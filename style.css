@@ -74,6 +74,21 @@ body {
   font-weight: 400;
 }
 
+.visit-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.hits-badge {
+  height: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
 /* Prompts Container */
 .prompts-container {
   display: flex;
