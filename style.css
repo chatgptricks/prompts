@@ -779,6 +779,26 @@ a {
   top: 0.02rem;
 }
 
+.visit-counter {
+  align-items: center;
+  background: rgba(2, 4, 4, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  bottom: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  display: flex;
+  min-height: 30px;
+  padding: 0.34rem 0.45rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 20;
+}
+
+.visit-counter img {
+  display: block;
+  max-height: 20px;
+}
+
 @keyframes particle-orbit {
   from {
     transform: translate(-50%, -50%) rotate(0deg) scale(1);

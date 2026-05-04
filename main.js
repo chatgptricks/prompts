@@ -221,6 +221,11 @@ const routeToLibrary = () => {
   return libraries.find(library => library.id === id)
 }
 
+const getVisitorBadgeUrl = libraryId => {
+  const path = encodeURIComponent(`chatgptricks.fun/${libraryId}`)
+  return `https://api.visitorbadge.io/api/visitors?path=${path}`
+}
+
 const createCopyButton = index => {
   const copyButton = document.createElement('button')
   copyButton.className = 'copy-btn'
@@ -433,6 +438,7 @@ const renderLibrary = library => {
   const app = document.querySelector('#app')
   app.className = 'library-shell'
   document.title = `${library.title} | chatgptricks.fun`
+  const visitorBadgeUrl = getVisitorBadgeUrl(library.id)
 
   app.innerHTML = `
     <header class="library-page-header">
@@ -456,6 +462,9 @@ const renderLibrary = library => {
         </ul>
       </div>
     </footer>
+    <aside class="visit-counter" aria-label="${library.name} visit counter">
+      <img src="${visitorBadgeUrl}" alt="${library.name} visitor counter" loading="lazy" referrerpolicy="no-referrer" />
+    </aside>
   `
 
   const siblingNav = app.querySelector('.sibling-nav')
