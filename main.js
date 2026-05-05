@@ -209,6 +209,101 @@ const libraries = [
         image: assetUrl('15.png')
       }
     ]
+  },
+  {
+    id: 'euphoria',
+    name: 'Animation Style Prompts',
+    shortName: 'Animation Styles',
+    accent: 'cyan',
+    summary: '11 prompts to reimagine one show, movie, or scene through famous animation and visual styles.',
+    title: 'Animation Style Prompt Library',
+    description: 'Use one source scene and quickly explore it across recognizable animation, collage, 3D, anime, and cinematic treatments.',
+    tipsTitle: 'Pro Tips for Style Reimaginings',
+    tips: [
+      'Replace [show/movie/scene] with a concrete subject, then keep it the same across every style.',
+      'Keep core character traits consistent so each result feels like a true reinterpretation, not a new concept.',
+      'Use the same aspect ratio across all prompts if you are building a carousel.',
+      'Add brand-safe wording when you want inspiration from a style without copying exact characters, logos, or layouts.'
+    ],
+    prompts: [
+      {
+        title: 'Lavish Hand-Drawn Fantasy',
+        category: 'Don Bluth',
+        prompt: ['Reimagine [show/movie/scene] as a lavish hand-drawn fantasy animation with lush lighting, expressive eyes, painterly backgrounds, dramatic posing, and warm cinematic emotion.'],
+        note: 'Best for nostalgic fantasy energy, expressive characters, and rich illustrated drama.',
+        image: assetUrl('style-01-don-bluth.png')
+      },
+      {
+        title: 'Classic Claymation',
+        category: 'Claymation',
+        prompt: ['Reimagine [show/movie/scene] as classic clay stop-motion with handmade clay textures, tiny physical sets, imperfect sculpted details, soft studio lighting, and tactile charm.'],
+        note: 'Best for cozy handmade scenes that feel crafted frame by frame.',
+        image: assetUrl('style-02-claymation.png')
+      },
+      {
+        title: 'Layered Paper Cut Collage',
+        category: 'Paper Cut',
+        prompt: ['Reimagine [show/movie/scene] as a 2D paper-cut collage made from layered cut paper, flat shapes, visible paper texture, soft shadows, and a crafted storybook composition.'],
+        note: 'Best for editorial, handmade, and charming flat-layout visuals.',
+        image: assetUrl('style-03-paper-cut.png')
+      },
+      {
+        title: '1930s Rubber-Hose Cartoon',
+        category: 'Fleischer',
+        prompt: ['Reimagine [show/movie/scene] as a 1930s rubber-hose cartoon with black-and-white ink lines, bendy limbs, vintage character posing, theatrical expressions, and old animation charm.'],
+        note: 'Best for retro cartoon energy with playful exaggeration.',
+        image: assetUrl('style-04-fleischer.png')
+      },
+      {
+        title: 'Nostalgic Holiday Stop-Motion',
+        category: 'Rankin/Bass',
+        prompt: ['Reimagine [show/movie/scene] as nostalgic stop-motion with cozy miniature sets, slightly janky character puppets, warm holiday lighting, soft textures, and storybook staging.'],
+        note: 'Best for warm, odd, handcrafted scenes with a vintage TV-special feel.',
+        image: assetUrl('style-05-rankin-bass.png')
+      },
+      {
+        title: 'Yellow Sitcom Cartoon',
+        category: 'Simpsons',
+        prompt: ['Reimagine [show/movie/scene] as a classic yellow-skin satirical sitcom cartoon with bold outlines, flat colors, expressive crowd staging, simple backgrounds, and comedic visual timing.'],
+        note: 'Best for instantly readable parody-style scenes and ensemble casts.',
+        image: assetUrl('style-06-simpsons.png')
+      },
+      {
+        title: 'Polished 3D Animated Feature',
+        category: 'Pixar',
+        prompt: ['Reimagine [show/movie/scene] as a polished 3D animated feature with warm lighting, expressive faces, impeccable shot composition, soft materials, and cinematic depth.'],
+        note: 'Best for clean, emotional, family-film-style visual storytelling.',
+        image: assetUrl('style-07-pixar.png')
+      },
+      {
+        title: 'Deliberately Bad MS Paint',
+        category: 'MS Paint',
+        prompt: ['Reimagine [show/movie/scene] as deliberately crude MS Paint art with simple brush lines, flat fills, awkward anatomy, uneven shapes, and charming low-effort computer-drawing energy.'],
+        note: 'Best for humor, memes, and intentionally rough visual contrast.',
+        image: assetUrl('style-08-ms-paint.png')
+      },
+      {
+        title: 'Chaotic Adult Sci-Fi Cartoon',
+        category: 'Rick and Morty',
+        prompt: ['Reimagine [show/movie/scene] as a chaotic adult sci-fi cartoon with sharp outlines, exaggerated expressions, surreal props, strange background details, and irreverent animated energy.'],
+        note: 'Best for absurd sci-fi reinterpretations and comedic weirdness.',
+        image: assetUrl('style-09-rick-and-morty.png')
+      },
+      {
+        title: '1970s Japanese Anime Movie',
+        category: 'Anime',
+        prompt: ['Reimagine [show/movie/scene] as a classic 1970s Japanese anime movie with dramatic lighting, painted backgrounds, expressive eyes, cinematic framing, and vintage film texture.'],
+        note: 'Best for emotional, cinematic scenes with retro anime atmosphere.',
+        image: assetUrl('style-10-anime.png')
+      },
+      {
+        title: 'Green-Tinted Cyberpunk Matrix',
+        category: 'Matrix Bonus',
+        prompt: ['Reimagine [show/movie/scene] as a green-tinted cyberpunk action film with leather outfits, digital rain atmosphere, fluorescent lighting, slow-motion tension, and hacker-movie mood.'],
+        note: 'Best for dark cinematic action, tech-noir mood, and dramatic reinventions.',
+        image: assetUrl('style-11-matrix.png')
+      }
+    ]
   }
 ]
 
@@ -323,7 +418,8 @@ const appendHighlightedPromptText = (paragraph, text) => {
 
 const makePromptCard = (library, prompt, index) => {
   const card = document.createElement('article')
-  card.className = `prompt-card ${library.id === 'images-2' ? 'prompt-card-with-image' : ''}`
+  const hasVisual = Boolean(prompt.image || prompt.images?.length)
+  card.className = `prompt-card ${hasVisual ? 'prompt-card-with-image' : ''}`
 
   const header = document.createElement('div')
   header.className = 'prompt-header'
@@ -367,7 +463,7 @@ const makePromptCard = (library, prompt, index) => {
   content.className = 'prompt-content'
   content.append(header, input, note)
 
-  if (library.id === 'images-2') {
+  if (hasVisual) {
     card.append(createImageSlot(prompt, index), content)
   } else {
     card.append(content)
