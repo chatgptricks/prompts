@@ -369,12 +369,16 @@ a {
 .library-page-header {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 86px 1fr auto;
+  grid-template-areas:
+    "home nav"
+    "content content";
+  grid-template-columns: 1fr auto;
   margin-bottom: 2rem;
   position: relative;
 }
 
 .library-page-header > div {
+  grid-area: content;
   min-width: 0;
 }
 
@@ -422,6 +426,11 @@ a {
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
+.home-link {
+  grid-area: home;
+  justify-self: flex-start;
+}
+
 .home-link:hover,
 .sibling-nav a:hover,
 .sibling-nav a.active {
@@ -433,6 +442,7 @@ a {
 .sibling-nav {
   display: flex;
   gap: 0.6rem;
+  grid-area: nav;
   justify-content: flex-end;
 }
 
@@ -911,6 +921,10 @@ a {
 
   .library-page-header {
     gap: 1rem;
+    grid-template-areas:
+      "home"
+      "content"
+      "nav";
   }
 
   .home-link {
