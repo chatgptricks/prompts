@@ -304,6 +304,99 @@ const libraries = [
         image: assetUrl('style-11-matrix.png')
       }
     ]
+  },
+  {
+    id: 'superman',
+    name: 'Superman Mode Prompts',
+    shortName: 'Superman Mode',
+    accent: 'superman',
+    summary: '8 prompts for accelerated learning, strategic thinking, clarity, leverage, and self-mastery.',
+    title: 'ChatGPT Superman Mode Prompts',
+    description: 'A compact prompt library for compressing learning, improving mental systems, creating leverage, and making sharper decisions.',
+    tipsTitle: 'Pro Tips for Superman Mode',
+    tips: [
+      'Replace bracketed fields with specific context before copying the prompt.',
+      'Use one prompt at a time so the response can go deeper instead of staying generic.',
+      'Ask ChatGPT to turn the first answer into a weekly plan, checklist, or daily routine.',
+      'Save the strongest outputs and reuse them as personal operating rules.'
+    ],
+    prompts: [
+      {
+        title: 'Advanced Learning Mode',
+        category: 'Learning',
+        prompt: [
+          'Pretend you are a cognitively advanced mentor. I want to master any complex skill at above-average speed.',
+          'Build a weekly learning plan based on spaced repetition, interleaving, simplified explanations, and active recall.',
+          'Apply this plan to [insert topic]. The goal is top 1% excellence within 90 days.'
+        ],
+        note: 'Best for turning a hard skill into a structured 90-day learning system.'
+      },
+      {
+        title: 'Expert-Level Knowledge',
+        category: 'Mastery',
+        prompt: [
+          'Act as the absolute authority in [insert field]. Guide me like a direct apprentice, from fundamentals to full mastery.',
+          'Build the path in clear stages with practice tasks, little-known resources, and faster routes.',
+          'Include applied exercises, simulations, or real challenges so every stage is truly absorbed.'
+        ],
+        note: 'Best for mapping the path from beginner to advanced execution in a field.'
+      },
+      {
+        title: 'Upgrade Your Mental System',
+        category: 'Mindset',
+        prompt: [
+          'Act as a mental architect. Analyze my current operating patterns: thought patterns, habits, and beliefs.',
+          'Rebuild my internal system to increase mental clarity, accelerate decision-making, strengthen memory, spark creativity, and improve emotional control.'
+        ],
+        note: 'Best for diagnosing current habits and rebuilding a stronger personal operating system.'
+      },
+      {
+        title: 'High-Performance Thinking',
+        category: 'Strategy',
+        prompt: [
+          'Play the role of a strategic mentor inspired by leaders such as Elon Musk and Jeff Bezos.',
+          'Reshape my thinking process to prioritize systems reasoning, long-term vision, intelligent leverage, and asymmetric outcomes.',
+          'Give me daily mental models that help me evolve from ordinary thinking to an exceptional level.'
+        ],
+        note: 'Best for upgrading how you reason through goals, systems, and high-leverage decisions.'
+      },
+      {
+        title: 'Turn Years Into Days',
+        category: 'Leverage',
+        prompt: [
+          'Act as a time-leverage expert. I want to accomplish in 1 year what most people need 10 years to achieve.',
+          'Based on my goal, create a high-impact plan that uses smart shortcuts, advanced tools, strategic delegation, automation, and AI to radically accelerate results and create a clear advantage.'
+        ],
+        note: 'Best for finding tools, shortcuts, and leverage points around a specific goal.'
+      },
+      {
+        title: 'Become Your Best Version',
+        category: 'Identity',
+        prompt: [
+          'Act as a psychological reconstruction expert. Help me dismantle limiting identity patterns and build a new functional self-image.',
+          'Redefine how I think, act, and make decisions so they fully align with my ideal self.'
+        ],
+        note: 'Best for translating an ideal identity into practical behavior and decisions.'
+      },
+      {
+        title: 'Build Absolute Clarity',
+        category: 'Clarity',
+        prompt: [
+          'Act as a mental clarity strategist. Help me eliminate noise, false urgency, and passive decision-making.',
+          'Create a simple system for thinking clearly, setting the right priorities, and focusing on what truly drives results.'
+        ],
+        note: 'Best for stripping away distraction and building a clearer priority system.'
+      },
+      {
+        title: 'Design a High-Impact Life',
+        category: 'Life Design',
+        prompt: [
+          'Act as a strategic life architect. Based on my values, skills, and ambitions, map an intentional life plan.',
+          'The goal is to maximize long-term impact, freedom, and alignment while avoiding distraction and random choices.'
+        ],
+        note: 'Best for connecting values, ambition, skills, and practical direction.'
+      }
+    ]
   }
 ]
 
