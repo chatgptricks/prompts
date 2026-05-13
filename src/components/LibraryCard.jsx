@@ -36,7 +36,7 @@ export default function LibraryCard({ library }) {
 function VisualGlyph({ library }) {
   return (
     <div className="visual-glyph" aria-hidden="true">
-      <span>{library.shortTitle.slice(0, 2).toUpperCase()}</span>
+      <span className="visual-emoji">{library.emoji}</span>
       <i />
       <i />
       <i />

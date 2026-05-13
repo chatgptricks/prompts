@@ -56,11 +56,6 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
             <span className="brand-mark">CGT</span>
             <span>Prompt OS</span>
           </a>
-          <nav className="top-links" aria-label="Quick navigation">
-            <a href="#/hub">Hub</a>
-            <a href="#/saved">Saved</a>
-            <a href="#/recent">Recent</a>
-          </nav>
           <div className="top-stat">
             <BookOpen aria-hidden="true" size={16} />
             {stats.prompts} prompts

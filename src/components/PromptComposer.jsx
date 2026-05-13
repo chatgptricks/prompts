@@ -78,7 +78,7 @@ export default function PromptComposer({
             </>
           ) : (
             <div className="detail-glyph" aria-hidden="true">
-              <Sparkles size={34} />
+              <strong>{prompt.emoji}</strong>
               <span>{library.shortTitle}</span>
             </div>
           )}

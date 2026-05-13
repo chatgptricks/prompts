@@ -6,6 +6,35 @@ const assetModules = import.meta.glob('../../assets/*', {
   import: 'default',
 })
 
+const libraryEmojis = {
+  presentations: '📊',
+  'images-2': '🎨',
+  euphoria: '🎬',
+  superman: '⚡',
+}
+
+const categoryEmojis = {
+  'Before and After': '🔀',
+  'Brand Color': '🎛️',
+  Character: '🧑‍🎨',
+  'Character Sheet': '🧍',
+  Clarity: '🎯',
+  Corporate: '🏢',
+  'Deck Builder': '📊',
+  Education: '🧠',
+  Identity: '🧬',
+  Learning: '⚡',
+  Leverage: '🧰',
+  Mastery: '🏆',
+  Mindset: '🧭',
+  Pitch: '🚀',
+  Prompt: '✨',
+  Research: '🔎',
+  Script: '🎙️',
+  Strategy: '♟️',
+  Storytelling: '📚',
+}
+
 export const assetUrl = (fileName) => {
   if (!fileName) return null
   return assetModules[`../../assets/${fileName}`] ?? null
@@ -32,6 +61,7 @@ export const composePrompt = (body, values = {}) =>
 
 export const libraries = rawLibraries.map((library) => ({
   ...library,
+  emoji: libraryEmojis[library.id] ?? '✨',
   coverUrl: assetUrl(library.cover),
   prompts: library.prompts.map((prompt) => {
     const variables = prompt.variables?.length ? prompt.variables : extractVariables(prompt.body)
@@ -39,6 +69,7 @@ export const libraries = rawLibraries.map((library) => ({
     return {
       ...prompt,
       variables,
+      emoji: categoryEmojis[prompt.category] ?? libraryEmojis[library.id] ?? '✨',
       key: getPromptKey(library.id, prompt.id),
       imageUrls: prompt.images.map(assetUrl).filter(Boolean),
     }

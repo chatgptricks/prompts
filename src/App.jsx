@@ -9,7 +9,6 @@ import {
   Library,
   Search,
   SlidersHorizontal,
-  Sparkles,
   Star,
   WandSparkles,
 } from 'lucide-react'
@@ -328,10 +327,6 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
 
   return (
     <div className="page library-page">
-      <a className="back-link" href="#/hub">
-        <ArrowLeft aria-hidden="true" size={17} />
-        Hub
-      </a>
       <section className={`library-hero accent-${library.accent}`}>
         <div className="library-hero-copy">
           <p className="eyebrow">{library.shortTitle}</p>
@@ -344,7 +339,7 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
           </div>
         </div>
         <div className="library-hero-visual">
-          {library.coverUrl ? <img src={library.coverUrl} alt="" /> : <Sparkles aria-hidden="true" size={58} />}
+          {library.coverUrl ? <img src={library.coverUrl} alt="" /> : <span className="library-hero-emoji" aria-hidden="true">{library.emoji}</span>}
           <div>
             <strong>{library.prompts.length}</strong>
             <span>prompts</span>

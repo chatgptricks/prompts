@@ -244,7 +244,7 @@ img {
   z-index: 20;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 70px;
   border-bottom: 1px solid var(--line);
   background: rgba(3, 5, 8, 0.76);
@@ -257,13 +257,6 @@ img {
   font-weight: 800;
 }
 
-.top-links {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.top-links a,
 .top-stat {
   display: inline-flex;
   align-items: center;
@@ -699,6 +692,16 @@ p {
   font-weight: 900;
 }
 
+.visual-glyph .visual-emoji,
+.detail-glyph strong,
+.prompt-card-glyph strong,
+.library-hero-emoji {
+  z-index: 1;
+  font-size: clamp(2.8rem, 7vw, 5.25rem);
+  line-height: 1;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.34));
+}
+
 .visual-glyph i {
   position: absolute;
   width: 64%;
@@ -765,6 +768,7 @@ p {
 }
 
 .prompt-card-glyph {
+  gap: 0.55rem;
   min-height: 140px;
   color: rgba(var(--accent-rgb), 0.94);
 }
@@ -828,10 +832,10 @@ p {
 
 .library-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
   gap: 1rem;
   align-items: stretch;
-  min-height: 316px;
+  min-height: 300px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
@@ -846,6 +850,20 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: clamp(1.3rem, 3vw, 2.35rem);
+}
+
+.library-hero h1 {
+  max-width: 13.5ch;
+  font-size: clamp(2.45rem, 4.5vw, 4.55rem);
+  line-height: 0.98;
+}
+
+.library-hero-copy > p {
+  max-width: 58ch;
+}
+
+.hero-tags {
+  margin-top: 1.05rem;
 }
 
 .library-hero-visual {
@@ -866,7 +884,16 @@ p {
   object-fit: cover;
 }
 
-.library-hero-visual > svg {
+.library-hero-emoji {
+  display: grid;
+  width: min(58%, 170px);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(var(--accent-rgb), 0.28);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(var(--accent-rgb), 0.2), transparent),
+    rgba(255, 255, 255, 0.04);
   color: var(--accent);
 }
 
@@ -888,7 +915,7 @@ p {
   line-height: 1;
 }
 
-.library-hero-visual span {
+.library-hero-visual > div span {
   color: var(--muted);
   font-size: 0.76rem;
   font-weight: 800;
@@ -1163,16 +1190,13 @@ p {
   }
 
   .top-bar {
+    justify-content: space-between;
     min-height: 64px;
     padding: 0 1rem;
   }
 
   .mobile-brand {
     display: flex;
-  }
-
-  .top-links {
-    display: none;
   }
 
   .page {
@@ -1267,6 +1291,10 @@ p {
   .collection-header h1 {
     font-size: clamp(1.95rem, 8.7vw, 2.35rem);
     line-height: 1.04;
+  }
+
+  .library-hero h1 {
+    max-width: 100%;
   }
 
   .hero-copy p:last-child,

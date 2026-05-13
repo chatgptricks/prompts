@@ -1,4 +1,4 @@
-import { ArrowRight, Copy, Image, Star } from 'lucide-react'
+import { ArrowRight, Copy, Star } from 'lucide-react'
 import { useState } from 'react'
 
 export default function PromptCard({ library, prompt, isFavorite, onToggleFavorite, onCopy, view = 'grid' }) {
@@ -25,7 +25,7 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
           <img src={prompt.imageUrls[0]} alt="" loading="lazy" />
         ) : (
           <div className="prompt-card-glyph" aria-hidden="true">
-            <Image size={24} />
+            <strong>{prompt.emoji}</strong>
             <span>{prompt.category}</span>
           </div>
         )}
@@ -56,7 +56,7 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
           <Copy aria-hidden="true" size={17} />
         </button>
         <span className="open-chip">
-          {copyState === 'idle' ? 'Compose' : copyState === 'copied' ? 'Copied' : 'Failed'}
+          {copyState === 'idle' ? 'Prompt' : copyState === 'copied' ? 'Copied' : 'Failed'}
           <ArrowRight aria-hidden="true" size={16} />
         </span>
       </div>
