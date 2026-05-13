@@ -292,6 +292,7 @@ img {
     linear-gradient(315deg, rgba(246, 185, 79, 0.12), transparent 34%),
     rgba(12, 17, 24, 0.82);
   box-shadow: var(--shadow);
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -841,12 +842,14 @@ p {
   background:
     linear-gradient(140deg, rgba(var(--accent-rgb), 0.2), transparent 46%),
     rgba(12, 16, 24, 0.9);
+  min-width: 0;
   overflow: hidden;
 }
 
 .library-hero-copy {
   display: flex;
   min-width: 0;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   padding: clamp(1.3rem, 3vw, 2.35rem);
@@ -869,6 +872,7 @@ p {
 .library-hero-visual {
   display: grid;
   position: relative;
+  min-width: 0;
   min-height: 280px;
   place-items: center;
   border-left: 1px solid var(--line);
@@ -1208,6 +1212,8 @@ p {
 
   .command-hero,
   .library-hero {
+    width: 100%;
+    max-width: 100%;
     grid-template-columns: 1fr;
   }
 
@@ -1254,6 +1260,8 @@ p {
     left: 0.75rem;
     z-index: 30;
     display: grid;
+    width: auto;
+    max-width: calc(100vw - 1.5rem);
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.32rem;
     border: 1px solid var(--line-strong);
@@ -1295,6 +1303,9 @@ p {
 
   .library-hero h1 {
     max-width: 100%;
+    font-size: clamp(1.85rem, 8vw, 2.1rem);
+    line-height: 1.06;
+    overflow-wrap: anywhere;
   }
 
   .hero-copy p:last-child,
