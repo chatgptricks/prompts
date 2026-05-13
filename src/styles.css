@@ -1302,7 +1302,7 @@ p {
   }
 
   .library-hero h1 {
-    max-width: 100%;
+    max-width: 10.8ch;
     font-size: clamp(1.85rem, 8vw, 2.1rem);
     line-height: 1.06;
     overflow-wrap: anywhere;
