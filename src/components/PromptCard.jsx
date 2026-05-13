@@ -56,7 +56,7 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
           <Copy aria-hidden="true" size={17} />
         </button>
         <span className="open-chip">
-          {copyState === 'idle' ? 'Prompt' : copyState === 'copied' ? 'Copied' : 'Failed'}
+          <span>{copyState === 'idle' ? 'Prompt' : copyState === 'copied' ? 'Copied' : 'Failed'}</span>
           <ArrowRight aria-hidden="true" size={16} />
         </span>
       </div>

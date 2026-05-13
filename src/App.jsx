@@ -89,7 +89,7 @@ export default function App() {
       ? `${context.prompt.title} | ChatGPTricks`
       : library
         ? `${library.shortTitle} | ChatGPTricks`
-        : 'ChatGPTricks Prompt OS'
+        : 'ChatGPTricks'
   }, [route])
 
   const favoriteSet = useMemo(() => new Set(favorites), [favorites])
@@ -208,10 +208,10 @@ function Dashboard({ favoriteSet, preferredView, setPreferredView, onToggleFavor
       <section className="command-hero">
         <div className="hero-copy">
           <p className="eyebrow">chatgptricks.fun</p>
-          <h1>Prompt OS for fast creative work.</h1>
+          <h1>Prompt libraries for fast creative work.</h1>
           <p>Search, customize, save, and copy prompts.</p>
         </div>
-        <div className="hero-console" aria-label="Prompt OS metrics">
+        <div className="hero-console" aria-label="Prompt library metrics">
           <div>
             <span>{stats.libraries}</span>
             <small>Libraries</small>

@@ -156,6 +156,18 @@ img {
   letter-spacing: 0;
 }
 
+.brand-mark img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+}
+
+.logo-mark {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: #020303;
+  box-shadow: inset 0 0 0 1px rgba(38, 224, 181, 0.08);
+}
+
 .brand-lockup strong {
   display: block;
   font-size: 0.98rem;
@@ -564,6 +576,8 @@ p {
 }
 
 .library-grid {
+  --library-media-height: clamp(178px, 22vw, 290px);
+
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.95rem;
@@ -584,13 +598,15 @@ p {
 
 .library-card {
   display: grid;
+  grid-template-rows: var(--library-media-height) 1fr;
   min-height: 392px;
   overflow: hidden;
 }
 
 .library-card-media {
   position: relative;
-  min-height: 164px;
+  height: var(--library-media-height);
+  min-height: 0;
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(var(--accent-rgb), 0.24), transparent),
@@ -598,10 +614,11 @@ p {
 }
 
 .library-card-media img {
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 164px;
   object-fit: cover;
+  object-position: center;
 }
 
 .library-card-body {
@@ -662,8 +679,7 @@ p {
   line-height: 1.15;
 }
 
-.card-action,
-.open-chip {
+.card-action {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -671,6 +687,39 @@ p {
   color: var(--accent);
   font-size: 0.88rem;
   font-weight: 800;
+}
+
+.open-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34rem;
+  min-height: 0;
+  margin-top: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--soft);
+  padding: 0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.open-chip svg {
+  color: var(--accent);
+  stroke-width: 2.5;
+  transition: transform 180ms ease;
+}
+
+.prompt-card:hover .open-chip,
+.prompt-card:focus-visible .open-chip {
+  color: var(--text);
+}
+
+.prompt-card:hover .open-chip svg,
+.prompt-card:focus-visible .open-chip svg {
+  transform: translateX(2px);
 }
 
 .visual-glyph,
@@ -809,10 +858,10 @@ p {
 }
 
 .prompt-card.list .open-chip {
-  justify-content: center;
-  min-height: 38px;
-  border: 1px solid rgba(var(--accent-rgb), 0.32);
-  border-radius: var(--radius);
+  align-self: stretch;
+  justify-content: flex-end;
+  min-height: 0;
+  margin-left: 0;
 }
 
 .prompt-card-actions .open-chip {

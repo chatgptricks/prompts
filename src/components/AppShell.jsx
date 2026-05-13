@@ -11,11 +11,11 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
   return (
     <div className="app-shell">
       <aside className="side-rail" aria-label="Main navigation">
-        <a href="#/hub" className="brand-lockup" aria-label="ChatGPTricks Prompt OS hub">
-          <span className="brand-mark">CGT</span>
+        <a href="#/hub" className="brand-lockup" aria-label="ChatGPTricks hub">
+          <span className="brand-mark logo-mark"><img src="/logoch.png" alt="" /></span>
           <span>
             <strong>ChatGPTricks</strong>
-            <small>Prompt OS</small>
+            <small>Prompt Library</small>
           </span>
         </a>
 
@@ -52,9 +52,9 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
 
       <div className="app-frame">
         <header className="top-bar">
-          <a href="#/hub" className="mobile-brand" aria-label="ChatGPTricks Prompt OS hub">
-            <span className="brand-mark">CGT</span>
-            <span>Prompt OS</span>
+          <a href="#/hub" className="mobile-brand" aria-label="ChatGPTricks hub">
+            <span className="brand-mark logo-mark"><img src="/logoch.png" alt="" /></span>
+            <span>ChatGPTricks</span>
           </a>
           <div className="top-stat">
             <BookOpen aria-hidden="true" size={16} />
