@@ -1,0 +1,488 @@
+[
+  {
+    "id": "presentations",
+    "title": "ChatGPT 5.5 Presentation Prompts",
+    "shortTitle": "Presentations",
+    "summary": "7 prompts to create complete decks, pitches, scripts, and research presentations.",
+    "description": "Build complete decks, pitch stories, research presentations, and speaker scripts from a single structured prompt.",
+    "accent": "emerald",
+    "cover": null,
+    "tags": ["Decks", "Research", "Pitch", "Script", "Storytelling"],
+    "tipsTitle": "Pro Tips for Presentations",
+    "tips": [
+      "Iterate and refine: ask ChatGPT to expand specific slides or change the tone.",
+      "Add your personal touch: use the AI-generated content as a foundation, then add your own stories and examples.",
+      "Visuals matter: pair these prompts with Images 2.0 to generate custom visuals for your slides.",
+      "Practice delivery: use the script prompt to rehearse pacing and emphasis."
+    ],
+    "prompts": [
+      {
+        "id": "full-presentation-builder",
+        "title": "Full Presentation Builder",
+        "category": "Deck Builder",
+        "body": "Act as a world-class presentation creator. Create a complete slide-by-slide presentation about [topic] for [audience].\n\nInclude title slide, key points, examples, data, one strong metaphor, visual suggestions, and a closing call-to-action.\n\nStructure it with a TED-style storytelling flow: clear hook, useful insight, and memorable ending.",
+        "note": "Best for turning a raw topic into a complete deck structure.",
+        "variables": ["topic", "audience"],
+        "images": [],
+        "tags": ["Deck Builder", "topic", "audience"]
+      },
+      {
+        "id": "deep-research-presentation",
+        "title": "Deep Research Presentation",
+        "category": "Research",
+        "body": "Create a research-backed presentation about [topic] for [audience].\n\nInclude real statistics, case studies, expert quotes, practical insights, and concrete examples.\n\nMake each slide educational and engaging. Add source references at the end.",
+        "note": "Best when credibility and supporting evidence matter.",
+        "variables": ["topic", "audience"],
+        "images": [],
+        "tags": ["Research", "topic", "audience"]
+      },
+      {
+        "id": "simplified-explanation",
+        "title": "Simplified Explanation",
+        "category": "Education",
+        "body": "Build a beginner-friendly presentation about [topic] for [audience].\n\nBreak down complex concepts into simple explanations, analogies, and step-by-step logic.\n\nMake the content clear enough for a complete beginner to understand without prior knowledge.",
+        "note": "Best for education, onboarding, and complex topics.",
+        "variables": ["topic", "audience"],
+        "images": [],
+        "tags": ["Education", "topic", "audience"]
+      },
+      {
+        "id": "business-pitch-presentation",
+        "title": "Business Pitch Presentation",
+        "category": "Pitch",
+        "body": "Create a complete investor-style pitch deck for this business idea: [business idea].\n\nInclude problem, solution, market size, product features, business model, competitive advantage, financial projections, team slide, and closing pitch script.",
+        "note": "Best for startup ideas, internal proposals, and funding decks.",
+        "variables": ["business idea"],
+        "images": [],
+        "tags": ["Pitch", "business idea"]
+      },
+      {
+        "id": "the-storytelling-master",
+        "title": "The Storytelling Master",
+        "category": "Storytelling",
+        "body": "Create a complete presentation about [topic] using this storytelling structure:\n\nHook -> Conflict -> Journey -> Insight -> Transformation -> Call to Action.\n\nMake the slides emotional, memorable, and persuasive. Add concise speaker notes with delivery guidance.",
+        "note": "Best for persuasive talks and narrative-driven decks.",
+        "variables": ["topic"],
+        "images": [],
+        "tags": ["Storytelling", "topic"]
+      },
+      {
+        "id": "corporate-presentation",
+        "title": "Corporate Presentation",
+        "category": "Corporate",
+        "body": "Create a formal corporate presentation about [topic] for [company/team/audience].\n\nInclude professional tone, structured bullet points, charts, graphs, SWOT analysis, trends, forecasts, and data-backed recommendations.\n\nMake it suitable for boardrooms.",
+        "note": "Best for executive, boardroom, and internal strategy contexts.",
+        "variables": ["topic", "company/team/audience"],
+        "images": [],
+        "tags": ["Corporate", "topic", "company/team/audience"]
+      },
+      {
+        "id": "complete-presentation-script-combo",
+        "title": "Complete Presentation + Script Combo",
+        "category": "Script",
+        "body": "Create a ready-to-use presentation about [topic] for [audience], and write a complete spoken script I can read while presenting.\n\nEnsure the script matches the tone, pacing, and emotional flow of the slides.\n\nInclude pauses, emphasis, storytelling cues, and delivery instructions.",
+        "note": "Best when you need both slides and delivery support.",
+        "variables": ["topic", "audience"],
+        "images": [],
+        "tags": ["Script", "topic", "audience"]
+      }
+    ]
+  },
+  {
+    "id": "images-2",
+    "title": "Images 2.0 Prompt Library",
+    "shortTitle": "Images 2.0",
+    "summary": "15 prompts for characters, mockups, print, icons, storyboards, typography, and visual systems.",
+    "description": "A structured set of visual prompts with a consistent purpose, prompt text, and example-image placeholder for each item.",
+    "accent": "cyan",
+    "cover": "1.png",
+    "tags": ["Character", "Typography", "Print", "Mockups", "Icon Set", "Infographic"],
+    "tipsTitle": "Pro Tips for Images 2.0",
+    "tips": [
+      "Replace bracketed text before copying so the model has concrete subject, style, and content details.",
+      "Keep brand-critical details consistent across prompts: character traits, palette, typography, and layout.",
+      "Use the image placeholder on each card for a final example, variant, or before/after reference.",
+      "For text-heavy outputs, include the self-review line to reduce spelling and anatomy issues."
+    ],
+    "prompts": [
+      {
+        "id": "generate-8-poses-for-the-same-character",
+        "title": "Generate 8 Poses for the Same Character",
+        "category": "Character",
+        "body": "Draw the same character [character description] in 8 different poses/expressions in one image:\n\n1. Smiling 2. Surprised 3. Sad 4. Reading 5. Working on a laptop 6. Drinking coffee 7. On the phone 8. Giving a presentation.\n\nKeep the character design consistent across all 8 versions. Use 2K resolution and a plain background.",
+        "note": "Excellent for unifying brand characters or social media accounts.",
+        "variables": ["character description"],
+        "images": ["1.png"],
+        "tags": ["Character", "character description"]
+      },
+      {
+        "id": "character-design-from-all-angles",
+        "title": "Character Design from All Angles",
+        "category": "Character Sheet",
+        "body": "Design a character reference sheet for [character description] from 3 angles: front, side, and back. Use [style: anime/3D/cartoon] with a clean plain background.",
+        "note": "Locks in the character features so you can reuse the same design from different angles.",
+        "variables": ["character description", "style: anime/3D/cartoon"],
+        "images": ["2.png"],
+        "tags": ["Character Sheet", "character description", "style: anime/3D/cartoon"]
+      },
+      {
+        "id": "high-precision-text-writing",
+        "title": "High-Precision Text Writing",
+        "category": "Typography",
+        "body": "Create a [design type] and write this exact text: [text]. Use a bold, clear font with perfect spelling and high readability.",
+        "note": "Useful for thumbnails, ads, and designs where manual text cleanup would slow you down.",
+        "variables": ["design type", "text"],
+        "images": ["3.png"],
+        "tags": ["Typography", "design type", "text"]
+      },
+      {
+        "id": "print-quality-2k",
+        "title": "Print Quality 2K",
+        "category": "Print",
+        "body": "Create a print-ready [poster/brochure/flyer] about [topic], in very high 2K resolution, A4 dimensions, portrait orientation, sharp details, and clean margins.",
+        "note": "Append this to poster, flyer, brochure, or one-page design prompts.",
+        "variables": ["poster/brochure/flyer", "topic"],
+        "images": ["4.png"],
+        "tags": ["Print", "poster/brochure/flyer", "topic"]
+      },
+      {
+        "id": "generate-multilingual-designs",
+        "title": "Generate Multilingual Designs",
+        "category": "Localization",
+        "body": "Create 3 versions of this [design type] in exactly the same layout: version 1 in [language 1], version 2 in [language 2], and version 3 in [language 3]. Keep spacing, hierarchy, and style consistent.",
+        "note": "Ready for publishing the same visual concept across multilingual platforms.",
+        "variables": ["design type", "language 1", "language 2", "language 3"],
+        "images": ["5a.png", "5b.png", "5c.png"],
+        "tags": ["Localization", "design type", "language 1", "language 2", "language 3"]
+      },
+      {
+        "id": "self-review-command",
+        "title": "Self-Review Command",
+        "category": "Quality Control",
+        "body": "After generating the image, self-review [hands/fingers], [faces], and [text spelling]. Correct visible errors before showing the final result.",
+        "note": "Add this when hands, readable text, or polish are important.",
+        "variables": ["hands/fingers", "faces", "text spelling"],
+        "images": ["6.png"],
+        "tags": ["Quality Control", "hands/fingers", "faces", "text spelling"]
+      },
+      {
+        "id": "legal-design-cloning-via-link",
+        "title": "Legal Design Cloning via Link",
+        "category": "Style Reference",
+        "body": "Visit [reference link], analyze its visual style, and create a new original image in a similar style using my content: [your content]. Do not copy logos, trademarks, or exact layout.",
+        "note": "Use for inspiration and style analysis while keeping the final content specific to your own project.",
+        "variables": ["reference link", "your content"],
+        "images": ["7.png"],
+        "tags": ["Style Reference", "reference link", "your content"]
+      },
+      {
+        "id": "professional-lens-realism",
+        "title": "Professional-Lens Realism",
+        "category": "Photography",
+        "body": "Create a highly realistic photorealistic image of [subject], shot with a 35mm lens, cinematic lighting, sharp focus, natural depth of field, and high-resolution detail.",
+        "note": "Best for visuals that should feel like professional photography.",
+        "variables": ["subject"],
+        "images": ["8.png"],
+        "tags": ["Photography", "subject"]
+      },
+      {
+        "id": "designing-product-mockups",
+        "title": "Designing Product Mockups",
+        "category": "Mockups",
+        "body": "Place [logo/text] realistically on [product], integrated into the material, lighting, and perspective. Show it in use by [person/context] in a natural lifestyle scene.",
+        "note": "Use to showcase products, merch, and branded assets quickly.",
+        "variables": ["logo/text", "product", "person/context"],
+        "images": ["9.png"],
+        "tags": ["Mockups", "logo/text", "product", "person/context"]
+      },
+      {
+        "id": "create-a-complete-icon-set",
+        "title": "Create a Complete Icon Set",
+        "category": "Icon Set",
+        "body": "Create a cohesive set of 6 icons for [app/topic] in a flat design style. Use only [color 1] and [color 2], consistent stroke/shape language, and a transparent background.",
+        "note": "Excellent for app designers and visual identity systems.",
+        "variables": ["app/topic", "color 1", "color 2"],
+        "images": ["10.png"],
+        "tags": ["Icon Set", "app/topic", "color 1", "color 2"]
+      },
+      {
+        "id": "split-screen-for-comparisons",
+        "title": "Split Screen for Comparisons",
+        "category": "Before and After",
+        "body": "Create a split-screen before/after image. Left side: [problem state]. Right side: the same scene after [solution/result]. Keep the composition aligned for easy comparison.",
+        "note": "Strong for ads that show a clear problem and solution.",
+        "variables": ["problem state", "solution/result"],
+        "images": ["11.png"],
+        "tags": ["Before and After", "problem state", "solution/result"]
+      },
+      {
+        "id": "strict-color-palette-control",
+        "title": "Strict Color Palette Control",
+        "category": "Brand Color",
+        "body": "Draw [subject/scene] using only this color palette: [color 1], [color 2], [color 3]. Strictly avoid all other colors and keep the palette consistent.",
+        "note": "Use to keep campaign visuals aligned with a specific brand palette.",
+        "variables": ["subject/scene", "color 1", "color 2", "color 3"],
+        "images": ["12.png"],
+        "tags": ["Brand Color", "subject/scene", "color 1", "color 2", "color 3"]
+      },
+      {
+        "id": "sequential-image-generation",
+        "title": "Sequential Image Generation",
+        "category": "Storyboarding",
+        "body": "Using the same character, outfit, and visual style from the previous image, draw the character now [new action/scene]. Keep identity and style consistent.",
+        "note": "Perfect for comics, storyboards, and sequential social content.",
+        "variables": ["new action/scene"],
+        "images": ["13.png"],
+        "tags": ["Storyboarding", "new action/scene"]
+      },
+      {
+        "id": "structural-infographic-designs",
+        "title": "Structural Infographic Designs",
+        "category": "Infographic",
+        "body": "Design an empty, ready-to-fill infographic template about [topic], divided into [number] sequential steps. Use a modern layout and leave clean blank spaces for text.",
+        "note": "Use when you want a custom template instead of a stock infographic layout.",
+        "variables": ["topic", "number"],
+        "images": ["14.png"],
+        "tags": ["Infographic", "topic", "number"]
+      },
+      {
+        "id": "transform-a-doodle-into-a-masterpiece",
+        "title": "Transform a Doodle into a Masterpiece",
+        "category": "Sketch Upgrade",
+        "body": "Take this uploaded sketch, preserve its main structure and composition, and transform it into a high-quality [style] design with polished lighting, depth, and detail.",
+        "note": "Upload a rough sketch first, then use this to preserve the idea while upgrading the finish.",
+        "variables": ["style"],
+        "images": ["15.png"],
+        "tags": ["Sketch Upgrade", "style"]
+      }
+    ]
+  },
+  {
+    "id": "euphoria",
+    "title": "Animation Style Prompt Library",
+    "shortTitle": "Animation Styles",
+    "summary": "11 prompts to reimagine one show, movie, or scene through famous animation and visual styles.",
+    "description": "Use one source scene and quickly explore it across recognizable animation, collage, 3D, anime, and cinematic treatments.",
+    "accent": "violet",
+    "cover": "style-01-don-bluth.png",
+    "tags": ["Animation", "Style Transfer", "Storyboarding", "Cinematic", "Visual Systems"],
+    "tipsTitle": "Pro Tips for Style Reimaginings",
+    "tips": [
+      "Replace [show/movie/scene] with a concrete subject, then keep it the same across every style.",
+      "Keep core character traits consistent so each result feels like a true reinterpretation, not a new concept.",
+      "Use the same aspect ratio across all prompts if you are building a carousel.",
+      "Add brand-safe wording when you want inspiration from a style without copying exact characters, logos, or layouts."
+    ],
+    "prompts": [
+      {
+        "id": "lavish-hand-drawn-fantasy",
+        "title": "Lavish Hand-Drawn Fantasy",
+        "category": "Don Bluth",
+        "body": "Reimagine [show/movie/scene] as a lavish hand-drawn fantasy animation with lush lighting, expressive eyes, painterly backgrounds, dramatic posing, and warm cinematic emotion.",
+        "note": "Best for nostalgic fantasy energy, expressive characters, and rich illustrated drama.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-01-don-bluth.png"],
+        "tags": ["Don Bluth", "show/movie/scene"]
+      },
+      {
+        "id": "classic-claymation",
+        "title": "Classic Claymation",
+        "category": "Claymation",
+        "body": "Reimagine [show/movie/scene] as classic clay stop-motion with handmade clay textures, tiny physical sets, imperfect sculpted details, soft studio lighting, and tactile charm.",
+        "note": "Best for cozy handmade scenes that feel crafted frame by frame.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-02-claymation.png"],
+        "tags": ["Claymation", "show/movie/scene"]
+      },
+      {
+        "id": "layered-paper-cut-collage",
+        "title": "Layered Paper Cut Collage",
+        "category": "Paper Cut",
+        "body": "Reimagine [show/movie/scene] as a 2D paper-cut collage made from layered cut paper, flat shapes, visible paper texture, soft shadows, and a crafted storybook composition.",
+        "note": "Best for editorial, handmade, and charming flat-layout visuals.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-03-paper-cut.png"],
+        "tags": ["Paper Cut", "show/movie/scene"]
+      },
+      {
+        "id": "1930s-rubber-hose-cartoon",
+        "title": "1930s Rubber-Hose Cartoon",
+        "category": "Fleischer",
+        "body": "Reimagine [show/movie/scene] as a 1930s rubber-hose cartoon with black-and-white ink lines, bendy limbs, vintage character posing, theatrical expressions, and old animation charm.",
+        "note": "Best for retro cartoon energy with playful exaggeration.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-04-fleischer.png"],
+        "tags": ["Fleischer", "show/movie/scene"]
+      },
+      {
+        "id": "nostalgic-holiday-stop-motion",
+        "title": "Nostalgic Holiday Stop-Motion",
+        "category": "Rankin/Bass",
+        "body": "Reimagine [show/movie/scene] as nostalgic stop-motion with cozy miniature sets, slightly janky character puppets, warm holiday lighting, soft textures, and storybook staging.",
+        "note": "Best for warm, odd, handcrafted scenes with a vintage TV-special feel.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-05-rankin-bass.png"],
+        "tags": ["Rankin/Bass", "show/movie/scene"]
+      },
+      {
+        "id": "yellow-sitcom-cartoon",
+        "title": "Yellow Sitcom Cartoon",
+        "category": "Simpsons",
+        "body": "Reimagine [show/movie/scene] as a classic yellow-skin satirical sitcom cartoon with bold outlines, flat colors, expressive crowd staging, simple backgrounds, and comedic visual timing.",
+        "note": "Best for instantly readable parody-style scenes and ensemble casts.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-06-simpsons.png"],
+        "tags": ["Simpsons", "show/movie/scene"]
+      },
+      {
+        "id": "polished-3d-animated-feature",
+        "title": "Polished 3D Animated Feature",
+        "category": "Pixar",
+        "body": "Reimagine [show/movie/scene] as a polished 3D animated feature with warm lighting, expressive faces, impeccable shot composition, soft materials, and cinematic depth.",
+        "note": "Best for clean, emotional, family-film-style visual storytelling.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-07-pixar.png"],
+        "tags": ["Pixar", "show/movie/scene"]
+      },
+      {
+        "id": "deliberately-bad-ms-paint",
+        "title": "Deliberately Bad MS Paint",
+        "category": "MS Paint",
+        "body": "Reimagine [show/movie/scene] as deliberately crude MS Paint art with simple brush lines, flat fills, awkward anatomy, uneven shapes, and charming low-effort computer-drawing energy.",
+        "note": "Best for humor, memes, and intentionally rough visual contrast.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-08-ms-paint.png"],
+        "tags": ["MS Paint", "show/movie/scene"]
+      },
+      {
+        "id": "chaotic-adult-sci-fi-cartoon",
+        "title": "Chaotic Adult Sci-Fi Cartoon",
+        "category": "Rick and Morty",
+        "body": "Reimagine [show/movie/scene] as a chaotic adult sci-fi cartoon with sharp outlines, exaggerated expressions, surreal props, strange background details, and irreverent animated energy.",
+        "note": "Best for absurd sci-fi reinterpretations and comedic weirdness.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-09-rick-and-morty.png"],
+        "tags": ["Rick and Morty", "show/movie/scene"]
+      },
+      {
+        "id": "1970s-japanese-anime-movie",
+        "title": "1970s Japanese Anime Movie",
+        "category": "Anime",
+        "body": "Reimagine [show/movie/scene] as a classic 1970s Japanese anime movie with dramatic lighting, painted backgrounds, expressive eyes, cinematic framing, and vintage film texture.",
+        "note": "Best for emotional, cinematic scenes with retro anime atmosphere.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-10-anime.png"],
+        "tags": ["Anime", "show/movie/scene"]
+      },
+      {
+        "id": "green-tinted-cyberpunk-matrix",
+        "title": "Green-Tinted Cyberpunk Matrix",
+        "category": "Matrix Bonus",
+        "body": "Reimagine [show/movie/scene] as a green-tinted cyberpunk action film with leather outfits, digital rain atmosphere, fluorescent lighting, slow-motion tension, and hacker-movie mood.",
+        "note": "Best for dark cinematic action, tech-noir mood, and dramatic reinventions.",
+        "variables": ["show/movie/scene"],
+        "images": ["style-11-matrix.png"],
+        "tags": ["Matrix Bonus", "show/movie/scene"]
+      }
+    ]
+  },
+  {
+    "id": "superman",
+    "title": "ChatGPT Superman Mode Prompts",
+    "shortTitle": "Superman Mode",
+    "summary": "8 prompts for accelerated learning, strategic thinking, clarity, leverage, and self-mastery.",
+    "description": "A compact prompt library for compressing learning, improving mental systems, creating leverage, and making sharper decisions.",
+    "accent": "superman",
+    "cover": null,
+    "tags": ["Learning", "Mastery", "Mindset", "Strategy", "Leverage", "Clarity"],
+    "tipsTitle": "Pro Tips for Superman Mode",
+    "tips": [
+      "Replace bracketed fields with specific context before copying the prompt.",
+      "Use one prompt at a time so the response can go deeper instead of staying generic.",
+      "Ask ChatGPT to turn the first answer into a weekly plan, checklist, or daily routine.",
+      "Save the strongest outputs and reuse them as personal operating rules."
+    ],
+    "prompts": [
+      {
+        "id": "advanced-learning-mode",
+        "title": "Advanced Learning Mode",
+        "category": "Learning",
+        "body": "Pretend you are a cognitively advanced mentor. I want to master any complex skill at above-average speed.\n\nBuild a weekly learning plan based on spaced repetition, interleaving, simplified explanations, and active recall.\n\nApply this plan to [insert topic]. The goal is top 1% excellence within 90 days.",
+        "note": "Best for turning a hard skill into a structured 90-day learning system.",
+        "variables": ["insert topic"],
+        "images": [],
+        "tags": ["Learning", "topic"]
+      },
+      {
+        "id": "expert-level-knowledge",
+        "title": "Expert-Level Knowledge",
+        "category": "Mastery",
+        "body": "Act as the absolute authority in [insert field]. Guide me like a direct apprentice, from fundamentals to full mastery.\n\nBuild the path in clear stages with practice tasks, little-known resources, and faster routes.\n\nInclude applied exercises, simulations, or real challenges so every stage is truly absorbed.",
+        "note": "Best for mapping the path from beginner to advanced execution in a field.",
+        "variables": ["insert field"],
+        "images": [],
+        "tags": ["Mastery", "field"]
+      },
+      {
+        "id": "upgrade-your-mental-system",
+        "title": "Upgrade Your Mental System",
+        "category": "Mindset",
+        "body": "Act as a mental architect. Analyze my current operating patterns: thought patterns, habits, and beliefs.\n\nRebuild my internal system to increase mental clarity, accelerate decision-making, strengthen memory, spark creativity, and improve emotional control.",
+        "note": "Best for diagnosing current habits and rebuilding a stronger personal operating system.",
+        "variables": [],
+        "images": [],
+        "tags": ["Mindset"]
+      },
+      {
+        "id": "high-performance-thinking",
+        "title": "High-Performance Thinking",
+        "category": "Strategy",
+        "body": "Play the role of a strategic mentor inspired by leaders such as Elon Musk and Jeff Bezos.\n\nReshape my thinking process to prioritize systems reasoning, long-term vision, intelligent leverage, and asymmetric outcomes.\n\nGive me daily mental models that help me evolve from ordinary thinking to an exceptional level.",
+        "note": "Best for upgrading how you reason through goals, systems, and high-leverage decisions.",
+        "variables": [],
+        "images": [],
+        "tags": ["Strategy"]
+      },
+      {
+        "id": "turn-years-into-days",
+        "title": "Turn Years Into Days",
+        "category": "Leverage",
+        "body": "Act as a time-leverage expert. I want to accomplish in 1 year what most people need 10 years to achieve.\n\nBased on my goal, create a high-impact plan that uses smart shortcuts, advanced tools, strategic delegation, automation, and AI to radically accelerate results and create a clear advantage.",
+        "note": "Best for finding tools, shortcuts, and leverage points around a specific goal.",
+        "variables": [],
+        "images": [],
+        "tags": ["Leverage"]
+      },
+      {
+        "id": "become-your-best-version",
+        "title": "Become Your Best Version",
+        "category": "Identity",
+        "body": "Act as a psychological reconstruction expert. Help me dismantle limiting identity patterns and build a new functional self-image.\n\nRedefine how I think, act, and make decisions so they fully align with my ideal self.",
+        "note": "Best for translating an ideal identity into practical behavior and decisions.",
+        "variables": [],
+        "images": [],
+        "tags": ["Identity"]
+      },
+      {
+        "id": "build-absolute-clarity",
+        "title": "Build Absolute Clarity",
+        "category": "Clarity",
+        "body": "Act as a mental clarity strategist. Help me eliminate noise, false urgency, and passive decision-making.\n\nCreate a simple system for thinking clearly, setting the right priorities, and focusing on what truly drives results.",
+        "note": "Best for stripping away distraction and building a clearer priority system.",
+        "variables": [],
+        "images": [],
+        "tags": ["Clarity"]
+      },
+      {
+        "id": "design-a-high-impact-life",
+        "title": "Design a High-Impact Life",
+        "category": "Life Design",
+        "body": "Act as a strategic life architect. Based on my values, skills, and ambitions, map an intentional life plan.\n\nThe goal is to maximize long-term impact, freedom, and alignment while avoiding distraction and random choices.",
+        "note": "Best for connecting values, ambition, skills, and practical direction.",
+        "variables": [],
+        "images": [],
+        "tags": ["Life Design"]
+      }
+    ]
+  }
+]

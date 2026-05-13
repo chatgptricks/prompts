@@ -1,0 +1,522 @@
+import { AnimatePresence, motion } from 'framer-motion'
+import {
+  ArrowLeft,
+  ArrowRight,
+  BookmarkCheck,
+  Clock3,
+  Grid2X2,
+  LayoutList,
+  Library,
+  Search,
+  SlidersHorizontal,
+  Sparkles,
+  Star,
+  WandSparkles,
+} from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import AppShell from './components/AppShell'
+import EmptyState from './components/EmptyState'
+import LibraryCard from './components/LibraryCard'
+import PromptCard from './components/PromptCard'
+import PromptComposer from './components/PromptComposer'
+import SearchBox from './components/SearchBox'
+import {
+  allPrompts,
+  findLibrary,
+  findPrompt,
+  findPromptByKey,
+  getCategories,
+  libraries,
+  stats,
+} from './lib/content'
+import { searchPrompts } from './lib/search'
+import { readStorage, STORAGE_KEYS, writeStorage } from './lib/storage'
+
+const pageVariants = {
+  initial: { opacity: 0, y: 12 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -8 },
+}
+
+function parseRoute() {
+  const hash = window.location.hash.replace(/^#\/?/, '')
+  const parts = hash.split('/').filter(Boolean)
+
+  if (!parts.length || parts[0] === 'hub') return { name: 'hub' }
+  if (parts[0] === 'saved') return { name: 'saved' }
+  if (parts[0] === 'recent') return { name: 'recent' }
+  if (parts[0] === 'library' && parts[1]) return { name: 'library', libraryId: parts[1] }
+  if (parts[0] === 'prompt' && parts[1] && parts[2]) {
+    return { name: 'prompt', libraryId: parts[1], promptId: parts[2] }
+  }
+
+  const legacyLibrary = findLibrary(parts[0])
+  if (legacyLibrary) return { name: 'library', libraryId: legacyLibrary.id, legacy: true }
+
+  return { name: 'hub' }
+}
+
+function useStoredState(key, initialValue) {
+  const [value, setValue] = useState(() => readStorage(key, initialValue))
+
+  useEffect(() => {
+    writeStorage(key, value)
+  }, [key, value])
+
+  return [value, setValue]
+}
+
+export default function App() {
+  const [route, setRoute] = useState(parseRoute)
+  const [favorites, setFavorites] = useStoredState(STORAGE_KEYS.favorites, [])
+  const [recentCopies, setRecentCopies] = useStoredState(STORAGE_KEYS.recentCopies, [])
+  const [drafts, setDrafts] = useStoredState(STORAGE_KEYS.composerDrafts, {})
+  const [preferredView, setPreferredView] = useStoredState(STORAGE_KEYS.preferredView, 'grid')
+
+  useEffect(() => {
+    const onHashChange = () => setRoute(parseRoute())
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [route.name, route.libraryId, route.promptId])
+
+  useEffect(() => {
+    const context = route.name === 'prompt' ? findPrompt(route.libraryId, route.promptId) : null
+    const library = route.name === 'library' ? findLibrary(route.libraryId) : context?.library
+    document.title = context
+      ? `${context.prompt.title} | ChatGPTricks`
+      : library
+        ? `${library.shortTitle} | ChatGPTricks`
+        : 'ChatGPTricks Prompt OS'
+  }, [route])
+
+  const favoriteSet = useMemo(() => new Set(favorites), [favorites])
+
+  const toggleFavorite = (key) => {
+    setFavorites((current) => (current.includes(key) ? current.filter((item) => item !== key) : [key, ...current]))
+  }
+
+  const recordCopy = (library, prompt) => {
+    setRecentCopies((current) => {
+      const next = [
+        {
+          key: prompt.key,
+          title: prompt.title,
+          libraryTitle: library.shortTitle,
+          copiedAt: new Date().toISOString(),
+        },
+        ...current.filter((item) => item.key !== prompt.key),
+      ]
+      return next.slice(0, 16)
+    })
+  }
+
+  const copyPrompt = async (library, prompt, text = prompt.body) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      recordCopy(library, prompt)
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  const updateDraft = (promptKey, value) => {
+    setDrafts((current) => ({
+      ...current,
+      [promptKey]: value,
+    }))
+  }
+
+  const resetDraft = (promptKey) => {
+    setDrafts((current) => {
+      const next = { ...current }
+      delete next[promptKey]
+      return next
+    })
+  }
+
+  const activeRoute = route.name === 'library' || route.name === 'prompt' ? 'library' : route.name
+
+  return (
+    <AppShell activeRoute={activeRoute} favoritesCount={favorites.length} recentCount={recentCopies.length}>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={`${route.name}-${route.libraryId ?? ''}-${route.promptId ?? ''}`}
+          variants={pageVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.22, ease: 'easeOut' }}
+        >
+          {route.name === 'hub' ? (
+            <Dashboard
+              favoriteSet={favoriteSet}
+              preferredView={preferredView}
+              setPreferredView={setPreferredView}
+              onToggleFavorite={toggleFavorite}
+              onCopy={copyPrompt}
+            />
+          ) : null}
+          {route.name === 'library' ? (
+            <LibraryPage
+              libraryId={route.libraryId}
+              favoriteSet={favoriteSet}
+              preferredView={preferredView}
+              setPreferredView={setPreferredView}
+              onToggleFavorite={toggleFavorite}
+              onCopy={copyPrompt}
+            />
+          ) : null}
+          {route.name === 'prompt' ? (
+            <PromptPage
+              libraryId={route.libraryId}
+              promptId={route.promptId}
+              favoriteSet={favoriteSet}
+              drafts={drafts}
+              onDraftChange={updateDraft}
+              onResetDraft={resetDraft}
+              onToggleFavorite={toggleFavorite}
+              onCopy={copyPrompt}
+            />
+          ) : null}
+          {route.name === 'saved' ? (
+            <SavedPage favoriteSet={favoriteSet} onToggleFavorite={toggleFavorite} onCopy={copyPrompt} />
+          ) : null}
+          {route.name === 'recent' ? (
+            <RecentPage recentCopies={recentCopies} favoriteSet={favoriteSet} onToggleFavorite={toggleFavorite} onCopy={copyPrompt} />
+          ) : null}
+        </motion.div>
+      </AnimatePresence>
+    </AppShell>
+  )
+}
+
+function Dashboard({ favoriteSet, preferredView, setPreferredView, onToggleFavorite, onCopy }) {
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState('All')
+  const categories = useMemo(() => ['All', ...getCategories(allPrompts).slice(0, 9)], [])
+  const filteredPrompts = useMemo(() => {
+    const searched = searchPrompts(allPrompts, query, 18)
+    return category === 'All' ? searched : searched.filter((prompt) => prompt.category === category)
+  }, [category, query])
+
+  return (
+    <div className="page dashboard-page">
+      <section className="command-hero">
+        <div className="hero-copy">
+          <p className="eyebrow">chatgptricks.fun</p>
+          <h1>Prompt OS for fast creative work.</h1>
+          <p>Search, customize, save, and copy prompts.</p>
+        </div>
+        <div className="hero-console" aria-label="Prompt OS metrics">
+          <div>
+            <span>{stats.libraries}</span>
+            <small>Libraries</small>
+          </div>
+          <div>
+            <span>{stats.prompts}</span>
+            <small>Prompts</small>
+          </div>
+          <div>
+            <span>{stats.categories}</span>
+            <small>Categories</small>
+          </div>
+        </div>
+      </section>
+
+      <section className="search-command">
+        <SearchBox value={query} onChange={setQuery} placeholder="Search presentation, image, animation, strategy..." />
+        <div className="filter-strip" aria-label="Prompt categories">
+          {categories.map((item) => (
+            <button key={item} type="button" className={item === category ? 'active' : ''} onClick={() => setCategory(item)}>
+              {item}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="quick-panels" aria-label="Saved and recent prompts">
+        <a href="#/saved">
+          <BookmarkCheck aria-hidden="true" size={20} />
+          <span>Saved prompts</span>
+          <ArrowRight aria-hidden="true" size={17} />
+        </a>
+        <a href="#/recent">
+          <Clock3 aria-hidden="true" size={20} />
+          <span>Recent copies</span>
+          <ArrowRight aria-hidden="true" size={17} />
+        </a>
+        <a href="#/prompt/superman/advanced-learning-mode">
+          <WandSparkles aria-hidden="true" size={20} />
+          <span>Open composer</span>
+          <ArrowRight aria-hidden="true" size={17} />
+        </a>
+      </section>
+
+      <SectionHeader
+        icon={Library}
+        title="Libraries"
+        action={
+          <div className="view-toggle" aria-label="Preferred prompt view">
+            <button type="button" className={preferredView === 'grid' ? 'active' : ''} onClick={() => setPreferredView('grid')} aria-label="Grid view">
+              <Grid2X2 aria-hidden="true" size={17} />
+            </button>
+            <button type="button" className={preferredView === 'list' ? 'active' : ''} onClick={() => setPreferredView('list')} aria-label="List view">
+              <LayoutList aria-hidden="true" size={17} />
+            </button>
+          </div>
+        }
+      />
+      <section className="library-grid">
+        {libraries.map((library) => (
+          <LibraryCard key={library.id} library={library} />
+        ))}
+      </section>
+
+      <SectionHeader icon={Search} title={query ? 'Search results' : 'Prompt radar'} />
+      {filteredPrompts.length ? (
+        <section className={`prompt-grid ${preferredView}`}>
+          {filteredPrompts.map((prompt) => {
+            const library = findLibrary(prompt.libraryId)
+            return (
+              <PromptCard
+                key={prompt.key}
+                library={library}
+                prompt={prompt}
+                view={preferredView}
+                isFavorite={favoriteSet.has(prompt.key)}
+                onToggleFavorite={onToggleFavorite}
+                onCopy={onCopy}
+              />
+            )
+          })}
+        </section>
+      ) : (
+        <EmptyState title="No prompts found" body="Try a different search term or category." />
+      )}
+    </div>
+  )
+}
+
+function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, onToggleFavorite, onCopy }) {
+  const library = findLibrary(libraryId)
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState('All')
+
+  const libraryPrompts = useMemo(
+    () =>
+      library?.prompts.map((prompt) => ({
+        ...prompt,
+        libraryId: library.id,
+        libraryTitle: library.title,
+        libraryShortTitle: library.shortTitle,
+      })) ?? [],
+    [library],
+  )
+
+  const categories = useMemo(() => ['All', ...getCategories(libraryPrompts)], [libraryPrompts])
+  const visiblePrompts = useMemo(() => {
+    const searched = searchPrompts(libraryPrompts, query, 60)
+    return category === 'All' ? searched : searched.filter((prompt) => prompt.category === category)
+  }, [category, libraryPrompts, query])
+
+  if (!library) return <MissingPage />
+
+  return (
+    <div className="page library-page">
+      <a className="back-link" href="#/hub">
+        <ArrowLeft aria-hidden="true" size={17} />
+        Hub
+      </a>
+      <section className={`library-hero accent-${library.accent}`}>
+        <div className="library-hero-copy">
+          <p className="eyebrow">{library.shortTitle}</p>
+          <h1>{library.title}</h1>
+          <p>{library.description}</p>
+          <div className="hero-tags">
+            {library.tags.map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
+          </div>
+        </div>
+        <div className="library-hero-visual">
+          {library.coverUrl ? <img src={library.coverUrl} alt="" /> : <Sparkles aria-hidden="true" size={58} />}
+          <div>
+            <strong>{library.prompts.length}</strong>
+            <span>prompts</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="library-toolbar">
+        <SearchBox value={query} onChange={setQuery} placeholder={`Search ${library.shortTitle}`} />
+        <div className="view-toggle" aria-label="Prompt view">
+          <button type="button" className={preferredView === 'grid' ? 'active' : ''} onClick={() => setPreferredView('grid')} aria-label="Grid view">
+            <Grid2X2 aria-hidden="true" size={17} />
+          </button>
+          <button type="button" className={preferredView === 'list' ? 'active' : ''} onClick={() => setPreferredView('list')} aria-label="List view">
+            <LayoutList aria-hidden="true" size={17} />
+          </button>
+        </div>
+      </section>
+
+      <div className="filter-strip sticky" aria-label="Library categories">
+        {categories.map((item) => (
+          <button key={item} type="button" className={item === category ? 'active' : ''} onClick={() => setCategory(item)}>
+            {item}
+          </button>
+        ))}
+      </div>
+
+      {visiblePrompts.length ? (
+        <section className={`prompt-grid ${preferredView}`}>
+          {visiblePrompts.map((prompt) => (
+            <PromptCard
+              key={prompt.key}
+              library={library}
+              prompt={prompt}
+              view={preferredView}
+              isFavorite={favoriteSet.has(prompt.key)}
+              onToggleFavorite={onToggleFavorite}
+              onCopy={onCopy}
+            />
+          ))}
+        </section>
+      ) : (
+        <EmptyState title="No prompts in this filter" body="Clear the search or switch categories." />
+      )}
+
+      <section className="tips-panel">
+        <SlidersHorizontal aria-hidden="true" size={21} />
+        <div>
+          <h2>{library.tipsTitle}</h2>
+          <ul>
+            {library.tips.map((tip) => (
+              <li key={tip}>{tip}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+function PromptPage({ libraryId, promptId, favoriteSet, drafts, onDraftChange, onResetDraft, onToggleFavorite, onCopy }) {
+  const context = findPrompt(libraryId, promptId)
+
+  if (!context) return <MissingPage />
+
+  const { library, prompt } = context
+  return (
+    <div className="page prompt-page">
+      <a className="back-link" href={`#/library/${library.id}`}>
+        <ArrowLeft aria-hidden="true" size={17} />
+        {library.shortTitle}
+      </a>
+      <PromptComposer
+        library={library}
+        prompt={prompt}
+        draft={drafts[prompt.key]}
+        onDraftChange={(value) => onDraftChange(prompt.key, value)}
+        onResetDraft={() => onResetDraft(prompt.key)}
+        onCopy={onCopy}
+        isFavorite={favoriteSet.has(prompt.key)}
+        onToggleFavorite={onToggleFavorite}
+      />
+    </div>
+  )
+}
+
+function SavedPage({ favoriteSet, onToggleFavorite, onCopy }) {
+  const saved = Array.from(favoriteSet).map(findPromptByKey).filter(Boolean)
+
+  return (
+    <CollectionPage
+      title="Saved prompts"
+      body="Local favorites stored in this browser."
+      items={saved}
+      favoriteSet={favoriteSet}
+      emptyTitle="No saved prompts yet"
+      emptyBody="Save prompts from any card or composer."
+      onToggleFavorite={onToggleFavorite}
+      onCopy={onCopy}
+    />
+  )
+}
+
+function RecentPage({ recentCopies, favoriteSet, onToggleFavorite, onCopy }) {
+  const recent = recentCopies
+    .map((copy) => {
+      const context = findPromptByKey(copy.key)
+      return context ? { ...context, copiedAt: copy.copiedAt } : null
+    })
+    .filter(Boolean)
+
+  return (
+    <CollectionPage
+      title="Recent copies"
+      body="Prompts copied from this browser."
+      items={recent}
+      favoriteSet={favoriteSet}
+      emptyTitle="No recent copies"
+      emptyBody="Copy a prompt to build this list."
+      onToggleFavorite={onToggleFavorite}
+      onCopy={onCopy}
+    />
+  )
+}
+
+function CollectionPage({ title, body, items, favoriteSet, emptyTitle, emptyBody, onToggleFavorite, onCopy }) {
+  return (
+    <div className="page collection-page">
+      <section className="collection-header">
+        <p className="eyebrow">Local workspace</p>
+        <h1>{title}</h1>
+        <p>{body}</p>
+      </section>
+      {items.length ? (
+        <section className="prompt-grid list">
+          {items.map(({ library, prompt, copiedAt }) => (
+            <div key={`${prompt.key}-${copiedAt ?? 'saved'}`} className="collection-item">
+              {copiedAt ? <time dateTime={copiedAt}>{new Date(copiedAt).toLocaleString()}</time> : null}
+              <PromptCard
+                library={library}
+                prompt={prompt}
+                view="list"
+                isFavorite={favoriteSet.has(prompt.key)}
+                onToggleFavorite={onToggleFavorite}
+                onCopy={onCopy}
+              />
+            </div>
+          ))}
+        </section>
+      ) : (
+        <EmptyState title={emptyTitle} body={emptyBody} />
+      )}
+    </div>
+  )
+}
+
+function SectionHeader({ icon: Icon, title, action }) {
+  return (
+    <div className="section-header">
+      <div>
+        <Icon aria-hidden="true" size={19} />
+        <h2>{title}</h2>
+      </div>
+      {action}
+    </div>
+  )
+}
+
+function MissingPage() {
+  return (
+    <div className="page">
+      <EmptyState title="Route not found" body="Go back to the hub and choose a library or prompt." />
+    </div>
+  )
+}

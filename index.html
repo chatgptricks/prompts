@@ -4,35 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A ChatGPTricks prompt hub for copy-ready creative, visual, learning, and strategy prompt libraries." />
-    <title>Prompt Library Hub | ChatGPTricks</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="description"
+      content="ChatGPTricks Prompt OS: visual prompt libraries with a live prompt composer for faster creative and strategic work."
+    />
+    <meta name="theme-color" content="#030508" />
+    <title>ChatGPTricks Prompt OS</title>
   </head>
   <body>
-    <div id="app">
-      <header class="hero">
-        <div class="logo">ChatGPTricks</div>
-        <h1>Prompt Library Hub</h1>
-        <p class="subtitle">Choose a library, then copy the prompt you want to use.</p>
-      </header>
-
-      <nav class="library-hub" aria-label="Prompt libraries" id="libraryHub"></nav>
-
-      <section class="library-intro" aria-live="polite">
-        <p class="library-kicker" id="libraryKicker"></p>
-        <h2 id="libraryTitle"></h2>
-        <p id="libraryDescription"></p>
-      </section>
-
-      <main class="prompts-container" id="promptsContainer"></main>
-
-      <footer class="conclusion">
-        <div class="conclusion-content">
-          <h3 id="tipsTitle">Pro Tips for the Best Results</h3>
-          <ul class="recommendations" id="tipsList"></ul>
-        </div>
-      </footer>
-    </div>
-    <script type="module" src="./main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
