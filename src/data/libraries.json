@@ -393,7 +393,7 @@
     "summary": "12 prompts for VHS, Polaroid, Y2K, CRT, PS1, pixel art, tabloid, sepia, and retro image styles.",
     "description": "Transform an uploaded identity reference into nostalgic photo, video, game, print, and animation aesthetics with editable scene variables.",
     "accent": "nostalgia",
-    "cover": "nostalgia-02-polaroid.png",
+    "cover": "nostalgia-cover-working-deck.png",
     "tags": ["VHS", "Polaroid", "Y2K", "CRT", "Pixel Art", "Vintage"],
     "tipsTitle": "Pro Tips for Nostalgia Prompts",
     "tips": [
