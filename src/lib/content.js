@@ -10,6 +10,7 @@ const libraryEmojis = {
   presentations: '📊',
   'images-2': '🎨',
   euphoria: '🎬',
+  nostalgia: '📼',
   superman: '⚡',
 }
 
@@ -19,20 +20,32 @@ const categoryEmojis = {
   Character: '🧑‍🎨',
   'Character Sheet': '🧍',
   Clarity: '🎯',
+  'Classic Disney': '🏰',
+  Cinematic: '🎞️',
   Corporate: '🏢',
+  'CRT TV': '📺',
   'Deck Builder': '📊',
   Education: '🧠',
+  'Handheld Camera': '🟩',
   Identity: '🧬',
   Learning: '⚡',
   Leverage: '🧰',
   Mastery: '🏆',
   Mindset: '🧭',
+  MySpace: '📸',
   Pitch: '🚀',
+  'Pixel Art': '🕹️',
+  Polaroid: '🖼️',
   Prompt: '✨',
+  'PS1 Graphics': '🎮',
   Research: '🔎',
   Script: '🎙️',
+  Tabloid: '🗞️',
   Strategy: '♟️',
   Storytelling: '📚',
+  VHS: '📼',
+  'Vintage Sepia': '🧳',
+  Y2K: '💿',
 }
 
 export const assetUrl = (fileName) => {
@@ -104,6 +117,3 @@ export const findPromptByKey = (key) => {
   const [libraryId, promptId] = key.split('/')
   return findPrompt(libraryId, promptId)
 }
-
-export const getCategories = (items = allPrompts) =>
-  Array.from(new Set(items.map((prompt) => prompt.category))).sort((a, b) => a.localeCompare(b))

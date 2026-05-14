@@ -9,21 +9,13 @@ export default function LibraryCard({ library }) {
       whileHover={{ y: -4 }}
       transition={{ duration: 0.18 }}
     >
-      <div className="library-card-media">
-        {library.coverUrl ? <img src={library.coverUrl} alt="" loading="lazy" /> : <VisualGlyph library={library} />}
-      </div>
+      <VisualGlyph library={library} />
       <div className="library-card-body">
         <div className="card-kicker">
-          <span>{library.prompts.length} prompts</span>
+          <span>Prompt library</span>
           <Layers3 aria-hidden="true" size={16} />
         </div>
         <h2>{library.shortTitle}</h2>
-        <p>{library.summary}</p>
-        <div className="tag-row">
-          {library.tags.slice(0, 3).map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
         <div className="card-action">
           Open library
           <ArrowRight aria-hidden="true" size={17} />
@@ -35,8 +27,8 @@ export default function LibraryCard({ library }) {
 
 function VisualGlyph({ library }) {
   return (
-    <div className="visual-glyph" aria-hidden="true">
-      <span className="visual-emoji">{library.emoji}</span>
+    <div className="library-card-visual" aria-hidden="true">
+      <span>{library.emoji}</span>
       <i />
       <i />
       <i />

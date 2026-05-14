@@ -387,6 +387,145 @@
     ]
   },
   {
+    "id": "nostalgia",
+    "title": "Nostalgia Photo Prompt Templates",
+    "shortTitle": "Nostalgia",
+    "summary": "12 prompts for VHS, Polaroid, Y2K, CRT, PS1, pixel art, tabloid, sepia, and retro image styles.",
+    "description": "Transform an uploaded identity reference into nostalgic photo, video, game, print, and animation aesthetics with editable scene variables.",
+    "accent": "nostalgia",
+    "cover": "nostalgia-02-polaroid.png",
+    "tags": ["VHS", "Polaroid", "Y2K", "CRT", "Pixel Art", "Vintage"],
+    "tipsTitle": "Pro Tips for Nostalgia Prompts",
+    "tips": [
+      "Upload a clear face reference first so the prompt can preserve identity across styles.",
+      "Fill in role, scene, action, outfit, extra details, and mood before copying.",
+      "Keep the scene simple when using low-resolution formats so the final image stays readable.",
+      "Use the same role and outfit across multiple prompts to create a cohesive nostalgic carousel."
+    ],
+    "prompts": [
+      {
+        "id": "vhs-home-video",
+        "title": "VHS Home Video",
+        "category": "VHS",
+        "body": "Use the uploaded photo as the face and identity reference. Turn this person into [ROLE] captured on a 1990s home video in [SCENE]. They are [ACTION], framed casually as if someone nearby recorded the moment without planning it. Keep the person recognizable, but adapt their outfit to [OUTFIT]. Add [EXTRA DETAILS]. Make it feel like a VHS handycam still, with analog blur, scan lines, tape noise, color bleed, muted colors, low resolution, and imperfect handheld framing. Mood, [MOOD].",
+        "note": "Best for 1990s home-video stills with tape noise and imperfect handheld framing.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-01-vhs.png"],
+        "tags": ["VHS", "1990s", "analog", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "polaroid-instant-photo",
+        "title": "Polaroid Instant Photo",
+        "category": "Polaroid",
+        "body": "Use the uploaded photo as the identity reference. Reimagine this person as [ROLE] in [SCENE], captured in a single vintage instant photo. They are [ACTION], posed naturally but not too perfectly. Keep their likeness clear, change the clothing to [OUTFIT], and include [EXTRA DETAILS]. Make the image feel like an old Polaroid, with soft focus, faded tones, gentle flash, creamy highlights, instant film texture, and slight color aging. Mood, [MOOD].",
+        "note": "Best for warm instant-film portraits with faded tones and soft nostalgic texture.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-02-polaroid.png"],
+        "tags": ["Polaroid", "instant film", "portrait", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "y2k-digital-camera",
+        "title": "Y2K Digital Camera",
+        "category": "Y2K",
+        "body": "Use the uploaded photo as the identity reference. Create a mid-2000s digital snapshot of this person as [ROLE] at [SCENE]. They are [ACTION], caught with casual flash-camera energy, like a photo taken for an old social album. Keep their face and recognizable features consistent. Dress them in [OUTFIT] and add [EXTRA DETAILS]. Use harsh direct flash, shiny highlights, slight red-eye risk, low-res digital noise, overexposed skin, and compact camera sharpness. Mood, [MOOD].",
+        "note": "Best for mid-2000s party snapshots, old social albums, and direct flash energy.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-03-y2k-digital-camera.png"],
+        "tags": ["Y2K", "digital camera", "flash", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "cinematic-film-grain",
+        "title": "Cinematic Film Grain",
+        "category": "Cinematic",
+        "body": "Use the uploaded photo as the actor reference. Cast this person as [ROLE] in a cinematic scene set in [SCENE]. They are [ACTION], lit like a still from an analog feature film. Keep the person recognizable while adapting their wardrobe to [OUTFIT]. Add [EXTRA DETAILS]. Use natural film grain, soft highlight rolloff, rich shadows, subtle lens softness, realistic color grading, and an emotional movie-still atmosphere. Mood, [MOOD].",
+        "note": "Best for emotional analog movie stills with rich shadows and realistic film texture.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-04-cinematic-film-grain.png"],
+        "tags": ["Cinematic", "film grain", "movie still", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "crt-tv-screen",
+        "title": "CRT TV Screen",
+        "category": "CRT TV",
+        "body": "Use the uploaded photo as the identity reference. Make this person appear as [ROLE] inside a scene playing on an old CRT television. The scene is [SCENE], and they are [ACTION]. Keep their likeness visible through the screen distortion. Dress them in [OUTFIT] and include [EXTRA DETAILS]. Render it as a paused retro TV image, with scan lines, phosphor glow, rounded screen curvature, bloom, slight static, softened detail, and analog display distortion. Mood, [MOOD].",
+        "note": "Best for paused retro television frames with scan lines, glow, and curved screen distortion.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-05-crt-tv-screen.png"],
+        "tags": ["CRT TV", "television", "scan lines", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "ps1-era-game-character",
+        "title": "PS1 Graphics",
+        "category": "PS1 Graphics",
+        "body": "Use the uploaded photo as the character identity reference. Recreate this person as a PS1-era game character, a [ROLE] in [SCENE]. They are [ACTION], designed like a playable character or cutscene model. Keep their likeness recognizable through low-poly facial structure and key features. Give them [OUTFIT] and include [EXTRA DETAILS]. Use low-polygon geometry, crunchy textures, limited lighting, jagged edges, warped surfaces, and late-1990s 3D game atmosphere. Mood, [MOOD].",
+        "note": "Best for late-1990s game characters with low-poly geometry and crunchy textures.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-06-ps1-graphics.png"],
+        "tags": ["PS1", "low poly", "game", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "low-res-monochrome-handheld-camera",
+        "title": "Low-Res Monochrome Handheld Camera",
+        "category": "Handheld Camera",
+        "body": "Use the uploaded photo as the face and identity reference. Turn this person into [ROLE] in [SCENE], [ACTION], as if photographed with an old monochrome handheld camera. Keep the person recognizable, but reduce the image aggressively to match the device's limitations. Adapt the outfit to [OUTFIT] and add [EXTRA DETAILS] only in very simple readable shapes.\n\nMake it look like a true low-resolution handheld camera image, with tiny resolution, only 4 greenish tones, strong dithering, coarse dot patterns, heavy pixelation, simplified shadows, and a raw monochrome portable-camera look. The final result should feel ugly, limited, and graphic, not polished pixel art, not smooth digital art, and not a modern retro illustration. Mood, [MOOD].",
+        "note": "Best for harsh monochrome portable-camera looks with dithering and tiny resolution.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-07-low-res-monochrome-camera.png"],
+        "tags": ["Handheld Camera", "monochrome", "dithering", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "classic-disney-animation",
+        "title": "Classic Disney Animation",
+        "category": "Classic Disney",
+        "body": "Use the uploaded photo as the identity reference. Reimagine this person as [ROLE] in [SCENE], drawn as a classic hand-painted animated character. They are [ACTION], with expressive body language and a clear storybook pose. Keep their recognizable face, features, and personality, but translate them into traditional animation design. Dress them in [OUTFIT] and add [EXTRA DETAILS]. Use clean linework, soft painted backgrounds, warm color styling, gentle shading, and timeless animated film charm. Mood, [MOOD].",
+        "note": "Best for classic hand-painted animation with warm storybook charm.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-08-classic-disney-animation.png"],
+        "tags": ["Classic Disney", "animation", "storybook", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "myspace-profile-pic",
+        "title": "MySpace Profile Pic",
+        "category": "MySpace",
+        "body": "Use the uploaded photo as the identity reference. Turn this person into [ROLE] taking a mid-2000s MySpace profile picture in [SCENE]. They are [ACTION], with an intentionally casual, slightly awkward social-media pose. Keep their face and recognizable features consistent. Style them with [OUTFIT] and include [EXTRA DETAILS]. Use direct flash, blown highlights, strong contrast, low-res digital quality, messy framing, nostalgic profile-photo energy, and early internet attitude. Mood, [MOOD].",
+        "note": "Best for early internet profile-photo energy with messy framing and direct flash.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-09-myspace-profile-pic.png"],
+        "tags": ["MySpace", "profile photo", "early internet", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "tabloid-gossip-magazine-scan",
+        "title": "Magazine Scan, Tabloid Gossip Style",
+        "category": "Tabloid",
+        "body": "Use the uploaded photo as the subject reference. Turn this person into [ROLE] featured inside a crowded tabloid gossip magazine page about [SCANDAL OR STORY]. Keep their likeness recognizable, but make the final image feel like a chaotic printed celebrity gossip spread, not a clean editorial portrait. Place them in [SCENE], [ACTION], wearing [OUTFIT], surrounded by loud headlines, cropped paparazzi-style photos, arrows, circles, stickers, price tags, captions, gossip callouts, and messy page graphics.\n\nMake it look like a real scanned tabloid magazine page, with cheap glossy paper texture, halftone dots, saturated ink, slightly faded print, scanner softness, compression artifacts, overlapping text boxes, dramatic pull quotes, red circles, yellow labels, and cluttered layout energy. The page should feel noisy, sensational, and overdesigned, like a 2000s supermarket gossip magazine. Mood, [MOOD].",
+        "note": "Best for chaotic 2000s celebrity gossip spreads with headlines, arrows, and scan texture.",
+        "variables": ["ROLE", "SCANDAL OR STORY", "SCENE", "ACTION", "OUTFIT", "MOOD"],
+        "images": ["nostalgia-10-tabloid-gossip-magazine.png"],
+        "tags": ["Tabloid", "magazine scan", "gossip", "ROLE", "SCANDAL OR STORY", "MOOD"]
+      },
+      {
+        "id": "1980s-pixel-art",
+        "title": "1980s Pixel Art",
+        "category": "Pixel Art",
+        "body": "Use the uploaded photo as the character reference. Transform this person into [ROLE] in [SCENE], shown [ACTION] like a scene from an 1980s fantasy or arcade game. Keep their identity recognizable through simplified facial features, silhouette, and expression. Give them [OUTFIT] and include [EXTRA DETAILS]. Render it as authentic 1980s pixel art, with a limited color palette, crisp blocky pixels, simplified forms, minimal shading, and old-school game-screen composition. Mood, [MOOD].",
+        "note": "Best for old-school arcade or fantasy scenes with crisp blocky pixels.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-11-1980s-pixel-art.png"],
+        "tags": ["Pixel Art", "1980s", "arcade", "ROLE", "SCENE", "MOOD"]
+      },
+      {
+        "id": "vintage-sepia-photograph",
+        "title": "Vintage Sepia",
+        "category": "Vintage Sepia",
+        "body": "Use the uploaded photo as the identity reference. Recreate this person as [ROLE] in an old sepia photograph set in [SCENE]. They are [ACTION], posed like a formal or candid photo from the late 1800s or early 1900s. Keep their face and recognizable features consistent, but adapt their outfit to [OUTFIT] and add [EXTRA DETAILS] that feel historically aged and natural.\n\nMake the image look like a true vintage sepia photograph, with warm brown monochrome tones, faded contrast, soft focus, subtle scratches, paper stains, worn edges, gentle vignette, uneven exposure, and old photographic texture. Avoid modern sharpness, bright colors, clean digital skin, or glossy AI polish. Mood, [MOOD].",
+        "note": "Best for late-1800s or early-1900s sepia photos with worn paper texture.",
+        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
+        "images": ["nostalgia-12-vintage-sepia.png"],
+        "tags": ["Vintage Sepia", "sepia", "old photograph", "ROLE", "SCENE", "MOOD"]
+      }
+    ]
+  },
+  {
     "id": "superman",
     "title": "ChatGPT Superman Mode Prompts",
     "shortTitle": "Superman Mode",

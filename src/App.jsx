@@ -1,16 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import {
   ArrowLeft,
-  ArrowRight,
-  BookmarkCheck,
-  Clock3,
   Grid2X2,
   LayoutList,
   Library,
-  Search,
   SlidersHorizontal,
-  Star,
-  WandSparkles,
 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import AppShell from './components/AppShell'
@@ -20,13 +14,10 @@ import PromptCard from './components/PromptCard'
 import PromptComposer from './components/PromptComposer'
 import SearchBox from './components/SearchBox'
 import {
-  allPrompts,
   findLibrary,
   findPrompt,
   findPromptByKey,
-  getCategories,
   libraries,
-  stats,
 } from './lib/content'
 import { searchPrompts } from './lib/search'
 import { readStorage, STORAGE_KEYS, writeStorage } from './lib/storage'
@@ -152,13 +143,7 @@ export default function App() {
           transition={{ duration: 0.22, ease: 'easeOut' }}
         >
           {route.name === 'hub' ? (
-            <Dashboard
-              favoriteSet={favoriteSet}
-              preferredView={preferredView}
-              setPreferredView={setPreferredView}
-              onToggleFavorite={toggleFavorite}
-              onCopy={copyPrompt}
-            />
+            <Dashboard />
           ) : null}
           {route.name === 'library' ? (
             <LibraryPage
@@ -194,109 +179,23 @@ export default function App() {
   )
 }
 
-function Dashboard({ favoriteSet, preferredView, setPreferredView, onToggleFavorite, onCopy }) {
-  const [query, setQuery] = useState('')
-  const [category, setCategory] = useState('All')
-  const categories = useMemo(() => ['All', ...getCategories(allPrompts).slice(0, 9)], [])
-  const filteredPrompts = useMemo(() => {
-    const searched = searchPrompts(allPrompts, query, 18)
-    return category === 'All' ? searched : searched.filter((prompt) => prompt.category === category)
-  }, [category, query])
-
+function Dashboard() {
   return (
     <div className="page dashboard-page">
-      <section className="command-hero">
+      <section className="command-hero library-only-hero">
         <div className="hero-copy">
           <p className="eyebrow">chatgptricks.fun</p>
-          <h1>Prompt libraries for fast creative work.</h1>
-          <p>Search, customize, save, and copy prompts.</p>
-        </div>
-        <div className="hero-console" aria-label="Prompt library metrics">
-          <div>
-            <span>{stats.libraries}</span>
-            <small>Libraries</small>
-          </div>
-          <div>
-            <span>{stats.prompts}</span>
-            <small>Prompts</small>
-          </div>
-          <div>
-            <span>{stats.categories}</span>
-            <small>Categories</small>
-          </div>
+          <h1>Choose a prompt library.</h1>
+          <p>Open the collection that matches what you want to create.</p>
         </div>
       </section>
 
-      <section className="search-command">
-        <SearchBox value={query} onChange={setQuery} placeholder="Search presentation, image, animation, strategy..." />
-        <div className="filter-strip" aria-label="Prompt categories">
-          {categories.map((item) => (
-            <button key={item} type="button" className={item === category ? 'active' : ''} onClick={() => setCategory(item)}>
-              {item}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="quick-panels" aria-label="Saved and recent prompts">
-        <a href="#/saved">
-          <BookmarkCheck aria-hidden="true" size={20} />
-          <span>Saved prompts</span>
-          <ArrowRight aria-hidden="true" size={17} />
-        </a>
-        <a href="#/recent">
-          <Clock3 aria-hidden="true" size={20} />
-          <span>Recent copies</span>
-          <ArrowRight aria-hidden="true" size={17} />
-        </a>
-        <a href="#/prompt/superman/advanced-learning-mode">
-          <WandSparkles aria-hidden="true" size={20} />
-          <span>Open composer</span>
-          <ArrowRight aria-hidden="true" size={17} />
-        </a>
-      </section>
-
-      <SectionHeader
-        icon={Library}
-        title="Libraries"
-        action={
-          <div className="view-toggle" aria-label="Preferred prompt view">
-            <button type="button" className={preferredView === 'grid' ? 'active' : ''} onClick={() => setPreferredView('grid')} aria-label="Grid view">
-              <Grid2X2 aria-hidden="true" size={17} />
-            </button>
-            <button type="button" className={preferredView === 'list' ? 'active' : ''} onClick={() => setPreferredView('list')} aria-label="List view">
-              <LayoutList aria-hidden="true" size={17} />
-            </button>
-          </div>
-        }
-      />
+      <SectionHeader icon={Library} title="Libraries" />
       <section className="library-grid">
         {libraries.map((library) => (
           <LibraryCard key={library.id} library={library} />
         ))}
       </section>
-
-      <SectionHeader icon={Search} title={query ? 'Search results' : 'Prompt radar'} />
-      {filteredPrompts.length ? (
-        <section className={`prompt-grid ${preferredView}`}>
-          {filteredPrompts.map((prompt) => {
-            const library = findLibrary(prompt.libraryId)
-            return (
-              <PromptCard
-                key={prompt.key}
-                library={library}
-                prompt={prompt}
-                view={preferredView}
-                isFavorite={favoriteSet.has(prompt.key)}
-                onToggleFavorite={onToggleFavorite}
-                onCopy={onCopy}
-              />
-            )
-          })}
-        </section>
-      ) : (
-        <EmptyState title="No prompts found" body="Try a different search term or category." />
-      )}
     </div>
   )
 }
@@ -304,7 +203,6 @@ function Dashboard({ favoriteSet, preferredView, setPreferredView, onToggleFavor
 function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, onToggleFavorite, onCopy }) {
   const library = findLibrary(libraryId)
   const [query, setQuery] = useState('')
-  const [category, setCategory] = useState('All')
 
   const libraryPrompts = useMemo(
     () =>
@@ -317,11 +215,9 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
     [library],
   )
 
-  const categories = useMemo(() => ['All', ...getCategories(libraryPrompts)], [libraryPrompts])
   const visiblePrompts = useMemo(() => {
-    const searched = searchPrompts(libraryPrompts, query, 60)
-    return category === 'All' ? searched : searched.filter((prompt) => prompt.category === category)
-  }, [category, libraryPrompts, query])
+    return searchPrompts(libraryPrompts, query, 60)
+  }, [libraryPrompts, query])
 
   if (!library) return <MissingPage />
 
@@ -359,14 +255,6 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
         </div>
       </section>
 
-      <div className="filter-strip sticky" aria-label="Library categories">
-        {categories.map((item) => (
-          <button key={item} type="button" className={item === category ? 'active' : ''} onClick={() => setCategory(item)}>
-            {item}
-          </button>
-        ))}
-      </div>
-
       {visiblePrompts.length ? (
         <section className={`prompt-grid ${preferredView}`}>
           {visiblePrompts.map((prompt) => (
@@ -382,7 +270,7 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
           ))}
         </section>
       ) : (
-        <EmptyState title="No prompts in this filter" body="Clear the search or switch categories." />
+        <EmptyState title="No prompts found" body="Try a different search term." />
       )}
 
       <section className="tips-panel">
@@ -396,7 +284,21 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
           </ul>
         </div>
       </section>
+      <VisitCounter library={library} />
     </div>
+  )
+}
+
+function getVisitorBadgeUrl(libraryId) {
+  const path = encodeURIComponent(`chatgptricks.fun/${libraryId}`)
+  return `https://api.visitorbadge.io/api/visitors?path=${path}`
+}
+
+function VisitCounter({ library }) {
+  return (
+    <aside className="visit-counter" aria-label={`${library.shortTitle} visit counter`}>
+      <img src={getVisitorBadgeUrl(library.id)} alt={`${library.shortTitle} visitor counter`} loading="lazy" referrerPolicy="no-referrer" />
+    </aside>
   )
 }
 

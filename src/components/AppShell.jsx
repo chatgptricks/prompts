@@ -1,5 +1,5 @@
-import { BookOpen, Clock3, Home, Library, PanelLeft, Star } from 'lucide-react'
-import { libraries, stats } from '../lib/content'
+import { Clock3, Home, Library, Star } from 'lucide-react'
+import { libraries } from '../lib/content'
 
 const navItems = [
   { href: '#/hub', label: 'Hub', icon: Home, match: 'hub' },
@@ -43,11 +43,6 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
           ))}
         </section>
 
-        <div className="rail-status">
-          <PanelLeft aria-hidden="true" size={17} />
-          <span>{stats.libraries} libraries</span>
-          <span>{stats.prompts} prompts</span>
-        </div>
       </aside>
 
       <div className="app-frame">
@@ -56,10 +51,6 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
             <span className="brand-mark logo-mark"><img src="/logoch.png" alt="" /></span>
             <span>ChatGPTricks</span>
           </a>
-          <div className="top-stat">
-            <BookOpen aria-hidden="true" size={16} />
-            {stats.prompts} prompts
-          </div>
         </header>
 
         <main>{children}</main>
