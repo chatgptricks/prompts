@@ -623,5 +623,104 @@
         "tags": ["Life Design"]
       }
     ]
+  },
+  {
+    "id": "higgsfield",
+    "title": "Higgsfield Prompts",
+    "shortTitle": "Higgsfield Prompts",
+    "summary": "8 Higgsfield prompts for restoration, retouching, cleanup, headshots, selfies, upscaling, anime, and product ads.",
+    "description": "A focused Higgsfield prompt library for image repair, identity-preserving edits, lifestyle shots, style conversion, and polished commercial visuals.",
+    "accent": "higgsfield",
+    "cover": "higgsfield-title.png",
+    "tags": ["Restoration", "Retouching", "Cleanup", "Headshot", "Upscale"],
+    "tipsTitle": "Pro Tips for Higgsfield Prompts",
+    "tips": [
+      "Upload the clearest possible reference image before using identity-preserving prompts.",
+      "Keep requested changes specific so the model can preserve the untouched parts of the image.",
+      "Use the numbered examples as visual references for the intended before-and-after result.",
+      "For edits involving text, labels, or logos, explicitly state what must remain unchanged."
+    ],
+    "prompts": [
+      {
+        "id": "photo-restoration",
+        "title": "1. Photo Restoration",
+        "category": "Restoration",
+        "body": "Bring this aged photograph back to life using period-appropriate restoration. Identify when it was taken and which photographic process produced it so the rebuild stays historically faithful. Tighten blurred contours, ease out grain, and fill lost regions with textures native to the original. Reintroduce missing color in a measured, era-appropriate way – never neon, never plastic. Re-balance whites, blacks, and skin tones for natural lighting; lift shadows and tame highlights without flattening the image. Quietly reconstruct eroded detail – fabric weave, skin pores, distant scenery – while leaving the framing untouched. Keep gentle film grain for character, strip artefacts but preserve the era's soft exposure profile. Finally, upscale to a clean modern resolution so the result reads as a freshly developed photograph rather than a digital effect.",
+        "note": "Best for historically faithful restoration of aged or damaged photographs.",
+        "variables": [],
+        "images": ["higgsfield-01.png"],
+        "tags": ["Restoration", "Photo Repair", "Upscale"]
+      },
+      {
+        "id": "body-reshape",
+        "title": "2. Body Reshape",
+        "category": "Retouching",
+        "body": "Recompose the body in this image to match [TARGET BUILD – e.g. lean and athletic, slimmer waist, longer legs, more muscular, softer figure, etc.]. Preserve believable anatomy and proportion, keep skin tone and surface texture consistent with the original, and let the lighting on the new body match the lighting that was already on the rest of the scene. The retouch must read as one continuous photograph – no warped surroundings, no smeared edges, no cut-out feel – just the same person in the same shot with their physique adjusted.",
+        "note": "Best for realistic physique adjustments that preserve the original photo context.",
+        "variables": ["TARGET BUILD – e.g. lean and athletic, slimmer waist, longer legs, more muscular, softer figure, etc."],
+        "images": ["higgsfield-02.png"],
+        "tags": ["Retouching", "Anatomy", "Photo Realism"]
+      },
+      {
+        "id": "remove-watermarks",
+        "title": "3. Remove Watermarks",
+        "category": "Cleanup",
+        "body": "Treat the underlying photo as untouchable and strip away only the overlaid logos, captions, or graphic marks sitting on top of it. The recovered image must remain identical beneath – no redrawn faces, no altered hair or skin, no shifted expression, no rearranged limbs, no new background. Just the source photo, cleanly free of overlays.",
+        "note": "Best for removing visible overlays while keeping the original image unchanged.",
+        "variables": [],
+        "images": ["higgsfield-03.png"],
+        "tags": ["Cleanup", "Overlay Removal", "Preservation"]
+      },
+      {
+        "id": "professional-portrait",
+        "title": "4. Professional Portrait",
+        "category": "Headshot",
+        "body": "Take the casual reference photo and rebuild it as a polished executive-grade headshot. Reframe to head-and-shoulders against a clean seamless studio backdrop, swap whatever the subject is wearing for a sharp tailored suit, crisp dress shirt, and a subtle tie. Direct the gaze straight into the lens with a confident closed-mouth smile and an upright squared posture. Light it like a high-end studio: a large soft key from above camera-left, gentle fill, a quiet rim to separate them from the backdrop, with clean catchlights in both eyes. Hold an 85mm portrait look with the backdrop softly out of focus. Preserve real skin texture – pores, fine lines, age – without plastic smoothing. Keep the original face identity, age, ethnicity, hair, and beard intact; only the wardrobe, framing, lighting, and backdrop change.",
+        "note": "Best for turning casual references into polished professional headshots.",
+        "variables": [],
+        "images": ["higgsfield-04.png"],
+        "tags": ["Headshot", "Studio Lighting", "Identity"]
+      },
+      {
+        "id": "famous-selfie",
+        "title": "5. Famous Selfie",
+        "category": "Selfie",
+        "body": "Casual phone selfie shot, both subjects from the reference images crowded close together at the lens, leaning into the frame from each side, holding the phone at arm's length with a slight upward tilt. Easy shoulder-to-shoulder framing, eyes straight into the camera, relaxed everyday expressions. Soft mixed indoor light cutting against direct phone-flash, with mild blown highlights and natural shadow falloff on the faces. Skin reads real – visible pore detail, faint pore-level texture, subtle makeup if any, the odd flyaway hair, minor fabric crease. The setting sits softly behind them, slightly out of focus, with everyday environmental detail still readable. A touch of edge motion blur from a moving hand, gentle lens distortion from how close the phone is, off-center crop, hint of ISO grain, white balance not perfectly clean. Unfiltered, unposed, candid realism – looks like a quick phone snap, not a styled portrait.",
+        "note": "Best for candid two-person phone selfies with unpolished realism.",
+        "variables": [],
+        "images": ["higgsfield-05.png"],
+        "tags": ["Selfie", "Candid", "Realism"]
+      },
+      {
+        "id": "4k-enhancer",
+        "title": "6. 4K Enhancer",
+        "category": "Upscale",
+        "body": "High-resolution upscale anchored to the source – zero deviation in face, identity, expression, pose, framing, and scene. Recover natural detail (pores, hair, fabric) without stylization. Keep colors, lighting, and contrast exact. Strip compression artifacts and noise while preserving authentic texture – no smoothing, no plastic skin, no identity drift, no hallucinated detail. Output: a photorealistic upscale – only clearer and sharper.",
+        "note": "Best for sharper source-faithful upscales without identity drift.",
+        "variables": [],
+        "images": ["higgsfield-06.png"],
+        "tags": ["Upscale", "Clarity", "Source Faithful"]
+      },
+      {
+        "id": "product-ad",
+        "title": "7. Product Ad",
+        "category": "Product Ad",
+        "body": "Premium product ad composition: isolate the product from the reference and rebuild it as a hero shot – centered, sharply in focus, surrounded by its key flavor ingredients arranged with depth and intent. Mix whole and sliced fruits, herb sprigs or botanicals, and crushed ice where it fits the product. Composition balanced but not perfectly symmetrical. Wet surface with subtle reflections, scattered droplets, and micro-condensation on the product. Background tone gradient tuned to match the label's color palette and mood. High-end studio lighting with controlled edge highlights and soft shadow falloff grounding the product. Crisp edges, fine detail in condensation, pulp, leaf veins, and ice crystals. Minimal negative space, no clutter, polished commercial finish that still feels real. Preserve the product's design, label text, logo, proportions, and packaging exactly as in the reference.",
+        "note": "Best for premium commercial product hero shots from a reference image.",
+        "variables": [],
+        "images": ["higgsfield-07.png"],
+        "tags": ["Product Ad", "Commercial", "Hero Shot"]
+      },
+      {
+        "id": "anime-effect",
+        "title": "8. Anime Effect",
+        "category": "Anime",
+        "body": "Convert the reference image into a polished hand-drawn anime rendering, keeping composition, camera angle, framing, pose, and proportions exactly intact. Translate facial structure and expression faithfully into anime style – large expressive eyes following the original gaze, simplified clean nose and mouth, charming character appeal. Crisp linework with subtle weight variation. Reinterpret hair into defined anime strands while preserving original shape, color, and flow. Skin shaded smoothly with soft tonal gradients. Carry over lighting direction and intensity from the source. Palette lightly stylized but true to the original. Background reworked into a matching anime environment with the same depth and perspective. Gentle cel shading. No anatomy or perspective distortion, no crop change – a high-fidelity anime adaptation of the original.",
+        "note": "Best for anime conversion while preserving framing, pose, and identity.",
+        "variables": [],
+        "images": ["higgsfield-08.png"],
+        "tags": ["Anime", "Style Transfer", "Identity"]
+      }
+    ]
   }
 ]

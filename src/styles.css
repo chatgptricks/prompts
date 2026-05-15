@@ -99,6 +99,12 @@ img {
   --accent-rgb: 83, 200, 255;
 }
 
+.accent-higgsfield {
+  --accent: #ccff00;
+  --accent-2: var(--cyan);
+  --accent-rgb: 204, 255, 0;
+}
+
 .accent-violet {
   --accent: var(--violet);
   --accent-2: var(--amber);
