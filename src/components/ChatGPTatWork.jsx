@@ -2690,42 +2690,42 @@ export default function ChatGPTatWork() {
                 </div>
               )}
             </section>
-
-            {/* Download Widescreen Call To Action */}
-            <section className="widescreen-download-section">
-              <div className="download-content-wrapper">
-                <h2>Get the Complete 100+ Prompt PDF Pack</h2>
-                <p>
-                  Download the official PDF freebie guide, formatted perfectly for high-quality offline reading, printing, or sharing. Includes all 5 project workflows and 100 categorized workspace prompts.
-                </p>
-              </div>
-              <div className="download-action-box">
-                <button
-                  onClick={handleDownload}
-                  disabled={downloading}
-                  className="premium-download-btn"
-                >
-                  {downloading ? (
-                    <>
-                      <Zap className="animate-spin" size={20} />
-                      Generating PDF...
-                    </>
-                  ) : (
-                    <>
-                      <Download size={20} />
-                      Download Freebie (.pdf)
-                    </>
-                  )}
-                </button>
-                <div className="download-subtext">
-                  <Check size={14} className="text-teal" />
-                  100% Free PDF Document Download (.pdf)
-                </div>
-              </div>
-            </section>
             {renderPagination()}
           </motion.div>
         )}
+
+        {/* Persistent Widescreen Download Banner at the bottom of all tabs */}
+        <section className="widescreen-download-section" style={{ marginTop: '5.5rem' }}>
+          <div className="download-content-wrapper">
+            <h2>Get the Complete 100+ Prompt PDF Pack</h2>
+            <p>
+              Download the official PDF freebie guide, formatted perfectly for high-quality offline reading, printing, or sharing. Includes all 5 project workflows and 100 categorized workspace prompts.
+            </p>
+          </div>
+          <div className="download-action-box">
+            <button
+              onClick={handleDownload}
+              disabled={downloading}
+              className="premium-download-btn"
+            >
+              {downloading ? (
+                <>
+                  <Zap className="animate-spin" size={20} />
+                  Generating PDF...
+                </>
+              ) : (
+                <>
+                  <Download size={20} />
+                  Download Freebie (.pdf)
+                </>
+              )}
+            </button>
+            <div className="download-subtext">
+              <Check size={14} className="text-teal" />
+              100% Free PDF Document Download (.pdf)
+            </div>
+          </div>
+        </section>
 
       </main>
     </div>
