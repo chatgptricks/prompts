@@ -34,7 +34,7 @@ function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '')
   const parts = hash.split('/').filter(Boolean)
 
-  if (!parts.length) return { name: 'ChatGPTatWork' }
+  if (!parts.length) return { name: 'hub' }
   if (parts[0] === 'hub') return { name: 'hub' }
   if (parts[0] === 'saved') return { name: 'saved' }
   if (parts[0] === 'recent') return { name: 'recent' }
