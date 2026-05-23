@@ -218,7 +218,12 @@ export default function ChatGPTatWork() {
 
   const scrollSection = (id) => {
     setActiveChapter(id)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    setTimeout(() => {
+      const el = document.querySelector('.section-tabs-bar')
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 40)
   }
 
   const renderPagination = () => null
