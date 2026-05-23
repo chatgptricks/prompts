@@ -1567,1098 +1567,1168 @@ export default function ChatGPTatWork() {
       <main className="guide-body">
         
         {/* Chapter 1 */}
-        <section id="ch-1" className="guide-section-block">
-          <h2 className="chapter-title">
-            <Brain size={28} />
-            1. Understanding AI and ChatGPT
-          </h2>
-          
-          <div className="prose prose-wide">
-            <h3>What is AI and how does it work?</h3>
-            <p>
-              AI stands for <strong>Artificial Intelligence</strong>, which is a broad term referring to the development of computer systems that can perform tasks that historically required human intelligence. AI can involve various techniques, such as machine learning and natural language processing.
-            </p>
-            <p>
-              <strong>ChatGPT</strong> is a specific instance of AI that uses a technique called <strong>deep learning</strong>. It’s designed to generate human-like text responses. ChatGPT learns through a two-step process: pretraining and fine-tuning.
-            </p>
-            <p>
-              During the <strong>pretraining phase</strong>, ChatGPT is exposed to a massive amount of text data from the internet. The model learns to predict what the next word in a sentence or paragraph is based on the context of the preceding text. It uses a technique called unsupervised learning, where it doesn't have explicit labels for the correct answers. Through this process, ChatGPT learns grammar, facts, reasoning abilities, and gains a broad understanding of language.
-            </p>
-            <p>
-              After pretraining, the model goes through a <strong>fine-tuning stage</strong> using a more specific dataset. The fine-tuning data involves demonstrations and comparisons. Human AI trainers provide conversations where they play both the user and an AI assistant and have access to model-written suggestions. They also rank different responses based on quality. The model is then fine-tuned using this data to improve its responses and align with the desired behavior.
-            </p>
-            <p>
-              This process helps ChatGPT develop a contextual understanding of language, allowing it to generate more relevant and coherent responses during conversations. It learns from the patterns and examples it has seen in the data and tries to generalize that knowledge to provide useful responses in real-world scenarios.
-            </p>
-            <p style={{ margin: 0 }}>
-              During a chat conversation, ChatGPT takes in your input message, tokenizes it, and produces a response based on patterns it has learned. It aims to generate relevant and coherent responses based on the context of the conversation history. The model learns from large amounts of data to better understand language and generate more accurate answers. However, it's important to note that ChatGPT may still produce incorrect or nonsensical answers at times, so caution should be exercised when relying on its responses.
-            </p>
-          </div>
-
-          <div className="widescreen-dashboard-box">
-            <div className="widescreen-dashboard-header">
-              <Activity size={18} className="text-teal" />
-              <h3>Everyday AI Applications</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              While ChatGPT is an increasingly common use of artificial intelligence, it is not the first time that AI has been adopted by everyday users. Here are five examples of AI that you’ve likely used before:
-            </p>
-            
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Virtual Assistants</h4>
-                <p>Virtual assistants like Apple's Siri, Amazon's Alexa, Google Assistant, or Microsoft's Cortana use AI to understand voice commands and perform tasks like setting reminders, answering questions, or controlling smart home devices.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Recommendation Systems</h4>
-                <p>Recommendation systems, used by platforms like Netflix, Spotify, or Amazon, use AI to analyze user preferences, behavior, and historical data to suggest personalized content, products, or services.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Image & Speech</h4>
-                <p>AI enables systems to recognize and interpret images, videos, or speech. This is used in applications like facial recognition, object detection, speech-to-text conversion, and voice assistants.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Autonomous Vehicles</h4>
-                <p>AI plays a crucial role in autonomous vehicles, allowing them to perceive the environment, make decisions, and navigate safely through technologies like computer vision and sensor fusion.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Fraud Detection</h4>
-                <p>AI is used to identify patterns or anomalies in data that may indicate fraudulent activities. It helps detect fraudulent transactions, cybersecurity threats, or suspicious behavior in real time.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Chapter 2 */}
-        <section id="ch-2" className="guide-section-block">
-          <h2 className="chapter-title">
-            <Cpu size={28} />
-            2. Capabilities and Use Cases of ChatGPT
-          </h2>
-          
-          <div className="prose prose-wide">
-            <p>
-              With its understanding of natural language, ChatGPT is able to comprehend and interpret input in a conversational manner. This, paired with its ease of use and ease of access, makes it a powerful tool that can go far in increasing efficiency and knowledge-building in its users.
-            </p>
-            <p>
-              ChatGPT maintains context over multiple turns, allowing it to remember and refer back to previous messages for more accurate responses. It excels in answering factual questions, providing explanations, definitions, and assisting with general knowledge inquiries.
-            </p>
-            <p>
-              There are also different models within the ChatGPT ecosystem, such as <strong>GPT-4 Preview</strong> and <strong>GPT Mini</strong>, each tailored to specific use cases. For instance, GPT-4 Preview is designed for deep, strategic problem-solving and excels at tackling complex, nuanced inquiries that require contextual understanding and advanced reasoning. In contrast, GPT Mini focuses on delivering quick and efficient responses, making it ideal for straightforward tasks or when a lightweight, speedy assistant is needed.
-            </p>
-            <p>
-              ChatGPT's capabilities and use cases span customer support, content editing, language learning, personal assistance, programming support, and knowledge exploration, making it a versatile tool for enhancing productivity and efficiency in different areas.
-            </p>
-            <p>
-              While ChatGPT can be a valuable tool, it's crucial to recognize its limitations. It may not possess domain-specific expertise or completely replace human expertise. It's important to consider factors such as contextual understanding and handling sensitive or confidential information when utilizing AI tools like ChatGPT—especially at work.
-            </p>
-            <p style={{ margin: 0 }}>
-              That being said, leveraging ChatGPT's capabilities can greatly benefit the workplace. It has the potential to streamline workflows, facilitate collaboration, and provide assistance in various work-related tasks. By harnessing its power, organizations can foster a more efficient and productive work environment.
-            </p>
-          </div>
-
-          <div className="widescreen-dashboard-box">
-            <div className="widescreen-dashboard-header">
-              <Layers size={18} className="text-teal" />
-              <h3>10 Ways to Use ChatGPT</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Maximize the value of generative models across diverse personal and professional contexts:
-            </p>
-            
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Virtual Assistant</h4>
-                <p>Draft email templates, proofread documents, translate articles, summarize texts, or brainstorm keywords.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Personal Concierge</h4>
-                <p>Get personalized recommendations for restaurants, hotels, movies, books, or activities.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Language Practice</h4>
-                <p>Engage in conversations with ChatGPT to practice and improve foreign language skills.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Creative Companion</h4>
-                <p>Use ChatGPT as a writing companion for brainstorming ideas and overcoming writer's block.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Information Retrieval</h4>
-                <p>Seek explanations, quick definitions, or fast information on a colossal range of topics.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">06</span>
-                <h4>Learning & Education</h4>
-                <p>Receive explanations or elaborations on complex subjects, aiding with homework.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">07</span>
-                <h4>Goal Tracking</h4>
-                <p>Track progress towards your goals, get motivational prompts, and stay focused.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">08</span>
-                <h4>Personal Growth</h4>
-                <p>Engage in reflective conversations with ChatGPT to gain insights and foster growth.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">09</span>
-                <h4>Entertainment & Pop</h4>
-                <p>Have interactive discussions, play trivia games, get riddles, or talk pop culture.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">10</span>
-                <h4>Exploration</h4>
-                <p>Delve into specific academic fields, explore interests, and discover new facts.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Chapter 3 */}
-        <section id="ch-3" className="guide-section-block">
-          {/* Section-Nested Decorative Aurora & Floating Watermark */}
-          <div className="section-glow-orb orb-ch3" />
-          <Sparkles size={450} strokeWidth={0.2} className="section-watermark watermark-ch3" />
-
-          <h2 className="chapter-title">
-            <BookOpen size={28} />
-            3. Using ChatGPT at Work
-          </h2>
-          
-          <div className="prose prose-wide">
-            <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
-              ChatGPT can be a valuable tool to enhance productivity and efficiency in a work environment. Organizations that embrace AI-augmented operations see immediate improvements across every department.
-            </p>
-          </div>
-
-          {/* How to use - 10 Core Methods */}
-          <div className="widescreen-dashboard-box">
-            <div className="widescreen-dashboard-header">
-              <Sparkles size={18} className="text-teal" />
-              <h3>10 Core Methods to Use ChatGPT at Work</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Retrieve information, automate tasks, draft reports, and solve operational problems seamlessly with these established methods:
-            </p>
-            
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Knowledge Retrieval</h4>
-                <p>Retrieve information, definitions, or explanations related to work topics rapidly, saving time spent searching.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Task Management</h4>
-                <p>Serve as a virtual assistant, helping you set reminders, organize checklists, and stay structured during your workday.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Writing & Editing</h4>
-                <p>Draft emails, craft reports, proofread documents, and refine communication for clear, concise correspondence.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Onboarding & Training</h4>
-                <p>Act as a training resource, providing instant answers to common questions and explaining company processes and policies.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Problem-Solving</h4>
-                <p>Brainstorm solutions, explore options, and analyze complex situations to make more informed choices.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">06</span>
-                <h4>Programming Support</h4>
-                <p>Provide coding tips, write boilerplate blocks, troubleshoot syntax bugs, and explain complex technical concepts.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">07</span>
-                <h4>Customer Service</h4>
-                <p>Integrate into service platforms to provide instant assistance, answer FAQs, and lower queues.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">08</span>
-                <h4>Collaboration & Ideas</h4>
-                <p>Generate creative suggestions, explore new angles, and facilitate brainstorming sessions with team members.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">09</span>
-                <h4>Project Management</h4>
-                <p>Track project milestones, draft status updates, and configure scheduled reminders for deadlines.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">10</span>
-                <h4>Employee Well-being</h4>
-                <p>Provide advice and resources related to stress management, work-life balance, and focus strategies.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Department Deep Dives - Stunning Widescreen Grid 4 */}
-          <div className="prose prose-wide" style={{ marginTop: '4rem', marginBottom: '2rem' }}>
-            <h3>Departmental Deep Dives</h3>
-            <p style={{ color: 'var(--muted)' }}>Explore how different teams leverage ChatGPT to streamline operations, enhance communication, and accelerate growth.</p>
-          </div>
-
-          <div className="widescreen-dashboard-grid-4" style={{ marginBottom: '4.5rem' }}>
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper"><Sparkles size={20} /></div>
-              <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Sales & Marketing</h4>
-              <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
-                Engage potential customers, qualify leads proactively, collect data from prospects, and automate personalized interactions on platforms or email campaigns at scale.
-              </p>
-              <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
-                <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Lead Generation</strong>
-                <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Revamp manual pipeline outreach using natural language intent assessment.</p>
-              </div>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(83, 200, 255, 0.1)', border: '1px solid rgba(83, 200, 255, 0.3)', color: '#53c8ff' }}><HelpCircle size={20} /></div>
-              <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Customer Support</h4>
-              <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
-                Provide swift, accurate, instant responses to FAQs and integrate AI chatbots to handle recursive tickets so human agents can focus on complex cases.
-              </p>
-              <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
-                <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Ticket Resolution</strong>
-                <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Lower resolution time and drop queue depth by automating tier-1 FAQs.</p>
-              </div>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(169, 139, 255, 0.1)', border: '1px solid rgba(169, 139, 255, 0.3)', color: '#a98bff' }}><ListTodo size={20} /></div>
-              <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Project Management</h4>
-              <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
-                Automate task allocations, analyze project requirements, suggest team distributions, monitor progress milestones, and optimize collaboration pipelines.
-              </p>
-              <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
-                <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Workflow Optimization</strong>
-                <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Integrate direct status checks, flag delays, and map project constraints.</p>
-              </div>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(246, 185, 79, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(246, 185, 79, 0.1)', border: '1px solid rgba(246, 185, 79, 0.3)', color: '#f6b94f' }}><Brain size={20} /></div>
-              <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Decision Support</h4>
-              <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
-                Analyze patterns, offer suggestions based on data correlations, support resource allocations, map budget plans, and expedite strategic problem-solving.
-              </p>
-              <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
-                <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Strategic Planning</strong>
-                <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Upskill team knowledge rapidly and access comparative industry trends.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Other Industries and Job Functions */}
-          <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
-            <div className="widescreen-dashboard-header">
-              <Brain size={18} className="text-teal" />
-              <h3>Other Industries &amp; Job Functions</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Beyond core departments, ChatGPT empowers individuals across every role to manage time, amplify learning, and sharpen decisions with AI-backed insights:
-            </p>
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Enhanced Decision-Making</h4>
-                <p>Analyze large data sets, identify trends in sales or operations, and surface strategic recommendations based on historical patterns and industry benchmarks.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Personal Virtual Assistant</h4>
-                <p>Find common availability across participants, organize prioritized to-do lists, manage calendar conflicts, and deliver daily agenda briefings on demand.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Time Management</h4>
-                <p>Discuss workloads and deadlines with ChatGPT for timeline suggestions, task prioritization guidance, and reminder systems that keep every responsibility on track.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Decision Support</h4>
-                <p>Get resource allocation guidance, identify project bottlenecks, suggest risk mitigations, and surface solutions grounded in prior data patterns and field best practices.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Personal Development</h4>
-                <p>Access training materials on demand, monitor industry news in real time, explore expert viewpoints, and receive customized skill-development roadmaps tailored to your goals.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Overcoming Challenges - Stunning Widescreen Grid 5 */}
-          <div className="widescreen-dashboard-box">
-            <div className="widescreen-dashboard-header">
-              <Shield size={18} className="text-teal" />
-              <h3>Overcoming Challenges and Limitations</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Using AI technologies like ChatGPT comes with potential challenges. Address these five critical fields to ensure effective and responsible use at work:
-            </p>
-            
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Feedback & Tuning</h4>
-                <p>AI models like ChatGPT require continuous feedback. Actively collect reviews from users to iterate and refine parameters.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Overcoming Biases</h4>
-                <p>AI models can reflect biases in training data. Mitigate these through careful curation, audits, and checks.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Data Security</h4>
-                <p>Protect sensitive workspace details and ensure compliance. Implement robust access control and encryption policies.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Human Oversight</h4>
-                <p>AI should complement, not replace, human judgment. Establish clear accountability frameworks and review AI decisions.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Ethical Principles</h4>
-                <p>Ensure AI usage aligns with workspace values, focusing on transparency, fairness, privacy, and consent.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Chapter 4 */}
-        <section id="ch-4" className="guide-section-block">
-          <h2 className="chapter-title">
-            <Shield size={28} />
-            4. Best Practices for Implementing ChatGPT in Your Work
-          </h2>
-          
-          <div className="prose prose-wide">
-            <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
-              Integrating ChatGPT into your workplace can be a game-changer for productivity and efficiency. However, to make the most of this powerful tool, it's important to establish some best practices. By following these guidelines, you can ensure accurate and reliable interactions while maintaining user privacy and adhering to company policies. From training and monitoring to feedback and version control, here are the ten essential best practices to optimize your use of ChatGPT in the workplace.
-            </p>
-          </div>
-
-          {/* 10 Best Practices - Stunning Widescreen Dashboard Grid */}
-          <div className="widescreen-dashboard-box">
-            <div className="widescreen-dashboard-header">
-              <ListTodo size={18} className="text-teal" />
-              <h3>10 Essential Best Practices</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Operationalize these ten fundamental guidelines across your daily workflows to maximize reliability and outputs:
-            </p>
-            
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Define your goal</h4>
-                <p>Clearly identify the purpose of using ChatGPT. Whether it's for customer support, content generation, or internal assistance, having a specific goal ensures better utilization.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Train ChatGPT properly</h4>
-                <p>Fine-tune base models using substantial, high-quality, company-specific data. This helps ChatGPT understand workspace context and provide accurate answers.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Set clear guidelines</h4>
-                <p>Establish strict usage guidelines to ensure consistency and regulatory compliance. These should cover acceptable content, tone, and privacy constraints.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Monitor and moderate</h4>
-                <p>Keep a close eye on conversations to ensure accuracy. Implement an active moderation pipeline to flag potential issues or structural biases.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Encourage feedback</h4>
-                <p>Encourage employees to review the quality of answers. Continuous feedback loop helps identify areas for prompt fine-tuning and template updates.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">06</span>
-                <h4>Avoid over-reliance</h4>
-                <p>While ChatGPT is highly capable, never treat it as an absolute ground truth. Users should exercise critical thinking and cross-verify facts.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">07</span>
-                <h4>Maintain user privacy</h4>
-                <p>Protect user privacy by implementing strict data security measures. Never input sensitive or proprietary source code or PII into public models.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">08</span>
-                <h4>Regularly fact-check</h4>
-                <p>Independently verify any critical calculations or professional advice. Cross-reference official databases and rely on experienced teammates.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">09</span>
-                <h4>Establish fallbacks</h4>
-                <p>Prepare alternative operational resources for situations where ChatGPT might fail or produce incomplete or out-of-scope outputs.</p>
-              </div>
-
-              <div className="widescreen-grid-card">
-                <span className="card-badge">10</span>
-                <h4>Evaluate performance</h4>
-                <p>Continuously track prompt ROI, response accuracy, and workflow times. Use this data to iterate on system instructions and template folders.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Sub-panels: side-by-side widescreen layout */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2.5rem', marginTop: '4rem' }}>
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1.5rem 0', fontSize: '1.4rem', fontWeight: 800 }}>Creating Better Prompts for Optimal Results</h3>
-              <p>The effectiveness of ChatGPT relies heavily on the clarity and structure of your prompts. To guide users in crafting better prompts, focus on including the following elements:</p>
+        {activeChapter === 'ch-1' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-1" className="guide-section-block">
+              <h2 className="chapter-title">
+                <Brain size={28} />
+                1. Understanding AI and ChatGPT
+              </h2>
               
-              <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Provide Context:</strong> Clearly state the situation or background information to help ChatGPT better understand the task. For example, instead of asking, "How do I write a good email?" you could say, "I need to write an email to my team about an upcoming project deadline. Can you provide a professional template for that?"
-                </li>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Be Specific:</strong> Avoid vague requests and specify exactly what you need. For instance, instead of, "Write something about time management," try, "Can you create a three-paragraph article about time management techniques for busy professionals?"
-                </li>
-                <li style={{ marginBottom: '1.5rem' }}>
-                  <strong>Define Outcomes:</strong> If you have a desired structure or tone, make that explicit. For example, "Write a step-by-step guide in a friendly and approachable tone for a blog audience."
-                </li>
-              </ul>
-              <p>By mastering prompt creation, users can generate responses that are more relevant, actionable, and aligned with their needs.</p>
-            </div>
-
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1.5rem 0', fontSize: '1.4rem', fontWeight: 800 }}>Advanced Techniques & Troubleshooting</h3>
-              <p>To maximize ChatGPT's potential, consider employing advanced strategies like:</p>
-              
-              <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Iterative Prompting:</strong> If the initial response isn't quite what you need, refine your request. For example, after receiving a general summary, follow up with, "Can you elaborate on point three?" or, "Can you rewrite this in a more formal tone?"
-                </li>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Breaking Tasks into Smaller Steps:</strong> For complex requests, divide them into manageable chunks. Instead of asking, "Write a comprehensive marketing plan," you might start with, "Outline the main components of a marketing plan," followed by, "Now elaborate on the social media strategy section."
-                </li>
-                <li style={{ marginBottom: '1.5rem' }}>
-                  <strong>Prompt Drafting by ChatGPT:</strong> Ask ChatGPT to help craft its own prompts. For instance, you could say, "What information do you need to create a detailed event proposal?" This approach ensures that the AI has all the context it needs to deliver high-quality results.
-                </li>
-              </ul>
-
-              <h4 style={{ color: '#fff', margin: '1.5rem 0 0.5rem 0', fontWeight: 800 }}>Troubleshooting Tips</h4>
-              <p>Despite its advanced capabilities, ChatGPT might occasionally deliver unsatisfactory results. Reframe your prompts to address common challenges:</p>
-              <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)', margin: 0 }}>
-                <li style={{ marginBottom: '0.4rem' }}><strong>Clarify Your Prompt:</strong> Review for ambiguity, reframe to be specific, and add context.</li>
-                <li style={{ marginBottom: '0.4rem' }}><strong>Adjust Tone or Depth:</strong> Instruct it to "Provide a detailed explanation" or "Use a professional tone."</li>
-                <li><strong>Recognize Limitations:</strong> Rely on external sources to verify critical information and acknowledge that AI complements, but cannot replace, human judgment.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Chapter 5 */}
-        <section id="ch-5" className="guide-section-block">
-          <h2 className="chapter-title">
-            <Lightbulb size={28} />
-            5. Mastering Prompt Engineering
-          </h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2.5rem' }}>
-            <div className="prose">
-              <p>
-                Prompt engineering is the cornerstone of effective interaction with ChatGPT. By crafting precise, structured prompts, you can guide the AI to generate more accurate, actionable, and context-appropriate responses.
-              </p>
-              <h3 style={{ marginTop: '2rem' }}>The Anatomy of a Great Prompt</h3>
-              <p>A well-designed prompt typically includes three essential components:</p>
-              <ol style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Context:</strong> Provide relevant background information to help ChatGPT understand the scenario.
-                </li>
-                <li style={{ marginBottom: '1rem' }}>
-                  <strong>Task:</strong> Clearly specify exactly what you want ChatGPT to do.
-                </li>
-                <li style={{ marginBottom: 0 }}>
-                  <strong>Details & Constraints:</strong> Add specific requirements such as tone, structural layout, length, or style.
-                </li>
-              </ol>
-            </div>
-
-            {/* Compare Sandbox Widescreen */}
-            <div className="compare-playground" style={{ height: 'fit-content' }}>
-              <div className="playground-header">
-                <div className="playground-meta">
-                  <Lightbulb size={18} style={{ color: 'var(--brand-teal)' }} />
-                  <h4>Interactive Prompt Sandbox</h4>
-                </div>
-                  <div className="playground-toggle-group">
-                    <button
-                      onClick={() => setActiveSandboxTab('vague')}
-                      className={`playground-toggle-btn ${activeSandboxTab === 'vague' ? 'active-bad' : ''}`}
-                    >
-                      Vague
-                    </button>
-                    <button
-                      onClick={() => setActiveSandboxTab('optimized')}
-                      className={`playground-toggle-btn ${activeSandboxTab === 'optimized' ? 'active-good' : ''}`}
-                    >
-                      Optimized
-                    </button>
-                  </div>
-                </div>
-
-                <div className="playground-body">
-                  <AnimatePresence mode="wait">
-                    {activeSandboxTab === 'optimized' ? (
-                      <motion.div
-                        key="optimized"
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -20 }}
-                        transition={{ duration: 0.22 }}
-                        className="sandbox-card good"
-                      >
-                        <div className="sandbox-card-header good">
-                          <h5>Optimized Prompt Structure</h5>
-                          <Check size={14} />
-                        </div>
-                        <div className="sandbox-card-body">
-                          <div className="prompt-code-display">
-                            "Act as an expert content writer. I need to write a professional email to my client to confirm our upcoming project review meeting. The email should include slots to propose three alternative times, politely request that they share any additional agenda items before Friday, and maintain a respectful yet warm tone. Keep it under 150 words."
-                          </div>
-                          <div className="sandbox-analysis">
-                            <p>
-                              <strong>Why it works:</strong> Defines a clear role (expert writer), provides detailed context (email to confirm meeting), specifies structure constraints (three time slots, deadline for agenda), and a clear length limit (under 150 words).
-                            </p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="vague"
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -20 }}
-                        transition={{ duration: 0.22 }}
-                        className="sandbox-card bad"
-                      >
-                        <div className="sandbox-card-header bad">
-                          <h5>Vague / Ineffective Prompt</h5>
-                        </div>
-                        <div className="sandbox-card-body">
-                          <div className="prompt-code-display" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                            "Write an email for a meeting."
-                          </div>
-                          <div className="sandbox-analysis">
-                            <p>
-                              <strong>Why it fails:</strong> Lacks any context or detail. The model doesn't know the recipient (client, colleague, friend), the required tone (formal, casual), meeting topic, or expected format. It will produce a generic, flat response.
-                            </p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        {/* Chapter 6 */}
-        <section id="ch-6" className="guide-section-block">
-          <h2 className="chapter-title">
-            <Zap size={28} />
-            6. What's New in 2026
-          </h2>
-          
-          <div className="prose prose-wide">
-            <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
-              As we navigate through 2026, ChatGPT has undergone its most dramatic evolution since launch—transforming from a clever chatbot into a comprehensive, collaborative AI workspace. Let's look at the game-changing updates making it an indispensable business partner:
-            </p>
-          </div>
-
-          <div className="widescreen-dashboard-grid-4">
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper"><Brain size={20} /></div>
-              <h3>Unified GPT-5.5 System</h3>
-              <p>No more choosing between confusing versions. GPT-5.5 runs on three distinct intelligence modes: Instant (quick tasks), Thinking (deep reasoning with adjustable 'thinking time'), and Pro (demanding, book-length analysis).</p>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(83, 200, 255, 0.1)', border: '1px solid rgba(83, 200, 255, 0.3)', color: '#53c8ff' }}><Compass size={20} /></div>
-              <h3>Advanced ChatGPT Projects</h3>
-              <p>Organize chats, instructions, and file uploads around specific goals. Create shared spaces where teams collaborate with a unified AI context that understands your brand voice and past decisions.</p>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(169, 139, 255, 0.1)', border: '1px solid rgba(169, 139, 255, 0.3)', color: '#a98bff' }}><Layers size={20} /></div>
-              <h3>Integrated Company Knowledge</h3>
-              <p>Connect your workspace directly to Slack channels, Google Drive, Notion, Outlook, and Salesforce. ChatGPT retrieves organization-specific insights complete with clickable citations and links, respecting existing permissions.</p>
-            </div>
-
-            <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(246, 185, 79, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-              <div className="feature-icon-wrapper" style={{ background: 'rgba(246, 185, 79, 0.1)', border: '1px solid rgba(246, 185, 79, 0.3)', color: '#f6b94f' }}><Zap size={20} /></div>
-              <h3>Agentic AI Workflows</h3>
-              <p>Run scheduled background tasks, execute multi-step research plans with Deep Research, and utilize Autonomous Agents to monitor boards, draft emails, and handle repetitive processes 24/7.</p>
-            </div>
-          </div>
-
-          {/* GPT-5.5: Three Intelligence Tiers */}
-          <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
-            <div className="widescreen-dashboard-header">
-              <Brain size={18} className="text-teal" />
-              <h3>GPT-5.5: Three Intelligence Tiers</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Launched December 11, 2025, GPT-5.5 is the first AI to consistently outperform human experts across a broad range of business tasks. Gone are the days of choosing between confusing versions — three unified modes cover every scenario:
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              <div className="widescreen-grid-card" style={{ borderLeft: '3px solid var(--brand-teal)', background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-                <span className="card-badge">INSTANT</span>
-                <h4>Free Users</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
-                  <li>Lightning-fast responses for everyday tasks</li>
-                  <li>Perfect for emails, quick summaries, and routine questions</li>
-                  <li>Accessible to everyone — AI assistance made truly universal</li>
-                </ul>
-              </div>
-              <div className="widescreen-grid-card" style={{ borderLeft: '3px solid #53c8ff', background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-                <span className="card-badge" style={{ color: '#53c8ff', background: 'rgba(83, 200, 255, 0.12)', borderColor: 'rgba(83, 200, 255, 0.25)' }}>THINKING</span>
-                <h4>Plus / Business / Enterprise</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
-                  <li>Deep reasoning with adjustable "thinking time"</li>
-                  <li>Choose Light, Standard, Extended, or Heavy modes</li>
-                  <li>Ideal for financial modeling, strategic analysis, and complex problem-solving</li>
-                </ul>
-              </div>
-              <div className="widescreen-grid-card" style={{ borderLeft: '3px solid #a98bff', background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
-                <span className="card-badge" style={{ color: '#a98bff', background: 'rgba(169, 139, 255, 0.12)', borderColor: 'rgba(169, 139, 255, 0.25)' }}>PRO</span>
-                <h4>Pro / Enterprise Users</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
-                  <li>Maximum capability for the most demanding professional tasks</li>
-                  <li>Extended context window for book-length documents</li>
-                  <li>Perfect for comprehensive research and multi-faceted projects</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Projects & Shared Projects */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2rem', marginTop: '2.5rem' }}>
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.35rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <Compass size={18} style={{ color: 'var(--brand-teal)', flexShrink: 0 }} />
-                Projects: Your New Command Center
-              </h3>
-              <p>Instead of scattered conversations, Projects organize work around specific goals with persistent context. How smart teams use them:</p>
-              <div style={{ background: 'rgba(0, 172, 128, 0.06)', border: '1px solid rgba(0, 172, 128, 0.2)', borderRadius: '10px', padding: '1.25rem', marginBottom: '1rem' }}>
-                <strong style={{ color: 'var(--brand-teal)', fontSize: '0.85rem', display: 'block', marginBottom: '0.5rem' }}>Sales: "Q2 Prospecting" Project</strong>
-                <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--soft)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                  <li>Upload ICP descriptions, messaging guidelines, and lead CSVs</li>
-                  <li>Every team member drops in new prospect lists</li>
-                  <li>Get prioritized call scripts, follow-up sequences, and qualification notes</li>
-                  <li>All consistent with your brand voice and methodology</li>
-                </ul>
-              </div>
-              <div style={{ background: 'rgba(83, 200, 255, 0.06)', border: '1px solid rgba(83, 200, 255, 0.2)', borderRadius: '10px', padding: '1.25rem' }}>
-                <strong style={{ color: '#53c8ff', fontSize: '0.85rem', display: 'block', marginBottom: '0.5rem' }}>Support: "Support Playbook" Project</strong>
-                <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--soft)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                  <li>Include FAQ PDFs, help center exports, and sample tickets</li>
-                  <li>Agents get instant, cited responses grounded in your actual policies</li>
-                  <li>Draft replies maintain consistency and save hours daily</li>
-                </ul>
-              </div>
-            </div>
-
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.35rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <Layers size={18} style={{ color: '#a98bff', flexShrink: 0 }} />
-                Shared Projects: True AI Collaboration
-              </h3>
-              <p>Launched October 2025, Shared Projects let multiple users contribute files, refine instructions, and build on each other's AI interactions:</p>
-              <ul>
-                <li><strong>Cross-plan collaboration:</strong> Free and paid users can work together seamlessly</li>
-                <li><strong>Persistent team context:</strong> AI remembers your team's working style across sessions</li>
-                <li><strong>File sharing with AI context:</strong> Upload once, every team member benefits</li>
-                <li><strong>Collaborative instruction refinement:</strong> Build better AI prompts together over time</li>
-              </ul>
-              <div style={{ background: 'rgba(169, 139, 255, 0.06)', border: '1px solid rgba(169, 139, 255, 0.2)', borderRadius: '10px', padding: '1.25rem', marginTop: '1rem' }}>
-                <strong style={{ color: '#a98bff', fontSize: '0.85rem', display: 'block', marginBottom: '0.4rem' }}>Power User Tip</strong>
-                <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--soft)', lineHeight: 1.6 }}>Set up a "Monthly KPI Reporting" shared project with your data templates and reporting standards. Team members upload departmental data, and ChatGPT generates consistent, formatted reports that match your executive presentation style.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Company Knowledge */}
-          <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
-            <div className="widescreen-dashboard-header">
-              <Layers size={18} className="text-teal" />
-              <h3>Company Knowledge: Your Business Brain</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              Available for Business and Enterprise plans, Company Knowledge connects ChatGPT directly to your business systems — delivering organization-specific insights with full citations and source links. Security: ChatGPT only accesses data you already have access to.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              <div>
-                <h4 style={{ color: '#fff', fontWeight: 800, marginBottom: '1rem', fontSize: '1rem' }}>Supported Integrations</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
-                  {['Slack Conversations', 'Google Drive', 'SharePoint', 'Gmail & Outlook', 'HubSpot', 'Salesforce', 'Notion / Confluence', 'Zendesk', 'Custom MCP Connectors'].map((intg) => (
-                    <span key={intg} style={{ background: 'rgba(0, 172, 128, 0.08)', border: '1px solid rgba(0, 172, 128, 0.2)', borderRadius: '6px', padding: '0.3rem 0.7rem', fontSize: '0.82rem', color: 'var(--brand-teal)', fontWeight: 700 }}>{intg}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">Example Query</span>
-                <h4>"Give me a brief on Client X before my call"</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
-                  <li>Recent Slack mentions and project updates</li>
-                  <li>Latest CRM notes and opportunity status</li>
-                  <li>Previous proposal documents from SharePoint</li>
-                  <li>Support ticket history and resolution status</li>
-                  <li>All with clickable links to source documents</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Agentic AI Details */}
-          <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
-            <div className="widescreen-dashboard-header">
-              <Zap size={18} className="text-teal" />
-              <h3>Agentic AI: Your 24/7 Assistant</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              ChatGPT's agentic features work autonomously — conducting research, running recurring tasks, and executing multi-step workflows without human intervention:
-            </p>
-            <div className="widescreen-dashboard-grid-4">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">Deep Research</span>
-                <h4>Long-Form Research Partner</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
-                  <li>Conducts cited research on complex topics using web + internal sources</li>
-                  <li>Exports professional PDF reports with full citations</li>
-                  <li>Runs autonomously based on your research parameters</li>
-                  <li>Example: weekly competitive landscape briefings every Monday</li>
-                </ul>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">Scheduled Tasks</span>
-                <h4>Recurring AI Workflows</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
-                  <li>Weekly support ticket analysis and trend reporting</li>
-                  <li>Monthly customer feedback categorization</li>
-                  <li>Daily social media content suggestions</li>
-                  <li>Quarterly financial data summaries</li>
-                </ul>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">ChatGPT Pulse</span>
-                <h4>Continuous Insight Stream</h4>
-                <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
-                  <li>Analyzes your ChatGPT usage patterns continuously</li>
-                  <li>Identifies relevant industry developments</li>
-                  <li>Surfaces potential opportunities or threats</li>
-                  <li>Delivers personalized visual summary dashboards</li>
-                </ul>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">Autonomous Agents</span>
-                <h4>Multi-Step Execution</h4>
-                <p style={{ color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65, margin: '0.75rem 0 0 0' }}>
-                  Agents monitor your project board, identify overdue tasks, automatically draft status update emails to stakeholders, and adjust project timelines based on preset parameters — all without human intervention.
+              <div className="prose prose-wide">
+                <h3>What is AI and how does it work?</h3>
+                <p>
+                  AI stands for <strong>Artificial Intelligence</strong>, which is a broad term referring to the development of computer systems that can perform tasks that historically required human intelligence. AI can involve various techniques, such as machine learning and natural language processing.
+                </p>
+                <p>
+                  <strong>ChatGPT</strong> is a specific instance of AI that uses a technique called <strong>deep learning</strong>. It’s designed to generate human-like text responses. ChatGPT learns through a two-step process: pretraining and fine-tuning.
+                </p>
+                <p>
+                  During the <strong>pretraining phase</strong>, ChatGPT is exposed to a massive amount of text data from the internet. The model learns to predict what the next word in a sentence or paragraph is based on the context of the preceding text. It uses a technique called unsupervised learning, where it doesn't have explicit labels for the correct answers. Through this process, ChatGPT learns grammar, facts, reasoning abilities, and gains a broad understanding of language.
+                </p>
+                <p>
+                  After pretraining, the model goes through a <strong>fine-tuning stage</strong> using a more specific dataset. The fine-tuning data involves demonstrations and comparisons. Human AI trainers provide conversations where they play both the user and an AI assistant and have access to model-written suggestions. They also rank different responses based on quality. The model is then fine-tuned using this data to improve its responses and align with the desired behavior.
+                </p>
+                <p>
+                  This process helps ChatGPT develop a contextual understanding of language, allowing it to generate more relevant and coherent responses during conversations. It learns from the patterns and examples it has seen in the data and tries to generalize that knowledge to provide useful responses in real-world scenarios.
+                </p>
+                <p style={{ margin: 0 }}>
+                  During a chat conversation, ChatGPT takes in your input message, tokenizes it, and produces a response based on patterns it has learned. It aims to generate relevant and coherent responses based on the context of the conversation history. The model learns from large amounts of data to better understand language and generate more accurate answers. However, it's important to note that ChatGPT may still produce incorrect or nonsensical answers at times, so caution should be exercised when relying on its responses.
                 </p>
               </div>
-            </div>
-          </div>
 
-          {/* Memory, Visual Intelligence, Codex */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Enhanced Memory &amp; Personalization</h3>
-              <p>Important business context stays accessible, less relevant details fade automatically, and frequently-used information surfaces first. Set tone presets — <strong>Friendly, Efficient, Professional, Candid,</strong> or <strong>Quirky</strong> — alongside warmth and formatting sliders. Changes apply immediately across every conversation.</p>
-            </div>
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Visual Intelligence Revolution</h3>
-              <p>ChatGPT now delivers <strong>inline visuals</strong> for statistics, side panels with highlighted key facts, entities, and companies, interactive charts and data visualizations, and better formatting tuned for mobile and meeting contexts — so you can scan responses instantly during client calls.</p>
-            </div>
-            <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
-              <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Codex: The Developer Platform</h3>
-              <p>OpenAI launched the standalone <strong>Codex macOS app</strong> built for development workflows — with multiple coding agents running in parallel, advanced diff management, background task execution, and reusable coding patterns. Even non-technical teams benefit when colleagues use Codex to automate integrations and build internal tooling.</p>
-            </div>
-          </div>
-
-          {/* Future-Proofing Your AI Skills */}
-          <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
-            <div className="widescreen-dashboard-header">
-              <Sparkles size={18} className="text-teal" />
-              <h3>Future-Proofing Your AI Skills</h3>
-            </div>
-            <p className="widescreen-dashboard-desc">
-              As ChatGPT evolves into a comprehensive business platform, professionals need five new essential competencies to stay ahead:
-            </p>
-            <div className="widescreen-dashboard-grid-5">
-              <div className="widescreen-grid-card">
-                <span className="card-badge">01</span>
-                <h4>Project Architecture</h4>
-                <p>Structure recurring workflows as Projects rather than one-off chats to build persistent, compounding AI context across your team.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">02</span>
-                <h4>Context Curation</h4>
-                <p>Master writing project-level instructions that provide consistent, useful context to AI across every team interaction and document.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">03</span>
-                <h4>Thinking Time Optimization</h4>
-                <p>Know when to apply Light vs. Extended vs. Heavy reasoning modes based on task complexity and available time constraints.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">04</span>
-                <h4>Collaborative AI Management</h4>
-                <p>Develop skills in managing shared AI resources, standardized instructions, and knowledge bases across distributed teams.</p>
-              </div>
-              <div className="widescreen-grid-card">
-                <span className="card-badge">05</span>
-                <h4>Verification Workflows</h4>
-                <p>Build habits of checking citations and source links, especially for business-critical decisions that rely on AI-generated outputs.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* What This Means for Your Business */}
-          <div style={{ background: 'linear-gradient(135deg, rgba(0, 172, 128, 0.08) 0%, rgba(14, 19, 27, 0.7) 100%)', border: '1px solid rgba(0, 172, 128, 0.25)', borderRadius: '16px', padding: '2.5rem', marginTop: '2.5rem' }}>
-            <h3 style={{ color: '#fff', fontWeight: 900, fontSize: '1.45rem', marginBottom: '0.75rem', letterSpacing: '-0.02em' }}>What This Means for Your Business</h3>
-            <p style={{ color: 'var(--soft)', marginBottom: '1.5rem', lineHeight: 1.65, fontSize: '1.05rem', maxWidth: '900px' }}>
-              The latest developments represent more than feature updates — it's a fundamental shift toward AI-augmented business operations. Organizations that embrace collaborative, agentic workflows will gain significant competitive advantages:
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.75rem' }}>
-              {[
-                'Faster decision cycles with instant access to organizational knowledge',
-                'Consistent quality through shared AI resources and standardized processes',
-                'Reduced operational overhead via automated research and reporting',
-                'Enhanced team collaboration through AI-mediated knowledge sharing',
-                'Scalable expertise that grows with your business needs',
-              ].map((benefit) => (
-                <div key={benefit} style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--brand-teal)', flexShrink: 0, marginTop: '7px' }} />
-                  <p style={{ margin: 0, color: 'var(--soft)', fontSize: '1rem', lineHeight: 1.55 }}>{benefit}</p>
+              <div className="widescreen-dashboard-box">
+                <div className="widescreen-dashboard-header">
+                  <Activity size={18} className="text-teal" />
+                  <h3>Everyday AI Applications</h3>
                 </div>
-              ))}
-            </div>
-            <p style={{ margin: 0, color: 'var(--muted)', fontStyle: 'italic', fontSize: '0.95rem', lineHeight: 1.65 }}>
-              Professionals and organizations that master these capabilities won't just work faster — they'll work fundamentally differently, with AI as a true collaborative partner rather than just an advanced search tool.
-            </p>
-          </div>
+                <p className="widescreen-dashboard-desc">
+                  While ChatGPT is an increasingly common use of artificial intelligence, it is not the first time that AI has been adopted by everyday users. Here are five examples of AI that you’ve likely used before:
+                </p>
+                
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Virtual Assistants</h4>
+                    <p>Virtual assistants like Apple's Siri, Amazon's Alexa, Google Assistant, or Microsoft's Cortana use AI to understand voice commands and perform tasks like setting reminders, answering questions, or controlling smart home devices.</p>
+                  </div>
 
-        </section>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Recommendation Systems</h4>
+                    <p>Recommendation systems, used by platforms like Netflix, Spotify, or Amazon, use AI to analyze user preferences, behavior, and historical data to suggest personalized content, products, or services.</p>
+                  </div>
 
-        {/* Chapter 7 / Interactive prompt explorer WIDESCREEN */}
-        <section id="ch-7" className="widescreen-explorer">
-          {/* Section-Nested Decorative Aurora & Floating Watermark */}
-          <div className="section-glow-orb orb-explorer" />
-          <Zap size={450} strokeWidth={0.2} className="section-watermark watermark-explorer" />
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Image & Speech</h4>
+                    <p>AI enables systems to recognize and interpret images, videos, or speech. This is used in applications like facial recognition, object detection, speech-to-text conversion, and voice assistants.</p>
+                  </div>
 
-          <div className="explorer-header-section">
-            <h2 className="chapter-title" style={{ border: 0, paddingBottom: 0, marginBottom: '0.75rem' }}>
-              <Layers size={28} />
-              7. 100+ Prompt Explorer
-            </h2>
-            <p style={{ margin: 0, fontSize: '1.05rem', color: 'var(--muted)', maxWidth: '900px', lineHeight: 1.6 }}>
-              Explore, search, and copy prompt templates from our official ChatGPTricks freebie guide. Use filters to find prompts for your specific role.
-            </p>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Autonomous Vehicles</h4>
+                    <p>AI plays a crucial role in autonomous vehicles, allowing them to perceive the environment, make decisions, and navigate safely through technologies like computer vision and sensor fusion.</p>
+                  </div>
 
-            {/* Workflow Spotlight Row */}
-            <div style={{ marginTop: '3.5rem' }}>
-              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Sparkles size={18} className="text-teal" />
-                Highlight: 5 Project-Based Workflows (2026 Edition)
-              </h3>
-              <div className="workflows-board">
-                {promptsData.workflows.map((wf) => (
-                  <div key={`wf-${wf.id}`} className="workflow-board-card">
-                    <div className="wf-card-top">
-                      <div className="wf-badge-title">
-                        <span className="wf-badge-num">Workflow {wf.id}</span>
-                        <h4 className="wf-card-title">{wf.title}</h4>
-                      </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Fraud Detection</h4>
+                    <p>AI is used to identify patterns or anomalies in data that may indicate fraudulent activities. It helps detect fraudulent transactions, cybersecurity threats, or suspicious behavior in real time.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
+
+        {/* Chapter 2 */}
+        {activeChapter === 'ch-2' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-2" className="guide-section-block">
+              <h2 className="chapter-title">
+                <Cpu size={28} />
+                2. Capabilities and Use Cases of ChatGPT
+              </h2>
+              
+              <div className="prose prose-wide">
+                <p>
+                  With its understanding of natural language, ChatGPT is able to comprehend and interpret input in a conversational manner. This, paired with its ease of use and ease of access, makes it a powerful tool that can go far in increasing efficiency and knowledge-building in its users.
+                </p>
+                <p>
+                  ChatGPT maintains context over multiple turns, allowing it to remember and refer back to previous messages for more accurate responses. It excels in answering factual questions, providing explanations, definitions, and assisting with general knowledge inquiries.
+                </p>
+                <p>
+                  There are also different models within the ChatGPT ecosystem, such as <strong>GPT-4 Preview</strong> and <strong>GPT Mini</strong>, each tailored to specific use cases. For instance, GPT-4 Preview is designed for deep, strategic problem-solving and excels at tackling complex, nuanced inquiries that require contextual understanding and advanced reasoning. In contrast, GPT Mini focuses on delivering quick and efficient responses, making it ideal for straightforward tasks or when a lightweight, speedy assistant is needed.
+                </p>
+                <p>
+                  ChatGPT's capabilities and use cases span customer support, content editing, language learning, personal assistance, programming support, and knowledge exploration, making it a versatile tool for enhancing productivity and efficiency in different areas.
+                </p>
+                <p>
+                  While ChatGPT can be a valuable tool, it's crucial to recognize its limitations. It may not possess domain-specific expertise or completely replace human expertise. It's important to consider factors such as contextual understanding and handling sensitive or confidential information when utilizing AI tools like ChatGPT—especially at work.
+                </p>
+                <p style={{ margin: 0 }}>
+                  That being said, leveraging ChatGPT's capabilities can greatly benefit the workplace. It has the potential to streamline workflows, facilitate collaboration, and provide assistance in various work-related tasks. By harnessing its power, organizations can foster a more efficient and productive work environment.
+                </p>
+              </div>
+
+              <div className="widescreen-dashboard-box">
+                <div className="widescreen-dashboard-header">
+                  <Layers size={18} className="text-teal" />
+                  <h3>10 Ways to Use ChatGPT</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Maximize the value of generative models across diverse personal and professional contexts:
+                </p>
+                
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Virtual Assistant</h4>
+                    <p>Draft email templates, proofread documents, translate articles, summarize texts, or brainstorm keywords.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Personal Concierge</h4>
+                    <p>Get personalized recommendations for restaurants, hotels, movies, books, or activities.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Language Practice</h4>
+                    <p>Engage in conversations with ChatGPT to practice and improve foreign language skills.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Creative Companion</h4>
+                    <p>Use ChatGPT as a writing companion for brainstorming ideas and overcoming writer's block.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Information Retrieval</h4>
+                    <p>Seek explanations, quick definitions, or fast information on a colossal range of topics.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">06</span>
+                    <h4>Learning & Education</h4>
+                    <p>Receive explanations or elaborations on complex subjects, aiding with homework.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">07</span>
+                    <h4>Goal Tracking</h4>
+                    <p>Track progress towards your goals, get motivational prompts, and stay focused.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">08</span>
+                    <h4>Personal Growth</h4>
+                    <p>Engage in reflective conversations with ChatGPT to gain insights and foster growth.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">09</span>
+                    <h4>Entertainment & Pop</h4>
+                    <p>Have interactive discussions, play trivia games, get riddles, or talk pop culture.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">10</span>
+                    <h4>Exploration</h4>
+                    <p>Delve into specific academic fields, explore interests, and discover new facts.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
+
+        {/* Chapter 3 */}
+        {activeChapter === 'ch-3' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-3" className="guide-section-block">
+              {/* Section-Nested Decorative Aurora & Floating Watermark */}
+              <div className="section-glow-orb orb-ch3" />
+              <Sparkles size={450} strokeWidth={0.2} className="section-watermark watermark-ch3" />
+
+              <h2 className="chapter-title">
+                <BookOpen size={28} />
+                3. Using ChatGPT at Work
+              </h2>
+              
+              <div className="prose prose-wide">
+                <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
+                  ChatGPT can be a valuable tool to enhance productivity and efficiency in a work environment. Organizations that embrace AI-augmented operations see immediate improvements across every department.
+                </p>
+              </div>
+
+              {/* How to use - 10 Core Methods */}
+              <div className="widescreen-dashboard-box">
+                <div className="widescreen-dashboard-header">
+                  <Sparkles size={18} className="text-teal" />
+                  <h3>10 Core Methods to Use ChatGPT at Work</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Retrieve information, automate tasks, draft reports, and solve operational problems seamlessly with these established methods:
+                </p>
+                
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Knowledge Retrieval</h4>
+                    <p>Retrieve information, definitions, or explanations related to work topics rapidly, saving time spent searching.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Task Management</h4>
+                    <p>Serve as a virtual assistant, helping you set reminders, organize checklists, and stay structured during your workday.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Writing & Editing</h4>
+                    <p>Draft emails, craft reports, proofread documents, and refine communication for clear, concise correspondence.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Onboarding & Training</h4>
+                    <p>Act as a training resource, providing instant answers to common questions and explaining company processes and policies.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Problem-Solving</h4>
+                    <p>Brainstorm solutions, explore options, and analyze complex situations to make more informed choices.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">06</span>
+                    <h4>Programming Support</h4>
+                    <p>Provide coding tips, write boilerplate blocks, troubleshoot syntax bugs, and explain complex technical concepts.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">07</span>
+                    <h4>Customer Service</h4>
+                    <p>Integrate into service platforms to provide instant assistance, answer FAQs, and lower queues.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">08</span>
+                    <h4>Collaboration & Ideas</h4>
+                    <p>Generate creative suggestions, explore new angles, and facilitate brainstorming sessions with team members.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">09</span>
+                    <h4>Project Management</h4>
+                    <p>Track project milestones, draft status updates, and configure scheduled reminders for deadlines.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">10</span>
+                    <h4>Employee Well-being</h4>
+                    <p>Provide advice and resources related to stress management, work-life balance, and focus strategies.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Department Deep Dives - Stunning Widescreen Grid 4 */}
+              <div className="prose prose-wide" style={{ marginTop: '4rem', marginBottom: '2rem' }}>
+                <h3>Departmental Deep Dives</h3>
+                <p style={{ color: 'var(--muted)' }}>Explore how different teams leverage ChatGPT to streamline operations, enhance communication, and accelerate growth.</p>
+              </div>
+
+              <div className="widescreen-dashboard-grid-4" style={{ marginBottom: '4.5rem' }}>
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper"><Sparkles size={20} /></div>
+                  <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Sales & Marketing</h4>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                    Engage potential customers, qualify leads proactively, collect data from prospects, and automate personalized interactions on platforms or email campaigns at scale.
+                  </p>
+                  <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
+                    <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Lead Generation</strong>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Revamp manual pipeline outreach using natural language intent assessment.</p>
+                  </div>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(83, 200, 255, 0.1)', border: '1px solid rgba(83, 200, 255, 0.3)', color: '#53c8ff' }}><HelpCircle size={20} /></div>
+                  <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Customer Support</h4>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                    Provide swift, accurate, instant responses to FAQs and integrate AI chatbots to handle recursive tickets so human agents can focus on complex cases.
+                  </p>
+                  <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
+                    <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Ticket Resolution</strong>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Lower resolution time and drop queue depth by automating tier-1 FAQs.</p>
+                  </div>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(169, 139, 255, 0.1)', border: '1px solid rgba(169, 139, 255, 0.3)', color: '#a98bff' }}><ListTodo size={20} /></div>
+                  <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Project Management</h4>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                    Automate task allocations, analyze project requirements, suggest team distributions, monitor progress milestones, and optimize collaboration pipelines.
+                  </p>
+                  <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
+                    <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Workflow Optimization</strong>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Integrate direct status checks, flag delays, and map project constraints.</p>
+                  </div>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(246, 185, 79, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(246, 185, 79, 0.1)', border: '1px solid rgba(246, 185, 79, 0.3)', color: '#f6b94f' }}><Brain size={20} /></div>
+                  <h4 style={{ fontSize: '1.3rem', margin: '0 0 1rem 0' }}>Decision Support</h4>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--soft)', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                    Analyze patterns, offer suggestions based on data correlations, support resource allocations, map budget plans, and expedite strategic problem-solving.
+                  </p>
+                  <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1rem', marginTop: 'auto' }}>
+                    <strong style={{ fontSize: '0.85rem', color: '#fff', display: 'block', marginBottom: '0.4rem' }}>Strategic Planning</strong>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)' }}>Upskill team knowledge rapidly and access comparative industry trends.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Other Industries and Job Functions */}
+              <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
+                <div className="widescreen-dashboard-header">
+                  <Brain size={18} className="text-teal" />
+                  <h3>Other Industries &amp; Job Functions</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Beyond core departments, ChatGPT empowers individuals across every role to manage time, amplify learning, and sharpen decisions with AI-backed insights:
+                </p>
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Enhanced Decision-Making</h4>
+                    <p>Analyze large data sets, identify trends in sales or operations, and surface strategic recommendations based on historical patterns and industry benchmarks.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Personal Virtual Assistant</h4>
+                    <p>Find common availability across participants, organize prioritized to-do lists, manage calendar conflicts, and deliver daily agenda briefings on demand.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Time Management</h4>
+                    <p>Discuss workloads and deadlines with ChatGPT for timeline suggestions, task prioritization guidance, and reminder systems that keep every responsibility on track.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Decision Support</h4>
+                    <p>Get resource allocation guidance, identify project bottlenecks, suggest risk mitigations, and surface solutions grounded in prior data patterns and field best practices.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Personal Development</h4>
+                    <p>Access training materials on demand, monitor industry news in real time, explore expert viewpoints, and receive customized skill-development roadmaps tailored to your goals.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Overcoming Challenges - Stunning Widescreen Grid 5 */}
+              <div className="widescreen-dashboard-box">
+                <div className="widescreen-dashboard-header">
+                  <Shield size={18} className="text-teal" />
+                  <h3>Overcoming Challenges and Limitations</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Using AI technologies like ChatGPT comes with potential challenges. Address these five critical fields to ensure effective and responsible use at work:
+                </p>
+                
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Feedback & Tuning</h4>
+                    <p>AI models like ChatGPT require continuous feedback. Actively collect reviews from users to iterate and refine parameters.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Overcoming Biases</h4>
+                    <p>AI models can reflect biases in training data. Mitigate these through careful curation, audits, and checks.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Data Security</h4>
+                    <p>Protect sensitive workspace details and ensure compliance. Implement robust access control and encryption policies.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Human Oversight</h4>
+                    <p>AI should complement, not replace, human judgment. Establish clear accountability frameworks and review AI decisions.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Ethical Principles</h4>
+                    <p>Ensure AI usage aligns with workspace values, focusing on transparency, fairness, privacy, and consent.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
+
+        {/* Chapter 4 */}
+        {activeChapter === 'ch-4' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-4" className="guide-section-block">
+              <h2 className="chapter-title">
+                <Shield size={28} />
+                4. Best Practices for Implementing ChatGPT in Your Work
+              </h2>
+              
+              <div className="prose prose-wide">
+                <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
+                  Integrating ChatGPT into your workplace can be a game-changer for productivity and efficiency. However, to make the most of this powerful tool, it's important to establish some best practices. By following these guidelines, you can ensure accurate and reliable interactions while maintaining user privacy and adhering to company policies. From training and monitoring to feedback and version control, here are the ten essential best practices to optimize your use of ChatGPT in the workplace.
+                </p>
+              </div>
+
+              {/* 10 Best Practices - Stunning Widescreen Dashboard Grid */}
+              <div className="widescreen-dashboard-box">
+                <div className="widescreen-dashboard-header">
+                  <ListTodo size={18} className="text-teal" />
+                  <h3>10 Essential Best Practices</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Operationalize these ten fundamental guidelines across your daily workflows to maximize reliability and outputs:
+                </p>
+                
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Define your goal</h4>
+                    <p>Clearly identify the purpose of using ChatGPT. Whether it's for customer support, content generation, or internal assistance, having a specific goal ensures better utilization.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Train ChatGPT properly</h4>
+                    <p>Fine-tune base models using substantial, high-quality, company-specific data. This helps ChatGPT understand workspace context and provide accurate answers.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Set clear guidelines</h4>
+                    <p>Establish strict usage guidelines to ensure consistency and regulatory compliance. These should cover acceptable content, tone, and privacy constraints.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Monitor and moderate</h4>
+                    <p>Keep a close eye on conversations to ensure accuracy. Implement an active moderation pipeline to flag potential issues or structural biases.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Encourage feedback</h4>
+                    <p>Encourage employees to review the quality of answers. Continuous feedback loop helps identify areas for prompt fine-tuning and template updates.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">06</span>
+                    <h4>Avoid over-reliance</h4>
+                    <p>While ChatGPT is highly capable, never treat it as an absolute ground truth. Users should exercise critical thinking and cross-verify facts.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">07</span>
+                    <h4>Maintain user privacy</h4>
+                    <p>Protect user privacy by implementing strict data security measures. Never input sensitive or proprietary source code or PII into public models.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">08</span>
+                    <h4>Regularly fact-check</h4>
+                    <p>Independently verify any critical calculations or professional advice. Cross-reference official databases and rely on experienced teammates.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">09</span>
+                    <h4>Establish fallbacks</h4>
+                    <p>Prepare alternative operational resources for situations where ChatGPT might fail or produce incomplete or out-of-scope outputs.</p>
+                  </div>
+
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">10</span>
+                    <h4>Evaluate performance</h4>
+                    <p>Continuously track prompt ROI, response accuracy, and workflow times. Use this data to iterate on system instructions and template folders.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sub-panels: side-by-side widescreen layout */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2.5rem', marginTop: '4rem' }}>
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1.5rem 0', fontSize: '1.4rem', fontWeight: 800 }}>Creating Better Prompts for Optimal Results</h3>
+                  <p>The effectiveness of ChatGPT relies heavily on the clarity and structure of your prompts. To guide users in crafting better prompts, focus on including the following elements:</p>
+                  
+                  <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Provide Context:</strong> Clearly state the situation or background information to help ChatGPT better understand the task. For example, instead of asking, "How do I write a good email?" you could say, "I need to write an email to my team about an upcoming project deadline. Can you provide a professional template for that?"
+                    </li>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Be Specific:</strong> Avoid vague requests and specify exactly what you need. For instance, instead of, "Write something about time management," try, "Can you create a three-paragraph article about time management techniques for busy professionals?"
+                    </li>
+                    <li style={{ marginBottom: '1.5rem' }}>
+                      <strong>Define Outcomes:</strong> If you have a desired structure or tone, make that explicit. For example, "Write a step-by-step guide in a friendly and approachable tone for a blog audience."
+                    </li>
+                  </ul>
+                  <p>By mastering prompt creation, users can generate responses that are more relevant, actionable, and aligned with their needs.</p>
+                </div>
+
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1.5rem 0', fontSize: '1.4rem', fontWeight: 800 }}>Advanced Techniques & Troubleshooting</h3>
+                  <p>To maximize ChatGPT's potential, consider employing advanced strategies like:</p>
+                  
+                  <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Iterative Prompting:</strong> If the initial response isn't quite what you need, refine your request. For example, after receiving a general summary, follow up with, "Can you elaborate on point three?" or, "Can you rewrite this in a more formal tone?"
+                    </li>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Breaking Tasks into Smaller Steps:</strong> For complex requests, divide them into manageable chunks. Instead of asking, "Write a comprehensive marketing plan," you might start with, "Outline the main components of a marketing plan," followed by, "Now elaborate on the social media strategy section."
+                    </li>
+                    <li style={{ marginBottom: '1.5rem' }}>
+                      <strong>Prompt Drafting by ChatGPT:</strong> Ask ChatGPT to help craft its own prompts. For instance, you could say, "What information do you need to create a detailed event proposal?" This approach ensures that the AI has all the context it needs to deliver high-quality results.
+                    </li>
+                  </ul>
+
+                  <h4 style={{ color: '#fff', margin: '1.5rem 0 0.5rem 0', fontWeight: 800 }}>Troubleshooting Tips</h4>
+                  <p>Despite its advanced capabilities, ChatGPT might occasionally deliver unsatisfactory results. Reframe your prompts to address common challenges:</p>
+                  <ul style={{ paddingLeft: '1.25rem', color: 'var(--soft)', margin: 0 }}>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Clarify Your Prompt:</strong> Review for ambiguity, reframe to be specific, and add context.</li>
+                    <li style={{ marginBottom: '0.4rem' }}><strong>Adjust Tone or Depth:</strong> Instruct it to "Provide a detailed explanation" or "Use a professional tone."</li>
+                    <li><strong>Recognize Limitations:</strong> Rely on external sources to verify critical information and acknowledge that AI complements, but cannot replace, human judgment.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
+
+        {/* Chapter 5 */}
+        {/* Chapter 5 */}
+        {activeChapter === 'ch-5' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-5" className="guide-section-block">
+              <h2 className="chapter-title">
+                <Lightbulb size={28} />
+                5. Mastering Prompt Engineering
+              </h2>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2.5rem' }}>
+                <div className="prose">
+                  <p>
+                    Prompt engineering is the cornerstone of effective interaction with ChatGPT. By crafting precise, structured prompts, you can guide the AI to generate more accurate, actionable, and context-appropriate responses.
+                  </p>
+                  <h3 style={{ marginTop: '2rem' }}>The Anatomy of a Great Prompt</h3>
+                  <p>A well-designed prompt typically includes three essential components:</p>
+                  <ol style={{ paddingLeft: '1.25rem', color: 'var(--soft)' }}>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Context:</strong> Provide relevant background information to help ChatGPT understand the scenario.
+                    </li>
+                    <li style={{ marginBottom: '1rem' }}>
+                      <strong>Task:</strong> Clearly specify exactly what you want ChatGPT to do.
+                    </li>
+                    <li style={{ marginBottom: 0 }}>
+                      <strong>Details & Constraints:</strong> Add specific requirements such as tone, structural layout, length, or style.
+                    </li>
+                  </ol>
+                </div>
+
+                {/* Compare Sandbox Widescreen */}
+                <div className="compare-playground" style={{ height: 'fit-content' }}>
+                  <div className="playground-header">
+                    <div className="playground-meta">
+                      <Lightbulb size={18} style={{ color: 'var(--brand-teal)' }} />
+                      <h4>Interactive Prompt Sandbox</h4>
+                    </div>
+                    <div className="playground-toggle-group">
                       <button
-                        onClick={() => handleCopyText(`Prompt: ${wf.prompt}`, `wf-${wf.id}`)}
-                        className={`copy-btn ${copiedPromptId === `wf-${wf.id}` ? 'copied' : ''}`}
+                        onClick={() => setActiveSandboxTab('vague')}
+                        className={`playground-toggle-btn ${activeSandboxTab === 'vague' ? 'active-bad' : ''}`}
                       >
-                        {copiedPromptId === `wf-${wf.id}` ? (
-                          <>
-                            <Check size={14} />
-                            Copied!
-                          </>
-                        ) : (
-                          <>
-                            <Copy size={14} />
-                            Copy Prompt
-                          </>
-                        )}
+                        Vague
+                      </button>
+                      <button
+                        onClick={() => setActiveSandboxTab('optimized')}
+                        className={`playground-toggle-btn ${activeSandboxTab === 'optimized' ? 'active-good' : ''}`}
+                      >
+                        Optimized
                       </button>
                     </div>
-                    <div className="wf-prompt-box">
-                      <div className="wf-prompt-label">Main Prompt</div>
-                      <p className="wf-prompt-text">
-                        "{wf.prompt}"
-                      </p>
-                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
 
-            {/* 100 Prompts Exploration Tool */}
-            <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '3rem', marginTop: '3rem' }}>
-              <ListTodo size={18} className="text-teal" />
-              100 Ways to Try ChatGPT: Core Prompts Pack
-            </h3>
-
-            <div className="explorer-toolbar-grid">
-              <div className="search-field-wrapper">
-                <Search size={20} className="search-field-icon" />
-                <input
-                  type="text"
-                  className="search-field-input"
-                  placeholder="Search 100 prompts by keyword..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-
-              <div className="explorer-tabs-row">
-                {categories.map((cat) => (
-                  <button
-                    key={cat.id}
-                    onClick={() => setActiveTab(cat.id)}
-                    className={`category-tab-button ${activeTab === cat.id ? 'active' : ''}`}
-                  >
-                    {cat.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Grid display with independent scroll container */}
-          {filteredPrompts.length > 0 ? (
-            <div className="explorer-scroll-container">
-              <div className="widescreen-prompts-grid">
-                {filteredPrompts.map((p) => (
-                  <div key={`p-${p.id}`} className="premium-prompt-item-card">
-                    <div className="prompt-item-top">
-                      <div className="prompt-item-header">
-                        <span className="prompt-item-number">#{p.id}</span>
-                        <button
-                          onClick={() => handleCopyText(`Prompt: ${p.prompt}`, `p-${p.id}`)}
-                          className={`copy-btn ${copiedPromptId === `p-${p.id}` ? 'copied' : ''}`}
-                          style={{ padding: '0.35rem 0.75rem', fontSize: '0.75rem' }}
+                  <div className="playground-body">
+                    <AnimatePresence mode="wait">
+                      {activeSandboxTab === 'optimized' ? (
+                        <motion.div
+                          key="optimized"
+                          initial={{ opacity: 0, x: 20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{ opacity: 0, x: -20 }}
+                          transition={{ duration: 0.22 }}
+                          className="sandbox-card good"
                         >
-                          {copiedPromptId === `p-${p.id}` ? (
-                            <Check size={12} />
-                          ) : (
-                            <Copy size={12} />
-                          )}
-                        </button>
-                      </div>
-                      <h4 className="prompt-item-title">{p.title}</h4>
-                    </div>
-                    
-                    <p className="prompt-item-body">
-                      "{p.prompt}"
-                    </p>
+                          <div className="sandbox-card-header good">
+                            <h5>Optimized Prompt Structure</h5>
+                            <Check size={14} />
+                          </div>
+                          <div className="sandbox-card-body">
+                            <div className="prompt-code-display">
+                              "Act as an expert content writer. I need to write a professional email to my client to confirm our upcoming project review meeting. The email should include slots to propose three alternative times, politely request that they share any additional agenda items before Friday, and maintain a respectful yet warm tone. Keep it under 150 words."
+                            </div>
+                            <div className="sandbox-analysis">
+                              <p>
+                                <strong>Why it works:</strong> Defines a clear role (expert writer), provides detailed context (email to confirm meeting), specifies structure constraints (three time slots, deadline for agenda), and a clear length limit (under 150 words).
+                              </p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      ) : (
+                        <motion.div
+                          key="vague"
+                          initial={{ opacity: 0, x: 20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{ opacity: 0, x: -20 }}
+                          transition={{ duration: 0.22 }}
+                          className="sandbox-card bad"
+                        >
+                          <div className="sandbox-card-header bad">
+                            <h5>Vague / Ineffective Prompt</h5>
+                          </div>
+                          <div className="sandbox-card-body">
+                            <div className="prompt-code-display" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                              "Write an email for a meeting."
+                            </div>
+                            <div className="sandbox-analysis">
+                              <p>
+                                <strong>Why it fails:</strong> Lacks any context or detail. The model doesn't know the recipient (client, colleague, friend), the required tone (formal, casual), meeting topic, or expected format. It will produce a generic, flat response.
+                              </p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
 
-                    <div className="prompt-item-footer">
-                      <span className="prompt-item-category">{p.category}</span>
+        {/* Chapter 6 */}
+        {activeChapter === 'ch-6' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-6" className="guide-section-block">
+              <h2 className="chapter-title">
+                <Zap size={28} />
+                6. What's New in 2026
+              </h2>
+              
+              <div className="prose prose-wide">
+                <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '3rem', maxWidth: '1100px', lineHeight: 1.6 }}>
+                  As we navigate through 2026, ChatGPT has undergone its most dramatic evolution since launch—transforming from a clever chatbot into a comprehensive, collaborative AI workspace. Let's look at the game-changing updates making it an indispensable business partner:
+                </p>
+              </div>
+
+              <div className="widescreen-dashboard-grid-4">
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper"><Brain size={20} /></div>
+                  <h3>Unified GPT-5.5 System</h3>
+                  <p>No more choosing between confusing versions. GPT-5.5 runs on three distinct intelligence modes: Instant (quick tasks), Thinking (deep reasoning with adjustable 'thinking time'), and Pro (demanding, book-length analysis).</p>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(83, 200, 255, 0.1)', border: '1px solid rgba(83, 200, 255, 0.3)', color: '#53c8ff' }}><Compass size={20} /></div>
+                  <h3>Advanced ChatGPT Projects</h3>
+                  <p>Organize chats, instructions, and file uploads around specific goals. Create shared spaces where teams collaborate with a unified AI context that understands your brand voice and past decisions.</p>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(169, 139, 255, 0.1)', border: '1px solid rgba(169, 139, 255, 0.3)', color: '#a98bff' }}><Layers size={20} /></div>
+                  <h3>Integrated Company Knowledge</h3>
+                  <p>Connect your workspace directly to Slack channels, Google Drive, Notion, Outlook, and Salesforce. ChatGPT retrieves organization-specific insights complete with clickable citations and links, respecting existing permissions.</p>
+                </div>
+
+                <div className="widescreen-grid-card" style={{ background: 'linear-gradient(180deg, rgba(246, 185, 79, 0.04) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                  <div className="feature-icon-wrapper" style={{ background: 'rgba(246, 185, 79, 0.1)', border: '1px solid rgba(246, 185, 79, 0.3)', color: '#f6b94f' }}><Zap size={20} /></div>
+                  <h3>Agentic AI Workflows</h3>
+                  <p>Run scheduled background tasks, execute multi-step research plans with Deep Research, and utilize Autonomous Agents to monitor boards, draft emails, and handle repetitive processes 24/7.</p>
+                </div>
+              </div>
+
+              {/* GPT-5.5: Three Intelligence Tiers */}
+              <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
+                <div className="widescreen-dashboard-header">
+                  <Brain size={18} className="text-teal" />
+                  <h3>GPT-5.5: Three Intelligence Tiers</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Launched December 11, 2025, GPT-5.5 is the first AI to consistently outperform human experts across a broad range of business tasks. Gone are the days of choosing between confusing versions — three unified modes cover every scenario:
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                  <div className="widescreen-grid-card" style={{ borderLeft: '3px solid var(--brand-teal)', background: 'linear-gradient(180deg, rgba(0, 172, 128, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                    <span className="card-badge">INSTANT</span>
+                    <h4>Free Users</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
+                      <li>Lightning-fast responses for everyday tasks</li>
+                      <li>Perfect for emails, quick summaries, and routine questions</li>
+                      <li>Accessible to everyone — AI assistance made truly universal</li>
+                    </ul>
+                  </div>
+                  <div className="widescreen-grid-card" style={{ borderLeft: '3px solid #53c8ff', background: 'linear-gradient(180deg, rgba(83, 200, 255, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                    <span className="card-badge" style={{ color: '#53c8ff', background: 'rgba(83, 200, 255, 0.12)', borderColor: 'rgba(83, 200, 255, 0.25)' }}>THINKING</span>
+                    <h4>Plus / Business / Enterprise</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
+                      <li>Deep reasoning with adjustable "thinking time"</li>
+                      <li>Choose Light, Standard, Extended, or Heavy modes</li>
+                      <li>Ideal for financial modeling, strategic analysis, and complex problem-solving</li>
+                    </ul>
+                  </div>
+                  <div className="widescreen-grid-card" style={{ borderLeft: '3px solid #a98bff', background: 'linear-gradient(180deg, rgba(169, 139, 255, 0.06) 0%, rgba(3, 5, 8, 0.6) 100%)' }}>
+                    <span className="card-badge" style={{ color: '#a98bff', background: 'rgba(169, 139, 255, 0.12)', borderColor: 'rgba(169, 139, 255, 0.25)' }}>PRO</span>
+                    <h4>Pro / Enterprise Users</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.92rem', lineHeight: 1.65 }}>
+                      <li>Maximum capability for the most demanding professional tasks</li>
+                      <li>Extended context window for book-length documents</li>
+                      <li>Perfect for comprehensive research and multi-faceted projects</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Projects & Shared Projects */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(48%, 1fr))', gap: '2rem', marginTop: '2.5rem' }}>
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.35rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                    <Compass size={18} style={{ color: 'var(--brand-teal)', flexShrink: 0 }} />
+                    Projects: Your New Command Center
+                  </h3>
+                  <p>Instead of scattered conversations, Projects organize work around specific goals with persistent context. How smart teams use them:</p>
+                  <div style={{ background: 'rgba(0, 172, 128, 0.06)', border: '1px solid rgba(0, 172, 128, 0.2)', borderRadius: '10px', padding: '1.25rem', marginBottom: '1rem' }}>
+                    <strong style={{ color: 'var(--brand-teal)', fontSize: '0.85rem', display: 'block', marginBottom: '0.5rem' }}>Sales: "Q2 Prospecting" Project</strong>
+                    <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--soft)', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      <li>Upload ICP descriptions, messaging guidelines, and lead CSVs</li>
+                      <li>Every team member drops in new prospect lists</li>
+                      <li>Get prioritized call scripts, follow-up sequences, and qualification notes</li>
+                      <li>All consistent with your brand voice and methodology</li>
+                    </ul>
+                  </div>
+                  <div style={{ background: 'rgba(83, 200, 255, 0.06)', border: '1px solid rgba(83, 200, 255, 0.2)', borderRadius: '10px', padding: '1.25rem' }}>
+                    <strong style={{ color: '#53c8ff', fontSize: '0.85rem', display: 'block', marginBottom: '0.5rem' }}>Support: "Support Playbook" Project</strong>
+                    <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--soft)', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      <li>Include FAQ PDFs, help center exports, and sample tickets</li>
+                      <li>Agents get instant, cited responses grounded in your actual policies</li>
+                      <li>Draft replies maintain consistency and save hours daily</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.35rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                    <Layers size={18} style={{ color: '#a98bff', flexShrink: 0 }} />
+                    Shared Projects: True AI Collaboration
+                  </h3>
+                  <p>Launched October 2025, Shared Projects let multiple users contribute files, refine instructions, and build on each other's AI interactions:</p>
+                  <ul>
+                    <li><strong>Cross-plan collaboration:</strong> Free and paid users can work together seamlessly</li>
+                    <li><strong>Persistent team context:</strong> AI remembers your team's working style across sessions</li>
+                    <li><strong>File sharing with AI context:</strong> Upload once, every team member benefits</li>
+                    <li><strong>Collaborative instruction refinement:</strong> Build better AI prompts together over time</li>
+                  </ul>
+                  <div style={{ background: 'rgba(169, 139, 255, 0.06)', border: '1px solid rgba(169, 139, 255, 0.2)', borderRadius: '10px', padding: '1.25rem', marginTop: '1rem' }}>
+                    <strong style={{ color: '#a98bff', fontSize: '0.85rem', display: 'block', marginBottom: '0.4rem' }}>Power User Tip</strong>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--soft)', lineHeight: 1.6 }}>Set up a "Monthly KPI Reporting" shared project with your data templates and reporting standards. Team members upload departmental data, and ChatGPT generates consistent, formatted reports that match your executive presentation style.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Company Knowledge */}
+              <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
+                <div className="widescreen-dashboard-header">
+                  <Layers size={18} className="text-teal" />
+                  <h3>Company Knowledge: Your Business Brain</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  Available for Business and Enterprise plans, Company Knowledge connects ChatGPT directly to your business systems — delivering organization-specific insights with full citations and source links. Security: ChatGPT only accesses data you already have access to.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                  <div>
+                    <h4 style={{ color: '#fff', fontWeight: 800, marginBottom: '1rem', fontSize: '1rem' }}>Supported Integrations</h4>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+                      {['Slack Conversations', 'Google Drive', 'SharePoint', 'Gmail & Outlook', 'HubSpot', 'Salesforce', 'Notion / Confluence', 'Zendesk', 'Custom MCP Connectors'].map((intg) => (
+                        <span key={intg} style={{ background: 'rgba(0, 172, 128, 0.08)', border: '1px solid rgba(0, 172, 128, 0.2)', borderRadius: '6px', padding: '0.3rem 0.7rem', fontSize: '0.82rem', color: 'var(--brand-teal)', fontWeight: 700 }}>{intg}</span>
+                      ))}
                     </div>
                   </div>
-                ))}
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">Example Query</span>
+                    <h4>"Give me a brief on Client X before my call"</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
+                      <li>Recent Slack mentions and project updates</li>
+                      <li>Latest CRM notes and opportunity status</li>
+                      <li>Previous proposal documents from SharePoint</li>
+                      <li>Support ticket history and resolution status</li>
+                      <li>All with clickable links to source documents</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="no-results" style={{ marginTop: '1.5rem' }}>
-              <Search size={40} style={{ marginBottom: '1rem', opacity: 0.5, color: 'var(--brand-teal)' }} />
-              <h4 style={{ color: '#fff', margin: '0 0 0.5rem 0', fontWeight: 800 }}>No Prompts Found</h4>
-              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.95rem' }}>Try searching for a different keyword or changing the category filter.</p>
-            </div>
-          )}
-        </section>
 
-        {/* Download Widescreen Call To Action */}
-        <section className="widescreen-download-section">
-          <div className="download-content-wrapper">
-            <h2>Get the Complete 100+ Prompt PDF Pack</h2>
-            <p>
-              Download the official PDF freebie guide, formatted perfectly for high-quality offline reading, printing, or sharing. Includes all 5 project workflows and 100 categorized workspace prompts.
-            </p>
-          </div>
-          <div className="download-action-box">
-            <button
-              onClick={handleDownload}
-              disabled={downloading}
-              className="premium-download-btn"
-            >
-              {downloading ? (
-                <>
-                  <Zap className="animate-spin" size={20} />
-                  Generating PDF...
-                </>
+              {/* Agentic AI Details */}
+              <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
+                <div className="widescreen-dashboard-header">
+                  <Zap size={18} className="text-teal" />
+                  <h3>Agentic AI: Your 24/7 Assistant</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  ChatGPT's agentic features work autonomously — conducting research, running recurring tasks, and executing multi-step workflows without human intervention:
+                </p>
+                <div className="widescreen-dashboard-grid-4">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">Deep Research</span>
+                    <h4>Long-Form Research Partner</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
+                      <li>Conducts cited research on complex topics using web + internal sources</li>
+                      <li>Exports professional PDF reports with full citations</li>
+                      <li>Runs autonomously based on your research parameters</li>
+                      <li>Example: weekly competitive landscape briefings every Monday</li>
+                    </ul>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">Scheduled Tasks</span>
+                    <h4>Recurring AI Workflows</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
+                      <li>Weekly support ticket analysis and trend reporting</li>
+                      <li>Monthly customer feedback categorization</li>
+                      <li>Daily social media content suggestions</li>
+                      <li>Quarterly financial data summaries</li>
+                    </ul>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">ChatGPT Pulse</span>
+                    <h4>Continuous Insight Stream</h4>
+                    <ul style={{ paddingLeft: '1.25rem', margin: '0.75rem 0 0 0', color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65 }}>
+                      <li>Analyzes your ChatGPT usage patterns continuously</li>
+                      <li>Identifies relevant industry developments</li>
+                      <li>Surfaces potential opportunities or threats</li>
+                      <li>Delivers personalized visual summary dashboards</li>
+                    </ul>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">Autonomous Agents</span>
+                    <h4>Multi-Step Execution</h4>
+                    <p style={{ color: 'var(--soft)', fontSize: '0.88rem', lineHeight: 1.65, margin: '0.75rem 0 0 0' }}>
+                      Agents monitor your project board, identify overdue tasks, automatically draft status update emails to stakeholders, and adjust project timelines based on preset parameters — all without human intervention.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Memory, Visual Intelligence, Codex */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Enhanced Memory &amp; Personalization</h3>
+                  <p>Important business context stays accessible, less relevant details fade automatically, and frequently-used information surfaces first. Set tone presets — <strong>Friendly, Efficient, Professional, Candid,</strong> or <strong>Quirky</strong> — alongside warmth and formatting sliders. Changes apply immediately across every conversation.</p>
+                </div>
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Visual Intelligence Revolution</h3>
+                  <p>ChatGPT now delivers <strong>inline visuals</strong> for statistics, side panels with highlighted key facts, entities, and companies, interactive charts and data visualizations, and better formatting tuned for mobile and meeting contexts — so you can scan responses instantly during client calls.</p>
+                </div>
+                <div style={{ background: 'rgba(14, 19, 27, 0.55)', border: '1px solid var(--line)', borderRadius: '16px', padding: '2.5rem' }} className="prose">
+                  <h3 style={{ color: '#fff', margin: '0 0 1rem 0', fontSize: '1.25rem', fontWeight: 800 }}>Codex: The Developer Platform</h3>
+                  <p>OpenAI launched the standalone <strong>Codex macOS app</strong> built for development workflows — with multiple coding agents running in parallel, advanced diff management, background task execution, and reusable coding patterns. Even non-technical teams benefit when colleagues use Codex to automate integrations and build internal tooling.</p>
+                </div>
+              </div>
+
+              {/* Future-Proofing Your AI Skills */}
+              <div className="widescreen-dashboard-box" style={{ marginTop: '2.5rem' }}>
+                <div className="widescreen-dashboard-header">
+                  <Sparkles size={18} className="text-teal" />
+                  <h3>Future-Proofing Your AI Skills</h3>
+                </div>
+                <p className="widescreen-dashboard-desc">
+                  As ChatGPT evolves into a comprehensive business platform, professionals need five new essential competencies to stay ahead:
+                </p>
+                <div className="widescreen-dashboard-grid-5">
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">01</span>
+                    <h4>Project Architecture</h4>
+                    <p>Structure recurring workflows as Projects rather than one-off chats to build persistent, compounding AI context across your team.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">02</span>
+                    <h4>Context Curation</h4>
+                    <p>Master writing project-level instructions that provide consistent, useful context to AI across every team interaction and document.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">03</span>
+                    <h4>Thinking Time Optimization</h4>
+                    <p>Know when to apply Light vs. Extended vs. Heavy reasoning modes based on task complexity and available time constraints.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">04</span>
+                    <h4>Collaborative AI Management</h4>
+                    <p>Develop skills in managing shared AI resources, standardized instructions, and knowledge bases across distributed teams.</p>
+                  </div>
+                  <div className="widescreen-grid-card">
+                    <span className="card-badge">05</span>
+                    <h4>Verification Workflows</h4>
+                    <p>Build habits of checking citations and source links, especially for business-critical decisions that rely on AI-generated outputs.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* What This Means for Your Business */}
+              <div style={{ background: 'linear-gradient(135deg, rgba(0, 172, 128, 0.08) 0%, rgba(14, 19, 27, 0.7) 100%)', border: '1px solid rgba(0, 172, 128, 0.25)', borderRadius: '16px', padding: '2.5rem', marginTop: '2.5rem' }}>
+                <h3 style={{ color: '#fff', fontWeight: 900, fontSize: '1.45rem', marginBottom: '0.75rem', letterSpacing: '-0.02em' }}>What This Means for Your Business</h3>
+                <p style={{ color: 'var(--soft)', marginBottom: '1.5rem', lineHeight: 1.65, fontSize: '1.05rem', maxWidth: '900px' }}>
+                  The latest developments represent more than feature updates — it's a fundamental shift toward AI-augmented business operations. Organizations that embrace collaborative, agentic workflows will gain significant competitive advantages:
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.75rem' }}>
+                  {[
+                    'Faster decision cycles with instant access to organizational knowledge',
+                    'Consistent quality through shared AI resources and standardized processes',
+                    'Reduced operational overhead via automated research and reporting',
+                    'Enhanced team collaboration through AI-mediated knowledge sharing',
+                    'Scalable expertise that grows with your business needs',
+                  ].map((benefit) => (
+                    <div key={benefit} style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
+                      <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--brand-teal)', flexShrink: 0, marginTop: '7px' }} />
+                      <p style={{ margin: 0, color: 'var(--soft)', fontSize: '1rem', lineHeight: 1.55 }}>{benefit}</p>
+                    </div>
+                  ))}
+                </div>
+                <p style={{ margin: 0, color: 'var(--muted)', fontStyle: 'italic', fontSize: '0.95rem', lineHeight: 1.65 }}>
+                  Professionals and organizations that master these capabilities won't just work faster — they'll work fundamentally differently, with AI as a true collaborative partner rather than just an advanced search tool.
+                </p>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
+
+        {/* Chapter 7 / Interactive prompt explorer WIDESCREEN */}
+        {activeChapter === 'ch-7' && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          >
+            <section id="ch-7" className="widescreen-explorer">
+              {/* Section-Nested Decorative Aurora & Floating Watermark */}
+              <div className="section-glow-orb orb-explorer" />
+              <Zap size={450} strokeWidth={0.2} className="section-watermark watermark-explorer" />
+
+              <div className="explorer-header-section">
+                <h2 className="chapter-title" style={{ border: 0, paddingBottom: 0, marginBottom: '0.75rem' }}>
+                  <Layers size={28} />
+                  7. 100+ Prompt Explorer
+                </h2>
+                <p style={{ margin: 0, fontSize: '1.05rem', color: 'var(--muted)', maxWidth: '900px', lineHeight: 1.6 }}>
+                  Explore, search, and copy prompt templates from our official ChatGPTricks freebie guide. Use filters to find prompts for your specific role.
+                </p>
+
+                {/* Workflow Spotlight Row */}
+                <div style={{ marginTop: '3.5rem' }}>
+                  <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Sparkles size={18} className="text-teal" />
+                    Highlight: 5 Project-Based Workflows (2026 Edition)
+                  </h3>
+                  <div className="workflows-board">
+                    {promptsData.workflows.map((wf) => (
+                      <div key={`wf-${wf.id}`} className="workflow-board-card">
+                        <div className="wf-card-top">
+                          <div className="wf-badge-title">
+                            <span className="wf-badge-num">Workflow {wf.id}</span>
+                            <h4 className="wf-card-title">{wf.title}</h4>
+                          </div>
+                          <button
+                            onClick={() => handleCopyText(`Prompt: ${wf.prompt}`, `wf-${wf.id}`)}
+                            className={`copy-btn ${copiedPromptId === `wf-${wf.id}` ? 'copied' : ''}`}
+                          >
+                            {copiedPromptId === `wf-${wf.id}` ? (
+                              <>
+                                <Check size={14} />
+                                Copied!
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={14} />
+                                Copy Prompt
+                              </>
+                            )}
+                          </button>
+                        </div>
+                        <div className="wf-prompt-box">
+                          <div className="wf-prompt-label">Main Prompt</div>
+                          <p className="wf-prompt-text">
+                            "{wf.prompt}"
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 100 Prompts Exploration Tool */}
+                <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '3rem', marginTop: '3rem' }}>
+                  <ListTodo size={18} className="text-teal" />
+                  100 Ways to Try ChatGPT: Core Prompts Pack
+                </h3>
+
+                <div className="explorer-toolbar-grid">
+                  <div className="search-field-wrapper">
+                    <Search size={20} className="search-field-icon" />
+                    <input
+                      type="text"
+                      className="search-field-input"
+                      placeholder="Search 100 prompts by keyword..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="explorer-tabs-row">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.id}
+                        onClick={() => setActiveTab(cat.id)}
+                        className={`category-tab-button ${activeTab === cat.id ? 'active' : ''}`}
+                      >
+                        {cat.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Grid display with independent scroll container */}
+              {filteredPrompts.length > 0 ? (
+                <div className="explorer-scroll-container">
+                  <div className="widescreen-prompts-grid">
+                    {filteredPrompts.map((p) => (
+                      <div key={`p-${p.id}`} className="premium-prompt-item-card">
+                        <div className="prompt-item-top">
+                          <div className="prompt-item-header">
+                            <span className="prompt-item-number">#{p.id}</span>
+                            <button
+                              onClick={() => handleCopyText(`Prompt: ${p.prompt}`, `p-${p.id}`)}
+                              className={`copy-btn ${copiedPromptId === `p-${p.id}` ? 'copied' : ''}`}
+                              style={{ padding: '0.35rem 0.75rem', fontSize: '0.75rem' }}
+                            >
+                              {copiedPromptId === `p-${p.id}` ? (
+                                <Check size={12} />
+                              ) : (
+                                <Copy size={12} />
+                              )}
+                            </button>
+                          </div>
+                          <h4 className="prompt-item-title">{p.title}</h4>
+                        </div>
+                        
+                        <p className="prompt-item-body">
+                          "{p.prompt}"
+                        </p>
+
+                        <div className="prompt-item-footer">
+                          <span className="prompt-item-category">{p.category}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               ) : (
-                <>
-                  <Download size={20} />
-                  Download Freebie (.pdf)
-                </>
+                <div className="no-results" style={{ marginTop: '1.5rem' }}>
+                  <Search size={40} style={{ marginBottom: '1rem', opacity: 0.5, color: 'var(--brand-teal)' }} />
+                  <h4 style={{ color: '#fff', margin: '0 0 0.5rem 0', fontWeight: 800 }}>No Prompts Found</h4>
+                  <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.95rem' }}>Try searching for a different keyword or changing the category filter.</p>
+                </div>
               )}
-            </button>
-            <div className="download-subtext">
-              <Check size={14} className="text-teal" />
-              100% Free PDF Document Download (.pdf)
-            </div>
-          </div>
-        </section>
+            </section>
+
+            {/* Download Widescreen Call To Action */}
+            <section className="widescreen-download-section">
+              <div className="download-content-wrapper">
+                <h2>Get the Complete 100+ Prompt PDF Pack</h2>
+                <p>
+                  Download the official PDF freebie guide, formatted perfectly for high-quality offline reading, printing, or sharing. Includes all 5 project workflows and 100 categorized workspace prompts.
+                </p>
+              </div>
+              <div className="download-action-box">
+                <button
+                  onClick={handleDownload}
+                  disabled={downloading}
+                  className="premium-download-btn"
+                >
+                  {downloading ? (
+                    <>
+                      <Zap className="animate-spin" size={20} />
+                      Generating PDF...
+                    </>
+                  ) : (
+                    <>
+                      <Download size={20} />
+                      Download Freebie (.pdf)
+                    </>
+                  )}
+                </button>
+                <div className="download-subtext">
+                  <Check size={14} className="text-teal" />
+                  100% Free PDF Document Download (.pdf)
+                </div>
+              </div>
+            </section>
+            {renderPagination()}
+          </motion.div>
+        )}
 
       </main>
     </div>
