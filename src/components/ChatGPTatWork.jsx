@@ -221,85 +221,7 @@ export default function ChatGPTatWork() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const renderPagination = () => {
-    const chapters = [
-      { id: 'ch-1', title: '1. Understanding AI & ChatGPT' },
-      { id: 'ch-2', title: '2. Capabilities & Use Cases' },
-      { id: 'ch-3', title: '3. Using ChatGPT at Work' },
-      { id: 'ch-4', title: '4. Best Practices' },
-      { id: 'ch-5', title: '5. Mastering Prompt Eng.' },
-      { id: 'ch-6', title: '6. What\'s New in 2026' },
-      { id: 'ch-7', title: '7. 100+ Prompt Explorer' },
-    ]
-
-    const currentIndex = chapters.findIndex(c => c.id === activeChapter)
-    const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null
-    const nextChapter = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null
-
-    return (
-      <div className="chapter-pagination" style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        marginTop: '4rem',
-        paddingTop: '2rem',
-        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-        gap: '1.5rem'
-      }}>
-        {prevChapter ? (
-          <button
-            onClick={() => scrollSection(prevChapter.id)}
-            style={{
-              background: 'rgba(255, 255, 255, 0.03)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              borderRadius: '12px',
-              padding: '1rem 1.75rem',
-              color: '#fff',
-              cursor: 'pointer',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              gap: '0.25rem',
-              textAlign: 'left',
-              transition: 'all 0.25s ease',
-              flex: 1,
-              maxWidth: '300px'
-            }}
-            className="prev-chap-btn"
-          >
-            <span style={{ fontSize: '0.75rem', color: 'var(--brand-teal)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Previous Chapter</span>
-            <span style={{ fontSize: '0.92rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>{prevChapter.title}</span>
-          </button>
-        ) : <div style={{ flex: 1, maxWidth: '300px' }} />}
-
-        {nextChapter ? (
-          <button
-            onClick={() => scrollSection(nextChapter.id)}
-            style={{
-              background: 'linear-gradient(135deg, rgba(0, 172, 128, 0.1) 0%, rgba(0, 172, 128, 0.02) 100%)',
-              border: '1px solid rgba(0, 172, 128, 0.25)',
-              borderRadius: '12px',
-              padding: '1rem 1.75rem',
-              color: '#fff',
-              cursor: 'pointer',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-              gap: '0.25rem',
-              textAlign: 'right',
-              transition: 'all 0.25s ease',
-              flex: 1,
-              maxWidth: '300px'
-            }}
-            className="next-chap-btn"
-          >
-            <span style={{ fontSize: '0.75rem', color: 'var(--brand-teal)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Next Chapter</span>
-            <span style={{ fontSize: '0.92rem', fontWeight: 600, color: '#fff' }}>{nextChapter.title}</span>
-          </button>
-        ) : <div style={{ flex: 1, maxWidth: '300px' }} />}
-      </div>
-    )
-  }
+  const renderPagination = () => null
 
   return (
     <div className="page chatgpt-work-page">
@@ -423,144 +345,92 @@ export default function ChatGPTatWork() {
           color: var(--muted);
         }
 
-        /* Interactive Roadmap Navigator */
-        .roadmap-container {
-          margin-bottom: 4rem;
-        }
-
-        .roadmap-title {
-          font-size: 1.1rem;
-          font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          color: var(--muted);
-          margin-bottom: 1.25rem;
+        /* High-end Segmented Horizontal Section Tabs Bar */
+        .section-tabs-bar {
           display: flex;
-          align-items: center;
           gap: 0.5rem;
-        }
-
-        .roadmap-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
-        }
-        @media (min-width: 640px) {
-          .roadmap-grid {
-            grid-template-columns: repeat(4, 1fr);
-          }
-        }
-        @media (min-width: 1024px) {
-          .roadmap-grid {
-            grid-template-columns: repeat(7, 1fr);
-          }
-        }
-
-        .roadmap-card {
-          background: rgba(14, 19, 27, 0.4);
-          backdrop-filter: blur(15px);
+          background: rgba(14, 19, 27, 0.45);
+          backdrop-filter: blur(20px);
           border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 12px;
-          padding: 1.25rem;
-          cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-          text-align: left;
+          border-radius: 14px;
+          padding: 0.5rem;
+          margin-bottom: 3.5rem;
+          overflow-x: auto;
+          scrollbar-width: none;
+        }
+        .section-tabs-bar::-webkit-scrollbar {
+          display: none;
+        }
+
+        .section-tab-item {
+          flex: 1;
+          min-width: 140px;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
-          position: relative;
-          overflow: hidden;
+          align-items: center;
+          justify-content: center;
+          gap: 0.35rem;
+          padding: 0.85rem 1rem;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          background: transparent;
+          color: rgba(255, 255, 255, 0.5);
+          cursor: pointer;
+          transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          text-align: center;
         }
 
-        .roadmap-card::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          opacity: 0;
-          transition: opacity 0.35s ease;
-          z-index: 0;
-          pointer-events: none;
-        }
-
-        .roadmap-card * {
-          position: relative;
-          z-index: 1;
-        }
-
-        .roadmap-card:hover {
-          transform: translateY(-6px) scale(1.02);
-          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-        }
-
-        .roadmap-card:hover::before {
-          opacity: 1;
-        }
-
-        .roadmap-card span.chapter-num {
-          font-size: 0.8rem;
-          font-weight: 800;
-          font-family: monospace;
-          padding: 0.2rem 0.5rem;
-          border-radius: 6px;
-          width: fit-content;
-          margin-bottom: 0.75rem;
-          display: inline-block;
-          letter-spacing: 0.03em;
-        }
-
-        .roadmap-card h4 {
-          font-size: 0.92rem;
-          font-weight: 700;
+        .section-tab-item:hover {
           color: #fff;
-          margin: 0;
-          line-height: 1.35;
-          letter-spacing: -0.01em;
+          background: rgba(255, 255, 255, 0.02);
         }
 
-        /* Unique Chapter Gradient Auras and Custom Color Themes */
-        .card-ch1::before { background: linear-gradient(180deg, transparent, rgba(0, 172, 128, 0.12)); }
-        .card-ch1:hover { border-color: rgba(0, 172, 128, 0.45); box-shadow: 0 15px 35px rgba(0, 172, 128, 0.15); }
-        .card-ch1 span.chapter-num { color: #00ac80; background: rgba(0, 172, 128, 0.12); border: 1px solid rgba(0, 172, 128, 0.25); }
-
-        .card-ch2::before { background: linear-gradient(180deg, transparent, rgba(5, 196, 144, 0.12)); }
-        .card-ch2:hover { border-color: rgba(5, 196, 144, 0.45); box-shadow: 0 15px 35px rgba(5, 196, 144, 0.15); }
-        .card-ch2 span.chapter-num { color: #05c490; background: rgba(5, 196, 144, 0.12); border: 1px solid rgba(5, 196, 144, 0.25); }
-
-        .card-ch3::before { background: linear-gradient(180deg, transparent, rgba(83, 200, 255, 0.12)); }
-        .card-ch3:hover { border-color: rgba(83, 200, 255, 0.45); box-shadow: 0 15px 35px rgba(83, 200, 255, 0.15); }
-        .card-ch3 span.chapter-num { color: #53c8ff; background: rgba(83, 200, 255, 0.12); border: 1px solid rgba(83, 200, 255, 0.25); }
-
-        .card-ch4::before { background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.12)); }
-        .card-ch4:hover { border-color: rgba(59, 130, 246, 0.45); box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15); }
-        .card-ch4 span.chapter-num { color: #3b82f6; background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(59, 130, 246, 0.25); }
-
-        .card-ch5::before { background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.12)); }
-        .card-ch5:hover { border-color: rgba(99, 102, 241, 0.45); box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15); }
-        .card-ch5 span.chapter-num { color: #6366f1; background: rgba(99, 102, 241, 0.12); border: 1px solid rgba(99, 102, 241, 0.25); }
-
-        .card-ch6::before { background: linear-gradient(180deg, transparent, rgba(169, 139, 255, 0.12)); }
-        .card-ch6:hover { border-color: rgba(169, 139, 255, 0.45); box-shadow: 0 15px 35px rgba(169, 139, 255, 0.15); }
-        .card-ch6 span.chapter-num { color: #a98bff; background: rgba(169, 139, 255, 0.12); border: 1px solid rgba(169, 139, 255, 0.25); }
-
-        /* Active chapter state styling */
-        .roadmap-card.active {
-          background: rgba(255, 255, 255, 0.05);
+        .section-tab-item.active {
+          color: #fff;
+          font-weight: 700;
         }
-        .roadmap-card.card-ch1.active { border-color: #00ac80; box-shadow: 0 10px 30px rgba(0, 172, 128, 0.25); background: rgba(0, 172, 128, 0.04); }
-        .roadmap-card.card-ch1.active::before { opacity: 1; }
-        .roadmap-card.card-ch2.active { border-color: #05c490; box-shadow: 0 10px 30px rgba(5, 196, 144, 0.25); background: rgba(5, 196, 144, 0.04); }
-        .roadmap-card.card-ch2.active::before { opacity: 1; }
-        .roadmap-card.card-ch3.active { border-color: #53c8ff; box-shadow: 0 10px 30px rgba(83, 200, 255, 0.25); background: rgba(83, 200, 255, 0.04); }
-        .roadmap-card.card-ch3.active::before { opacity: 1; }
-        .roadmap-card.card-ch4.active { border-color: #3b82f6; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25); background: rgba(59, 130, 246, 0.04); }
-        .roadmap-card.card-ch4.active::before { opacity: 1; }
-        .roadmap-card.card-ch5.active { border-color: #6366f1; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.25); background: rgba(99, 102, 241, 0.04); }
-        .roadmap-card.card-ch5.active::before { opacity: 1; }
-        .roadmap-card.card-ch6.active { border-color: #a98bff; box-shadow: 0 10px 30px rgba(169, 139, 255, 0.25); background: rgba(169, 139, 255, 0.04); }
-        .roadmap-card.card-ch6.active::before { opacity: 1; }
-        .roadmap-card.card-ch7.active { border-color: #f6b94f; box-shadow: 0 10px 30px rgba(246, 185, 79, 0.25); background: rgba(246, 185, 79, 0.04); }
-        .roadmap-card.card-ch7.active::before { opacity: 1; }
+
+        .section-tab-item.active.tab-ch1 { border-color: rgba(0, 172, 128, 0.3); background: rgba(0, 172, 128, 0.08); color: #00ac80; }
+        .section-tab-item.active.tab-ch2 { border-color: rgba(5, 196, 144, 0.3); background: rgba(5, 196, 144, 0.08); color: #05c490; }
+        .section-tab-item.active.tab-ch3 { border-color: rgba(83, 200, 255, 0.3); background: rgba(83, 200, 255, 0.08); color: #53c8ff; }
+        .section-tab-item.active.tab-ch4 { border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+        .section-tab-item.active.tab-ch5 { border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.08); color: #6366f1; }
+        .section-tab-item.active.tab-ch6 { border-color: rgba(169, 139, 255, 0.3); background: rgba(169, 139, 255, 0.08); color: #a98bff; }
+        .section-tab-item.active.tab-ch7 { border-color: rgba(246, 185, 79, 0.3); background: rgba(246, 185, 79, 0.08); color: #f6b94f; }
+
+        .tab-icon-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.03);
+          transition: all 0.25s ease;
+          color: rgba(255, 255, 255, 0.4);
+        }
+
+        .section-tab-item.active .tab-icon-wrapper {
+          background: rgba(255, 255, 255, 0.08);
+          color: currentColor;
+        }
+
+        .tab-chapter-num {
+          font-size: 0.75rem;
+          font-weight: 800;
+          opacity: 0.8;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        .tab-chapter-title {
+          font-size: 0.85rem;
+          font-weight: 600;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
 
         /* Widescreen Fluid Grid and Card Layouts */
         .widescreen-dashboard-box {
@@ -1619,43 +1489,71 @@ export default function ChatGPTatWork() {
         </div>
       </header>
 
-      {/* Interactive Roadmap Navigator */}
-      <section className="roadmap-container">
-        <div className="roadmap-title">
-          <Compass size={16} className="text-teal" />
-          Interactive Roadmap Navigator
-        </div>
-        <div className="roadmap-grid">
-          <div className={`roadmap-card card-ch1 ${activeChapter === 'ch-1' ? 'active' : ''}`} onClick={() => scrollSection('ch-1')}>
-            <span className="chapter-num">Ch. 1</span>
-            <h4>Understanding AI & ChatGPT</h4>
-          </div>
-          <div className={`roadmap-card card-ch2 ${activeChapter === 'ch-2' ? 'active' : ''}`} onClick={() => scrollSection('ch-2')}>
-            <span className="chapter-num">Ch. 2</span>
-            <h4>Capabilities & Use Cases</h4>
-          </div>
-          <div className={`roadmap-card card-ch3 ${activeChapter === 'ch-3' ? 'active' : ''}`} onClick={() => scrollSection('ch-3')}>
-            <span className="chapter-num">Ch. 3</span>
-            <h4>Using ChatGPT at Work</h4>
-          </div>
-          <div className={`roadmap-card card-ch4 ${activeChapter === 'ch-4' ? 'active' : ''}`} onClick={() => scrollSection('ch-4')}>
-            <span className="chapter-num">Ch. 4</span>
-            <h4>Best Practices</h4>
-          </div>
-          <div className={`roadmap-card card-ch5 ${activeChapter === 'ch-5' ? 'active' : ''}`} onClick={() => scrollSection('ch-5')}>
-            <span className="chapter-num">Ch. 5</span>
-            <h4>Mastering Prompt Eng.</h4>
-          </div>
-          <div className={`roadmap-card card-ch6 ${activeChapter === 'ch-6' ? 'active' : ''}`} onClick={() => scrollSection('ch-6')}>
-            <span className="chapter-num">Ch. 6</span>
-            <h4>What's New in 2026</h4>
-          </div>
-          <div className={`roadmap-card card-ch7 ${activeChapter === 'ch-7' ? 'active' : ''}`} onClick={() => scrollSection('ch-7')}>
-            <span className="chapter-num">Ch. 7</span>
-            <h4>100+ Prompt Explorer</h4>
-          </div>
-        </div>
-      </section>
+      {/* Chapter Selection Tabs */}
+      <nav className="section-tabs-bar">
+        <button
+          className={`section-tab-item tab-ch1 ${activeChapter === 'ch-1' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-1')}
+        >
+          <div className="tab-icon-wrapper"><Brain size={16} /></div>
+          <span className="tab-chapter-num">Ch. 1</span>
+          <span className="tab-chapter-title">Understanding AI</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch2 ${activeChapter === 'ch-2' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-2')}
+        >
+          <div className="tab-icon-wrapper"><Compass size={16} /></div>
+          <span className="tab-chapter-num">Ch. 2</span>
+          <span className="tab-chapter-title">Capabilities</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch3 ${activeChapter === 'ch-3' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-3')}
+        >
+          <div className="tab-icon-wrapper"><Cpu size={16} /></div>
+          <span className="tab-chapter-num">Ch. 3</span>
+          <span className="tab-chapter-title">At Work</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch4 ${activeChapter === 'ch-4' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-4')}
+        >
+          <div className="tab-icon-wrapper"><ListTodo size={16} /></div>
+          <span className="tab-chapter-num">Ch. 4</span>
+          <span className="tab-chapter-title">Best Practices</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch5 ${activeChapter === 'ch-5' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-5')}
+        >
+          <div className="tab-icon-wrapper"><Zap size={16} /></div>
+          <span className="tab-chapter-num">Ch. 5</span>
+          <span className="tab-chapter-title">Prompt Eng.</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch6 ${activeChapter === 'ch-6' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-6')}
+        >
+          <div className="tab-icon-wrapper"><Sparkles size={16} /></div>
+          <span className="tab-chapter-num">Ch. 6</span>
+          <span className="tab-chapter-title">What's New</span>
+        </button>
+
+        <button
+          className={`section-tab-item tab-ch7 ${activeChapter === 'ch-7' ? 'active' : ''}`}
+          onClick={() => scrollSection('ch-7')}
+        >
+          <div className="tab-icon-wrapper"><Layers size={16} /></div>
+          <span className="tab-chapter-num">Ch. 7</span>
+          <span className="tab-chapter-title">100+ Explorer</span>
+        </button>
+      </nav>
 
       {/* Content body */}
       <main className="guide-body">
