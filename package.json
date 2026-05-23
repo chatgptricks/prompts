@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "picomatch": "^3.0.2",
+    "postcss": "^8.4.47",
     "vite": "^8.0.10"
   },
   "dependencies": {

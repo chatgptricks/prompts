@@ -8,11 +8,13 @@ import {
 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import AppShell from './components/AppShell'
+import GlobalBackground from './components/GlobalBackground'
 import EmptyState from './components/EmptyState'
 import LibraryCard from './components/LibraryCard'
 import PromptCard from './components/PromptCard'
 import PromptComposer from './components/PromptComposer'
 import SearchBox from './components/SearchBox'
+import ChatGPTatWork from './components/ChatGPTatWork'
 import {
   findLibrary,
   findPrompt,
@@ -32,9 +34,11 @@ function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '')
   const parts = hash.split('/').filter(Boolean)
 
-  if (!parts.length || parts[0] === 'hub') return { name: 'hub' }
+  if (!parts.length) return { name: 'ChatGPTatWork' }
+  if (parts[0] === 'hub') return { name: 'hub' }
   if (parts[0] === 'saved') return { name: 'saved' }
   if (parts[0] === 'recent') return { name: 'recent' }
+  if (parts[0] === 'ChatGPTatWork') return { name: 'ChatGPTatWork' }
   if (parts[0] === 'library' && parts[1]) return { name: 'library', libraryId: parts[1] }
   if (parts[0] === 'prompt' && parts[1] && parts[2]) {
     return { name: 'prompt', libraryId: parts[1], promptId: parts[2] }
@@ -76,11 +80,13 @@ export default function App() {
   useEffect(() => {
     const context = route.name === 'prompt' ? findPrompt(route.libraryId, route.promptId) : null
     const library = route.name === 'library' ? findLibrary(route.libraryId) : context?.library
-    document.title = context
-      ? `${context.prompt.title} | ChatGPTricks`
-      : library
-        ? `${library.shortTitle} | ChatGPTricks`
-        : 'ChatGPTricks'
+    document.title = route.name === 'ChatGPTatWork'
+      ? 'ChatGPT at Work | ChatGPTricks'
+      : context
+        ? `${context.prompt.title} | ChatGPTricks`
+        : library
+          ? `${library.shortTitle} | ChatGPTricks`
+          : 'ChatGPTricks'
   }, [route])
 
   const favoriteSet = useMemo(() => new Set(favorites), [favorites])
@@ -131,7 +137,29 @@ export default function App() {
 
   const activeRoute = route.name === 'library' || route.name === 'prompt' ? 'library' : route.name
 
+  if (route.name === 'ChatGPTatWork') {
+    return (
+      <>
+        <GlobalBackground />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key="ChatGPTatWork"
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+          >
+            <ChatGPTatWork />
+          </motion.div>
+        </AnimatePresence>
+      </>
+    )
+  }
+
   return (
+    <>
+    <GlobalBackground />
     <AppShell activeRoute={activeRoute} favoritesCount={favorites.length} recentCount={recentCopies.length}>
       <AnimatePresence mode="wait">
         <motion.div
@@ -176,7 +204,12 @@ export default function App() {
         </motion.div>
       </AnimatePresence>
     </AppShell>
+    </>
   )
+}
+
+const gridVariants = {
+  animate: { transition: { staggerChildren: 0.07 } },
 }
 
 function Dashboard() {
@@ -191,11 +224,16 @@ function Dashboard() {
       </section>
 
       <SectionHeader icon={Library} title="Libraries" />
-      <section className="library-grid">
+      <motion.section
+        className="library-grid"
+        variants={gridVariants}
+        initial="initial"
+        animate="animate"
+      >
         {libraries.map((library) => (
           <LibraryCard key={library.id} library={library} />
         ))}
-      </section>
+      </motion.section>
     </div>
   )
 }

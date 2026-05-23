@@ -1,0 +1,631 @@
+{
+  "workflows": [
+    {
+      "id": 1,
+      "title": "Set up a \"Client Research Hub\" shared project",
+      "prompt": "Create a shared project for prospect research. Upload your ICP definition, competitor analysis, and past successful client profiles. Ask team members to add new prospects and get AI-generated research briefs, outreach strategies, and qualification scorecards that stay consistent across your entire sales team."
+    },
+    {
+      "id": 2,
+      "title": "Build a \"Campaign Command Center\" for marketing teams",
+      "prompt": "Establish a shared project called \"Q2 Product Launch\" with brand guidelines, previous campaign performance data, and target audience personas. Have different team members contribute content ideas, ad copy, and landing page concepts while maintaining unified messaging and tone across all deliverables."
+    },
+    {
+      "id": 3,
+      "title": "Create an \"Operations Playbook\" for recurring processes",
+      "prompt": "Set up a project with your SOPs, checklists, and process documentation. Ask ChatGPT to generate step-by-step workflows for common scenarios, risk assessment templates for new initiatives, and post-mortem frameworks that reference your actual policies and procedures."
+    },
+    {
+      "id": 4,
+      "title": "Launch a \"Support Knowledge Base\" for customer service teams",
+      "prompt": "Build a shared project with FAQ documents, product manuals, and sample ticket resolutions. Team members can instantly get drafted responses to customer inquiries that cite your actual help documentation, ensuring consistent, accurate support while dramatically reducing response time."
+    },
+    {
+      "id": 5,
+      "title": "Develop a \"Financial Analysis Center\" for data-driven decisions",
+      "prompt": "Create a project with historical financial data, budget templates, and KPI definitions. Upload monthly reports and ask ChatGPT to identify trends, flag anomalies, and generate executive summaries that automatically reference your specific business metrics and benchmarks.\n\n#"
+    }
+  ],
+  "prompts": [
+    {
+      "id": 1,
+      "title": "Answer frequently asked questions from colleagues or clients.",
+      "prompt": "Can you explain the return/exchange policy using the following summary?   \n\\[Insert a summary of your company’s policy\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 2,
+      "title": "Draft and refine emails, reports, or other written communication.",
+      "prompt": "Can you provide suggestions for improving the flow of my executive summary?  \n\\[Insert your executive summary\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 3,
+      "title": "Create meeting outlines and decks",
+      "prompt": "Could you help me create a slide deck outline for our upcoming sales team meeting?  \n\\[Insert details about the meeting objectives and attendees\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 4,
+      "title": "Generate ideas for team-building activities.",
+      "prompt": "Can you suggest some creative team-building activities that our department can participate in?  \n\\[Provide some information about your department's size and interests\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 5,
+      "title": "Provide reminders for important deadlines or events.",
+      "prompt": "Could you remind me about the deadline for submitting the project proposal?  \n\\[Specify the project name and the date the proposal is due\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 6,
+      "title": "Conduct research on industry trends or competitors.",
+      "prompt": "Can you gather information on the latest trends in digital marketing?  \n\\[Specify the specific aspect or subtopic in digital marketing you're interested in\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 7,
+      "title": "Help plan and coordinate company events or celebrations.",
+      "prompt": "Could you help me with planning our annual holiday party?  \n\\[Include any preferences or requirements for the party, such as date, time, location, and expected number of attendees\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 8,
+      "title": "Generate ideas for blog or social media content.",
+      "prompt": "Can you provide some blog post ideas related to customer experience?  \n\\[Specify any specific focus areas or target audience for the blog content\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 9,
+      "title": "Assist with data entry and organization.",
+      "prompt": "Can you help me organize the customer data spreadsheet?  \n\\[Specify the specific criteria or format for organizing the data\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 10,
+      "title": "Provide training resources or documentation.",
+      "prompt": "Can you provide a step-by-step guide on how to create a new deal in our CRM?  \n\\[Specify the CRM platform being used and any specific requirements or fields to consider\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 11,
+      "title": "Generate suggestions for employee recognition programs.",
+      "prompt": "What are some creative ways we can recognize and appreciate our employees' hard work and achievements?  \n\\[Provide some background information on the company culture and the number of employees\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 12,
+      "title": "Assist with scheduling meetings or appointments.",
+      "prompt": "Can you help me find a time that works for everyone to schedule a team meeting?  \n\\[Specify the desired meeting duration, the participants' availability, and any preferred dates or times\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 13,
+      "title": "Provide recommendations for team productivity tools.",
+      "prompt": "Can you suggest some tools or software that can help our team collaborate and stay organized?  \n\\[Specify any specific features or requirements\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 14,
+      "title": "Assist with customer support inquiries.",
+      "prompt": "Can you help me respond to a customer's support ticket about a billing issue?  \n\\[Provide necessary details like the customer's name and the specific issue\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 15,
+      "title": "Generate ideas for improving internal communication.",
+      "prompt": "What are some creative ways we can enhance communication among different departments in our company?  \n\\[Provide any current challenges or pain points in communication\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 16,
+      "title": "Help create a project timeline or roadmap.",
+      "prompt": "Can you assist me in creating a timeline for our upcoming marketing campaign?  \n\\[Specify the campaign start and end dates, key milestones, and any dependencies\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 17,
+      "title": "Provide suggestions for optimizing email marketing campaigns.",
+      "prompt": "Can you give me some tips on improving our email open rates and click-through rates?  \n\\[Specify any specific challenges or current performance metrics\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 18,
+      "title": "Assist with lead generation strategies.",
+      "prompt": "Can you suggest some effective lead generation tactics for our sales team?  \n\\[Provide any target audience or industry information\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 19,
+      "title": "Provide recommendations for professional development resources.",
+      "prompt": "Can you suggest some online courses or training programs for improving leadership skills?  \n\\[Specify any specific focus areas or desired outcomes\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 20,
+      "title": "Help organize and categorize digital files or documents.",
+      "prompt": "Can you assist me in organizing our shared drive and creating a standardized naming convention?  \n\\[Specify any existing categories or folder structure\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 21,
+      "title": "Assist with content creation for marketing materials.",
+      "prompt": "Can you help me write engaging copy for our upcoming product brochure?  \n\\[Provide any specific details or key features that should be highlighted\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 22,
+      "title": "Generate ideas for team bonding activities for remote teams.",
+      "prompt": "Can you suggest some virtual team-building activities for our remote employees?  \n\\[Provide information on the number of remote employees and any tools or platforms available for virtual activities\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 23,
+      "title": "Provide recommendations for project management software.",
+      "prompt": "What project management software would you recommend for our team to improve productivity and collaboration?  \n\\[Specify any specific features or integrations needed\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 24,
+      "title": "Assist with market research and competitor analysis.",
+      "prompt": "Can you help me gather information on our top competitors and their marketing strategies?  \n\\[Specify the industry or market segment and any key competitors\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 25,
+      "title": "Generate ideas for employee wellness programs.",
+      "prompt": "Can you suggest some initiatives or activities to promote employee wellness and work-life balance?  \n\\[Provide information on the company's current wellness programs or initiatives\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 26,
+      "title": "Help create a customer satisfaction survey.",
+      "prompt": "Can you assist me in designing a customer satisfaction survey to gather feedback on our products and services?  \n\\[Specify any specific questions or metrics to include\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 27,
+      "title": "Provide recommendations for customer retention strategies.",
+      "prompt": "What are some effective strategies or tactics to improve customer retention for our business?  \n\\[Provide any information on current customer churn rates or challenges\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 28,
+      "title": "Assist with social media management and scheduling.",
+      "prompt": "Can you help me schedule our social media posts for the upcoming week?  \n\\[Specify the social media platforms and any specific content or hashtags to include\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 29,
+      "title": "Generate ideas for optimizing website conversion rates.",
+      "prompt": "Can you give me some suggestions on how to increase our website's conversion rates?  \n\\[Provide any specific pages or areas of the website to focus on\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 30,
+      "title": "Provide recommendations for collaboration tools for remote teams.",
+      "prompt": "What tools or platforms would you recommend for our remote team to collaborate effectively?  \n\\[Specify any specific features or integrations needed\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 31,
+      "title": "Assist with creating and managing email marketing campaigns.",
+      "prompt": "Can you help me design and send out our monthly newsletter to our subscribers?  \n\\[Provide any specific content or promotions to be included\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 32,
+      "title": "Generate ideas for team-building activities for a large company retreat.",
+      "prompt": "Can you suggest some engaging activities for our company retreat with over 200 employees?  \n\\[Provide any specific location or theme for the retreat\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 33,
+      "title": "Provide recommendations for streamlining internal processes.",
+      "prompt": "What are some ways we can simplify and streamline our project approval process?  \n\\[Provide any current pain points or bottlenecks in the process\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 34,
+      "title": "Assist with creating and managing online advertising campaigns.",
+      "prompt": "Can you help me set up and optimize our Google Ads campaign?  \n\\[Specify any specific campaign goals or target audience\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 35,
+      "title": "Generate ideas for improving customer onboarding processes.",
+      "prompt": "Can you give me some suggestions on how to enhance our customer onboarding experience?  \n\\[Provide any current challenges or pain points in onboarding\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 36,
+      "title": "Provide recommendations for team training and development programs.",
+      "prompt": "Can you suggest some training programs or workshops to enhance our team's skills and knowledge?  \n\\[Provide any specific areas or skills to focus on\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 37,
+      "title": "Assist with data analysis and reporting.",
+      "prompt": "Can you help me analyze and summarize our monthly sales data?  \n\\[Specify any specific metrics or reports required\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 38,
+      "title": "Generate ideas for cross-selling or upselling strategies.",
+      "prompt": "Can you give me some recommendations on how to effectively cross-sell or upsell our products?  \n\\[Provide any information on current customer purchasing patterns\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 39,
+      "title": "Provide recommendations for employee engagement initiatives.",
+      "prompt": "What are some initiatives or programs we can implement to improve employee engagement and morale?  \n\\[Provide any current challenges or feedback from employee surveys\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 40,
+      "title": "Assist with market segmentation and target audience analysis.",
+      "prompt": "Can you help me identify and define our target audience for a new product launch?  \n\\[Specify any specific demographics or psychographics to consider\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 41,
+      "title": "Generate ideas for team-building activities for remote and distributed teams.",
+      "prompt": "Can you suggest some virtual team-building activities that can help foster collaboration and connectivity among our remote and distributed teams?  \n\\[Provide information on the number of remote employees and any tools or platforms available for virtual activities\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 42,
+      "title": "Provide recommendations for time management techniques.",
+      "prompt": "What are some effective time management techniques or strategies that can help improve productivity and efficiency?  \n\\[Specify any specific challenges or areas where time management is needed\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 43,
+      "title": "Assist with creating and optimizing landing pages for lead capture.",
+      "prompt": "Can you help me create a high-converting landing page for our upcoming lead generation campaign?  \n\\[Provide any specific content or design preferences\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 44,
+      "title": "Generate ideas for employee recognition and rewards programs.",
+      "prompt": "Can you suggest some creative ways to recognize and reward our employees for their hard work and achievements?  \n\\[Provide information on the company's budget and any existing recognition programs\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 45,
+      "title": "Provide recommendations for improving customer service and support.",
+      "prompt": "What are some best practices or strategies to enhance our customer service and support efforts?  \n\\[Provide any specific feedback or areas of improvement\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 46,
+      "title": "Assist with creating and managing a content calendar for social media.",
+      "prompt": "Can you help me create a content calendar for our social media platforms for the next quarter?  \n\\[Specify the desired posting frequency and any key events or promotions\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 47,
+      "title": "Generate ideas for improving employee feedback and performance reviews.",
+      "prompt": "Can you give me some suggestions on how to make our employee feedback and performance review process more effective and meaningful?  \n\\[Provide any specific challenges or feedback from employees\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 48,
+      "title": "Provide recommendations for A/B testing and optimization.",
+      "prompt": "What are some best practices for conducting A/B testing and optimizing our website or marketing campaigns?  \n\\[Provide any specific elements or metrics to focus on\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 49,
+      "title": "Assist with creating and managing customer segmentation for targeted marketing campaigns.",
+      "prompt": "Can you help me segment our customer database based on specific criteria for our upcoming targeted marketing campaign?  \n\\[Specify the desired segmentation criteria or target audience\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 50,
+      "title": "Generate ideas for improving employee engagement in remote work environments.",
+      "prompt": "Can you give me some suggestions on how to boost employee engagement and motivation in a remote work setup?  \n\\[Provide any specific challenges or feedback from employees\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 51,
+      "title": "Provide recommendations for improving email deliverability rates.",
+      "prompt": "What are some strategies or best practices to improve our email deliverability rates and avoid being marked as spam?  \n\\[Provide any specific challenges or email marketing platforms being used\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 52,
+      "title": "Assist with creating and managing customer loyalty programs.",
+      "prompt": "Can you help me design and implement a customer loyalty program to reward our repeat customers?  \n\\[Provide any specific rewards or incentives to consider\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 53,
+      "title": "Generate ideas for improving website usability and user experience.",
+      "prompt": "Can you suggest some ways to enhance the usability and user experience of our website?  \n\\[Specify any specific pain points or user feedback\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 54,
+      "title": "Provide recommendations for remote team communication tools.",
+      "prompt": "What communication and collaboration tools would you recommend for our remote team to stay connected and productive?  \n\\[Specify any specific features or integrations needed\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 55,
+      "title": "Assist with creating and managing customer feedback surveys.",
+      "prompt": "Can you help me design a customer feedback survey to gather insights on our products and services?  \n\\[Specify any specific questions or metrics to include\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 56,
+      "title": "Generate ideas for improving sales conversion rates.",
+      "prompt": "Can you give me some suggestions on how to increase our sales conversion rates and close more deals?  \n\\[Provide any specific sales processes or metrics to focus on\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 57,
+      "title": "Provide recommendations for improving website SEO (search engine optimization).",
+      "prompt": "What are some strategies or tactics to improve our website's SEO and increase organic traffic?  \n\\[Provide any specific keywords or competitors to consider\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 58,
+      "title": "Assist with creating and managing a customer referral program.",
+      "prompt": "Can you help me develop a customer referral program to incentivize our existing customers to refer new leads?  \n\\[Provide any specific rewards or incentives to offer\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 59,
+      "title": "Generate ideas for improving employee onboarding processes.",
+      "prompt": "Can you give me some suggestions on how to enhance our employee onboarding experience and make it more efficient?  \n\\[Provide any specific challenges or pain points in onboarding\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 60,
+      "title": "Provide recommendations for effective customer relationship management (CRM) strategies.",
+      "prompt": "What are some best practices or strategies for managing and nurturing customer relationships using our CRM system?  \n\\[Specify the CRM platform being used and any specific challenges or goals\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 61,
+      "title": "Assist with creating and managing customer advocacy programs.",
+      "prompt": "Can you help me develop a customer advocacy program to empower and mobilize our loyal customers to promote our brand?  \n\\[Provide any specific rewards or incentives to offer and any existing customer base\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 62,
+      "title": "Generate ideas for improving employee training and development programs.",
+      "prompt": "Can you give me some suggestions on how to enhance our employee training and development programs to foster continuous learning and growth?  \n\\[Provide any specific areas or skills to focus on and any existing training initiatives\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 63,
+      "title": "Provide recommendations for optimizing website speed and performance.",
+      "prompt": "What are some strategies or tools we can use to improve our website's loading speed and overall performance?  \n\\[Specify any specific challenges or metrics to focus on\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 64,
+      "title": "Assist with creating and managing customer retention campaigns.",
+      "prompt": "Can you help me design and execute a customer retention campaign to reduce churn and increase customer loyalty?  \n\\[Provide any specific offers or messages to include\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 65,
+      "title": "Generate ideas for team recognition and appreciation activities.",
+      "prompt": "Can you suggest some creative ways to recognize and appreciate our team members' contributions and accomplishments?  \n\\[Provide any specific team size or dynamics\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 66,
+      "title": "Provide recommendations for remote team collaboration and project management tools.",
+      "prompt": "What collaboration and project management tools would you recommend for our remote team to streamline workflows and stay organized?  \n\\[Specify any specific features or integrations needed\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 67,
+      "title": "Assist with creating and managing influencer marketing campaigns.",
+      "prompt": "Can you help me identify and collaborate with relevant influencers for our marketing campaigns?  \n\\[Specify the target audience and any specific goals or budget\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 68,
+      "title": "Generate ideas for improving customer experience and satisfaction.",
+      "prompt": "Can you give me suggestions on how to enhance our overall customer experience and ensure customer satisfaction?  \n\\[Provide any specific pain points or feedback from customers\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 69,
+      "title": "Provide recommendations for improving internal knowledge sharing and communication.",
+      "prompt": "What are some strategies or tools that can facilitate better knowledge sharing and communication among our internal teams?  \n\\[Provide any specific challenges or areas of improvement\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 70,
+      "title": "Assist with creating and managing testimonials.",
+      "prompt": "Can you help me collect and leverage testimonials to showcase the value of our products or services?  \n\\[Specify any specific channels or platforms to use\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 71,
+      "title": "Generate ideas for improving employee motivation and morale.",
+      "prompt": "Can you give me some suggestions on how to boost employee motivation and morale in the workplace?  \n\\[Provide any specific challenges or feedback from employees\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 72,
+      "title": "Provide recommendations for optimizing pay-per-click (PPC) advertising campaigns.",
+      "prompt": "What are some strategies or tactics to improve the performance and ROI of our PPC campaigns?  \n\\[Specify any specific advertising platforms being used\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 73,
+      "title": "Assist with content curation and creation for social media.",
+      "prompt": "Can you help me curate and create engaging content for our social media channels?  \n\\[Provide any specific target audience or themes\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 74,
+      "title": "Generate ideas for improving customer self-service resources.",
+      "prompt": "Can you give me suggestions on how to enhance our customer self-service resources, such as FAQs or knowledge bases?  \n\\[Provide any specific pain points or feedback from customers\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 75,
+      "title": "Provide recommendations for improving workplace diversity and inclusion.",
+      "prompt": "What are some strategies or initiatives we can implement to foster diversity and inclusion in our workplace?  \n\\[Provide any specific challenges or areas of improvement\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 76,
+      "title": "Assist with creating and managing customer segmentation for personalized marketing campaigns.",
+      "prompt": "Can you help me segment our customer database based on their preferences or behaviors for targeted marketing campaigns?  \n\\[Specify the desired segmentation criteria or target audience\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 77,
+      "title": "Generate ideas for improving employee feedback and communication processes.",
+      "prompt": "Can you suggest some ways to make our employee feedback and communication processes more effective and transparent?  \n\\[Provide any specific challenges or feedback from employees\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 78,
+      "title": "Provide recommendations for streamlining and automating business workflows.",
+      "prompt": "What are some tools or technologies we can use to automate and streamline our business workflows and processes?  \n\\[Provide any specific pain points or inefficiencies in current workflows\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 79,
+      "title": "Assist with creating and managing email marketing automation workflows.",
+      "prompt": "Can you help me set up and optimize our email marketing automation workflows to improve engagement and conversions?  \n\\[Specify any specific segmentation or triggers to consider\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 80,
+      "title": "Generate ideas for improving customer retention and loyalty programs.",
+      "prompt": "Can you give me suggestions on how to enhance our customer retention and loyalty programs to increase customer lifetime value?  \n\\[Provide any specific challenges or current program details\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 81,
+      "title": "Provide recommendations for improving website accessibility for users with disabilities.",
+      "prompt": "What are some strategies or techniques to make our website more accessible for users with disabilities?  \n\\[Specify any specific accessibility guidelines or regulations to follow\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 82,
+      "title": "Assist with creating and managing customer satisfaction surveys.",
+      "prompt": "Can you help me design and implement a customer satisfaction survey to gather feedback on our products or services?  \n\\[Provide any specific questions or rating scales to include\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 83,
+      "title": "Generate ideas for improving employee collaboration and teamwork.",
+      "prompt": "Can you give me some suggestions on how to foster better collaboration and teamwork among our employees?  \n\\[Provide any specific challenges or team dynamics\\]",
+      "category": "HR & Team"
+    },
+    {
+      "id": 84,
+      "title": "Provide recommendations for improving customer journey maps and touchpoints.",
+      "prompt": "What are some strategies or tactics to optimize our customer journey and ensure positive touchpoints along the way?  \n\\[Provide any specific touchpoints or stages of the customer journey\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 85,
+      "title": "Assist with creating and managing customer loyalty and rewards programs.",
+      "prompt": "Can you help me develop a customer loyalty and rewards program to incentivize repeat purchases and customer retention?  \n\\[Provide any specific rewards or incentives to offer\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 86,
+      "title": "Generate ideas for improving employee wellness and work-life balance.",
+      "prompt": "Can you give me some suggestions on how to promote employee wellness and work-life balance in our organization?  \n\\[Provide any specific challenges or feedback from employees\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 87,
+      "title": "Provide recommendations for improving email marketing automation and personalization.",
+      "prompt": "What are some key practices or techniques for enhancing our email marketing automation and personalization efforts?  \n\\[Specify any specific personalization variables or segmentation criteria\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 88,
+      "title": "Assist with creating and managing the complaint resolution processes.",
+      "prompt": "Can you help me design an effective customer feedback and complaint resolution process to address customer concerns and improve satisfaction?  \n\\[Provide any specific channels or escalation procedures\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 89,
+      "title": "Generate ideas for improving website conversion funnels.",
+      "prompt": "Can you give me suggestions on how to optimize our website conversion funnels and increase conversion rates?  \n\\[Provide any specific funnel stages or metrics to focus on\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 90,
+      "title": "Provide recommendations for optimizing customer service response times.",
+      "prompt": "What are some strategies or tools we can use to improve our customer service response times and ensure timely resolutions?  \n\\[Provide any specific challenges or average response time metrics\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 91,
+      "title": "Generate ideas for improving internal communication.",
+      "prompt": "Can you suggest ways to enhance communication between different teams or departments?  \n\\[Provide some information about the challenges or areas for improvement\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 92,
+      "title": "Provide recommendations for productivity apps or tools.",
+      "prompt": "Can you suggest some project management tools that can help streamline our workflow?  \n\\[Specify any specific requirements or integration preferences\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 93,
+      "title": "Help with email management and organization.",
+      "prompt": "Can you provide tips for keeping my inbox organized and managing email overload?  \n\\[Specify any specific challenges you're facing or desired email management practices\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 94,
+      "title": "Assist with creating efficient meeting agendas.",
+      "prompt": "Can you help me create a well-structured meeting agenda for our weekly team meeting?  \n\\[Include any specific discussion topics or goals for the meeting\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 95,
+      "title": "Provide guidance on effective time management techniques.",
+      "prompt": "Can you recommend tips for effectively managing my time during busy periods?  \n\\[Specify the specific challenges or time constraints you're facing\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 96,
+      "title": "Assist with troubleshooting technical issues.",
+      "prompt": "Can you help me troubleshoot an issue I'm having with connecting to our CRM system?  \n\\[Include any error messages or specific information about the problem\\]",
+      "category": "Productivity & Operations"
+    },
+    {
+      "id": 97,
+      "title": "Create templates for commonly used documents or presentations.",
+      "prompt": "Can you help me create a template for our weekly sales report presentation?  \n\\[Specify any specific formatting or content requirements\\]",
+      "category": "Marketing & Sales"
+    },
+    {
+      "id": 98,
+      "title": "Provide tips for effective project delegation.",
+      "prompt": "Can you suggest best practices for delegating tasks to team members without micromanaging?  \n\\[Include any specific concerns or challenges you're facing\\]",
+      "category": "Writing & Content"
+    },
+    {
+      "id": 99,
+      "title": "Help with organizing and prioritizing customer feedback.",
+      "prompt": "Can you provide guidance on how to effectively gather and categorize customer feedback?  \n\\[Specify any specific channels for feedback collection or desired categorization criteria\\]",
+      "category": "Customer Support"
+    },
+    {
+      "id": 100,
+      "title": "Assist with tracking and analyzing key performance indicators (KPIs).",
+      "prompt": "Can you help me set up a dashboard to track and visualize our sales team's performance metrics?  \n\\[Specify the specific KPIs you want to track and any desired visualization formats\\]",
+      "category": "Marketing & Sales"
+    }
+  ]
+}
