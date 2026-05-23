@@ -21,6 +21,7 @@ import { useMemo, useState } from 'react'
 import promptsData from '../data/prompts_data.json'
 
 export default function ChatGPTatWork() {
+  const [activeChapter, setActiveChapter] = useState('ch-1')
   const [activeTab, setActiveTab] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
   const [copiedPromptId, setCopiedPromptId] = useState(null)
@@ -216,10 +217,88 @@ export default function ChatGPTatWork() {
   }
 
   const scrollSection = (id) => {
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
+    setActiveChapter(id)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const renderPagination = () => {
+    const chapters = [
+      { id: 'ch-1', title: '1. Understanding AI & ChatGPT' },
+      { id: 'ch-2', title: '2. Capabilities & Use Cases' },
+      { id: 'ch-3', title: '3. Using ChatGPT at Work' },
+      { id: 'ch-4', title: '4. Best Practices' },
+      { id: 'ch-5', title: '5. Mastering Prompt Eng.' },
+      { id: 'ch-6', title: '6. What\'s New in 2026' },
+      { id: 'ch-7', title: '7. 100+ Prompt Explorer' },
+    ]
+
+    const currentIndex = chapters.findIndex(c => c.id === activeChapter)
+    const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null
+    const nextChapter = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null
+
+    return (
+      <div className="chapter-pagination" style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: '4rem',
+        paddingTop: '2rem',
+        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+        gap: '1.5rem'
+      }}>
+        {prevChapter ? (
+          <button
+            onClick={() => scrollSection(prevChapter.id)}
+            style={{
+              background: 'rgba(255, 255, 255, 0.03)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+              borderRadius: '12px',
+              padding: '1rem 1.75rem',
+              color: '#fff',
+              cursor: 'pointer',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              gap: '0.25rem',
+              textAlign: 'left',
+              transition: 'all 0.25s ease',
+              flex: 1,
+              maxWidth: '300px'
+            }}
+            className="prev-chap-btn"
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--brand-teal)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Previous Chapter</span>
+            <span style={{ fontSize: '0.92rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>{prevChapter.title}</span>
+          </button>
+        ) : <div style={{ flex: 1, maxWidth: '300px' }} />}
+
+        {nextChapter ? (
+          <button
+            onClick={() => scrollSection(nextChapter.id)}
+            style={{
+              background: 'linear-gradient(135deg, rgba(0, 172, 128, 0.1) 0%, rgba(0, 172, 128, 0.02) 100%)',
+              border: '1px solid rgba(0, 172, 128, 0.25)',
+              borderRadius: '12px',
+              padding: '1rem 1.75rem',
+              color: '#fff',
+              cursor: 'pointer',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-end',
+              gap: '0.25rem',
+              textAlign: 'right',
+              transition: 'all 0.25s ease',
+              flex: 1,
+              maxWidth: '300px'
+            }}
+            className="next-chap-btn"
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--brand-teal)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Next Chapter</span>
+            <span style={{ fontSize: '0.92rem', fontWeight: 600, color: '#fff' }}>{nextChapter.title}</span>
+          </button>
+        ) : <div style={{ flex: 1, maxWidth: '300px' }} />}
+      </div>
+    )
   }
 
   return (
@@ -464,9 +543,24 @@ export default function ChatGPTatWork() {
         .card-ch6:hover { border-color: rgba(169, 139, 255, 0.45); box-shadow: 0 15px 35px rgba(169, 139, 255, 0.15); }
         .card-ch6 span.chapter-num { color: #a98bff; background: rgba(169, 139, 255, 0.12); border: 1px solid rgba(169, 139, 255, 0.25); }
 
-        .card-ch7::before { background: linear-gradient(180deg, transparent, rgba(246, 185, 79, 0.12)); }
-        .card-ch7:hover { border-color: rgba(246, 185, 79, 0.45); box-shadow: 0 15px 35px rgba(246, 185, 79, 0.15); }
-        .card-ch7 span.chapter-num { color: #f6b94f; background: rgba(246, 185, 79, 0.12); border: 1px solid rgba(246, 185, 79, 0.25); }
+        /* Active chapter state styling */
+        .roadmap-card.active {
+          background: rgba(255, 255, 255, 0.05);
+        }
+        .roadmap-card.card-ch1.active { border-color: #00ac80; box-shadow: 0 10px 30px rgba(0, 172, 128, 0.25); background: rgba(0, 172, 128, 0.04); }
+        .roadmap-card.card-ch1.active::before { opacity: 1; }
+        .roadmap-card.card-ch2.active { border-color: #05c490; box-shadow: 0 10px 30px rgba(5, 196, 144, 0.25); background: rgba(5, 196, 144, 0.04); }
+        .roadmap-card.card-ch2.active::before { opacity: 1; }
+        .roadmap-card.card-ch3.active { border-color: #53c8ff; box-shadow: 0 10px 30px rgba(83, 200, 255, 0.25); background: rgba(83, 200, 255, 0.04); }
+        .roadmap-card.card-ch3.active::before { opacity: 1; }
+        .roadmap-card.card-ch4.active { border-color: #3b82f6; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25); background: rgba(59, 130, 246, 0.04); }
+        .roadmap-card.card-ch4.active::before { opacity: 1; }
+        .roadmap-card.card-ch5.active { border-color: #6366f1; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.25); background: rgba(99, 102, 241, 0.04); }
+        .roadmap-card.card-ch5.active::before { opacity: 1; }
+        .roadmap-card.card-ch6.active { border-color: #a98bff; box-shadow: 0 10px 30px rgba(169, 139, 255, 0.25); background: rgba(169, 139, 255, 0.04); }
+        .roadmap-card.card-ch6.active::before { opacity: 1; }
+        .roadmap-card.card-ch7.active { border-color: #f6b94f; box-shadow: 0 10px 30px rgba(246, 185, 79, 0.25); background: rgba(246, 185, 79, 0.04); }
+        .roadmap-card.card-ch7.active::before { opacity: 1; }
 
         /* Widescreen Fluid Grid and Card Layouts */
         .widescreen-dashboard-box {
@@ -1532,31 +1626,31 @@ export default function ChatGPTatWork() {
           Interactive Roadmap Navigator
         </div>
         <div className="roadmap-grid">
-          <div className="roadmap-card card-ch1" onClick={() => scrollSection('ch-1')}>
+          <div className={`roadmap-card card-ch1 ${activeChapter === 'ch-1' ? 'active' : ''}`} onClick={() => scrollSection('ch-1')}>
             <span className="chapter-num">Ch. 1</span>
             <h4>Understanding AI & ChatGPT</h4>
           </div>
-          <div className="roadmap-card card-ch2" onClick={() => scrollSection('ch-2')}>
+          <div className={`roadmap-card card-ch2 ${activeChapter === 'ch-2' ? 'active' : ''}`} onClick={() => scrollSection('ch-2')}>
             <span className="chapter-num">Ch. 2</span>
             <h4>Capabilities & Use Cases</h4>
           </div>
-          <div className="roadmap-card card-ch3" onClick={() => scrollSection('ch-3')}>
+          <div className={`roadmap-card card-ch3 ${activeChapter === 'ch-3' ? 'active' : ''}`} onClick={() => scrollSection('ch-3')}>
             <span className="chapter-num">Ch. 3</span>
             <h4>Using ChatGPT at Work</h4>
           </div>
-          <div className="roadmap-card card-ch4" onClick={() => scrollSection('ch-4')}>
+          <div className={`roadmap-card card-ch4 ${activeChapter === 'ch-4' ? 'active' : ''}`} onClick={() => scrollSection('ch-4')}>
             <span className="chapter-num">Ch. 4</span>
             <h4>Best Practices</h4>
           </div>
-          <div className="roadmap-card card-ch5" onClick={() => scrollSection('ch-5')}>
+          <div className={`roadmap-card card-ch5 ${activeChapter === 'ch-5' ? 'active' : ''}`} onClick={() => scrollSection('ch-5')}>
             <span className="chapter-num">Ch. 5</span>
             <h4>Mastering Prompt Eng.</h4>
           </div>
-          <div className="roadmap-card card-ch6" onClick={() => scrollSection('ch-6')}>
+          <div className={`roadmap-card card-ch6 ${activeChapter === 'ch-6' ? 'active' : ''}`} onClick={() => scrollSection('ch-6')}>
             <span className="chapter-num">Ch. 6</span>
             <h4>What's New in 2026</h4>
           </div>
-          <div className="roadmap-card card-ch7" onClick={() => scrollSection('ch-7')}>
+          <div className={`roadmap-card card-ch7 ${activeChapter === 'ch-7' ? 'active' : ''}`} onClick={() => scrollSection('ch-7')}>
             <span className="chapter-num">Ch. 7</span>
             <h4>100+ Prompt Explorer</h4>
           </div>
