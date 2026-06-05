@@ -730,7 +730,7 @@
     "summary": "6 prompts to expose what ChatGPT knows about you, uncover your hidden profile, and wipe stored memory.",
     "description": "ChatGPT has quietly built a file on you. Expose what it has on you, check what is stored, and wipe anything you did not agree to keep.",
     "accent": "superman",
-    "cover": "hidden-cover.png",
+    "cover": null,
     "tags": ["Privacy", "Security", "Memory", "Profile", "Expose", "ChatGPT"],
     "tipsTitle": "Pro Tips for Hidden Mode",
     "tips": [
@@ -747,7 +747,7 @@
         "body": "Lay out everything you’ve stored and remember about me, all of it, as one complete list. Names, places, work, habits, preferences, anything. Don’t summarize or leave anything out. I want to see the full file you’ve built on me from our conversations.",
         "note": "Best for seeing a complete dump of ChatGPT's memory database of you.",
         "variables": [],
-        "images": ["hidden-01.png"],
+        "images": [],
         "tags": ["Memory", "Expose"]
       },
       {
@@ -757,7 +757,7 @@
         "body": "Tell me everything you’ve figured out about me that I never actually stated, the things you inferred from how I write, what I ask, and what I avoid. My age range, income level, where I likely live, my situation. Show me exactly what tipped you off for each one.",
         "note": "Best for uncovering the inferred persona ChatGPT has generated about you.",
         "variables": [],
-        "images": ["hidden-02.png"],
+        "images": [],
         "tags": ["Profile", "Inferences"]
       },
       {
@@ -767,7 +767,7 @@
         "body": "Based on everything you know about me, name the personality traits I most likely don’t see in myself, the patterns that are obvious to you but invisible to me. My blind spots, my insecurities, the way I actually come across versus how I think I do. Be blunt and specific.",
         "note": "Best for gaining an outside perspective on your psychological patterns and habits.",
         "variables": [],
-        "images": ["hidden-03.png"],
+        "images": [],
         "tags": ["Blind Spots", "Self-Mastery"]
       },
       {
@@ -777,7 +777,7 @@
         "body": "Using your profile of me, predict how I’d handle things I’ve never told you about: money, stress, conflict, risk, and the decision I’m most likely to make next in my life. Tell me how confident you are in each one and what in my behavior it’s based on.",
         "note": "Best for testing the predictive accuracy of the profile ChatGPT has built.",
         "variables": [],
-        "images": ["hidden-04.png"],
+        "images": [],
         "tags": ["Predictions", "Profiling"]
       },
       {
@@ -787,7 +787,7 @@
         "body": "Open ChatGPT Settings, Personalization, then Manage Memories. That’s the explicit list of facts it’s saved about you.\n\nRead it, then tap the trash icon on anything you want gone, or Clear All to wipe the lot. Deletion is instant, no undo.",
         "note": "Best for deleting individual facts or clearing out all saved memory data.",
         "variables": [],
-        "images": ["hidden-05.png"],
+        "images": [],
         "tags": ["Settings", "Memory Wipe"]
       },
       {
@@ -797,7 +797,7 @@
         "body": "Deleting the list isn’t enough. Two switches keep profiling you in the background.\n\nIn Settings, Personalization, turn off Reference Chat History, the hidden layer with no list you can ever see.\n\nThen go to Data Controls and TURN OFF “Improve the model for everyone” so your chats stop training future models. Memory and training are separate toggles, flip both.",
         "note": "Best for completely disabling background tracking and model training.",
         "variables": [],
-        "images": ["hidden-06.png"],
+        "images": [],
         "tags": ["Tracking", "Privacy Settings"]
       }
     ]
