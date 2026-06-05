@@ -13,6 +13,7 @@ const libraryEmojis = {
   higgsfield: '🧪',
   nostalgia: '📼',
   superman: '⚡',
+  hidden: '🕵️‍♂️',
 }
 
 const categoryEmojis = {
@@ -51,6 +52,12 @@ const categoryEmojis = {
   VHS: '📼',
   'Vintage Sepia': '🧳',
   Y2K: '💿',
+  Memory: '💾',
+  Profile: '👤',
+  'Blind Spots': '👁️',
+  Predictions: '🔮',
+  Settings: '⚙️',
+  Tracking: '🕵️‍♂️',
 }
 
 export const assetUrl = (fileName) => {
