@@ -90,6 +90,7 @@ export default function PromptComposer({
   onCopy,
   isFavorite,
   onToggleFavorite,
+  detailEyebrow,
 }) {
   const [status, setStatus] = useState('idle')
   const [activeImage, setActiveImage] = useState(0)
@@ -181,7 +182,7 @@ export default function PromptComposer({
           )}
         </div>
         <div className="detail-copy">
-          <p className="eyebrow">{library.shortTitle} / {prompt.category}</p>
+          <p className="eyebrow">{detailEyebrow ?? `${library.shortTitle} / ${prompt.category}`}</p>
           <h1>{prompt.title}</h1>
           <p>{prompt.note}</p>
           <div className="tag-row">

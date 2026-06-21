@@ -30,6 +30,12 @@ const pageVariants = {
   exit: { opacity: 0, y: -8 },
 }
 
+function findDirectEntryPrompt(libraryId) {
+  const library = findLibrary(libraryId)
+  if (!library?.entryPromptId) return null
+  return findPrompt(libraryId, library.entryPromptId)
+}
+
 function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '')
   const parts = hash.split('/').filter(Boolean)
@@ -41,6 +47,14 @@ function parseRoute() {
   if (parts[0] === 'ChatGPTatWork') return { name: 'ChatGPTatWork' }
   if (parts[0] === 'library' && parts[1]) return { name: 'library', libraryId: parts[1] }
   if (parts[0] === 'prompt' && parts[1] && parts[2]) {
+    const directEntryPrompt = findDirectEntryPrompt(parts[1])
+    if (directEntryPrompt?.prompt.id === parts[2]) {
+      return {
+        name: 'library',
+        libraryId: parts[1],
+        canonicalHash: `#/library/${parts[1]}`,
+      }
+    }
     return { name: 'prompt', libraryId: parts[1], promptId: parts[2] }
   }
 
@@ -72,6 +86,12 @@ export default function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  useEffect(() => {
+    if (route.canonicalHash && window.location.hash !== route.canonicalHash) {
+      window.history.replaceState(null, '', route.canonicalHash)
+    }
+  }, [route.canonicalHash])
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' })
@@ -179,6 +199,9 @@ export default function App() {
               favoriteSet={favoriteSet}
               preferredView={preferredView}
               setPreferredView={setPreferredView}
+              drafts={drafts}
+              onDraftChange={updateDraft}
+              onResetDraft={resetDraft}
               onToggleFavorite={toggleFavorite}
               onCopy={copyPrompt}
             />
@@ -238,7 +261,17 @@ function Dashboard() {
   )
 }
 
-function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, onToggleFavorite, onCopy }) {
+function LibraryPage({
+  libraryId,
+  favoriteSet,
+  preferredView,
+  setPreferredView,
+  drafts,
+  onDraftChange,
+  onResetDraft,
+  onToggleFavorite,
+  onCopy,
+}) {
   const library = findLibrary(libraryId)
   const [query, setQuery] = useState('')
 
@@ -258,6 +291,24 @@ function LibraryPage({ libraryId, favoriteSet, preferredView, setPreferredView, 
   }, [libraryPrompts, query])
 
   if (!library) return <MissingPage />
+  if (library.entryPromptId) {
+    const prompt = library.prompts.find((item) => item.id === library.entryPromptId) ?? library.prompts[0]
+
+    if (!prompt) return <MissingPage />
+
+    return (
+      <DirectEntryLibraryPage
+        library={library}
+        prompt={prompt}
+        draft={drafts[prompt.key]}
+        favoriteSet={favoriteSet}
+        onDraftChange={onDraftChange}
+        onResetDraft={onResetDraft}
+        onToggleFavorite={onToggleFavorite}
+        onCopy={onCopy}
+      />
+    )
+  }
 
   return (
     <div className="page library-page">
@@ -337,6 +388,24 @@ function VisitCounter({ library }) {
     <aside className="visit-counter" aria-label={`${library.shortTitle} visit counter`}>
       <img src={getVisitorBadgeUrl(library.id)} alt={`${library.shortTitle} visitor counter`} loading="lazy" referrerPolicy="no-referrer" />
     </aside>
+  )
+}
+
+function DirectEntryLibraryPage({ library, prompt, draft, favoriteSet, onDraftChange, onResetDraft, onToggleFavorite, onCopy }) {
+  return (
+    <div className="page prompt-page">
+      <PromptComposer
+        library={library}
+        prompt={prompt}
+        draft={draft}
+        onDraftChange={(value) => onDraftChange(prompt.key, value)}
+        onResetDraft={() => onResetDraft(prompt.key)}
+        onCopy={onCopy}
+        isFavorite={favoriteSet.has(prompt.key)}
+        onToggleFavorite={onToggleFavorite}
+        detailEyebrow={library.shortTitle}
+      />
+    </div>
   )
 }
 
