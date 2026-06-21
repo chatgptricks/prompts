@@ -45,6 +45,7 @@ const categoryEmojis = {
   Restoration: '🧰',
   Script: '🎙️',
   Selfie: '🤳',
+  'Sports Broadcast': '🏟️',
   Tabloid: '🗞️',
   Strategy: '♟️',
   Storytelling: '📚',
