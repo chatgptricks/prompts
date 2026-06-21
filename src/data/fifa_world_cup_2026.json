@@ -1,0 +1,2969 @@
+{
+  "source": {
+    "fetchedAt": "2026-06-21T22:24:02.907Z",
+    "fixturesUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?limit=500&dates=20260611-20260719",
+    "venueReferenceUrl": "https://fifaworldcup26.suites.fifa.com/venues/"
+  },
+  "defaults": {
+    "matchId": "760444",
+    "scoreboardTime": "34:29"
+  },
+  "teams": [
+    {
+      "code": "ALG",
+      "name": "Algeria",
+      "shortName": "Algeria"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "shortName": "Argentina"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "shortName": "Australia"
+    },
+    {
+      "code": "AUT",
+      "name": "Austria",
+      "shortName": "Austria"
+    },
+    {
+      "code": "BEL",
+      "name": "Belgium",
+      "shortName": "Belgium"
+    },
+    {
+      "code": "BIH",
+      "name": "Bosnia-Herzegovina",
+      "shortName": "Bosnia-Herz"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "shortName": "Brazil"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "shortName": "Canada"
+    },
+    {
+      "code": "CPV",
+      "name": "Cape Verde",
+      "shortName": "Cape Verde"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "shortName": "Colombia"
+    },
+    {
+      "code": "COD",
+      "name": "Congo DR",
+      "shortName": "Congo DR"
+    },
+    {
+      "code": "CRO",
+      "name": "Croatia",
+      "shortName": "Croatia"
+    },
+    {
+      "code": "CUW",
+      "name": "Curaçao",
+      "shortName": "Curaçao"
+    },
+    {
+      "code": "CZE",
+      "name": "Czechia",
+      "shortName": "Czechia"
+    },
+    {
+      "code": "ECU",
+      "name": "Ecuador",
+      "shortName": "Ecuador"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "shortName": "Egypt"
+    },
+    {
+      "code": "ENG",
+      "name": "England",
+      "shortName": "England"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "shortName": "France"
+    },
+    {
+      "code": "GER",
+      "name": "Germany",
+      "shortName": "Germany"
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "shortName": "Ghana"
+    },
+    {
+      "code": "HAI",
+      "name": "Haiti",
+      "shortName": "Haiti"
+    },
+    {
+      "code": "IRN",
+      "name": "Iran",
+      "shortName": "Iran"
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "shortName": "Iraq"
+    },
+    {
+      "code": "CIV",
+      "name": "Ivory Coast",
+      "shortName": "Ivory Coast"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "shortName": "Japan"
+    },
+    {
+      "code": "JOR",
+      "name": "Jordan",
+      "shortName": "Jordan"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "shortName": "Mexico"
+    },
+    {
+      "code": "MAR",
+      "name": "Morocco",
+      "shortName": "Morocco"
+    },
+    {
+      "code": "NED",
+      "name": "Netherlands",
+      "shortName": "Netherlands"
+    },
+    {
+      "code": "NZL",
+      "name": "New Zealand",
+      "shortName": "New Zealand"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "shortName": "Norway"
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "shortName": "Panama"
+    },
+    {
+      "code": "PAR",
+      "name": "Paraguay",
+      "shortName": "Paraguay"
+    },
+    {
+      "code": "POR",
+      "name": "Portugal",
+      "shortName": "Portugal"
+    },
+    {
+      "code": "QAT",
+      "name": "Qatar",
+      "shortName": "Qatar"
+    },
+    {
+      "code": "KSA",
+      "name": "Saudi Arabia",
+      "shortName": "Saudi Arabia"
+    },
+    {
+      "code": "SCO",
+      "name": "Scotland",
+      "shortName": "Scotland"
+    },
+    {
+      "code": "SEN",
+      "name": "Senegal",
+      "shortName": "Senegal"
+    },
+    {
+      "code": "RSA",
+      "name": "South Africa",
+      "shortName": "South Africa"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "shortName": "South Korea"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "shortName": "Spain"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "shortName": "Sweden"
+    },
+    {
+      "code": "SUI",
+      "name": "Switzerland",
+      "shortName": "Switzerland"
+    },
+    {
+      "code": "TUN",
+      "name": "Tunisia",
+      "shortName": "Tunisia"
+    },
+    {
+      "code": "TUR",
+      "name": "Türkiye",
+      "shortName": "Türkiye"
+    },
+    {
+      "code": "USA",
+      "name": "United States",
+      "shortName": "USA"
+    },
+    {
+      "code": "URU",
+      "name": "Uruguay",
+      "shortName": "Uruguay"
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "shortName": "Uzbekistan"
+    }
+  ],
+  "stadiums": [
+    {
+      "id": "atlanta-stadium",
+      "name": "Atlanta Stadium",
+      "city": "Atlanta",
+      "location": "Atlanta, U.S.",
+      "realVenue": "Mercedes-Benz Stadium"
+    },
+    {
+      "id": "bc-place-vancouver",
+      "name": "BC Place Vancouver",
+      "city": "Vancouver",
+      "location": "Vancouver, Canada",
+      "realVenue": "BC Place"
+    },
+    {
+      "id": "boston-stadium",
+      "name": "Boston Stadium",
+      "city": "Boston",
+      "location": "Boston, U.S.",
+      "realVenue": "Gillette Stadium"
+    },
+    {
+      "id": "dallas-stadium",
+      "name": "Dallas Stadium",
+      "city": "Dallas",
+      "location": "Dallas, U.S.",
+      "realVenue": "AT&T Stadium"
+    },
+    {
+      "id": "guadalajara-stadium",
+      "name": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "location": "Guadalajara, Mexico",
+      "realVenue": "Estadio Akron"
+    },
+    {
+      "id": "houston-stadium",
+      "name": "Houston Stadium",
+      "city": "Houston",
+      "location": "Houston, U.S.",
+      "realVenue": "NRG Stadium"
+    },
+    {
+      "id": "kansas-city-stadium",
+      "name": "Kansas City Stadium",
+      "city": "Kansas City",
+      "location": "Kansas City, U.S.",
+      "realVenue": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "id": "los-angeles-stadium",
+      "name": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "location": "Los Angeles, U.S.",
+      "realVenue": "SoFi Stadium"
+    },
+    {
+      "id": "mexico-city-stadium",
+      "name": "Mexico City Stadium",
+      "city": "Mexico City",
+      "location": "Mexico City, Mexico",
+      "realVenue": "Estadio Banorte"
+    },
+    {
+      "id": "miami-stadium",
+      "name": "Miami Stadium",
+      "city": "Miami",
+      "location": "Miami, U.S.",
+      "realVenue": "Hard Rock Stadium"
+    },
+    {
+      "id": "monterrey-stadium",
+      "name": "Monterrey Stadium",
+      "city": "Monterrey",
+      "location": "Monterrey, Mexico",
+      "realVenue": "Estadio BBVA"
+    },
+    {
+      "id": "new-york-new-jersey-stadium",
+      "name": "New York New Jersey Stadium",
+      "city": "New York New Jersey",
+      "location": "New York New Jersey, U.S.",
+      "realVenue": "MetLife Stadium"
+    },
+    {
+      "id": "philadelphia-stadium",
+      "name": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "location": "Philadelphia, U.S.",
+      "realVenue": "Lincoln Financial Field"
+    },
+    {
+      "id": "san-francisco-bay-area-stadium",
+      "name": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "location": "San Francisco Bay Area, U.S.",
+      "realVenue": "Levi's Stadium"
+    },
+    {
+      "id": "seattle-stadium",
+      "name": "Seattle Stadium",
+      "city": "Seattle",
+      "location": "Seattle, U.S.",
+      "realVenue": "Lumen Field"
+    },
+    {
+      "id": "toronto-stadium",
+      "name": "Toronto Stadium",
+      "city": "Toronto",
+      "location": "Toronto, Canada",
+      "realVenue": "BMO Field"
+    }
+  ],
+  "matches": [
+    {
+      "id": "760415",
+      "sequence": 1,
+      "date": "2026-06-11T19:00Z",
+      "dateLabel": "Jun 11, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "MEX",
+        "name": "Mexico",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "RSA",
+        "name": "South Africa",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "mexico-city-stadium",
+      "label": "Jun 11, 3:00 PM EDT - Mexico 2-0 South Africa - Mexico City Stadium"
+    },
+    {
+      "id": "760414",
+      "sequence": 2,
+      "date": "2026-06-12T02:00Z",
+      "dateLabel": "Jun 11, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "KOR",
+        "name": "South Korea",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CZE",
+        "name": "Czechia",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "guadalajara-stadium",
+      "label": "Jun 11, 10:00 PM EDT - South Korea 2-1 Czechia - Guadalajara Stadium"
+    },
+    {
+      "id": "760416",
+      "sequence": 3,
+      "date": "2026-06-12T19:00Z",
+      "dateLabel": "Jun 12, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "CAN",
+        "name": "Canada",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "BIH",
+        "name": "Bosnia-Herzegovina",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jun 12, 3:00 PM EDT - Canada 1-1 Bosnia-Herzegovina - Toronto Stadium"
+    },
+    {
+      "id": "760417",
+      "sequence": 4,
+      "date": "2026-06-13T01:00Z",
+      "dateLabel": "Jun 12, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "USA",
+        "name": "United States",
+        "score": 4,
+        "placeholder": false
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 12, 9:00 PM EDT - United States 4-1 Paraguay - Los Angeles Stadium"
+    },
+    {
+      "id": "760420",
+      "sequence": 5,
+      "date": "2026-06-13T19:00Z",
+      "dateLabel": "Jun 13, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "QAT",
+        "name": "Qatar",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SUI",
+        "name": "Switzerland",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jun 13, 3:00 PM EDT - Qatar 1-1 Switzerland - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760419",
+      "sequence": 6,
+      "date": "2026-06-13T22:00Z",
+      "dateLabel": "Jun 13, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "BRA",
+        "name": "Brazil",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Morocco",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 13, 6:00 PM EDT - Brazil 1-1 Morocco - New York New Jersey Stadium"
+    },
+    {
+      "id": "760418",
+      "sequence": 7,
+      "date": "2026-06-14T01:00Z",
+      "dateLabel": "Jun 13, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "HAI",
+        "name": "Haiti",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SCO",
+        "name": "Scotland",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 13, 9:00 PM EDT - Haiti 0-1 Scotland - Boston Stadium"
+    },
+    {
+      "id": "760421",
+      "sequence": 8,
+      "date": "2026-06-14T04:00Z",
+      "dateLabel": "Jun 14, 12:00 AM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "AUS",
+        "name": "Australia",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jun 14, 12:00 AM EDT - Australia 2-0 Türkiye - BC Place Vancouver"
+    },
+    {
+      "id": "760422",
+      "sequence": 9,
+      "date": "2026-06-14T17:00Z",
+      "dateLabel": "Jun 14, 1:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "GER",
+        "name": "Germany",
+        "score": 7,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CUW",
+        "name": "Curaçao",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 14, 1:00 PM EDT - Germany 7-1 Curaçao - Houston Stadium"
+    },
+    {
+      "id": "760425",
+      "sequence": 10,
+      "date": "2026-06-14T20:00Z",
+      "dateLabel": "Jun 14, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "NED",
+        "name": "Netherlands",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "JPN",
+        "name": "Japan",
+        "score": 2,
+        "placeholder": false
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 14, 4:00 PM EDT - Netherlands 2-2 Japan - Dallas Stadium"
+    },
+    {
+      "id": "760423",
+      "sequence": 11,
+      "date": "2026-06-14T23:00Z",
+      "dateLabel": "Jun 14, 7:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "CIV",
+        "name": "Ivory Coast",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ecuador",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jun 14, 7:00 PM EDT - Ivory Coast 1-0 Ecuador - Philadelphia Stadium"
+    },
+    {
+      "id": "760424",
+      "sequence": 12,
+      "date": "2026-06-15T02:00Z",
+      "dateLabel": "Jun 14, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "SWE",
+        "name": "Sweden",
+        "score": 5,
+        "placeholder": false
+      },
+      "away": {
+        "code": "TUN",
+        "name": "Tunisia",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "monterrey-stadium",
+      "label": "Jun 14, 10:00 PM EDT - Sweden 5-1 Tunisia - Monterrey Stadium"
+    },
+    {
+      "id": "760428",
+      "sequence": 13,
+      "date": "2026-06-15T16:00Z",
+      "dateLabel": "Jun 15, 12:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "ESP",
+        "name": "Spain",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CPV",
+        "name": "Cape Verde",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jun 15, 12:00 PM EDT - Spain 0-0 Cape Verde - Atlanta Stadium"
+    },
+    {
+      "id": "760426",
+      "sequence": 14,
+      "date": "2026-06-15T19:00Z",
+      "dateLabel": "Jun 15, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "BEL",
+        "name": "Belgium",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "EGY",
+        "name": "Egypt",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jun 15, 3:00 PM EDT - Belgium 1-1 Egypt - Seattle Stadium"
+    },
+    {
+      "id": "760429",
+      "sequence": 15,
+      "date": "2026-06-15T22:00Z",
+      "dateLabel": "Jun 15, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jun 15, 6:00 PM EDT - Saudi Arabia 1-1 Uruguay - Miami Stadium"
+    },
+    {
+      "id": "760427",
+      "sequence": 16,
+      "date": "2026-06-16T01:00Z",
+      "dateLabel": "Jun 15, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "IRN",
+        "name": "Iran",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "NZL",
+        "name": "New Zealand",
+        "score": 2,
+        "placeholder": false
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 15, 9:00 PM EDT - Iran 2-2 New Zealand - Los Angeles Stadium"
+    },
+    {
+      "id": "760432",
+      "sequence": 17,
+      "date": "2026-06-16T19:00Z",
+      "dateLabel": "Jun 16, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "FRA",
+        "name": "France",
+        "score": 3,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 16, 3:00 PM EDT - France 3-1 Senegal - New York New Jersey Stadium"
+    },
+    {
+      "id": "760430",
+      "sequence": 18,
+      "date": "2026-06-16T22:00Z",
+      "dateLabel": "Jun 16, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "IRQ",
+        "name": "Iraq",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "NOR",
+        "name": "Norway",
+        "score": 4,
+        "placeholder": false
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 16, 6:00 PM EDT - Iraq 1-4 Norway - Boston Stadium"
+    },
+    {
+      "id": "760433",
+      "sequence": 19,
+      "date": "2026-06-17T01:00Z",
+      "dateLabel": "Jun 16, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "ARG",
+        "name": "Argentina",
+        "score": 3,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ALG",
+        "name": "Algeria",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jun 16, 9:00 PM EDT - Argentina 3-0 Algeria - Kansas City Stadium"
+    },
+    {
+      "id": "760431",
+      "sequence": 20,
+      "date": "2026-06-17T04:00Z",
+      "dateLabel": "Jun 17, 12:00 AM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "AUT",
+        "name": "Austria",
+        "score": 3,
+        "placeholder": false
+      },
+      "away": {
+        "code": "JOR",
+        "name": "Jordan",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jun 17, 12:00 AM EDT - Austria 3-1 Jordan - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760435",
+      "sequence": 21,
+      "date": "2026-06-17T17:00Z",
+      "dateLabel": "Jun 17, 1:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "POR",
+        "name": "Portugal",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "COD",
+        "name": "Congo DR",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 17, 1:00 PM EDT - Portugal 1-1 Congo DR - Houston Stadium"
+    },
+    {
+      "id": "760437",
+      "sequence": 22,
+      "date": "2026-06-17T20:00Z",
+      "dateLabel": "Jun 17, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "ENG",
+        "name": "England",
+        "score": 4,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Croatia",
+        "score": 2,
+        "placeholder": false
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 17, 4:00 PM EDT - England 4-2 Croatia - Dallas Stadium"
+    },
+    {
+      "id": "760434",
+      "sequence": 23,
+      "date": "2026-06-17T23:00Z",
+      "dateLabel": "Jun 17, 7:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "GHA",
+        "name": "Ghana",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "PAN",
+        "name": "Panama",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jun 17, 7:00 PM EDT - Ghana 1-0 Panama - Toronto Stadium"
+    },
+    {
+      "id": "760436",
+      "sequence": 24,
+      "date": "2026-06-18T02:00Z",
+      "dateLabel": "Jun 17, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "COL",
+        "name": "Colombia",
+        "score": 3,
+        "placeholder": false
+      },
+      "stadiumId": "mexico-city-stadium",
+      "label": "Jun 17, 10:00 PM EDT - Uzbekistan 1-3 Colombia - Mexico City Stadium"
+    },
+    {
+      "id": "760438",
+      "sequence": 25,
+      "date": "2026-06-18T16:00Z",
+      "dateLabel": "Jun 18, 12:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "CZE",
+        "name": "Czechia",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "RSA",
+        "name": "South Africa",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jun 18, 12:00 PM EDT - Czechia 1-1 South Africa - Atlanta Stadium"
+    },
+    {
+      "id": "760439",
+      "sequence": 26,
+      "date": "2026-06-18T19:00Z",
+      "dateLabel": "Jun 18, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "SUI",
+        "name": "Switzerland",
+        "score": 4,
+        "placeholder": false
+      },
+      "away": {
+        "code": "BIH",
+        "name": "Bosnia-Herzegovina",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 18, 3:00 PM EDT - Switzerland 4-1 Bosnia-Herzegovina - Los Angeles Stadium"
+    },
+    {
+      "id": "760440",
+      "sequence": 27,
+      "date": "2026-06-18T22:00Z",
+      "dateLabel": "Jun 18, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "CAN",
+        "name": "Canada",
+        "score": 6,
+        "placeholder": false
+      },
+      "away": {
+        "code": "QAT",
+        "name": "Qatar",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jun 18, 6:00 PM EDT - Canada 6-0 Qatar - BC Place Vancouver"
+    },
+    {
+      "id": "760441",
+      "sequence": 28,
+      "date": "2026-06-19T01:00Z",
+      "dateLabel": "Jun 18, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "MEX",
+        "name": "Mexico",
+        "score": 1,
+        "placeholder": false
+      },
+      "away": {
+        "code": "KOR",
+        "name": "South Korea",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "guadalajara-stadium",
+      "label": "Jun 18, 9:00 PM EDT - Mexico 1-0 South Korea - Guadalajara Stadium"
+    },
+    {
+      "id": "760442",
+      "sequence": 29,
+      "date": "2026-06-19T19:00Z",
+      "dateLabel": "Jun 19, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "USA",
+        "name": "United States",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Australia",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jun 19, 3:00 PM EDT - United States 2-0 Australia - Seattle Stadium"
+    },
+    {
+      "id": "760445",
+      "sequence": 30,
+      "date": "2026-06-19T22:00Z",
+      "dateLabel": "Jun 19, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "SCO",
+        "name": "Scotland",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Morocco",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 19, 6:00 PM EDT - Scotland 0-1 Morocco - Boston Stadium"
+    },
+    {
+      "id": "760444",
+      "sequence": 31,
+      "date": "2026-06-20T00:30Z",
+      "dateLabel": "Jun 19, 8:30 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "BRA",
+        "name": "Brazil",
+        "score": 3,
+        "placeholder": false
+      },
+      "away": {
+        "code": "HAI",
+        "name": "Haiti",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jun 19, 8:30 PM EDT - Brazil 3-0 Haiti - Philadelphia Stadium"
+    },
+    {
+      "id": "760443",
+      "sequence": 32,
+      "date": "2026-06-20T03:00Z",
+      "dateLabel": "Jun 19, 11:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jun 19, 11:00 PM EDT - Türkiye 0-1 Paraguay - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760447",
+      "sequence": 33,
+      "date": "2026-06-20T17:00Z",
+      "dateLabel": "Jun 20, 1:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "NED",
+        "name": "Netherlands",
+        "score": 5,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SWE",
+        "name": "Sweden",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 20, 1:00 PM EDT - Netherlands 5-1 Sweden - Houston Stadium"
+    },
+    {
+      "id": "760448",
+      "sequence": 34,
+      "date": "2026-06-20T20:00Z",
+      "dateLabel": "Jun 20, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "GER",
+        "name": "Germany",
+        "score": 2,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CIV",
+        "name": "Ivory Coast",
+        "score": 1,
+        "placeholder": false
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jun 20, 4:00 PM EDT - Germany 2-1 Ivory Coast - Toronto Stadium"
+    },
+    {
+      "id": "760446",
+      "sequence": 35,
+      "date": "2026-06-21T00:00Z",
+      "dateLabel": "Jun 20, 8:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "ECU",
+        "name": "Ecuador",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CUW",
+        "name": "Curaçao",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jun 20, 8:00 PM EDT - Ecuador 0-0 Curaçao - Kansas City Stadium"
+    },
+    {
+      "id": "760449",
+      "sequence": 36,
+      "date": "2026-06-21T04:00Z",
+      "dateLabel": "Jun 21, 12:00 AM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "TUN",
+        "name": "Tunisia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "JPN",
+        "name": "Japan",
+        "score": 4,
+        "placeholder": false
+      },
+      "stadiumId": "monterrey-stadium",
+      "label": "Jun 21, 12:00 AM EDT - Tunisia 0-4 Japan - Monterrey Stadium"
+    },
+    {
+      "id": "760453",
+      "sequence": 37,
+      "date": "2026-06-21T16:00Z",
+      "dateLabel": "Jun 21, 12:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "ESP",
+        "name": "Spain",
+        "score": 4,
+        "placeholder": false
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jun 21, 12:00 PM EDT - Spain 4-0 Saudi Arabia - Atlanta Stadium"
+    },
+    {
+      "id": "760451",
+      "sequence": 38,
+      "date": "2026-06-21T19:00Z",
+      "dateLabel": "Jun 21, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Full Time",
+      "completed": true,
+      "home": {
+        "code": "BEL",
+        "name": "Belgium",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "IRN",
+        "name": "Iran",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 21, 3:00 PM EDT - Belgium 0-0 Iran - Los Angeles Stadium"
+    },
+    {
+      "id": "760450",
+      "sequence": 39,
+      "date": "2026-06-21T22:00Z",
+      "dateLabel": "Jun 21, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "First Half",
+      "completed": false,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CPV",
+        "name": "Cape Verde",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jun 21, 6:00 PM EDT - Uruguay 0-0 Cape Verde - Miami Stadium"
+    },
+    {
+      "id": "760452",
+      "sequence": 40,
+      "date": "2026-06-22T01:00Z",
+      "dateLabel": "Jun 21, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "NZL",
+        "name": "New Zealand",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "EGY",
+        "name": "Egypt",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jun 21, 9:00 PM EDT - New Zealand 0-0 Egypt - BC Place Vancouver"
+    },
+    {
+      "id": "760456",
+      "sequence": 41,
+      "date": "2026-06-22T17:00Z",
+      "dateLabel": "Jun 22, 1:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "ARG",
+        "name": "Argentina",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Austria",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 22, 1:00 PM EDT - Argentina 0-0 Austria - Dallas Stadium"
+    },
+    {
+      "id": "760457",
+      "sequence": 42,
+      "date": "2026-06-22T21:00Z",
+      "dateLabel": "Jun 22, 5:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "FRA",
+        "name": "France",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "Iraq",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jun 22, 5:00 PM EDT - France 0-0 Iraq - Philadelphia Stadium"
+    },
+    {
+      "id": "760454",
+      "sequence": 43,
+      "date": "2026-06-23T00:00Z",
+      "dateLabel": "Jun 22, 8:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "NOR",
+        "name": "Norway",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 22, 8:00 PM EDT - Norway 0-0 Senegal - New York New Jersey Stadium"
+    },
+    {
+      "id": "760455",
+      "sequence": 44,
+      "date": "2026-06-23T03:00Z",
+      "dateLabel": "Jun 22, 11:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "JOR",
+        "name": "Jordan",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ALG",
+        "name": "Algeria",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jun 22, 11:00 PM EDT - Jordan 0-0 Algeria - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760461",
+      "sequence": 45,
+      "date": "2026-06-23T17:00Z",
+      "dateLabel": "Jun 23, 1:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "POR",
+        "name": "Portugal",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 23, 1:00 PM EDT - Portugal 0-0 Uzbekistan - Houston Stadium"
+    },
+    {
+      "id": "760458",
+      "sequence": 46,
+      "date": "2026-06-23T20:00Z",
+      "dateLabel": "Jun 23, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "ENG",
+        "name": "England",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Ghana",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 23, 4:00 PM EDT - England 0-0 Ghana - Boston Stadium"
+    },
+    {
+      "id": "760460",
+      "sequence": 47,
+      "date": "2026-06-23T23:00Z",
+      "dateLabel": "Jun 23, 7:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "PAN",
+        "name": "Panama",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Croatia",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jun 23, 7:00 PM EDT - Panama 0-0 Croatia - Toronto Stadium"
+    },
+    {
+      "id": "760459",
+      "sequence": 48,
+      "date": "2026-06-24T02:00Z",
+      "dateLabel": "Jun 23, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "COL",
+        "name": "Colombia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "COD",
+        "name": "Congo DR",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "guadalajara-stadium",
+      "label": "Jun 23, 10:00 PM EDT - Colombia 0-0 Congo DR - Guadalajara Stadium"
+    },
+    {
+      "id": "760462",
+      "sequence": 49,
+      "date": "2026-06-24T19:00Z",
+      "dateLabel": "Jun 24, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "BIH",
+        "name": "Bosnia-Herzegovina",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "QAT",
+        "name": "Qatar",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jun 24, 3:00 PM EDT - Bosnia-Herzegovina 0-0 Qatar - Seattle Stadium"
+    },
+    {
+      "id": "760463",
+      "sequence": 50,
+      "date": "2026-06-24T19:00Z",
+      "dateLabel": "Jun 24, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "B",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "SUI",
+        "name": "Switzerland",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CAN",
+        "name": "Canada",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jun 24, 3:00 PM EDT - Switzerland 0-0 Canada - BC Place Vancouver"
+    },
+    {
+      "id": "760464",
+      "sequence": 51,
+      "date": "2026-06-24T22:00Z",
+      "dateLabel": "Jun 24, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "MAR",
+        "name": "Morocco",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "HAI",
+        "name": "Haiti",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jun 24, 6:00 PM EDT - Morocco 0-0 Haiti - Atlanta Stadium"
+    },
+    {
+      "id": "760465",
+      "sequence": 52,
+      "date": "2026-06-24T22:00Z",
+      "dateLabel": "Jun 24, 6:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "C",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "SCO",
+        "name": "Scotland",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "BRA",
+        "name": "Brazil",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jun 24, 6:00 PM EDT - Scotland 0-0 Brazil - Miami Stadium"
+    },
+    {
+      "id": "760467",
+      "sequence": 53,
+      "date": "2026-06-25T01:00Z",
+      "dateLabel": "Jun 24, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "CZE",
+        "name": "Czechia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "MEX",
+        "name": "Mexico",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "mexico-city-stadium",
+      "label": "Jun 24, 9:00 PM EDT - Czechia 0-0 Mexico - Mexico City Stadium"
+    },
+    {
+      "id": "760466",
+      "sequence": 54,
+      "date": "2026-06-25T01:00Z",
+      "dateLabel": "Jun 24, 9:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "A",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RSA",
+        "name": "South Africa",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "KOR",
+        "name": "South Korea",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "monterrey-stadium",
+      "label": "Jun 24, 9:00 PM EDT - South Africa 0-0 South Korea - Monterrey Stadium"
+    },
+    {
+      "id": "760473",
+      "sequence": 55,
+      "date": "2026-06-25T20:00Z",
+      "dateLabel": "Jun 25, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "CUW",
+        "name": "Curaçao",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "CIV",
+        "name": "Ivory Coast",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jun 25, 4:00 PM EDT - Curaçao 0-0 Ivory Coast - Philadelphia Stadium"
+    },
+    {
+      "id": "760468",
+      "sequence": 56,
+      "date": "2026-06-25T20:00Z",
+      "dateLabel": "Jun 25, 4:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "E",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "ECU",
+        "name": "Ecuador",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "GER",
+        "name": "Germany",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 25, 4:00 PM EDT - Ecuador 0-0 Germany - New York New Jersey Stadium"
+    },
+    {
+      "id": "760471",
+      "sequence": 57,
+      "date": "2026-06-25T23:00Z",
+      "dateLabel": "Jun 25, 7:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "JPN",
+        "name": "Japan",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "SWE",
+        "name": "Sweden",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 25, 7:00 PM EDT - Japan 0-0 Sweden - Dallas Stadium"
+    },
+    {
+      "id": "760472",
+      "sequence": 58,
+      "date": "2026-06-25T23:00Z",
+      "dateLabel": "Jun 25, 7:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "F",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "TUN",
+        "name": "Tunisia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "NED",
+        "name": "Netherlands",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jun 25, 7:00 PM EDT - Tunisia 0-0 Netherlands - Kansas City Stadium"
+    },
+    {
+      "id": "760469",
+      "sequence": 59,
+      "date": "2026-06-26T02:00Z",
+      "dateLabel": "Jun 25, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Australia",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jun 25, 10:00 PM EDT - Paraguay 0-0 Australia - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760470",
+      "sequence": 60,
+      "date": "2026-06-26T02:00Z",
+      "dateLabel": "Jun 25, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "D",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "USA",
+        "name": "United States",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 25, 10:00 PM EDT - Türkiye 0-0 United States - Los Angeles Stadium"
+    },
+    {
+      "id": "760475",
+      "sequence": 61,
+      "date": "2026-06-26T19:00Z",
+      "dateLabel": "Jun 26, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "NOR",
+        "name": "Norway",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "FRA",
+        "name": "France",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 26, 3:00 PM EDT - Norway 0-0 France - Boston Stadium"
+    },
+    {
+      "id": "760474",
+      "sequence": 62,
+      "date": "2026-06-26T19:00Z",
+      "dateLabel": "Jun 26, 3:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "I",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "SEN",
+        "name": "Senegal",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "Iraq",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jun 26, 3:00 PM EDT - Senegal 0-0 Iraq - Toronto Stadium"
+    },
+    {
+      "id": "760478",
+      "sequence": 63,
+      "date": "2026-06-27T00:00Z",
+      "dateLabel": "Jun 26, 8:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "CPV",
+        "name": "Cape Verde",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 26, 8:00 PM EDT - Cape Verde 0-0 Saudi Arabia - Houston Stadium"
+    },
+    {
+      "id": "760479",
+      "sequence": 64,
+      "date": "2026-06-27T00:00Z",
+      "dateLabel": "Jun 26, 8:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "H",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ESP",
+        "name": "Spain",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "guadalajara-stadium",
+      "label": "Jun 26, 8:00 PM EDT - Uruguay 0-0 Spain - Guadalajara Stadium"
+    },
+    {
+      "id": "760476",
+      "sequence": 65,
+      "date": "2026-06-27T03:00Z",
+      "dateLabel": "Jun 26, 11:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "EGY",
+        "name": "Egypt",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "IRN",
+        "name": "Iran",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jun 26, 11:00 PM EDT - Egypt 0-0 Iran - Seattle Stadium"
+    },
+    {
+      "id": "760477",
+      "sequence": 66,
+      "date": "2026-06-27T03:00Z",
+      "dateLabel": "Jun 26, 11:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "G",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "NZL",
+        "name": "New Zealand",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "BEL",
+        "name": "Belgium",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jun 26, 11:00 PM EDT - New Zealand 0-0 Belgium - BC Place Vancouver"
+    },
+    {
+      "id": "760480",
+      "sequence": 67,
+      "date": "2026-06-27T21:00Z",
+      "dateLabel": "Jun 27, 5:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "CRO",
+        "name": "Croatia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Ghana",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jun 27, 5:00 PM EDT - Croatia 0-0 Ghana - Philadelphia Stadium"
+    },
+    {
+      "id": "760485",
+      "sequence": 68,
+      "date": "2026-06-27T21:00Z",
+      "dateLabel": "Jun 27, 5:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "L",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "PAN",
+        "name": "Panama",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ENG",
+        "name": "England",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 27, 5:00 PM EDT - Panama 0-0 England - New York New Jersey Stadium"
+    },
+    {
+      "id": "760481",
+      "sequence": 69,
+      "date": "2026-06-27T23:30Z",
+      "dateLabel": "Jun 27, 7:30 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "COL",
+        "name": "Colombia",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portugal",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jun 27, 7:30 PM EDT - Colombia 0-0 Portugal - Miami Stadium"
+    },
+    {
+      "id": "760482",
+      "sequence": 70,
+      "date": "2026-06-27T23:30Z",
+      "dateLabel": "Jun 27, 7:30 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "K",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "COD",
+        "name": "Congo DR",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jun 27, 7:30 PM EDT - Congo DR 0-0 Uzbekistan - Atlanta Stadium"
+    },
+    {
+      "id": "760484",
+      "sequence": 71,
+      "date": "2026-06-28T02:00Z",
+      "dateLabel": "Jun 27, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "ALG",
+        "name": "Algeria",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Austria",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jun 27, 10:00 PM EDT - Algeria 0-0 Austria - Kansas City Stadium"
+    },
+    {
+      "id": "760483",
+      "sequence": 72,
+      "date": "2026-06-28T02:00Z",
+      "dateLabel": "Jun 27, 10:00 PM EDT",
+      "stage": "group-stage",
+      "stageLabel": "Group Stage",
+      "group": "J",
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "JOR",
+        "name": "Jordan",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "ARG",
+        "name": "Argentina",
+        "score": 0,
+        "placeholder": false
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 27, 10:00 PM EDT - Jordan 0-0 Argentina - Dallas Stadium"
+    },
+    {
+      "id": "760486",
+      "sequence": 73,
+      "date": "2026-06-28T19:00Z",
+      "dateLabel": "Jun 28, 3:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "2A",
+        "name": "Group A 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2B",
+        "name": "Group B 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jun 28, 3:00 PM EDT - Group A 2nd Place 0-0 Group B 2nd Place - Los Angeles Stadium"
+    },
+    {
+      "id": "760487",
+      "sequence": 74,
+      "date": "2026-06-29T17:00Z",
+      "dateLabel": "Jun 29, 1:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1C",
+        "name": "Group C Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2F",
+        "name": "Group F 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jun 29, 1:00 PM EDT - Group C Winner 0-0 Group F 2nd Place - Houston Stadium"
+    },
+    {
+      "id": "760489",
+      "sequence": 75,
+      "date": "2026-06-29T20:30Z",
+      "dateLabel": "Jun 29, 4:30 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "GER",
+        "name": "Germany",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group A/B/C/D/F",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jun 29, 4:30 PM EDT - Germany 0-0 Third Place Group A/B/C/D/F - Boston Stadium"
+    },
+    {
+      "id": "760488",
+      "sequence": 76,
+      "date": "2026-06-30T01:00Z",
+      "dateLabel": "Jun 29, 9:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1F",
+        "name": "Group F Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2C",
+        "name": "Group C 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "monterrey-stadium",
+      "label": "Jun 29, 9:00 PM EDT - Group F Winner 0-0 Group C 2nd Place - Monterrey Stadium"
+    },
+    {
+      "id": "760490",
+      "sequence": 77,
+      "date": "2026-06-30T17:00Z",
+      "dateLabel": "Jun 30, 1:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "2E",
+        "name": "Group E 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2I",
+        "name": "Group I 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jun 30, 1:00 PM EDT - Group E 2nd Place 0-0 Group I 2nd Place - Dallas Stadium"
+    },
+    {
+      "id": "760492",
+      "sequence": 78,
+      "date": "2026-06-30T21:00Z",
+      "dateLabel": "Jun 30, 5:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1I",
+        "name": "Group I Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group C/D/F/G/H",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jun 30, 5:00 PM EDT - Group I Winner 0-0 Third Place Group C/D/F/G/H - New York New Jersey Stadium"
+    },
+    {
+      "id": "760491",
+      "sequence": 79,
+      "date": "2026-07-01T01:00Z",
+      "dateLabel": "Jun 30, 9:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "MEX",
+        "name": "Mexico",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group C/E/F/H/I",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "mexico-city-stadium",
+      "label": "Jun 30, 9:00 PM EDT - Mexico 0-0 Third Place Group C/E/F/H/I - Mexico City Stadium"
+    },
+    {
+      "id": "760495",
+      "sequence": 80,
+      "date": "2026-07-01T16:00Z",
+      "dateLabel": "Jul 1, 12:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1L",
+        "name": "Group L Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group E/H/I/J/K",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jul 1, 12:00 PM EDT - Group L Winner 0-0 Third Place Group E/H/I/J/K - Atlanta Stadium"
+    },
+    {
+      "id": "760493",
+      "sequence": 81,
+      "date": "2026-07-01T20:00Z",
+      "dateLabel": "Jul 1, 4:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1G",
+        "name": "Group G Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group A/E/H/I/J",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jul 1, 4:00 PM EDT - Group G Winner 0-0 Third Place Group A/E/H/I/J - Seattle Stadium"
+    },
+    {
+      "id": "760494",
+      "sequence": 82,
+      "date": "2026-07-02T00:00Z",
+      "dateLabel": "Jul 1, 8:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "USA",
+        "name": "United States",
+        "score": 0,
+        "placeholder": false
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group B/E/F/I/J",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "san-francisco-bay-area-stadium",
+      "label": "Jul 1, 8:00 PM EDT - United States 0-0 Third Place Group B/E/F/I/J - San Francisco Bay Area Stadium"
+    },
+    {
+      "id": "760497",
+      "sequence": 83,
+      "date": "2026-07-02T19:00Z",
+      "dateLabel": "Jul 2, 3:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1H",
+        "name": "Group H Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2J",
+        "name": "Group J 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jul 2, 3:00 PM EDT - Group H Winner 0-0 Group J 2nd Place - Los Angeles Stadium"
+    },
+    {
+      "id": "760496",
+      "sequence": 84,
+      "date": "2026-07-02T23:00Z",
+      "dateLabel": "Jul 2, 7:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "2K",
+        "name": "Group K 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2L",
+        "name": "Group L 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "toronto-stadium",
+      "label": "Jul 2, 7:00 PM EDT - Group K 2nd Place 0-0 Group L 2nd Place - Toronto Stadium"
+    },
+    {
+      "id": "760498",
+      "sequence": 85,
+      "date": "2026-07-03T03:00Z",
+      "dateLabel": "Jul 2, 11:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1B",
+        "name": "Group B Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group E/F/G/I/J",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jul 2, 11:00 PM EDT - Group B Winner 0-0 Third Place Group E/F/G/I/J - BC Place Vancouver"
+    },
+    {
+      "id": "760499",
+      "sequence": 86,
+      "date": "2026-07-03T18:00Z",
+      "dateLabel": "Jul 3, 2:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "2D",
+        "name": "Group D 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2G",
+        "name": "Group G 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jul 3, 2:00 PM EDT - Group D 2nd Place 0-0 Group G 2nd Place - Dallas Stadium"
+    },
+    {
+      "id": "760500",
+      "sequence": 87,
+      "date": "2026-07-03T22:00Z",
+      "dateLabel": "Jul 3, 6:00 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1J",
+        "name": "Group J Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "2H",
+        "name": "Group H 2nd Place",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jul 3, 6:00 PM EDT - Group J Winner 0-0 Group H 2nd Place - Miami Stadium"
+    },
+    {
+      "id": "760501",
+      "sequence": 88,
+      "date": "2026-07-04T01:30Z",
+      "dateLabel": "Jul 3, 9:30 PM EDT",
+      "stage": "round-of-32",
+      "stageLabel": "Round of 32",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "1K",
+        "name": "Group K Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "3RD",
+        "name": "Third Place Group D/E/I/J/L",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jul 3, 9:30 PM EDT - Group K Winner 0-0 Third Place Group D/E/I/J/L - Kansas City Stadium"
+    },
+    {
+      "id": "760502",
+      "sequence": 89,
+      "date": "2026-07-04T17:00Z",
+      "dateLabel": "Jul 4, 1:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 1 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 3 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "houston-stadium",
+      "label": "Jul 4, 1:00 PM EDT - Round of 32 1 Winner 0-0 Round of 32 3 Winner - Houston Stadium"
+    },
+    {
+      "id": "760503",
+      "sequence": 90,
+      "date": "2026-07-04T21:00Z",
+      "dateLabel": "Jul 4, 5:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 2 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 5 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "philadelphia-stadium",
+      "label": "Jul 4, 5:00 PM EDT - Round of 32 2 Winner 0-0 Round of 32 5 Winner - Philadelphia Stadium"
+    },
+    {
+      "id": "760504",
+      "sequence": 91,
+      "date": "2026-07-05T20:00Z",
+      "dateLabel": "Jul 5, 4:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 4 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 6 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jul 5, 4:00 PM EDT - Round of 32 4 Winner 0-0 Round of 32 6 Winner - New York New Jersey Stadium"
+    },
+    {
+      "id": "760505",
+      "sequence": 92,
+      "date": "2026-07-06T00:00Z",
+      "dateLabel": "Jul 5, 8:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 7 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 8 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "mexico-city-stadium",
+      "label": "Jul 5, 8:00 PM EDT - Round of 32 7 Winner 0-0 Round of 32 8 Winner - Mexico City Stadium"
+    },
+    {
+      "id": "760506",
+      "sequence": 93,
+      "date": "2026-07-06T19:00Z",
+      "dateLabel": "Jul 6, 3:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 11 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 12 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jul 6, 3:00 PM EDT - Round of 32 11 Winner 0-0 Round of 32 12 Winner - Dallas Stadium"
+    },
+    {
+      "id": "760507",
+      "sequence": 94,
+      "date": "2026-07-07T00:00Z",
+      "dateLabel": "Jul 6, 8:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 9 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 10 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "seattle-stadium",
+      "label": "Jul 6, 8:00 PM EDT - Round of 32 9 Winner 0-0 Round of 32 10 Winner - Seattle Stadium"
+    },
+    {
+      "id": "760509",
+      "sequence": 95,
+      "date": "2026-07-07T16:00Z",
+      "dateLabel": "Jul 7, 12:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 14 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 16 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jul 7, 12:00 PM EDT - Round of 32 14 Winner 0-0 Round of 32 16 Winner - Atlanta Stadium"
+    },
+    {
+      "id": "760508",
+      "sequence": 96,
+      "date": "2026-07-07T20:00Z",
+      "dateLabel": "Jul 7, 4:00 PM EDT",
+      "stage": "round-of-16",
+      "stageLabel": "Round of 16",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD32",
+        "name": "Round of 32 13 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD32",
+        "name": "Round of 32 15 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "bc-place-vancouver",
+      "label": "Jul 7, 4:00 PM EDT - Round of 32 13 Winner 0-0 Round of 32 15 Winner - BC Place Vancouver"
+    },
+    {
+      "id": "760510",
+      "sequence": 97,
+      "date": "2026-07-09T20:00Z",
+      "dateLabel": "Jul 9, 4:00 PM EDT",
+      "stage": "quarterfinals",
+      "stageLabel": "Quarter-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD16 W1",
+        "name": "Round of 16 1 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD16 W2",
+        "name": "Round of 16 2 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "boston-stadium",
+      "label": "Jul 9, 4:00 PM EDT - Round of 16 1 Winner 0-0 Round of 16 2 Winner - Boston Stadium"
+    },
+    {
+      "id": "760511",
+      "sequence": 98,
+      "date": "2026-07-10T19:00Z",
+      "dateLabel": "Jul 10, 3:00 PM EDT",
+      "stage": "quarterfinals",
+      "stageLabel": "Quarter-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD16 W5",
+        "name": "Round of 16 5 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD16 W6",
+        "name": "Round of 16 6 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "los-angeles-stadium",
+      "label": "Jul 10, 3:00 PM EDT - Round of 16 5 Winner 0-0 Round of 16 6 Winner - Los Angeles Stadium"
+    },
+    {
+      "id": "760512",
+      "sequence": 99,
+      "date": "2026-07-11T21:00Z",
+      "dateLabel": "Jul 11, 5:00 PM EDT",
+      "stage": "quarterfinals",
+      "stageLabel": "Quarter-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD16 W3",
+        "name": "Round of 16 3 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD16 W4",
+        "name": "Round of 16 4 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jul 11, 5:00 PM EDT - Round of 16 3 Winner 0-0 Round of 16 4 Winner - Miami Stadium"
+    },
+    {
+      "id": "760513",
+      "sequence": 100,
+      "date": "2026-07-12T01:00Z",
+      "dateLabel": "Jul 11, 9:00 PM EDT",
+      "stage": "quarterfinals",
+      "stageLabel": "Quarter-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "RD16 W7",
+        "name": "Round of 16 7 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "RD16 W8",
+        "name": "Round of 16 8 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "kansas-city-stadium",
+      "label": "Jul 11, 9:00 PM EDT - Round of 16 7 Winner 0-0 Round of 16 8 Winner - Kansas City Stadium"
+    },
+    {
+      "id": "760514",
+      "sequence": 101,
+      "date": "2026-07-14T19:00Z",
+      "dateLabel": "Jul 14, 3:00 PM EDT",
+      "stage": "semifinals",
+      "stageLabel": "Semi-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "QFW1",
+        "name": "Quarterfinal 1 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "QFW2",
+        "name": "Quarterfinal 2 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "dallas-stadium",
+      "label": "Jul 14, 3:00 PM EDT - Quarterfinal 1 Winner 0-0 Quarterfinal 2 Winner - Dallas Stadium"
+    },
+    {
+      "id": "760515",
+      "sequence": 102,
+      "date": "2026-07-15T19:00Z",
+      "dateLabel": "Jul 15, 3:00 PM EDT",
+      "stage": "semifinals",
+      "stageLabel": "Semi-finals",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "QFW3",
+        "name": "Quarterfinal 3 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "QW4",
+        "name": "Quarterfinal 4 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "atlanta-stadium",
+      "label": "Jul 15, 3:00 PM EDT - Quarterfinal 3 Winner 0-0 Quarterfinal 4 Winner - Atlanta Stadium"
+    },
+    {
+      "id": "760516",
+      "sequence": 103,
+      "date": "2026-07-18T21:00Z",
+      "dateLabel": "Jul 18, 5:00 PM EDT",
+      "stage": "3rd-place-match",
+      "stageLabel": "Third-place match",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "SF L1",
+        "name": "Semifinal 1 Loser",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "SF L2",
+        "name": "Semifinal 2 Loser",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "miami-stadium",
+      "label": "Jul 18, 5:00 PM EDT - Semifinal 1 Loser 0-0 Semifinal 2 Loser - Miami Stadium"
+    },
+    {
+      "id": "760517",
+      "sequence": 104,
+      "date": "2026-07-19T19:00Z",
+      "dateLabel": "Jul 19, 3:00 PM EDT",
+      "stage": "final",
+      "stageLabel": "Final",
+      "group": null,
+      "status": "Scheduled",
+      "completed": false,
+      "home": {
+        "code": "SFW1",
+        "name": "Semifinal 1 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "away": {
+        "code": "SFW2",
+        "name": "Semifinal 2 Winner",
+        "score": 0,
+        "placeholder": true
+      },
+      "stadiumId": "new-york-new-jersey-stadium",
+      "label": "Jul 19, 3:00 PM EDT - Semifinal 1 Winner 0-0 Semifinal 2 Winner - New York New Jersey Stadium"
+    }
+  ]
+}

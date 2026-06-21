@@ -628,11 +628,11 @@
     "id": "higgsfield",
     "title": "Higgsfield Prompts",
     "shortTitle": "Higgsfield Prompts",
-    "summary": "9 Higgsfield prompts for restoration, retouching, cleanup, headshots, selfies, upscaling, anime, product ads, and sports broadcast cutaways.",
+    "summary": "8 Higgsfield prompts for restoration, retouching, cleanup, headshots, selfies, upscaling, anime, and product ads.",
     "description": "A focused Higgsfield prompt library for image repair, identity-preserving edits, lifestyle shots, style conversion, and polished commercial visuals.",
     "accent": "higgsfield",
     "cover": "higgsfield-title.png",
-    "tags": ["Restoration", "Retouching", "Cleanup", "Headshot", "Sports Broadcast"],
+    "tags": ["Restoration", "Retouching", "Cleanup", "Headshot", "Anime"],
     "tipsTitle": "Pro Tips for Higgsfield Prompts",
     "tips": [
       "Upload the clearest possible reference image before using identity-preserving prompts.",
@@ -720,14 +720,37 @@
         "variables": [],
         "images": ["higgsfield-08.png"],
         "tags": ["Anime", "Style Transfer", "Identity"]
-      },
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2026",
+    "title": "FIFA World Cup 2026 Prompts",
+    "shortTitle": "World Cup 2026",
+    "summary": "Real FIFA World Cup 2026 match, team, and stadium prompt customizations.",
+    "description": "Build broadcast-style FIFA World Cup 2026 spectator cutaways with real tournament teams, fixtures, scores, stages, and venues.",
+    "accent": "worldcup",
+    "cover": null,
+    "tags": ["FIFA World Cup 2026", "Teams", "Matches", "Stadiums", "Broadcast"],
+    "tipsTitle": "Pro Tips for World Cup 2026",
+    "tips": [
+      "Start with the match dropdown so the matchup, scoreline, stage, and default venue stay tied to real fixture data.",
+      "Use the supported team dropdown to change the jersey, scarf, and emotional focus without rewriting the full prompt.",
+      "Use the stadium dropdown when you intentionally want to stage the cutaway in a different World Cup 2026 venue."
+    ],
+    "prompts": [
       {
         "id": "world-cup-vip-cutaway",
-        "title": "9. World Cup VIP Cutaway",
+        "title": "1. World Cup VIP Cutaway",
         "category": "Sports Broadcast",
-        "body": "Attach the subject image first. Attach the scoreboard reference image if using one.\n\nCreate a photorealistic candid live football broadcast cutaway using the uploaded subject image only as the exact facial identity reference. Preserve the subject’s face, skin tone, age, facial proportions, distinctive features, gender presentation, ethnicity, hairstyle and modesty. If the subject wears a headcover, do not reveal hair or neck. Do not copy the original pose, head tilt, expression or camera angle; rebuild everything naturally.\n\nScene: FIFA World Cup 2026 match between Brazil and Haiti at New York New Jersey Stadium, New Jersey. The subject supports Brazil and is inside a premium VIP hospitality suite behind a clear glass railing, overlooking the pitch.\n\nOutfit: official Brazil national team jersey, elegant dark navy blazer or cardigan, black trousers, FIFA style event lanyard, slim watch, small Brazil scarf draped naturally.\n\nThe subject is unaware of the camera, fully focused on the match. Frame waist up. Body turned about 45 degrees toward the pitch, head upright and facing the same direction, neck straight, shoulders balanced. Gaze directed toward the right side of frame, slightly downward toward the pitch. No eye contact with camera. Expression is tense and hopeful, eyebrows slightly tightened, lips slightly parted, as if watching a final minutes Brazil attack.\n\nPose: both hands rest lightly on the clear glass railing with natural relaxed fingers. No thumbs up, waving, peace signs or camera facing gestures.\n\nInclude 5 supporting spectators around the subject, partially cropped at the left and right edges, wearing Brazil and Haiti jerseys or refined matchday clothing. Everyone looks naturally toward the pitch. Add softly blurred heads, shoulders, scarves and raised hands in the lower foreground for stadium depth, without blocking the subject’s face.\n\nShow subtle glass reflections, dark suite framing, premium stadium architecture and softly blurred crowd background. Reflections must stay light and never cover the face.\n\nCamera and lighting: authentic distant live sports broadcast angle, 200mm to 400mm telephoto compression, natural asymmetrical composition. Face and eyes sharp, surrounding spectators slightly softer. Realistic stadium lighting with soft VIP suite ambient light and reflected pitch light. Natural skin texture, realistic fabric folds, mild live broadcast compression.\n\nAdd a compact professional football broadcast scoreboard at the top left, using the uploaded scoreboard image as the visual style reference. Text: 34:29  Brazil 3-0 Haiti. Design: small white rounded timer box with bold black text, dark charcoal team boxes, accurate flag icons, bold uppercase three letter team codes, bright cyan score boxes with large black numbers, small central white rounded box with a black and gold tournament trophy icon, compact connected broadcast graphics, sharp and readable. Do not add “LIVE.” Do not cover the subject’s head or face.\n\nFinal image must look like a real spontaneous spectator cutaway from a live FIFA World Cup 2026 television broadcast, not a studio portrait, fashion shoot, ad, CGI or illustration. Photorealistic, realistic anatomy, natural hands and fingers, accurate facial identity, 4K broadcast quality, aspect ratio 3:4.",
+        "body": "Attach the subject image first. Attach the scoreboard reference image if using one.\n\nCreate a photorealistic candid live football broadcast cutaway using the uploaded subject image only as the exact facial identity reference. Preserve the subject’s face, skin tone, age, facial proportions, distinctive features, gender presentation, ethnicity, hairstyle and modesty. If the subject wears a headcover, do not reveal hair or neck. Do not copy the original pose, head tilt, expression or camera angle; rebuild everything naturally.\n\nScene: FIFA World Cup 2026 [match stage] match between [home team] and [away team] at [stadium] in [venue location], with the subject supporting [supported team]. The subject is inside a premium VIP hospitality suite behind a clear glass railing, overlooking the pitch.\n\nOutfit: official [supported team] national team jersey, elegant dark navy blazer or cardigan, black trousers, FIFA style event lanyard, slim watch, small [supported team] scarf draped naturally.\n\nThe subject is unaware of the camera, fully focused on the match. Frame waist up. Body turned about 45 degrees toward the pitch, head upright and facing the same direction, neck straight, shoulders balanced. Gaze directed toward the right side of frame, slightly downward toward the pitch. No eye contact with camera. Expression is tense and hopeful, eyebrows slightly tightened, lips slightly parted, as if watching a final minutes [supported team] attack.\n\nPose: both hands rest lightly on the clear glass railing with natural relaxed fingers. No thumbs up, waving, peace signs or camera facing gestures.\n\nInclude 5 supporting spectators around the subject, partially cropped at the left and right edges, wearing [home team] and [away team] jerseys or refined matchday clothing. Everyone looks naturally toward the pitch. Add softly blurred heads, shoulders, scarves and raised hands in the lower foreground for stadium depth, without blocking the subject’s face.\n\nShow subtle glass reflections, dark suite framing, premium stadium architecture and softly blurred crowd background. Reflections must stay light and never cover the face.\n\nCamera and lighting: authentic distant live sports broadcast angle, 200mm to 400mm telephoto compression, natural asymmetrical composition. Face and eyes sharp, surrounding spectators slightly softer. Realistic stadium lighting with soft VIP suite ambient light and reflected pitch light. Natural skin texture, realistic fabric folds, mild live broadcast compression.\n\nAdd a compact professional football broadcast scoreboard at the top left, using the uploaded scoreboard image as the visual style reference. Text: [scoreboard text]. Design: small white rounded timer box with bold black text, dark charcoal team boxes, accurate flag icons, bold uppercase three letter team codes [home team code] and [away team code], bright cyan score boxes with large black numbers, small central white rounded box with a black and gold tournament trophy icon, compact connected broadcast graphics, sharp and readable. Do not add “LIVE.” Do not cover the subject’s head or face.\n\nFinal image must look like a real spontaneous spectator cutaway from a live FIFA World Cup 2026 television broadcast, not a studio portrait, fashion shoot, ad, CGI or illustration. Photorealistic, realistic anatomy, natural hands and fingers, accurate facial identity, 4K broadcast quality, aspect ratio 3:4.",
         "note": "Best for identity-preserving live football spectator cutaways with broadcast scoreboard graphics.",
-        "variables": [],
+        "variables": ["scoreboard time"],
+        "customization": {
+          "type": "fifa-world-cup-2026",
+          "defaultMatchId": "760444",
+          "defaultScoreboardTime": "34:29"
+        },
         "images": [],
         "tags": ["Sports Broadcast", "Football", "Identity"]
       }

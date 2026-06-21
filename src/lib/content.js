@@ -11,6 +11,7 @@ const libraryEmojis = {
   'images-2': '🎨',
   euphoria: '🎬',
   higgsfield: '🧪',
+  'world-cup-2026': '🏆',
   nostalgia: '📼',
   superman: '⚡',
   hidden: '🕵️‍♂️',
