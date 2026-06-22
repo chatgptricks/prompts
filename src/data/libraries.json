@@ -864,7 +864,7 @@
         "body": "Pretend you are a cognitively advanced mentor. I want to master any complex skill at above-average speed.\n\nBuild a weekly learning plan based on spaced repetition, interleaving, simplified explanations, and active recall.\n\nApply this plan to [insert topic]. The goal is top 1% excellence within 90 days.",
         "note": "Best for turning a hard skill into a structured 90-day learning system.",
         "variables": ["insert topic"],
-        "images": ["harvard-01.png"],
+        "images": [],
         "tags": ["Learning", "topic"]
       },
       {
@@ -874,7 +874,7 @@
         "body": "Act as the absolute authority in [insert field]. Guide me like a direct apprentice, from fundamentals to full mastery.\n\nBuild the path in clear stages with practice tasks, little-known resources, and faster routes.\n\nInclude applied exercises, simulations, or real challenges so every stage is truly absorbed.",
         "note": "Best for mapping the path from beginner to advanced execution in a field.",
         "variables": ["insert field"],
-        "images": ["harvard-02.png"],
+        "images": [],
         "tags": ["Mastery", "field"]
       },
       {
@@ -884,7 +884,7 @@
         "body": "Act as a mental architect. Analyze my current operating patterns: thought patterns, habits, and beliefs.\n\nRebuild my internal system to increase mental clarity, accelerate decision-making, strengthen memory, spark creativity, and improve emotional control.",
         "note": "Best for diagnosing current habits and rebuilding a stronger personal operating system.",
         "variables": [],
-        "images": ["harvard-03.png"],
+        "images": [],
         "tags": ["Mindset"]
       },
       {
@@ -894,7 +894,7 @@
         "body": "Play the role of a strategic mentor inspired by leaders such as Elon Musk and Jeff Bezos.\n\nReshape my thinking process to prioritize systems reasoning, long-term vision, intelligent leverage, and asymmetric outcomes.\n\nGive me daily mental models that help me evolve from ordinary thinking to an exceptional level.",
         "note": "Best for upgrading how you reason through goals, systems, and high-leverage decisions.",
         "variables": [],
-        "images": ["harvard-04.png"],
+        "images": [],
         "tags": ["Strategy"]
       },
       {
@@ -904,7 +904,7 @@
         "body": "Act as a time-leverage expert. I want to accomplish in 1 year what most people need 10 years to achieve.\n\nBased on my goal, create a high-impact plan that uses smart shortcuts, advanced tools, strategic delegation, automation, and AI to radically accelerate results and create a clear advantage.",
         "note": "Best for finding tools, shortcuts, and leverage points around a specific goal.",
         "variables": [],
-        "images": ["harvard-05.png"],
+        "images": [],
         "tags": ["Leverage"]
       },
       {
@@ -914,7 +914,7 @@
         "body": "Act as a psychological reconstruction expert. Help me dismantle limiting identity patterns and build a new functional self-image.\n\nRedefine how I think, act, and make decisions so they fully align with my ideal self.",
         "note": "Best for translating an ideal identity into practical behavior and decisions.",
         "variables": [],
-        "images": ["harvard-06.png"],
+        "images": [],
         "tags": ["Identity"]
       },
       {
