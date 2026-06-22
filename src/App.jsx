@@ -405,6 +405,7 @@ function DirectEntryLibraryPage({ library, prompt, draft, favoriteSet, onDraftCh
         onToggleFavorite={onToggleFavorite}
         detailEyebrow={library.shortTitle}
       />
+      <VisitCounter library={library} />
     </div>
   )
 }

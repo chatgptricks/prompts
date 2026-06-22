@@ -1448,6 +1448,27 @@ h1, h2, h3, p { min-width: 0; }
 
 .no-variables.compact { min-height: 38px; }
 
+.prompt-instructions {
+  display: grid;
+  gap: 0.55rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  padding: 0.9rem 1rem;
+}
+
+.prompt-instructions .eyebrow { margin: 0; }
+
+.prompt-instructions ul {
+  display: grid;
+  gap: 0.38rem;
+  margin: 0;
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.72);
+}
+
+.prompt-instructions li { line-height: 1.5; }
+
 .prompt-preview {
   max-height: 430px;
   margin: 0;

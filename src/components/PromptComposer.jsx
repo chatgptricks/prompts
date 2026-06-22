@@ -227,6 +227,17 @@ export default function PromptComposer({
           </div>
         )}
 
+        {prompt.instructions?.length ? (
+          <div className="prompt-instructions" aria-label="Prompt instructions">
+            <p className="eyebrow">Before You Paste</p>
+            <ul>
+              {prompt.instructions.map((instruction) => (
+                <li key={instruction}>{instruction}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
         <div className="preview-header">
           <span>Live preview</span>
           <span>{finalPrompt.length.toLocaleString()} chars</span>
