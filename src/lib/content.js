@@ -16,6 +16,8 @@ const libraryEmojis = {
   superman: '⚡',
   hidden: '🕵️‍♂️',
   harvard: '🎓',
+  claude: '🤖',
+  gemini: '♊',
 }
 
 const categoryEmojis = {
@@ -61,6 +63,8 @@ const categoryEmojis = {
   Predictions: '🔮',
   Settings: '⚙️',
   Tracking: '🕵️‍♂️',
+  'Prompt Engineering': '🛠️',
+  Translation: '🌐',
 }
 
 export const assetUrl = (fileName) => {

@@ -928,5 +928,163 @@
         "tags": ["Clarity"]
       }
     ]
+  },
+  {
+    "id": "claude",
+    "title": "Claude Power User Prompts",
+    "shortTitle": "Claude Prompts",
+    "summary": "6 advanced prompts for code refactoring, complex logic, document analysis, and precise copy.",
+    "description": "Leverage Claude's superior reasoning, coding agent capabilities, and detailed prose structure.",
+    "accent": "claude",
+    "cover": null,
+    "tags": ["Claude", "Coding", "Reasoning", "Refactoring", "Analysis"],
+    "tipsTitle": "Pro Tips for Claude Prompts",
+    "tips": [
+      "Use XML tags (like <content> or <instructions>) to structure inputs cleanly.",
+      "Ask Claude to think step-by-step using a <thinking> block before generating the answer.",
+      "Provide concrete examples (few-shot prompting) to align Claude's tone with your goals.",
+      "Use Claude's long context to parse entire source files or PDFs at once."
+    ],
+    "prompts": [
+      {
+        "id": "code-refactoring-optimization",
+        "title": "Code Refactoring & Optimization",
+        "category": "Coding",
+        "body": "Act as an expert software architect. Refactor the following [programming language] code to improve readability, performance, and adherence to clean code principles:\n\n<code>\n[insert code]\n</code>\n\nExplain each modification in detail and highlight the performance gains.",
+        "note": "Best for cleaning up legacy code or optimizing slow functions.",
+        "variables": ["programming language", "insert code"],
+        "images": [],
+        "tags": ["Coding", "programming language", "insert code"]
+      },
+      {
+        "id": "step-by-step-logic-analyzer",
+        "title": "Step-by-Step Logic Analyzer",
+        "category": "Reasoning",
+        "body": "I want you to solve a complex logical problem: [logical problem].\n\nBefore giving me the final answer, use a detailed step-by-step thinking process. Break down your reasoning, check for assumptions, evaluate alternative solutions, and verify your conclusion.",
+        "note": "Leverages Claude's reasoning capabilities for complex problems.",
+        "variables": ["logical problem"],
+        "images": [],
+        "tags": ["Reasoning", "logical problem"]
+      },
+      {
+        "id": "document-analysis-synthesis",
+        "title": "Document Analysis & Synthesis",
+        "category": "Analysis",
+        "body": "Analyze the uploaded document content about [document topic].\n\nSynthesize the key points into a structured markdown report including:\n- Executive Summary\n- 5 Core Takeaways\n- Potential Risks or Gaps\n- Actionable Next Steps\n- 3 follow-up questions I should ask you about this data.",
+        "note": "Best for reading reports, contracts, or research papers.",
+        "variables": ["document topic"],
+        "images": [],
+        "tags": ["Analysis", "document topic"]
+      },
+      {
+        "id": "brand-voice-copywriter",
+        "title": "Brand Voice Copywriter",
+        "category": "Writing",
+        "body": "You are a senior copywriter. Rewrite the following copy to match a [desired tone] brand voice targeted at [target audience]:\n\nCopy:\n\"[original copy]\"\n\nKeep the core message intact but elevate the flow and emotional appeal.",
+        "note": "Best for newsletters, ads, and landing page copy.",
+        "variables": ["desired tone", "target audience", "original copy"],
+        "images": [],
+        "tags": ["Writing", "desired tone", "target audience", "original copy"]
+      },
+      {
+        "id": "interactive-programming-mentor",
+        "title": "Interactive Programming Mentor",
+        "category": "Education",
+        "body": "Act as a patient and highly skilled coding mentor. I want to learn [programming concept].\n\nExplain the concept clearly using a simple real-world analogy. Then, give me a small exercise to solve. Wait for my response before giving me the answer or moving to the next concept.",
+        "note": "Best for step-by-step interactive learning.",
+        "variables": ["programming concept"],
+        "images": [],
+        "tags": ["Education", "programming concept"]
+      },
+      {
+        "id": "claude-system-prompt-builder",
+        "title": "Claude System Prompt Builder",
+        "category": "Prompt Engineering",
+        "body": "Design a comprehensive system prompt for Claude to perform [intended task].\n\nStructure the prompt using standard XML tags (e.g., <role>, <rules>, <examples>, <output_format>) to maximize execution precision.",
+        "note": "Best for building custom prompts for Claude projects.",
+        "variables": ["intended task"],
+        "images": [],
+        "tags": ["Prompt Engineering", "intended task"]
+      }
+    ]
+  },
+  {
+    "id": "gemini",
+    "title": "Gemini Multimodal Prompts",
+    "shortTitle": "Gemini Prompts",
+    "summary": "6 prompts for audio, video, long files, and multimodal analysis.",
+    "description": "Utilize Gemini's massive context window and native multimodal inputs for video, audio, and large repository tasks.",
+    "accent": "gemini",
+    "cover": null,
+    "tags": ["Gemini", "Multimodal", "Video", "Audio", "Repository", "Context"],
+    "tipsTitle": "Pro Tips for Gemini Prompts",
+    "tips": [
+      "Upload raw video or audio files directly alongside the prompt for native analysis.",
+      "Input entire books or codebases to leverage the million-token context window.",
+      "Combine visual screenshots with code for highly specific front-end refactoring.",
+      "Ask Gemini to translate or summarize large multilingual source materials."
+    ],
+    "prompts": [
+      {
+        "id": "video-summary-timestamping",
+        "title": "Video Summary & Timestamping",
+        "category": "Research",
+        "body": "Based on the uploaded video and transcript, analyze [topic]. Break down the video into logical chapters with timestamps, summarize the core arguments, and highlight 5 key takeaways.",
+        "note": "Best for webinars, lectures, or interviews.",
+        "variables": ["topic"],
+        "images": [],
+        "tags": ["Research", "topic"]
+      },
+      {
+        "id": "full-codebase-architect",
+        "title": "Full Codebase Architect",
+        "category": "Coding",
+        "body": "Analyze the uploaded code files for [project name]. Act as a lead architect and perform a structural audit. Identify performance bottlenecks, redundancy, and provide refactored code snippets to improve speed and clean architecture.",
+        "note": "Best for audits of medium to large repositories.",
+        "variables": ["project name"],
+        "images": [],
+        "tags": ["Coding", "project name"]
+      },
+      {
+        "id": "design-screenshot-to-code",
+        "title": "Design Screenshot to Code",
+        "category": "Design",
+        "body": "Analyze the uploaded screenshot of [website name]. Recreate this user interface using [frontend framework] and [styling library]. Focus on matching the visual layout, spacing, and typography accurately.",
+        "note": "Best for converting mockups to functional code.",
+        "variables": ["website name", "frontend framework", "styling library"],
+        "images": [],
+        "tags": ["Design", "website name", "frontend framework", "styling library"]
+      },
+      {
+        "id": "audio-transcript-optimizer",
+        "title": "Audio Transcript Optimizer",
+        "category": "Content",
+        "body": "Listen to the uploaded audio recording of [podcast/meeting] and read its transcript. Write a comprehensive summary, format the action items with owners, and highlight any unresolved questions.",
+        "note": "Best for meeting notes and podcast summaries.",
+        "variables": ["podcast/meeting"],
+        "images": [],
+        "tags": ["Content", "podcast/meeting"]
+      },
+      {
+        "id": "contextual-document-translator",
+        "title": "Contextual Document Translator",
+        "category": "Translation",
+        "body": "Translate the uploaded [source language] document into [target language]. Maintain the original professional tone, formatting, and industry-specific jargon. Correct any literal translation errors using local cultural context.",
+        "note": "Best for legal, technical, or marketing documents.",
+        "variables": ["source language", "target language"],
+        "images": [],
+        "tags": ["Translation", "source language", "target language"]
+      },
+      {
+        "id": "large-dataset-trend-spotter",
+        "title": "Large Dataset Trend Spotter",
+        "category": "Strategy",
+        "body": "Analyze the uploaded dataset containing [data topic]. Identify the top 3 trends, flag anomalies, and provide 5 data-backed strategic recommendations for [business goal].",
+        "note": "Best for analyzing spreadsheets, logs, or reports.",
+        "variables": ["data topic", "business goal"],
+        "images": [],
+        "tags": ["Strategy", "data topic", "business goal"]
+      }
+    ]
   }
 ]

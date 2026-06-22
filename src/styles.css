@@ -216,6 +216,8 @@ img { display: block; max-width: 100%; }
 .accent-superman { --accent: #ff3f55; --accent-2: #2f7cff; --accent-rgb: 255, 63, 85; }
 .accent-nostalgia { --accent: #ffb830; --accent-2: #1dffc0; --accent-rgb: 255, 184, 48; }
 .accent-harvard   { --accent: #a51c30; --accent-2: #ff4766; --accent-rgb: 165, 28, 48; }
+.accent-claude    { --accent: #d97753; --accent-2: #f2aa8a; --accent-rgb: 217, 119, 83; }
+.accent-gemini    { --accent: #4c82ff; --accent-2: #8bb2ff; --accent-rgb: 76, 130, 255; }
 
 .app-shell {
   display: grid;
