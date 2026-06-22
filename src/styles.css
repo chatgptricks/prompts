@@ -215,8 +215,7 @@ img { display: block; max-width: 100%; }
 .accent-violet   { --accent: #b490ff; --accent-2: #ffb830; --accent-rgb: 180, 144, 255; }
 .accent-superman { --accent: #ff3f55; --accent-2: #2f7cff; --accent-rgb: 255, 63, 85; }
 .accent-nostalgia { --accent: #ffb830; --accent-2: #1dffc0; --accent-rgb: 255, 184, 48; }
-
-/* ─── App Shell ──────────────────────────────────────────────── */
+.accent-harvard   { --accent: #a51c30; --accent-2: #ff4766; --accent-rgb: 165, 28, 48; }
 
 .app-shell {
   display: grid;

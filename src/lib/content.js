@@ -15,6 +15,7 @@ const libraryEmojis = {
   nostalgia: '📼',
   superman: '⚡',
   hidden: '🕵️‍♂️',
+  harvard: '🎓',
 }
 
 const categoryEmojis = {
