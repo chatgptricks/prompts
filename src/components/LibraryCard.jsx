@@ -1,6 +1,8 @@
 import { ArrowRight, Layers3 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
+const brandLogoUrl = `${import.meta.env.BASE_URL}logoch.png`
+
 const cardVariants = {
   initial: { opacity: 0, y: 32, scale: 0.93 },
   animate: {
@@ -29,8 +31,7 @@ export default function LibraryCard({ library }) {
         <i />
         <i />
         <i />
-        {/* Floating emoji */}
-        <span>{library.emoji}</span>
+        <img className="library-card-logo" src={brandLogoUrl} alt="" />
       </div>
 
       <div className="library-card-body">

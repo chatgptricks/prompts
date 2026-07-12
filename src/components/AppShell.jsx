@@ -1,6 +1,8 @@
 import { Clock3, Home, Library, Star } from 'lucide-react'
 import { libraries } from '../lib/content'
 
+const brandLogoUrl = `${import.meta.env.BASE_URL}logoch.png`
+
 const navItems = [
   { href: '#/hub',    label: 'Hub',    icon: Home,    match: 'hub' },
   { href: '#/saved',  label: 'Saved',  icon: Star,    match: 'saved' },
@@ -14,7 +16,7 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
       <div className="app-shell">
         <aside className="side-rail" aria-label="Main navigation">
           <a href="#/hub" className="brand-lockup" aria-label="ChatGPTricks hub">
-            <span className="brand-mark logo-mark"><img src="/logoch.png" alt="" /></span>
+            <span className="brand-mark logo-mark"><img src={brandLogoUrl} alt="" /></span>
             <span>
               <strong>ChatGPTricks</strong>
               <small>Prompt Library</small>
@@ -49,7 +51,7 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
         <div className="app-frame">
           <header className="top-bar">
             <a href="#/hub" className="mobile-brand" aria-label="ChatGPTricks hub">
-              <span className="brand-mark logo-mark"><img src="/logoch.png" alt="" /></span>
+              <span className="brand-mark logo-mark"><img src={brandLogoUrl} alt="" /></span>
               <span>ChatGPTricks</span>
             </a>
           </header>

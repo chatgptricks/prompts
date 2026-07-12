@@ -870,26 +870,28 @@ h1, h2, h3, p { min-width: 0; }
   animation: ring-expand 4s ease-in-out infinite 1.2s;
 }
 
-/* Emoji */
-.library-card-visual span {
+/* Logo */
+.library-card-logo {
   position: relative;
   z-index: 2;
-  font-size: 4.5rem;
-  line-height: 1;
-  filter:
-    drop-shadow(0 0 30px rgba(var(--accent-rgb), 0.65))
-    drop-shadow(0 0 60px rgba(var(--accent-rgb), 0.3))
-    drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+  width: min(58%, 170px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 18px 36px rgba(0,0,0,0.32),
+    0 0 48px rgba(var(--accent-rgb), 0.18);
   animation: float-emoji 4s ease-in-out infinite;
-  transition: filter 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
 }
 
-.library-card:hover .library-card-visual span {
-  transform: scale(1.18) translateY(-6px);
-  filter:
-    drop-shadow(0 0 50px rgba(var(--accent-rgb), 0.95))
-    drop-shadow(0 0 90px rgba(var(--accent-rgb), 0.5))
-    drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+.library-card:hover .library-card-logo {
+  transform: scale(1.08) translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.12),
+    0 24px 44px rgba(0,0,0,0.4),
+    0 0 80px rgba(var(--accent-rgb), 0.28);
 }
 
 /* ─── Library Card Body ──────────────────────────────────────── */
