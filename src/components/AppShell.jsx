@@ -1,7 +1,6 @@
 import { Clock3, Home, Library, Star } from 'lucide-react'
 import { libraries } from '../lib/content'
-
-const brandLogoUrl = `${import.meta.env.BASE_URL}logoch.png`
+import brandLogoUrl from '../assets/profile.jpg'
 
 const navItems = [
   { href: '#/hub',    label: 'Hub',    icon: Home,    match: 'hub' },

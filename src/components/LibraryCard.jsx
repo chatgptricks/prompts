@@ -1,7 +1,6 @@
 import { ArrowRight, Layers3 } from 'lucide-react'
 import { motion } from 'framer-motion'
-
-const brandLogoUrl = `${import.meta.env.BASE_URL}logoch.png`
+import brandLogoUrl from '../assets/profile.jpg'
 
 const cardVariants = {
   initial: { opacity: 0, y: 32, scale: 0.93 },
