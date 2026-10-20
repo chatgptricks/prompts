@@ -19,7 +19,12 @@ import {
   findLibrary,
   findPrompt,
   findPromptByKey,
-  libraries,
+  librarySections,
+  canonicalPromptKey,
+  legacyLibraryRoutes,
+  migrateFavorites,
+  migrateRecentCopies,
+  migrateDrafts,
 } from './lib/content'
 import { searchPrompts } from './lib/search'
 import { readStorage, STORAGE_KEYS, writeStorage } from './lib/storage'
@@ -30,10 +35,16 @@ const pageVariants = {
   exit: { opacity: 0, y: -8 },
 }
 
-function findDirectEntryPrompt(libraryId) {
-  const library = findLibrary(libraryId)
-  if (!library?.entryPromptId) return null
-  return findPrompt(libraryId, library.entryPromptId)
+function routeToLibrary(libraryId) {
+  const legacy = legacyLibraryRoutes[libraryId]
+  if (legacy?.defaultPromptKey) {
+    const [canonicalLibraryId, promptId] = legacy.defaultPromptKey.split('/')
+    return { name: 'prompt', libraryId: canonicalLibraryId, promptId, canonicalHash: `#/prompt/${legacy.defaultPromptKey}` }
+  }
+  if (legacy?.redirectTo) {
+    return { name: 'library', libraryId: legacy.redirectTo, canonicalHash: `#/library/${legacy.redirectTo}` }
+  }
+  return { name: 'library', libraryId }
 }
 
 function parseRoute() {
@@ -45,27 +56,21 @@ function parseRoute() {
   if (parts[0] === 'saved') return { name: 'saved' }
   if (parts[0] === 'recent') return { name: 'recent' }
   if (parts[0] === 'ChatGPTatWork') return { name: 'ChatGPTatWork' }
-  if (parts[0] === 'library' && parts[1]) return { name: 'library', libraryId: parts[1] }
+  if (parts[0] === 'library' && parts[1]) return routeToLibrary(parts[1])
   if (parts[0] === 'prompt' && parts[1] && parts[2]) {
-    const directEntryPrompt = findDirectEntryPrompt(parts[1])
-    if (directEntryPrompt?.prompt.id === parts[2]) {
-      return {
-        name: 'library',
-        libraryId: parts[1],
-        canonicalHash: `#/library/${parts[1]}`,
-      }
-    }
+    const context = findPrompt(parts[1], parts[2])
+    if (context) return { name: 'prompt', libraryId: context.library.id, promptId: context.prompt.id, canonicalHash: `#/prompt/${context.prompt.key}` }
     return { name: 'prompt', libraryId: parts[1], promptId: parts[2] }
   }
 
   const legacyLibrary = findLibrary(parts[0])
-  if (legacyLibrary) return { name: 'library', libraryId: legacyLibrary.id, legacy: true }
+  if (legacyLibrary) return routeToLibrary(legacyLibrary.id)
 
   return { name: 'hub' }
 }
 
-function useStoredState(key, initialValue) {
-  const [value, setValue] = useState(() => readStorage(key, initialValue))
+function useStoredState(key, initialValue, migrate = (value) => value) {
+  const [value, setValue] = useState(() => migrate(readStorage(key, initialValue)))
 
   useEffect(() => {
     writeStorage(key, value)
@@ -76,9 +81,9 @@ function useStoredState(key, initialValue) {
 
 export default function App() {
   const [route, setRoute] = useState(parseRoute)
-  const [favorites, setFavorites] = useStoredState(STORAGE_KEYS.favorites, [])
-  const [recentCopies, setRecentCopies] = useStoredState(STORAGE_KEYS.recentCopies, [])
-  const [drafts, setDrafts] = useStoredState(STORAGE_KEYS.composerDrafts, {})
+  const [favorites, setFavorites] = useStoredState(STORAGE_KEYS.favorites, [], migrateFavorites)
+  const [recentCopies, setRecentCopies] = useStoredState(STORAGE_KEYS.recentCopies, [], migrateRecentCopies)
+  const [drafts, setDrafts] = useStoredState(STORAGE_KEYS.composerDrafts, {}, migrateDrafts)
   const [preferredView, setPreferredView] = useStoredState(STORAGE_KEYS.preferredView, 'grid')
 
   useEffect(() => {
@@ -150,7 +155,9 @@ export default function App() {
   const resetDraft = (promptKey) => {
     setDrafts((current) => {
       const next = { ...current }
-      delete next[promptKey]
+      for (const key of Object.keys(next)) {
+        if (canonicalPromptKey(key) === canonicalPromptKey(promptKey)) delete next[key]
+      }
       return next
     })
   }
@@ -241,22 +248,32 @@ function Dashboard() {
       <section className="command-hero library-only-hero">
         <div className="hero-copy">
           <p className="eyebrow">chatgptricks.fun</p>
-          <h1>Choose a library.</h1>
-          <p>Open the collection that matches what you want to create.</p>
+          <h1>What do you want to do?</h1>
+          <p>Find prompts and guides for work, creativity, learning, and better AI conversations.</p>
         </div>
       </section>
 
-      <SectionHeader icon={Library} title="Libraries" />
-      <motion.section
-        className="library-grid"
-        variants={gridVariants}
-        initial="initial"
-        animate="animate"
-      >
-        {libraries.map((library) => (
-          <LibraryCard key={library.id} library={library} />
-        ))}
-      </motion.section>
+      {librarySections.map((section) => (
+        <section key={section.id} className="library-section" aria-labelledby={`section-${section.id}`}>
+          <header className="library-section-header">
+            <div>
+              <Library aria-hidden="true" size={18} />
+              <h2 id={`section-${section.id}`}>{section.title}</h2>
+            </div>
+            {section.description ? <p>{section.description}</p> : null}
+          </header>
+          <motion.div
+            className="library-grid"
+            variants={gridVariants}
+            initial="initial"
+            animate="animate"
+          >
+            {section.libraries.map((library) => (
+              <LibraryCard key={library.id} library={library} sectionTitle={section.title} />
+            ))}
+          </motion.div>
+        </section>
+      ))}
     </div>
   )
 }
@@ -316,20 +333,13 @@ function LibraryPage({
     <div className="page library-page">
       <section className={`library-hero accent-${library.accent}`}>
         <div className="library-hero-copy">
-          <p className="eyebrow">{library.shortTitle}</p>
+          <p className="eyebrow">{library.compatibility ? 'Original collection' : 'Collection'} · {library.prompts.length} {entryLabel}</p>
           <h1>{library.title}</h1>
           <p>{library.description}</p>
           <div className="hero-tags">
             {library.tags.map((tag) => (
               <span key={tag}>{tag}</span>
             ))}
-          </div>
-        </div>
-        <div className="library-hero-visual">
-          {library.coverUrl ? <img src={library.coverUrl} alt="" /> : <span className="library-hero-emoji" aria-hidden="true">{library.emoji}</span>}
-          <div>
-            <strong>{library.prompts.length}</strong>
-            <span>{entryLabel}</span>
           </div>
         </div>
       </section>
@@ -451,6 +461,17 @@ function PromptPage({ libraryId, promptId, favoriteSet, drafts, onDraftChange, o
         isFavorite={favoriteSet.has(prompt.key)}
         onToggleFavorite={onToggleFavorite}
       />
+      {prompt.relatedKeys?.length ? (
+        <section className="related-prompts" aria-label="Related prompts">
+          <h2>Related prompts</h2>
+          <div className="prompt-grid">
+            {prompt.relatedKeys.map(findPromptByKey).filter(Boolean).map((related) => (
+              <PromptCard key={related.prompt.key} library={related.library} prompt={related.prompt} isFavorite={favoriteSet.has(related.prompt.key)} onToggleFavorite={onToggleFavorite} onCopy={onCopy} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+      {prompt.visitorCounterId ? <VisitCounter library={{ ...library, id: prompt.visitorCounterId, shortTitle: prompt.title }} /> : null}
     </div>
   )
 }

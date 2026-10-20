@@ -178,7 +178,6 @@ export default function PromptComposer({
           ) : (
             <div className="detail-glyph" aria-hidden="true">
               <strong>{prompt.emoji}</strong>
-              <span>{library.shortTitle}</span>
             </div>
           )}
         </div>
@@ -274,6 +273,7 @@ function PromptSource({ source }) {
   if (!source) return null
 
   const account = source.account ? `@${source.account.replace(/^@/, '')}` : null
+  const collaborators = source.collaborators?.filter((handle) => handle.replace(/^@/, '') !== source.account?.replace(/^@/, '')) ?? []
   const publishedAt = source.publishedAt ? new Date(source.publishedAt) : null
   const hasDate = publishedAt && !Number.isNaN(publishedAt.getTime())
   const sourceUrl = /^https?:\/\//i.test(source.url ?? '') ? source.url : null
@@ -293,6 +293,7 @@ function PromptSource({ source }) {
           {publishedAt.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}
         </time>
       ) : null}
+      {collaborators.length ? <span>With {collaborators.map((handle) => `@${handle.replace(/^@/, '')}`).join(', ')}</span> : null}
     </div>
   )
 }

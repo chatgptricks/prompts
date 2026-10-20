@@ -4,7 +4,8 @@ import { useState } from 'react'
 export default function PromptCard({ library, prompt, isFavorite, onToggleFavorite, onCopy, view = 'grid' }) {
   const [copyState, setCopyState] = useState('idle')
   const isGuide = prompt.kind === 'guide'
-  const href = library.entryPromptId === prompt.id ? `#/library/${library.id}` : `#/prompt/${library.id}/${prompt.id}`
+  const href = `#/prompt/${prompt.key}`
+  const previewUrl = prompt.imageUrls?.[0]
 
   const handleCopy = async (event) => {
     event.preventDefault()
@@ -23,12 +24,11 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
   return (
     <a href={href} className={`prompt-card accent-${library.accent} ${view}`}>
       <div className="prompt-card-preview">
-        {prompt.imageUrls?.[0] ? (
-          <img src={prompt.imageUrls[0]} alt="" loading="lazy" />
+        {previewUrl ? (
+          <img src={previewUrl} alt="" loading="lazy" />
         ) : (
           <div className="prompt-card-glyph" aria-hidden="true">
             <strong>{prompt.emoji}</strong>
-            <span>{prompt.category}</span>
           </div>
         )}
       </div>

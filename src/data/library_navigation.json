@@ -1,0 +1,622 @@
+{
+  "sections": [
+    {
+      "id": "visuals",
+      "title": "Images & Design",
+      "description": "Edit a photo, create a scene, illustrate a character, or design a product visual."
+    },
+    {
+      "id": "work",
+      "title": "Work & Research",
+      "description": "Build a presentation, apply for a role, work with code, or understand source material."
+    },
+    {
+      "id": "learning",
+      "title": "Learn & Improve",
+      "description": "Learn a skill, write clearer prompts, and understand personalization."
+    }
+  ],
+  "promptAliases": {
+    "image-trends/gta-vi-key-art": "illustration-characters/gta-vi-key-art",
+    "image-trends/celebrity-pool-floatie": "product-brand-design/celebrity-pool-floatie",
+    "images-2/generate-8-poses-for-the-same-character": "illustration-characters/generate-8-poses-for-the-same-character",
+    "images-2/character-design-from-all-angles": "illustration-characters/character-design-from-all-angles",
+    "images-2/high-precision-text-writing": "product-brand-design/high-precision-text-writing",
+    "images-2/print-quality-2k": "product-brand-design/print-quality-2k",
+    "images-2/generate-multilingual-designs": "product-brand-design/generate-multilingual-designs",
+    "images-2/self-review-command": "photo-editing/self-review-command",
+    "images-2/legal-design-cloning-via-link": "product-brand-design/legal-design-cloning-via-link",
+    "images-2/professional-lens-realism": "portraits-scenes/professional-lens-realism",
+    "images-2/designing-product-mockups": "product-brand-design/designing-product-mockups",
+    "images-2/create-a-complete-icon-set": "product-brand-design/create-a-complete-icon-set",
+    "images-2/split-screen-for-comparisons": "product-brand-design/split-screen-for-comparisons",
+    "images-2/strict-color-palette-control": "product-brand-design/strict-color-palette-control",
+    "images-2/sequential-image-generation": "illustration-characters/sequential-image-generation",
+    "images-2/structural-infographic-designs": "product-brand-design/structural-infographic-designs",
+    "images-2/transform-a-doodle-into-a-masterpiece": "illustration-characters/transform-a-doodle-into-a-masterpiece",
+    "euphoria/lavish-hand-drawn-fantasy": "illustration-characters/lavish-hand-drawn-fantasy",
+    "euphoria/classic-claymation": "illustration-characters/classic-claymation",
+    "euphoria/layered-paper-cut-collage": "illustration-characters/layered-paper-cut-collage",
+    "euphoria/1930s-rubber-hose-cartoon": "illustration-characters/1930s-rubber-hose-cartoon",
+    "euphoria/nostalgic-holiday-stop-motion": "illustration-characters/nostalgic-holiday-stop-motion",
+    "euphoria/yellow-sitcom-cartoon": "illustration-characters/yellow-sitcom-cartoon",
+    "euphoria/polished-3d-animated-feature": "illustration-characters/polished-3d-animated-feature",
+    "euphoria/deliberately-bad-ms-paint": "illustration-characters/deliberately-bad-ms-paint",
+    "euphoria/chaotic-adult-sci-fi-cartoon": "illustration-characters/chaotic-adult-sci-fi-cartoon",
+    "euphoria/1970s-japanese-anime-movie": "illustration-characters/1970s-japanese-anime-movie",
+    "euphoria/green-tinted-cyberpunk-matrix": "illustration-characters/green-tinted-cyberpunk-matrix",
+    "nostalgia/vhs-home-video": "portraits-scenes/vhs-home-video",
+    "nostalgia/polaroid-instant-photo": "portraits-scenes/polaroid-instant-photo",
+    "nostalgia/y2k-digital-camera": "portraits-scenes/y2k-digital-camera",
+    "nostalgia/cinematic-film-grain": "portraits-scenes/cinematic-film-grain",
+    "nostalgia/crt-tv-screen": "portraits-scenes/crt-tv-screen",
+    "nostalgia/ps1-era-game-character": "illustration-characters/ps1-era-game-character",
+    "nostalgia/low-res-monochrome-handheld-camera": "portraits-scenes/low-res-monochrome-handheld-camera",
+    "nostalgia/classic-disney-animation": "illustration-characters/classic-disney-animation",
+    "nostalgia/myspace-profile-pic": "portraits-scenes/myspace-profile-pic",
+    "nostalgia/tabloid-gossip-magazine-scan": "portraits-scenes/tabloid-gossip-magazine-scan",
+    "nostalgia/1980s-pixel-art": "illustration-characters/1980s-pixel-art",
+    "nostalgia/vintage-sepia-photograph": "portraits-scenes/vintage-sepia-photograph",
+    "superman/advanced-learning-mode": "learning-growth/advanced-learning-mode",
+    "superman/expert-level-knowledge": "learning-growth/expert-level-knowledge",
+    "superman/upgrade-your-mental-system": "learning-growth/upgrade-your-mental-system",
+    "superman/high-performance-thinking": "learning-growth/high-performance-thinking",
+    "superman/turn-years-into-days": "learning-growth/turn-years-into-days",
+    "superman/become-your-best-version": "learning-growth/become-your-best-version",
+    "superman/build-absolute-clarity": "learning-growth/build-absolute-clarity",
+    "superman/design-a-high-impact-life": "learning-growth/design-a-high-impact-life",
+    "higgsfield/photo-restoration": "photo-editing/photo-restoration",
+    "higgsfield/body-reshape": "photo-editing/body-reshape",
+    "higgsfield/remove-watermarks": "photo-editing/remove-watermarks",
+    "higgsfield/professional-portrait": "portraits-scenes/professional-portrait",
+    "higgsfield/famous-selfie": "portraits-scenes/famous-selfie",
+    "higgsfield/4k-enhancer": "photo-editing/4k-enhancer",
+    "higgsfield/product-ad": "product-brand-design/product-ad",
+    "higgsfield/anime-effect": "illustration-characters/anime-effect",
+    "world-cup-2026/world-cup-vip-cutaway": "portraits-scenes/world-cup-vip-cutaway",
+    "world-cup-2026/world-cup-vip-cutaway-short": "portraits-scenes/world-cup-vip-cutaway-short",
+    "hidden/open-the-file": "privacy-memory/open-the-file",
+    "hidden/the-hidden-profile": "privacy-memory/the-hidden-profile",
+    "hidden/traits-i-cant-see": "privacy-memory/traits-i-cant-see",
+    "hidden/predict-me": "privacy-memory/predict-me",
+    "hidden/see-whats-stored": "privacy-memory/see-whats-stored",
+    "hidden/kill-the-invisible-tracking": "privacy-memory/kill-the-invisible-tracking",
+    "harvard/advanced-learning-mode": "learning-growth/advanced-learning-mode",
+    "harvard/expert-level-knowledge": "learning-growth/expert-level-knowledge",
+    "harvard/upgrade-your-mental-system": "learning-growth/upgrade-your-mental-system",
+    "harvard/high-performance-thinking": "learning-growth/high-performance-thinking",
+    "harvard/turn-years-into-days": "learning-growth/turn-years-into-days",
+    "harvard/become-your-best-version": "learning-growth/become-your-best-version",
+    "harvard/build-absolute-clarity": "learning-growth/build-absolute-clarity",
+    "claude/code-refactoring-optimization": "coding-data/code-refactoring-optimization",
+    "claude/step-by-step-logic-analyzer": "learning-growth/step-by-step-logic-analyzer",
+    "claude/document-analysis-synthesis": "research-writing/document-analysis-synthesis",
+    "claude/brand-voice-copywriter": "research-writing/brand-voice-copywriter",
+    "claude/interactive-programming-mentor": "coding-data/interactive-programming-mentor",
+    "claude/claude-system-prompt-builder": "prompting-toolkit/claude-system-prompt-builder",
+    "gemini/video-summary-timestamping": "research-writing/video-summary-timestamping",
+    "gemini/full-codebase-architect": "coding-data/full-codebase-architect",
+    "gemini/design-screenshot-to-code": "coding-data/design-screenshot-to-code",
+    "gemini/audio-transcript-optimizer": "research-writing/audio-transcript-optimizer",
+    "gemini/contextual-document-translator": "research-writing/contextual-document-translator",
+    "gemini/large-dataset-trend-spotter": "coding-data/large-dataset-trend-spotter",
+    "image-trends/1985-portrait": "portraits-scenes/1985-portrait",
+    "prompting-toolkit/brutally-honest-advisor": "learning-growth/brutally-honest-advisor",
+    "product-photo-shortcuts/product-blueprint": "product-brand-design/product-blueprint",
+    "product-photo-shortcuts/product-exploded-view": "product-brand-design/product-exploded-view",
+    "product-photo-shortcuts/product-studio-photography": "product-brand-design/product-studio-photography",
+    "product-photo-shortcuts/product-360-view": "product-brand-design/product-360-view",
+    "product-photo-shortcuts/product-meta-ads": "product-brand-design/product-meta-ads",
+    "product-photo-shortcuts/product-macro-details": "product-brand-design/product-macro-details",
+    "product-photo-shortcuts/product-color-variants": "product-brand-design/product-color-variants",
+    "product-photo-shortcuts/product-parts-catalog": "product-brand-design/product-parts-catalog",
+    "photo-editing-shortcuts/identitylock": "photo-editing/identitylock",
+    "photo-editing-shortcuts/poseonly": "photo-editing/poseonly",
+    "photo-editing-shortcuts/upscale": "photo-editing/upscale",
+    "photo-editing-shortcuts/studioquality": "photo-editing/studioquality",
+    "photo-editing-shortcuts/cleanup": "photo-editing/cleanup",
+    "photo-editing-shortcuts/expressiononly": "photo-editing/expressiononly",
+    "photo-editing-shortcuts/backgroundonly": "photo-editing/backgroundonly",
+    "photo-editing-shortcuts/portraitlight": "photo-editing/portraitlight",
+    "photo-editing-shortcuts/naturalretouch": "photo-editing/naturalretouch",
+    "photo-editing-shortcuts/outfitonly": "photo-editing/outfitonly"
+  },
+  "legacyLibraries": {
+    "claude": {
+      "id": "claude",
+      "title": "Claude Power User Prompts",
+      "shortTitle": "Claude Prompts",
+      "summary": "6 advanced prompts for code refactoring, complex logic, document analysis, and precise copy.",
+      "description": "Leverage Claude's superior reasoning, coding agent capabilities, and detailed prose structure.",
+      "accent": "claude",
+      "tags": [
+        "Claude",
+        "Coding",
+        "Reasoning",
+        "Refactoring",
+        "Analysis"
+      ],
+      "tipsTitle": "Pro Tips for Claude Prompts",
+      "tips": [
+        "Use XML tags (like <content> or <instructions>) to structure inputs cleanly.",
+        "Ask Claude to think step-by-step using a <thinking> block before generating the answer.",
+        "Provide concrete examples (few-shot prompting) to align Claude's tone with your goals.",
+        "Use Claude's long context to parse entire source files or PDFs at once."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "coding-data",
+          "learning-growth",
+          "research-writing",
+          "prompting-toolkit"
+        ],
+        "canonicalPromptKeys": [
+          "coding-data/code-refactoring-optimization",
+          "learning-growth/step-by-step-logic-analyzer",
+          "research-writing/document-analysis-synthesis",
+          "research-writing/brand-voice-copywriter",
+          "coding-data/interactive-programming-mentor",
+          "prompting-toolkit/claude-system-prompt-builder"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "euphoria": {
+      "id": "euphoria",
+      "title": "Animation Style Prompt Library",
+      "shortTitle": "Animation Styles",
+      "summary": "11 prompts to reimagine one show, movie, or scene through famous animation and visual styles.",
+      "description": "Use one source scene and quickly explore it across recognizable animation, collage, 3D, anime, and cinematic treatments.",
+      "accent": "violet",
+      "tags": [
+        "Animation",
+        "Style Transfer",
+        "Storyboarding",
+        "Cinematic",
+        "Visual Systems"
+      ],
+      "tipsTitle": "Pro Tips for Style Reimaginings",
+      "tips": [
+        "Replace [show/movie/scene] with a concrete subject, then keep it the same across every style.",
+        "Keep core character traits consistent so each result feels like a true reinterpretation, not a new concept.",
+        "Use the same aspect ratio across all prompts if you are building a carousel.",
+        "Add brand-safe wording when you want inspiration from a style without copying exact characters, logos, or layouts."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "illustration-characters"
+        ],
+        "canonicalPromptKeys": [
+          "illustration-characters/lavish-hand-drawn-fantasy",
+          "illustration-characters/classic-claymation",
+          "illustration-characters/layered-paper-cut-collage",
+          "illustration-characters/1930s-rubber-hose-cartoon",
+          "illustration-characters/nostalgic-holiday-stop-motion",
+          "illustration-characters/yellow-sitcom-cartoon",
+          "illustration-characters/polished-3d-animated-feature",
+          "illustration-characters/deliberately-bad-ms-paint",
+          "illustration-characters/chaotic-adult-sci-fi-cartoon",
+          "illustration-characters/1970s-japanese-anime-movie",
+          "illustration-characters/green-tinted-cyberpunk-matrix"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "illustration-characters"
+      }
+    },
+    "gemini": {
+      "id": "gemini",
+      "title": "Gemini Multimodal Prompts",
+      "shortTitle": "Gemini Prompts",
+      "summary": "6 prompts for audio, video, long files, and multimodal analysis.",
+      "description": "Utilize Gemini's massive context window and native multimodal inputs for video, audio, and large repository tasks.",
+      "accent": "gemini",
+      "tags": [
+        "Gemini",
+        "Multimodal",
+        "Video",
+        "Audio",
+        "Repository",
+        "Context"
+      ],
+      "tipsTitle": "Pro Tips for Gemini Prompts",
+      "tips": [
+        "Upload raw video or audio files directly alongside the prompt for native analysis.",
+        "Input entire books or codebases to leverage the million-token context window.",
+        "Combine visual screenshots with code for highly specific front-end refactoring.",
+        "Ask Gemini to translate or summarize large multilingual source materials."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "research-writing",
+          "coding-data"
+        ],
+        "canonicalPromptKeys": [
+          "research-writing/video-summary-timestamping",
+          "coding-data/full-codebase-architect",
+          "coding-data/design-screenshot-to-code",
+          "research-writing/audio-transcript-optimizer",
+          "research-writing/contextual-document-translator",
+          "coding-data/large-dataset-trend-spotter"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "harvard": {
+      "id": "harvard",
+      "title": "Learning Harvard Prompts",
+      "shortTitle": "Harvard Prompts",
+      "summary": "7 prompts for learning velocity, mental models, time leverage, and self-mastery.",
+      "description": "Reimagine your learning processes, upgrade your thinking frameworks, and accelerate your personal mastery.",
+      "accent": "harvard",
+      "tags": [
+        "Learning",
+        "Mastery",
+        "Mindset",
+        "Strategy",
+        "Leverage",
+        "Clarity"
+      ],
+      "tipsTitle": "Pro Tips for Harvard Prompts",
+      "tips": [
+        "Replace bracketed fields with specific context before copying the prompt.",
+        "Use one prompt at a time so the response can go deeper instead of staying generic.",
+        "Ask ChatGPT to turn the first answer into a weekly plan, checklist, or daily routine.",
+        "Save the strongest outputs and reuse them as personal operating rules."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "learning-growth"
+        ],
+        "canonicalPromptKeys": [
+          "learning-growth/advanced-learning-mode",
+          "learning-growth/expert-level-knowledge",
+          "learning-growth/upgrade-your-mental-system",
+          "learning-growth/high-performance-thinking",
+          "learning-growth/turn-years-into-days",
+          "learning-growth/become-your-best-version",
+          "learning-growth/build-absolute-clarity"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "learning-growth"
+      }
+    },
+    "hidden": {
+      "id": "hidden",
+      "title": "ChatGPT Hidden Mode Prompts",
+      "shortTitle": "Hidden Mode",
+      "summary": "6 prompts to expose what ChatGPT knows about you, uncover your hidden profile, and wipe stored memory.",
+      "description": "ChatGPT has quietly built a file on you. Expose what it has on you, check what is stored, and wipe anything you did not agree to keep.",
+      "accent": "superman",
+      "tags": [
+        "Privacy",
+        "Security",
+        "Memory",
+        "Profile",
+        "Expose",
+        "ChatGPT"
+      ],
+      "tipsTitle": "Pro Tips for Hidden Mode",
+      "tips": [
+        "Open your ChatGPT settings first to locate Personalization and Memory controls.",
+        "Check your stored memories regularly to ensure no sensitive facts are kept without your consent.",
+        "Turn off 'Reference Chat History' if you want a clean slate for future chats.",
+        "Keep the tracking switches toggled off if you want to stop background profiling entirely."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "privacy-memory"
+        ],
+        "canonicalPromptKeys": [
+          "privacy-memory/open-the-file",
+          "privacy-memory/the-hidden-profile",
+          "privacy-memory/traits-i-cant-see",
+          "privacy-memory/predict-me",
+          "privacy-memory/see-whats-stored",
+          "privacy-memory/kill-the-invisible-tracking"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "privacy-memory"
+      }
+    },
+    "higgsfield": {
+      "id": "higgsfield",
+      "title": "Higgsfield Prompts",
+      "shortTitle": "Higgsfield Prompts",
+      "summary": "8 Higgsfield prompts for restoration, retouching, cleanup, headshots, selfies, upscaling, anime, and product ads.",
+      "description": "A focused Higgsfield prompt library for image repair, identity-preserving edits, lifestyle shots, style conversion, and polished commercial visuals.",
+      "accent": "higgsfield",
+      "tags": [
+        "Restoration",
+        "Retouching",
+        "Cleanup",
+        "Headshot",
+        "Anime"
+      ],
+      "tipsTitle": "Pro Tips for Higgsfield Prompts",
+      "tips": [
+        "Upload the clearest possible reference image before using identity-preserving prompts.",
+        "Keep requested changes specific so the model can preserve the untouched parts of the image.",
+        "Use the numbered examples as visual references for the intended before-and-after result.",
+        "For edits involving text, labels, or logos, explicitly state what must remain unchanged."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "photo-editing",
+          "portraits-scenes",
+          "product-brand-design",
+          "illustration-characters"
+        ],
+        "canonicalPromptKeys": [
+          "photo-editing/photo-restoration",
+          "photo-editing/body-reshape",
+          "photo-editing/remove-watermarks",
+          "portraits-scenes/professional-portrait",
+          "portraits-scenes/famous-selfie",
+          "photo-editing/4k-enhancer",
+          "product-brand-design/product-ad",
+          "illustration-characters/anime-effect"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "image-trends": {
+      "id": "image-trends",
+      "title": "Creative Image Prompts",
+      "shortTitle": "Image Trends",
+      "summary": "Turn a reference photo into GTA VI-style key art or a surreal inflatable pool toy.",
+      "description": "Turn a reference photo into GTA VI-style key art or a surreal inflatable pool toy.",
+      "accent": "violet",
+      "tags": [
+        "Photo Editing",
+        "Illustration",
+        "Product Photography"
+      ],
+      "tipsTitle": "How to use this collection",
+      "tips": [
+        "Upload a reference photo when the prompt calls for one.",
+        "Preserve the prompt wording and replace only the subject details you need.",
+        "Open the original post link for published examples."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "illustration-characters",
+          "product-brand-design",
+          "portraits-scenes"
+        ],
+        "canonicalPromptKeys": [
+          "illustration-characters/gta-vi-key-art",
+          "product-brand-design/celebrity-pool-floatie",
+          "portraits-scenes/1985-portrait"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "images-2": {
+      "id": "images-2",
+      "title": "Images 2.0 Prompt Library",
+      "shortTitle": "Images 2.0",
+      "summary": "15 prompts for characters, mockups, print, icons, storyboards, typography, and visual systems.",
+      "description": "A structured set of visual prompts with a consistent purpose, prompt text, and example-image placeholder for each item.",
+      "accent": "cyan",
+      "tags": [
+        "Character",
+        "Typography",
+        "Print",
+        "Mockups",
+        "Icon Set",
+        "Infographic"
+      ],
+      "tipsTitle": "Pro Tips for Images 2.0",
+      "tips": [
+        "Replace bracketed text before copying so the model has concrete subject, style, and content details.",
+        "Keep brand-critical details consistent across prompts: character traits, palette, typography, and layout.",
+        "Use the image placeholder on each card for a final example, variant, or before/after reference.",
+        "For text-heavy outputs, include the self-review line to reduce spelling and anatomy issues."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "illustration-characters",
+          "product-brand-design",
+          "photo-editing",
+          "portraits-scenes"
+        ],
+        "canonicalPromptKeys": [
+          "illustration-characters/generate-8-poses-for-the-same-character",
+          "illustration-characters/character-design-from-all-angles",
+          "product-brand-design/high-precision-text-writing",
+          "product-brand-design/print-quality-2k",
+          "product-brand-design/generate-multilingual-designs",
+          "photo-editing/self-review-command",
+          "product-brand-design/legal-design-cloning-via-link",
+          "portraits-scenes/professional-lens-realism",
+          "product-brand-design/designing-product-mockups",
+          "product-brand-design/create-a-complete-icon-set",
+          "product-brand-design/split-screen-for-comparisons",
+          "product-brand-design/strict-color-palette-control",
+          "illustration-characters/sequential-image-generation",
+          "product-brand-design/structural-infographic-designs",
+          "illustration-characters/transform-a-doodle-into-a-masterpiece"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "nostalgia": {
+      "id": "nostalgia",
+      "title": "Nostalgia Photo Prompt Templates",
+      "shortTitle": "Nostalgia",
+      "summary": "12 prompts for VHS, Polaroid, Y2K, CRT, PS1, pixel art, tabloid, sepia, and retro image styles.",
+      "description": "Transform an uploaded identity reference into nostalgic photo, video, game, print, and animation aesthetics with editable scene variables.",
+      "accent": "nostalgia",
+      "tags": [
+        "VHS",
+        "Polaroid",
+        "Y2K",
+        "CRT",
+        "Pixel Art",
+        "Vintage"
+      ],
+      "tipsTitle": "Pro Tips for Nostalgia Prompts",
+      "tips": [
+        "Upload a clear face reference first so the prompt can preserve identity across styles.",
+        "Fill in role, scene, action, outfit, extra details, and mood before copying.",
+        "Keep the scene simple when using low-resolution formats so the final image stays readable.",
+        "Use the same role and outfit across multiple prompts to create a cohesive nostalgic carousel."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "portraits-scenes",
+          "illustration-characters"
+        ],
+        "canonicalPromptKeys": [
+          "portraits-scenes/vhs-home-video",
+          "portraits-scenes/polaroid-instant-photo",
+          "portraits-scenes/y2k-digital-camera",
+          "portraits-scenes/cinematic-film-grain",
+          "portraits-scenes/crt-tv-screen",
+          "illustration-characters/ps1-era-game-character",
+          "portraits-scenes/low-res-monochrome-handheld-camera",
+          "illustration-characters/classic-disney-animation",
+          "portraits-scenes/myspace-profile-pic",
+          "portraits-scenes/tabloid-gossip-magazine-scan",
+          "illustration-characters/1980s-pixel-art",
+          "portraits-scenes/vintage-sepia-photograph"
+        ],
+        "routingPolicy": "compatibility-landing",
+        "redirectTo": null
+      }
+    },
+    "photo-editing-shortcuts": {
+      "title": "photo-editing-shortcuts",
+      "shortTitle": "photo-editing-shortcuts",
+      "accent": "emerald",
+      "tags": [],
+      "tipsTitle": "Using these prompts",
+      "tips": [],
+      "route": {
+        "destinationCollectionIds": [
+          "photo-editing"
+        ],
+        "canonicalPromptKeys": [
+          "photo-editing/identitylock",
+          "photo-editing/poseonly",
+          "photo-editing/upscale",
+          "photo-editing/studioquality",
+          "photo-editing/cleanup",
+          "photo-editing/expressiononly",
+          "photo-editing/backgroundonly",
+          "photo-editing/portraitlight",
+          "photo-editing/naturalretouch",
+          "photo-editing/outfitonly"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "photo-editing"
+      }
+    },
+    "product-photo-shortcuts": {
+      "title": "product-photo-shortcuts",
+      "shortTitle": "product-photo-shortcuts",
+      "accent": "emerald",
+      "tags": [],
+      "tipsTitle": "Using these prompts",
+      "tips": [],
+      "route": {
+        "destinationCollectionIds": [
+          "product-brand-design"
+        ],
+        "canonicalPromptKeys": [
+          "product-brand-design/product-blueprint",
+          "product-brand-design/product-exploded-view",
+          "product-brand-design/product-studio-photography",
+          "product-brand-design/product-360-view",
+          "product-brand-design/product-meta-ads",
+          "product-brand-design/product-macro-details",
+          "product-brand-design/product-color-variants",
+          "product-brand-design/product-parts-catalog"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "product-brand-design"
+      }
+    },
+    "superman": {
+      "id": "superman",
+      "title": "ChatGPT Superman Mode Prompts",
+      "shortTitle": "Superman Mode",
+      "summary": "8 prompts for accelerated learning, strategic thinking, clarity, leverage, and self-mastery.",
+      "description": "A compact prompt library for compressing learning, improving mental systems, creating leverage, and making sharper decisions.",
+      "accent": "superman",
+      "tags": [
+        "Learning",
+        "Mastery",
+        "Mindset",
+        "Strategy",
+        "Leverage",
+        "Clarity"
+      ],
+      "tipsTitle": "Pro Tips for Superman Mode",
+      "tips": [
+        "Replace bracketed fields with specific context before copying the prompt.",
+        "Use one prompt at a time so the response can go deeper instead of staying generic.",
+        "Ask ChatGPT to turn the first answer into a weekly plan, checklist, or daily routine.",
+        "Save the strongest outputs and reuse them as personal operating rules."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "learning-growth"
+        ],
+        "canonicalPromptKeys": [
+          "learning-growth/advanced-learning-mode",
+          "learning-growth/expert-level-knowledge",
+          "learning-growth/upgrade-your-mental-system",
+          "learning-growth/high-performance-thinking",
+          "learning-growth/turn-years-into-days",
+          "learning-growth/become-your-best-version",
+          "learning-growth/build-absolute-clarity",
+          "learning-growth/design-a-high-impact-life"
+        ],
+        "routingPolicy": "redirect",
+        "redirectTo": "learning-growth"
+      }
+    },
+    "world-cup-2026": {
+      "id": "world-cup-2026",
+      "title": "FIFA World Cup 2026 Prompts",
+      "shortTitle": "World Cup 2026",
+      "summary": "Two World Cup spectator prompts: the full customizable version and the published short version.",
+      "description": "Build broadcast-style FIFA World Cup 2026 spectator cutaways with real tournament teams, fixtures, scores, stages, and venues.",
+      "accent": "worldcup",
+      "tags": [
+        "FIFA World Cup 2026",
+        "Teams",
+        "Matches",
+        "Stadiums",
+        "Broadcast"
+      ],
+      "tipsTitle": "Pro Tips for World Cup 2026",
+      "tips": [
+        "Start with the match dropdown so the matchup, scoreline, stage, and default venue stay tied to real fixture data.",
+        "Use the supported team dropdown to change the jersey, scarf, and emotional focus without rewriting the full prompt.",
+        "Use the stadium dropdown when you intentionally want to stage the cutaway in a different World Cup 2026 venue."
+      ],
+      "route": {
+        "destinationCollectionIds": [
+          "portraits-scenes"
+        ],
+        "canonicalPromptKeys": [
+          "portraits-scenes/world-cup-vip-cutaway",
+          "portraits-scenes/world-cup-vip-cutaway-short"
+        ],
+        "routingPolicy": "direct-entry-compatibility",
+        "redirectTo": null,
+        "defaultPromptKey": "portraits-scenes/world-cup-vip-cutaway",
+        "relatedPromptKeys": [
+          "portraits-scenes/world-cup-vip-cutaway-short"
+        ]
+      }
+    }
+  }
+}

@@ -5,19 +5,21 @@
     "account": "chatgptricks",
     "publishedFromInclusive": "2026-05-20",
     "publishedToInclusive": "2026-10-20",
-    "knownCollaborationsExcluded": true,
+    "knownCollaborationsExcluded": false,
     "scannedRecentPosts": 306,
-    "collaborationCaveat": "Some stored isCollab values are null. Entries belong to chatgptricks and have no known collaborators; unknown is not proof of a solo publication."
+    "collaborationCaveat": "Posts belong to chatgptricks. Known collaborators are retained in source metadata; unknown stored values remain unknown.",
+    "collaborationsIncluded": true
   },
   "comparison": {
     "existingLibraryEntries": 87,
     "existingWorkPrompts": 100,
     "existingWorkflows": 5,
-    "addedPrompts": 19,
-    "addedGuides": 1,
+    "addedPrompts": 39,
+    "addedGuides": 4,
     "existingEntriesGivenSourceAttribution": 8,
     "promptBodiesReplaced": 0,
-    "totalLibraryEntries": 107
+    "totalLibraryEntries": 123,
+    "deduplicatedExistingEntries": 7
   },
   "importedPosts": [
     {
@@ -29,14 +31,14 @@
       "collaborators": [],
       "entries": [
         {
-          "key": "world-cup-2026/world-cup-vip-cutaway",
+          "key": "portraits-scenes/world-cup-vip-cutaway",
           "action": "source-added",
           "slides": [
             11
           ]
         },
         {
-          "key": "world-cup-2026/world-cup-vip-cutaway-short",
+          "key": "portraits-scenes/world-cup-vip-cutaway-short",
           "action": "added",
           "slides": [
             10
@@ -53,49 +55,49 @@
       "collaborators": [],
       "entries": [
         {
-          "key": "harvard/advanced-learning-mode",
+          "key": "learning-growth/advanced-learning-mode",
           "action": "source-added",
           "slides": [
             2
           ]
         },
         {
-          "key": "harvard/expert-level-knowledge",
+          "key": "learning-growth/expert-level-knowledge",
           "action": "source-added",
           "slides": [
             3
           ]
         },
         {
-          "key": "harvard/upgrade-your-mental-system",
+          "key": "learning-growth/upgrade-your-mental-system",
           "action": "source-added",
           "slides": [
             4
           ]
         },
         {
-          "key": "harvard/high-performance-thinking",
+          "key": "learning-growth/high-performance-thinking",
           "action": "source-added",
           "slides": [
             5
           ]
         },
         {
-          "key": "harvard/turn-years-into-days",
+          "key": "learning-growth/turn-years-into-days",
           "action": "source-added",
           "slides": [
             6
           ]
         },
         {
-          "key": "harvard/become-your-best-version",
+          "key": "learning-growth/become-your-best-version",
           "action": "source-added",
           "slides": [
             7
           ]
         },
         {
-          "key": "harvard/build-absolute-clarity",
+          "key": "learning-growth/build-absolute-clarity",
           "action": "source-added",
           "slides": [
             8
@@ -112,7 +114,7 @@
       "collaborators": [],
       "entries": [
         {
-          "key": "image-trends/celebrity-pool-floatie",
+          "key": "product-brand-design/celebrity-pool-floatie",
           "action": "added",
           "slides": [
             8
@@ -150,7 +152,7 @@
       "collaborators": [],
       "entries": [
         {
-          "key": "image-trends/gta-vi-key-art",
+          "key": "illustration-characters/gta-vi-key-art",
           "action": "added",
           "slides": [
             3
@@ -289,16 +291,262 @@
           ]
         }
       ]
+    },
+    {
+      "shortcode": "DaHsnNHAHt1",
+      "account": "chatgptricks",
+      "publishedAt": "2026-06-28T06:55:27+00:00",
+      "url": "https://www.instagram.com/p/DaHsnNHAHt1/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "prompting-toolkit/better-prompt-rewrites-june",
+          "action": "added",
+          "slides": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DdG4H3foAt1",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-10T12:50:03+00:00",
+      "url": "https://www.instagram.com/p/DdG4H3foAt1/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "portraits-scenes/1985-portrait",
+          "action": "added",
+          "slides": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DdRQezfILm-",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-14T13:36:14+00:00",
+      "url": "https://www.instagram.com/p/DdRQezfILm-/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "learning-growth/brutally-honest-advisor",
+          "action": "added",
+          "slides": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DdUIIPfoO0U",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-15T16:20:01+00:00",
+      "url": "https://www.instagram.com/p/DdUIIPfoO0U/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "product-brand-design/product-blueprint",
+          "action": "added",
+          "slides": [
+            1
+          ]
+        },
+        {
+          "key": "product-brand-design/product-exploded-view",
+          "action": "added",
+          "slides": [
+            2
+          ]
+        },
+        {
+          "key": "product-brand-design/product-studio-photography",
+          "action": "added",
+          "slides": [
+            3
+          ]
+        },
+        {
+          "key": "product-brand-design/product-360-view",
+          "action": "added",
+          "slides": [
+            4
+          ]
+        },
+        {
+          "key": "product-brand-design/product-meta-ads",
+          "action": "added",
+          "slides": [
+            5
+          ]
+        },
+        {
+          "key": "product-brand-design/product-macro-details",
+          "action": "added",
+          "slides": [
+            6
+          ]
+        },
+        {
+          "key": "product-brand-design/product-color-variants",
+          "action": "added",
+          "slides": [
+            7
+          ]
+        },
+        {
+          "key": "product-brand-design/product-parts-catalog",
+          "action": "added",
+          "slides": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DeHZJqkoGqO",
+      "account": "chatgptricks",
+      "publishedAt": "2026-10-05T14:10:59+00:00",
+      "url": "https://www.instagram.com/p/DeHZJqkoGqO/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "prompting-toolkit/better-prompt-rewrites-october",
+          "action": "added",
+          "slides": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DeNGNq1HV3Y",
+      "account": "chatgptricks",
+      "publishedAt": "2026-10-07T19:20:02+00:00",
+      "url": "https://www.instagram.com/p/DeNGNq1HV3Y/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "prompting-toolkit/prompt-structure-symbols",
+          "action": "added",
+          "slides": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DeeUPQTIIX1",
+      "account": "chatgptricks",
+      "publishedAt": "2026-10-14T11:50:02+00:00",
+      "url": "https://www.instagram.com/p/DeeUPQTIIX1/",
+      "isCollab": true,
+      "collaborators": [
+        "chatgptips"
+      ],
+      "entries": [
+        {
+          "key": "photo-editing/identitylock",
+          "action": "added",
+          "slides": [
+            2
+          ]
+        },
+        {
+          "key": "photo-editing/poseonly",
+          "action": "added",
+          "slides": [
+            3
+          ]
+        },
+        {
+          "key": "photo-editing/upscale",
+          "action": "added",
+          "slides": [
+            4
+          ]
+        },
+        {
+          "key": "photo-editing/studioquality",
+          "action": "added",
+          "slides": [
+            5
+          ]
+        },
+        {
+          "key": "photo-editing/cleanup",
+          "action": "added",
+          "slides": [
+            6
+          ]
+        },
+        {
+          "key": "photo-editing/expressiononly",
+          "action": "added",
+          "slides": [
+            7
+          ]
+        },
+        {
+          "key": "photo-editing/backgroundonly",
+          "action": "added",
+          "slides": [
+            8
+          ]
+        },
+        {
+          "key": "photo-editing/portraitlight",
+          "action": "added",
+          "slides": [
+            9
+          ]
+        },
+        {
+          "key": "photo-editing/naturalretouch",
+          "action": "added",
+          "slides": [
+            10
+          ]
+        },
+        {
+          "key": "photo-editing/outfitonly",
+          "action": "added",
+          "slides": [
+            11
+          ]
+        }
+      ]
     }
-  ],
-  "excludedKnownCollaborations": [
-    "DaHsnNHAHt1",
-    "DdG4H3foAt1",
-    "DdRQezfILm-",
-    "DdUIIPfoO0U",
-    "DeHZJqkoGqO",
-    "DeNGNq1HV3Y",
-    "DeeUPQTIIX1"
   ],
   "unavailableSources": [
     {
@@ -313,5 +561,92 @@
   "coverageLimitations": [
     "The available Dashboard dataset contains no posts dated August 2026. July data has a gap between July 12 and July 29.",
     "Only posts and complete text available from the Dashboard were imported."
-  ]
+  ],
+  "organization": {
+    "logic": "One primary home per prompt, organized by task instead of model or source carousel.",
+    "sections": 3,
+    "collections": 11,
+    "uniqueEntries": 123,
+    "deduplicatedPairs": [
+      {
+        "duplicateKeys": [
+          "harvard/advanced-learning-mode",
+          "superman/advanced-learning-mode"
+        ],
+        "canonicalKey": "learning-growth/advanced-learning-mode",
+        "takeContentFrom": "harvard/advanced-learning-mode",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/expert-level-knowledge",
+          "superman/expert-level-knowledge"
+        ],
+        "canonicalKey": "learning-growth/expert-level-knowledge",
+        "takeContentFrom": "harvard/expert-level-knowledge",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/upgrade-your-mental-system",
+          "superman/upgrade-your-mental-system"
+        ],
+        "canonicalKey": "learning-growth/upgrade-your-mental-system",
+        "takeContentFrom": "harvard/upgrade-your-mental-system",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/high-performance-thinking",
+          "superman/high-performance-thinking"
+        ],
+        "canonicalKey": "learning-growth/high-performance-thinking",
+        "takeContentFrom": "harvard/high-performance-thinking",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/turn-years-into-days",
+          "superman/turn-years-into-days"
+        ],
+        "canonicalKey": "learning-growth/turn-years-into-days",
+        "takeContentFrom": "harvard/turn-years-into-days",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/become-your-best-version",
+          "superman/become-your-best-version"
+        ],
+        "canonicalKey": "learning-growth/become-your-best-version",
+        "takeContentFrom": "harvard/become-your-best-version",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      },
+      {
+        "duplicateKeys": [
+          "harvard/build-absolute-clarity",
+          "superman/build-absolute-clarity"
+        ],
+        "canonicalKey": "learning-growth/build-absolute-clarity",
+        "takeContentFrom": "harvard/build-absolute-clarity",
+        "reason": "Identical body and variable list; Harvard entry also carries verified June 22 source attribution.",
+        "preserveSourceMetadataFromBoth": true
+      }
+    ],
+    "legacyPromptAliases": 103,
+    "groupCovers": false,
+    "individualCovers": false,
+    "generatedArtworks": 0,
+    "individualGeneratedCoverAssignments": 0,
+    "individualsWithExistingImages": 46,
+    "groupsWithImages": 0,
+    "individualsWithEmoji": 77,
+    "individualVisuals": "Existing prompt examples where available; simple emoji elsewhere. No generated artwork."
+  }
 }

@@ -1,5 +1,5 @@
 import { Clock3, Home, Library, Star } from 'lucide-react'
-import { libraries } from '../lib/content'
+import { librarySections } from '../lib/content'
 import brandLogoUrl from '../assets/profile.jpg'
 
 const navItems = [
@@ -36,15 +36,20 @@ export default function AppShell({ activeRoute, favoritesCount, recentCount, chi
             })}
           </nav>
 
-          <section className="rail-libraries">
+          <nav className="rail-libraries" aria-label="Libraries">
             <p>Libraries</p>
-            {libraries.map((library) => (
-              <a key={library.id} href={`#/library/${library.id}`}>
-                <span className={`rail-dot accent-${library.accent}`} />
-                {library.shortTitle}
-              </a>
+            {librarySections.map((section) => (
+              <div key={section.id} className="rail-library-group" role="group" aria-label={section.title}>
+                <h2>{section.title}</h2>
+                {section.libraries.map((library) => (
+                  <a key={library.id} href={`#/library/${library.id}`}>
+                    <span className={`rail-dot accent-${library.accent}`} />
+                    {library.shortTitle}
+                  </a>
+                ))}
+              </div>
             ))}
-          </section>
+          </nav>
         </aside>
 
         <div className="app-frame">
