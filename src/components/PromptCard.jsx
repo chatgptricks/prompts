@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 export default function PromptCard({ library, prompt, isFavorite, onToggleFavorite, onCopy, view = 'grid' }) {
   const [copyState, setCopyState] = useState('idle')
+  const isGuide = prompt.kind === 'guide'
   const href = library.entryPromptId === prompt.id ? `#/library/${library.id}` : `#/prompt/${library.id}/${prompt.id}`
 
   const handleCopy = async (event) => {
@@ -34,7 +35,7 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
       <div className="prompt-card-main">
         <div className="prompt-meta">
           <span>{library.shortTitle}</span>
-          <span>{prompt.category}</span>
+          <span>{isGuide ? `Guide · ${prompt.category}` : prompt.category}</span>
         </div>
         <h3>{prompt.title}</h3>
         <p>{prompt.note}</p>
@@ -49,15 +50,15 @@ export default function PromptCard({ library, prompt, isFavorite, onToggleFavori
           type="button"
           className={`icon-button ${isFavorite ? 'active' : ''}`}
           onClick={handleFavorite}
-          aria-label={isFavorite ? 'Remove from saved prompts' : 'Save prompt'}
+          aria-label={isFavorite ? `Remove ${isGuide ? 'guide' : 'prompt'} from saved` : `Save ${isGuide ? 'guide' : 'prompt'}`}
         >
           <Star aria-hidden="true" size={17} />
         </button>
-        <button type="button" className="icon-button" onClick={handleCopy} aria-label="Copy prompt">
+        <button type="button" className="icon-button" onClick={handleCopy} aria-label={isGuide ? 'Copy guide' : 'Copy prompt'}>
           <Copy aria-hidden="true" size={17} />
         </button>
         <span className="open-chip">
-          <span>{copyState === 'idle' ? 'Customize' : copyState === 'copied' ? 'Copied' : 'Failed'}</span>
+          <span>{copyState === 'idle' ? isGuide ? 'Read guide' : 'Customize' : copyState === 'copied' ? 'Copied' : 'Failed'}</span>
           <ArrowRight aria-hidden="true" size={16} />
         </span>
       </div>

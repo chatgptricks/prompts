@@ -241,7 +241,7 @@ function Dashboard() {
       <section className="command-hero library-only-hero">
         <div className="hero-copy">
           <p className="eyebrow">chatgptricks.fun</p>
-          <h1>Choose a prompt library.</h1>
+          <h1>Choose a library.</h1>
           <p>Open the collection that matches what you want to create.</p>
         </div>
       </section>
@@ -287,10 +287,12 @@ function LibraryPage({
   )
 
   const visiblePrompts = useMemo(() => {
-    return searchPrompts(libraryPrompts, query, 60)
+    return searchPrompts(libraryPrompts, query, libraryPrompts.length)
   }, [libraryPrompts, query])
 
   if (!library) return <MissingPage />
+  const guideCount = library.prompts.filter((prompt) => prompt.kind === 'guide').length
+  const entryLabel = guideCount === library.prompts.length ? 'guides' : guideCount ? 'prompts & guides' : 'prompts'
   if (library.entryPromptId) {
     const prompt = library.prompts.find((item) => item.id === library.entryPromptId) ?? library.prompts[0]
 
@@ -327,7 +329,7 @@ function LibraryPage({
           {library.coverUrl ? <img src={library.coverUrl} alt="" /> : <span className="library-hero-emoji" aria-hidden="true">{library.emoji}</span>}
           <div>
             <strong>{library.prompts.length}</strong>
-            <span>prompts</span>
+            <span>{entryLabel}</span>
           </div>
         </div>
       </section>
@@ -405,6 +407,23 @@ function DirectEntryLibraryPage({ library, prompt, draft, favoriteSet, onDraftCh
         onToggleFavorite={onToggleFavorite}
         detailEyebrow={library.shortTitle}
       />
+      {library.prompts.length > 1 ? (
+        <section className="related-prompts" aria-label={`More in ${library.shortTitle}`}>
+          <h2>More in {library.shortTitle}</h2>
+          <div className="prompt-grid">
+            {library.prompts.filter((item) => item.id !== prompt.id).map((item) => (
+              <PromptCard
+                key={item.key}
+                library={library}
+                prompt={item}
+                isFavorite={favoriteSet.has(item.key)}
+                onToggleFavorite={onToggleFavorite}
+                onCopy={onCopy}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
       <VisitCounter library={library} />
     </div>
   )

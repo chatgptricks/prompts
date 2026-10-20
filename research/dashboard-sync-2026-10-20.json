@@ -1,0 +1,317 @@
+{
+  "reviewedAt": "2026-10-20",
+  "sourceProduct": "Sentient Dash Research",
+  "scope": {
+    "account": "chatgptricks",
+    "publishedFromInclusive": "2026-05-20",
+    "publishedToInclusive": "2026-10-20",
+    "knownCollaborationsExcluded": true,
+    "scannedRecentPosts": 306,
+    "collaborationCaveat": "Some stored isCollab values are null. Entries belong to chatgptricks and have no known collaborators; unknown is not proof of a solo publication."
+  },
+  "comparison": {
+    "existingLibraryEntries": 87,
+    "existingWorkPrompts": 100,
+    "existingWorkflows": 5,
+    "addedPrompts": 19,
+    "addedGuides": 1,
+    "existingEntriesGivenSourceAttribution": 8,
+    "promptBodiesReplaced": 0,
+    "totalLibraryEntries": 107
+  },
+  "importedPosts": [
+    {
+      "shortcode": "DZ3w3PFgPOQ",
+      "account": "chatgptricks",
+      "publishedAt": "2026-06-22T02:24:45+00:00",
+      "url": "https://www.instagram.com/p/DZ3w3PFgPOQ/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "world-cup-2026/world-cup-vip-cutaway",
+          "action": "source-added",
+          "slides": [
+            11
+          ]
+        },
+        {
+          "key": "world-cup-2026/world-cup-vip-cutaway-short",
+          "action": "added",
+          "slides": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DZ5gfSMFWVC",
+      "account": "chatgptricks",
+      "publishedAt": "2026-06-22T18:40:02+00:00",
+      "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "harvard/advanced-learning-mode",
+          "action": "source-added",
+          "slides": [
+            2
+          ]
+        },
+        {
+          "key": "harvard/expert-level-knowledge",
+          "action": "source-added",
+          "slides": [
+            3
+          ]
+        },
+        {
+          "key": "harvard/upgrade-your-mental-system",
+          "action": "source-added",
+          "slides": [
+            4
+          ]
+        },
+        {
+          "key": "harvard/high-performance-thinking",
+          "action": "source-added",
+          "slides": [
+            5
+          ]
+        },
+        {
+          "key": "harvard/turn-years-into-days",
+          "action": "source-added",
+          "slides": [
+            6
+          ]
+        },
+        {
+          "key": "harvard/become-your-best-version",
+          "action": "source-added",
+          "slides": [
+            7
+          ]
+        },
+        {
+          "key": "harvard/build-absolute-clarity",
+          "action": "source-added",
+          "slides": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DaBMlCsIIA-",
+      "account": "chatgptricks",
+      "publishedAt": "2026-06-25T18:20:01+00:00",
+      "url": "https://www.instagram.com/p/DaBMlCsIIA-/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "image-trends/celebrity-pool-floatie",
+          "action": "added",
+          "slides": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "Dd6W1wuoHN4",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-30T12:40:01+00:00",
+      "url": "https://www.instagram.com/p/Dd6W1wuoHN4/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "prompting-toolkit/anatomy-of-an-agent-prompt",
+          "action": "added",
+          "slides": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DdoTjYLlRQm",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-23T12:25:01+00:00",
+      "url": "https://www.instagram.com/p/DdoTjYLlRQm/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "image-trends/gta-vi-key-art",
+          "action": "added",
+          "slides": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DduEqKBoASU",
+      "account": "chatgptricks",
+      "publishedAt": "2026-09-25T18:10:02+00:00",
+      "url": "https://www.instagram.com/p/DduEqKBoASU/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "job-applications/jd-cv-tailor",
+          "action": "added",
+          "slides": [
+            2
+          ]
+        },
+        {
+          "key": "job-applications/impact-bullet-rewriter",
+          "action": "added",
+          "slides": [
+            3
+          ]
+        },
+        {
+          "key": "job-applications/unskippable-cover-letter",
+          "action": "added",
+          "slides": [
+            4
+          ]
+        },
+        {
+          "key": "job-applications/recruiter-keyword-extractor",
+          "action": "added",
+          "slides": [
+            5
+          ]
+        },
+        {
+          "key": "job-applications/gap-fixer",
+          "action": "added",
+          "slides": [
+            6
+          ]
+        },
+        {
+          "key": "job-applications/interview-question-predictor",
+          "action": "added",
+          "slides": [
+            7
+          ]
+        },
+        {
+          "key": "job-applications/star-story-builder",
+          "action": "added",
+          "slides": [
+            8
+          ]
+        },
+        {
+          "key": "job-applications/full-application-pack",
+          "action": "added",
+          "slides": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "shortcode": "DenCxhuHeha",
+      "account": "chatgptricks",
+      "publishedAt": "2026-10-17T21:11:08+00:00",
+      "url": "https://www.instagram.com/p/DenCxhuHeha/",
+      "isCollab": null,
+      "collaborators": [],
+      "entries": [
+        {
+          "key": "prompting-toolkit/gaslight-it",
+          "action": "added",
+          "slides": [
+            2
+          ]
+        },
+        {
+          "key": "prompting-toolkit/give-it-an-absurd-iq",
+          "action": "added",
+          "slides": [
+            3
+          ]
+        },
+        {
+          "key": "prompting-toolkit/use-obviously-as-bait",
+          "action": "added",
+          "slides": [
+            4
+          ]
+        },
+        {
+          "key": "prompting-toolkit/imagine-an-audience",
+          "action": "added",
+          "slides": [
+            5
+          ]
+        },
+        {
+          "key": "prompting-toolkit/give-it-a-weird-limitation",
+          "action": "added",
+          "slides": [
+            6
+          ]
+        },
+        {
+          "key": "prompting-toolkit/propose-a-bet",
+          "action": "added",
+          "slides": [
+            8
+          ]
+        },
+        {
+          "key": "prompting-toolkit/invent-an-opponent",
+          "action": "added",
+          "slides": [
+            7
+          ]
+        },
+        {
+          "key": "prompting-toolkit/ask-for-version-2",
+          "action": "added",
+          "slides": [
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "excludedKnownCollaborations": [
+    "DaHsnNHAHt1",
+    "DdG4H3foAt1",
+    "DdRQezfILm-",
+    "DdUIIPfoO0U",
+    "DeHZJqkoGqO",
+    "DeNGNq1HV3Y",
+    "DeeUPQTIIX1"
+  ],
+  "unavailableSources": [
+    {
+      "shortcode": "DdwRfGYIAbZ",
+      "reason": "Media endpoint returned status 502: \"Apify returned no matching result for this post\" on initial request and one retry. Detail endpoint returned full caption but ocrText is empty; eight full prompt bodies could not be recovered."
+    },
+    {
+      "shortcode": "DeiCY4NnQ3c",
+      "reason": "Media endpoint returned status 502: \"Apify returned no matching result for this post\" on initial request and one retry. Detail endpoint returned full caption but ocrText is empty; full expert prompt body could not be recovered."
+    }
+  ],
+  "coverageLimitations": [
+    "The available Dashboard dataset contains no posts dated August 2026. July data has a gap between July 12 and July 29.",
+    "Only posts and complete text available from the Dashboard were imported."
+  ]
+}

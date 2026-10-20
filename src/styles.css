@@ -1353,6 +1353,26 @@ h1, h2, h3, p { min-width: 0; }
 .detail-copy { padding: 1.25rem; }
 .detail-copy h1 { font-size: clamp(2rem, 4vw, 3.8rem); }
 
+.prompt-source {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 0.9rem 0;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.prompt-source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent);
+}
+
+.prompt-source a:hover { text-decoration: underline; }
+
 .composer-panel {
   position: sticky;
   top: 86px;
@@ -1462,15 +1482,16 @@ h1, h2, h3, p { min-width: 0; }
 
 .prompt-instructions .eyebrow { margin: 0; }
 
-.prompt-instructions ul {
+.prompt-instructions ol {
   display: grid;
   gap: 0.38rem;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   color: rgba(255,255,255,0.72);
 }
 
-.prompt-instructions li { line-height: 1.5; }
+.prompt-instructions li { line-height: 1.5; white-space: pre-line; }
+.prompt-instructions li::marker { color: var(--accent, #1dffc0); font-weight: 700; }
 
 .prompt-preview {
   max-height: 430px;
@@ -1485,6 +1506,12 @@ h1, h2, h3, p { min-width: 0; }
   line-height: 1.68;
   padding: 1rem;
   white-space: pre-wrap;
+}
+
+.guide-preview {
+  font-family: inherit;
+  font-size: 0.94rem;
+  line-height: 1.75;
 }
 
 .composer-actions { display: grid; grid-template-columns: 1.2fr repeat(3, minmax(96px, 1fr)); gap: 0.55rem; }

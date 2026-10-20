@@ -18,6 +18,9 @@ const libraryEmojis = {
   harvard: '🎓',
   claude: '🤖',
   gemini: '♊',
+  'image-trends': '🎨',
+  'job-applications': '💼',
+  'prompting-toolkit': '🛠️',
 }
 
 const categoryEmojis = {
@@ -74,8 +77,10 @@ export const assetUrl = (fileName) => {
 
 export const getPromptKey = (libraryId, promptId) => `${libraryId}/${promptId}`
 
-export const extractVariables = (body) =>
-  Array.from(new Set((body.match(/\[[^\]]+\]/g) ?? []).map((match) => match.slice(1, -1))))
+const variablePattern = (style) => style === 'braces' ? /\{([^{}]+)\}/g : /\[([^\]]+)\]/g
+
+export const extractVariables = (body, style = 'brackets') =>
+  Array.from(new Set(Array.from(body.matchAll(variablePattern(style)), (match) => match[1])))
 
 export const humanizeVariable = (variable) =>
   variable
@@ -85,8 +90,8 @@ export const humanizeVariable = (variable) =>
     .trim()
     .replace(/\b\w/g, (letter) => letter.toUpperCase())
 
-export const composePrompt = (body, values = {}) =>
-  body.replace(/\[([^\]]+)\]/g, (match, name) => {
+export const composePrompt = (body, values = {}, style = 'brackets') =>
+  body.replace(variablePattern(style), (match, name) => {
     const value = values[name]?.trim()
     return value || match
   })
@@ -96,7 +101,7 @@ export const libraries = rawLibraries.map((library) => ({
   emoji: libraryEmojis[library.id] ?? '✨',
   coverUrl: assetUrl(library.cover),
   prompts: library.prompts.map((prompt) => {
-    const variables = prompt.variables?.length ? prompt.variables : extractVariables(prompt.body)
+    const variables = prompt.variables ?? extractVariables(prompt.body, prompt.placeholderStyle)
 
     return {
       ...prompt,

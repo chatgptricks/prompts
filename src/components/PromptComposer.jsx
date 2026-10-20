@@ -1,4 +1,4 @@
-import { Check, Copy, RotateCcw, Share2, Sparkles, Star } from 'lucide-react'
+import { Check, Copy, ExternalLink, RotateCcw, Share2, Sparkles, Star } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import fifaWorldCup2026 from '../data/fifa_world_cup_2026.json'
 import { composePrompt, humanizeVariable } from '../lib/content'
@@ -94,11 +94,12 @@ export default function PromptComposer({
 }) {
   const [status, setStatus] = useState('idle')
   const [activeImage, setActiveImage] = useState(0)
+  const isGuide = prompt.kind === 'guide'
   const values = draft ?? {}
   const worldCupContext = useMemo(() => getWorldCupValues(prompt, values), [prompt, values])
   const variables = useMemo(
-    () => (prompt.variables ?? []).filter((variable) => !hiddenWorldCupVariables.has(variable)),
-    [prompt.variables],
+    () => (prompt.variables ?? []).filter((variable) => !worldCupContext || !hiddenWorldCupVariables.has(variable)),
+    [prompt.variables, worldCupContext],
   )
   const composedValues = useMemo(
     () => ({
@@ -107,7 +108,7 @@ export default function PromptComposer({
     }),
     [values, worldCupContext],
   )
-  const finalPrompt = useMemo(() => composePrompt(prompt.body, composedValues), [prompt.body, composedValues])
+  const finalPrompt = useMemo(() => composePrompt(prompt.body, composedValues, prompt.placeholderStyle), [prompt.body, composedValues, prompt.placeholderStyle])
 
   const setVariable = (name, value) => {
     onDraftChange({
@@ -185,6 +186,7 @@ export default function PromptComposer({
           <p className="eyebrow">{detailEyebrow ?? `${library.shortTitle} / ${prompt.category}`}</p>
           <h1>{prompt.title}</h1>
           <p>{prompt.note}</p>
+          <PromptSource source={prompt.source} />
           <div className="tag-row">
             {prompt.tags.map((tag) => (
               <span key={tag}>{tag}</span>
@@ -196,14 +198,14 @@ export default function PromptComposer({
       <article className="composer-panel">
         <div className="panel-heading">
           <div>
-            <p className="eyebrow">Prompt Composer</p>
-            <h2>Customize the variables</h2>
+            <p className="eyebrow">{isGuide ? 'Guide' : 'Prompt Composer'}</p>
+            <h2>{isGuide && !variables.length ? 'Read the guide' : 'Customize the variables'}</h2>
           </div>
           <button
             type="button"
             className={`icon-button ${isFavorite ? 'active' : ''}`}
             onClick={() => onToggleFavorite(prompt.key)}
-            aria-label={isFavorite ? 'Remove from saved prompts' : 'Save prompt'}
+            aria-label={isFavorite ? `Remove ${isGuide ? 'guide' : 'prompt'} from saved` : `Save ${isGuide ? 'guide' : 'prompt'}`}
           >
             <Star aria-hidden="true" size={18} />
           </button>
@@ -223,31 +225,31 @@ export default function PromptComposer({
         ) : (
           <div className={`no-variables ${worldCupContext ? 'compact' : ''}`}>
             <Check aria-hidden="true" size={18} />
-            <span>{worldCupContext ? 'World Cup data selected.' : 'Ready to copy as written.'}</span>
+            <span>{worldCupContext ? 'World Cup data selected.' : isGuide ? 'Ready to read or copy.' : 'Ready to copy as written.'}</span>
           </div>
         )}
 
         {prompt.instructions?.length ? (
-          <div className="prompt-instructions" aria-label="Prompt instructions">
-            <p className="eyebrow">Before You Paste</p>
-            <ul>
+          <div className="prompt-instructions" aria-label={isGuide ? 'Guide instructions' : 'Prompt instructions'}>
+            <p className="eyebrow">{isGuide ? 'How to use this guide' : 'Before You Paste'}</p>
+            <ol>
               {prompt.instructions.map((instruction) => (
                 <li key={instruction}>{instruction}</li>
               ))}
-            </ul>
+            </ol>
           </div>
         ) : null}
 
         <div className="preview-header">
-          <span>Live preview</span>
+          <span>{isGuide ? 'Guide' : 'Live preview'}</span>
           <span>{finalPrompt.length.toLocaleString()} chars</span>
         </div>
-        <pre className="prompt-preview">{finalPrompt}</pre>
+        <pre className={`prompt-preview ${isGuide ? 'guide-preview' : ''}`}>{finalPrompt}</pre>
 
         <div className="composer-actions">
           <button type="button" className="primary-button" onClick={copyPrompt}>
             <Copy aria-hidden="true" size={18} />
-            {status === 'copied' ? 'Copied' : 'Copy'}
+            {status === 'copied' ? 'Copied' : isGuide ? 'Copy guide' : 'Copy'}
           </button>
           <button type="button" className="secondary-button" onClick={onResetDraft}>
             <RotateCcw aria-hidden="true" size={18} />
@@ -265,6 +267,33 @@ export default function PromptComposer({
         {status === 'failed' ? <p className="action-error">Clipboard access failed in this browser.</p> : null}
       </article>
     </section>
+  )
+}
+
+function PromptSource({ source }) {
+  if (!source) return null
+
+  const account = source.account ? `@${source.account.replace(/^@/, '')}` : null
+  const publishedAt = source.publishedAt ? new Date(source.publishedAt) : null
+  const hasDate = publishedAt && !Number.isNaN(publishedAt.getTime())
+  const sourceUrl = /^https?:\/\//i.test(source.url ?? '') ? source.url : null
+
+  if (!account && !sourceUrl && !hasDate) return null
+
+  return (
+    <div className="prompt-source" aria-label="Original post source">
+      {sourceUrl ? (
+        <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
+          {account ? `${account} · Original post` : 'Original post'}
+          <ExternalLink aria-hidden="true" size={13} />
+        </a>
+      ) : account ? <span>{account}</span> : null}
+      {hasDate ? (
+        <time dateTime={source.publishedAt}>
+          {publishedAt.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}
+        </time>
+      ) : null}
+    </div>
   )
 }
 

@@ -13,6 +13,9 @@ const cardVariants = {
 }
 
 export default function LibraryCard({ library }) {
+  const guideCount = library.prompts.filter((prompt) => prompt.kind === 'guide').length
+  const libraryLabel = guideCount && guideCount === library.prompts.length ? 'Guide library' : guideCount ? 'Prompts & guides' : 'Prompt library'
+
   return (
     <motion.a
       href={`#/library/${library.id}`}
@@ -35,7 +38,7 @@ export default function LibraryCard({ library }) {
 
       <div className="library-card-body">
         <div className="card-kicker">
-          <span>Prompt library</span>
+          <span>{libraryLabel}</span>
           <Layers3 aria-hidden="true" size={15} />
         </div>
         <h2>{library.shortTitle}</h2>

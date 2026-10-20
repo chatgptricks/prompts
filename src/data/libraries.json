@@ -1,5 +1,576 @@
 [
   {
+    "id": "prompting-toolkit",
+    "title": "Prompting Examples & Agent Guide",
+    "shortTitle": "Prompting Toolkit",
+    "summary": "8 published prompt examples and a four-part guide to writing agent instructions.",
+    "description": "8 published prompt examples and a four-part guide to writing agent instructions.",
+    "accent": "cyan",
+    "cover": null,
+    "tags": [
+      "Prompting",
+      "Agents",
+      "Examples",
+      "Context"
+    ],
+    "tipsTitle": "How to use this collection",
+    "tips": [
+      "Use the examples with your own question, idea, campaign, or code.",
+      "The agent guide includes the complete purchasing example from the source post.",
+      "Open any entry to see its original ChatGPTricks post and publication date."
+    ],
+    "prompts": [
+      {
+        "id": "anatomy-of-an-agent-prompt",
+        "title": "The Anatomy of an Agent Prompt",
+        "body": "Goal\nDefine exactly what the agent is being asked to accomplish. A strong goal includes the main task, important constraints, and the outcome you expect, so the agent knows what success looks like from the start\n\nReturn format\nSpecify how you want the agent to present its work. This can include the information to return, how many options to provide, what details to include for each one, and whether it should stop for approval before taking the next action\n\nWarnings\nSet clear boundaries around what the agent should never do. These instructions are especially useful for purchases, payments, sensitive data, security risks, or any action where a mistake could have real consequences\n\nContext dump\nGive the agent the background information that helps it make better decisions.\nThis can include why the task matters, previous problems, preferences, operational details, and anything else that would change how it approaches the job\n\nExample\n\nI want you to buy 40 ergonomic office chairs for our new San Francisco office, under $20,000 total.\n\nEach chair should be highly rated for all-day comfort and arrive within two weeks.\n\nFor each option, return the chair model, the merchant, the merchant’s Baselayer verification status, price per chair, total cost, delivery date, and why it’s a good fit.\n\nReturn the top 3, then wait for my approval before checking out.\n\nOnly buy from Baselayer-verified merchants. Present our Baselayer identity credential at checkout so the order isn’t flagged as bot activity. Never enter our card on a site that fails counterparty verification.\n\nFor context: we’re a 40-person fintech team moving into a new office next month. last quarter an intern’s agent ordered monitors from a storefront that turned out to be registered four days earlier -- we never saw the monitors or the money again. finance is now nervous about letting agents spend anything. we sit at our desks 8+ hours a day, so comfort matters way more than looks. our last chairs came from a big-box retailer that kept blocking our agent’s checkout as a bot, so we ended up finishing the order by hand. if this goes smoothly, it’s the proof finance needs to let agents handle all of our office procurement.",
+        "note": "Structure an agent prompt with a goal, return format, warnings, and context dump.",
+        "category": "Prompt Engineering",
+        "kind": "guide",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/Dd6W1wuoHN4/",
+          "publishedAt": "2026-09-30T12:40:01+00:00",
+          "kind": "carousel",
+          "slides": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "tags": [
+          "Agents",
+          "Prompt Structure",
+          "Context"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "gaslight-it",
+        "title": "Gaslight it",
+        "body": "You explained X to me yesterday, but I forgot one detail",
+        "note": "An example framed around an imagined previous conversation.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            2
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "give-it-an-absurd-iq",
+        "title": "Give it an absurd IQ",
+        "body": "You are a marketing expert with an IQ of 145. Analyze my campaign",
+        "note": "A marketing analysis example with an expert role and a specified IQ.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            3
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "use-obviously-as-bait",
+        "title": "Use “obviously” as bait",
+        "body": "Obviously, Python is better than JavaScript for the web, right?",
+        "note": "A comparison question that opens with an assumption.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            4
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "imagine-an-audience",
+        "title": "Imagine an audience",
+        "body": "Explain blockchain as if you were in a packed auditorium",
+        "note": "A blockchain explanation framed for an auditorium audience.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            5
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "give-it-a-weird-limitation",
+        "title": "Give it a weird limitation",
+        "body": "Explain this using only kitchen analogies",
+        "note": "An explanation constrained to kitchen analogies.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            6
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "propose-a-bet",
+        "title": "Propose a bet",
+        "body": "I bet $100 this code isn’t efficient",
+        "note": "A code review example phrased as a hypothetical bet.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            8
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "invent-an-opponent",
+        "title": "Invent an opponent",
+        "body": "My colleague says this approach is wrong. Defend it or accept that he’s right",
+        "note": "A prompt asking for a defense or concession about an approach.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            7
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      },
+      {
+        "id": "ask-for-version-2",
+        "title": "Ask for a “version 2.0”",
+        "body": "Give me Version 2.0 of this idea",
+        "note": "An idea iteration framed as Version 2.0.",
+        "category": "Prompt Engineering",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DenCxhuHeha/",
+          "publishedAt": "2026-10-17T21:11:08+00:00",
+          "kind": "carousel",
+          "slides": [
+            9
+          ]
+        },
+        "tags": [
+          "Prompting",
+          "Examples",
+          "ChatGPT",
+          "Claude"
+        ],
+        "images": [],
+        "variables": []
+      }
+    ]
+  },
+  {
+    "id": "job-applications",
+    "title": "Job Application Prompts",
+    "shortTitle": "Job Applications",
+    "summary": "8 prompts for tailoring a CV, writing a cover letter, finding keywords, and preparing for interviews.",
+    "description": "8 prompts for tailoring a CV, writing a cover letter, finding keywords, and preparing for interviews.",
+    "accent": "emerald",
+    "cover": null,
+    "tags": [
+      "CV",
+      "Cover Letter",
+      "Interview",
+      "Career"
+    ],
+    "tipsTitle": "How to use this collection",
+    "tips": [
+      "Start with the actual job description and your current CV.",
+      "Fill the original curly-brace fields before copying.",
+      "For prompts without fields, supply the CV and job description in the same conversation.",
+      "Review the finished application against your actual experience."
+    ],
+    "prompts": [
+      {
+        "id": "jd-cv-tailor",
+        "title": "JD → CV Tailor",
+        "body": "Act as a senior recruiter\n\nAnalyze this job description:\n{paste JD}\n\nThen rewrite my CV to match the role:\n{paste CV}\n\nHighlight relevant experience, align keywords, and reframe bullet points to match the employer’s priorities",
+        "note": "This aligns your CV with what recruiters actually scan for",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            2
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [
+          "paste JD",
+          "paste CV"
+        ],
+        "placeholderStyle": "braces"
+      },
+      {
+        "id": "impact-bullet-rewriter",
+        "title": "Impact Bullet Rewriter",
+        "body": "Rewrite my CV bullet points using a results-first format\n\nTurn each line into:\n+ Action\n+ Metric\n+ Outcome\n\nQuantify impact wherever possible and remove generic phrasing",
+        "note": "This upgrades weak bullets into high-impact signals",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            3
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [],
+        "placeholderStyle": "braces",
+        "instructions": [
+          "Paste or upload your existing CV bullet points before running this prompt."
+        ]
+      },
+      {
+        "id": "unskippable-cover-letter",
+        "title": "Unskippable Cover Letter",
+        "body": "Write a tailored cover letter for this role:\n{JD}\n\nFocus on why I’m a strong fit based on my experience:\n{Summary}\n\nAvoid generic language\n\nMake it specific, concise, and aligned with the company’s goals",
+        "note": "Draft a role-specific letter from the job description and your experience.",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            4
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [
+          "JD",
+          "Summary"
+        ],
+        "placeholderStyle": "braces"
+      },
+      {
+        "id": "recruiter-keyword-extractor",
+        "title": "Recruiter Keyword Extractor",
+        "body": "Analyze this job description and extract the top 20 keywords, skills, and competencies the recruiter is prioritizing\n\nCategorize them into must-have vs nice-to-have\n\nUse your knowledge regarding ATS systems to select the better options",
+        "note": "Extract must-have and nice-to-have skills from a job description.",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            5
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [],
+        "placeholderStyle": "braces",
+        "instructions": [
+          "Paste or upload the job description before running this prompt."
+        ]
+      },
+      {
+        "id": "gap-fixer",
+        "title": "Gap Fixer",
+        "body": "Compare my current CV:\n{CV}\n\nWith this job description:\n{JD}\n\nIdentify gaps in skills, experience, or positioning\n\nSuggest how I can reframe or strengthen my profile",
+        "note": "This shows you what’s missing and how to fix it",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            6
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [
+          "CV",
+          "JD"
+        ],
+        "placeholderStyle": "braces"
+      },
+      {
+        "id": "interview-question-predictor",
+        "title": "Interview Question Predictor",
+        "body": "Based on this job description and my CV, generate the top 10 interview questions I’m likely to be asked\n\nInclude behavioral and role-specific questions with strong sample answers\n\nUse the information in my CV to generate the best genuine answers I should use",
+        "note": "This prepares you before the interview even happens",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            7
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [],
+        "placeholderStyle": "braces",
+        "instructions": [
+          "Share the job description and your CV before running this prompt."
+        ]
+      },
+      {
+        "id": "star-story-builder",
+        "title": "STAR Story Builder",
+        "body": "Help me turn my past experience into strong STAR (Situation, Task, Action, Result) stories for interviews\n\nUse this experience:\n{details} and make each story concise and impactful\n\nGenerate them with variable order for the STAR elements, so its not very obvious and always authentic",
+        "note": "This makes your answers structured and memorable",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            8
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [
+          "details"
+        ],
+        "placeholderStyle": "braces"
+      },
+      {
+        "id": "full-application-pack",
+        "title": "Full Application Pack",
+        "body": "Using this job description:\n{JD}\n\nAnd my background:\n{info}\n\nGenerate a complete application package including tailored CV, cover letter, key talking points, and interview preparation notes",
+        "note": "Prepare a CV, cover letter, talking points, and interview notes together.",
+        "category": "Career",
+        "kind": "prompt",
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DduEqKBoASU/",
+          "publishedAt": "2026-09-25T18:10:02+00:00",
+          "kind": "carousel",
+          "slides": [
+            9
+          ]
+        },
+        "tags": [
+          "Job Applications",
+          "CV",
+          "Interview"
+        ],
+        "images": [],
+        "variables": [
+          "JD",
+          "info"
+        ],
+        "placeholderStyle": "braces"
+      }
+    ]
+  },
+  {
+    "id": "image-trends",
+    "title": "Creative Image Prompts",
+    "shortTitle": "Image Trends",
+    "summary": "Turn a reference photo into GTA VI-style key art or a surreal inflatable pool toy.",
+    "description": "Turn a reference photo into GTA VI-style key art or a surreal inflatable pool toy.",
+    "accent": "violet",
+    "cover": null,
+    "tags": [
+      "Photo Editing",
+      "Illustration",
+      "Product Photography"
+    ],
+    "tipsTitle": "How to use this collection",
+    "tips": [
+      "Upload a reference photo when the prompt calls for one.",
+      "Preserve the prompt wording and replace only the subject details you need.",
+      "Open the original post link for published examples."
+    ],
+    "prompts": [
+      {
+        "id": "gta-vi-key-art",
+        "title": "GTA VI Art Style",
+        "category": "Illustration",
+        "body": "Transform this photo into polished hand-painted video-game key art. Preserve the person's identity, pose, expression, clothing and composition. Medium detail, simplified facial planes, clean defined edges, graphic color blocking, flat-to-semi-flat painted shading and simplified hair and textures. Vibrant tropical Miami sunset palette with pink, purple, turquoise, orange and golden rim lighting. Realistic proportions but clearly illustrated, not photorealistic. No skin pores, microdetail, 3D-render look, anime or grunge.",
+        "note": "Turn an uploaded photo into illustrated video-game key art while preserving the subject and composition.",
+        "instructions": [
+          "Upload the photo you want to transform, then paste this prompt."
+        ],
+        "variables": [],
+        "images": [],
+        "tags": [
+          "Illustration",
+          "Photo Editing",
+          "GTA VI"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DdoTjYLlRQm/",
+          "publishedAt": "2026-09-23T12:25:01+00:00",
+          "kind": "carousel",
+          "slide": 3
+        }
+      },
+      {
+        "id": "celebrity-pool-floatie",
+        "title": "Celebrity Floatie",
+        "category": "Product Photography",
+        "body": "Photorealistic luxury pool product photo of a human-sized inflatable vinyl pool floatie resembling [CELEBRITY NAME] or [insert your picture], reclining on bright blue pool water. Full-body floatie with exaggerated inflated arms, legs, feet, and torso, glossy vinyl clothing, visible seams, wrinkles, air chambers, water droplets, and realistic reflections.\n\nStylized inflatable toy face that clearly resembles their identity. Sunny backyard pool, tropical plants, lounge chairs, low-angle wide shot from the feet toward the face. Surreal, funny, high-end product photography.\n\nNot a real person, no human skin, no extra people, no logos, no watermark.",
+        "note": "Create a surreal inflatable pool toy from a celebrity name or a reference photo.",
+        "instructions": [
+          "Choose a celebrity name or upload a reference photo. Use the matching option in the opening line."
+        ],
+        "variables": [
+          "CELEBRITY NAME",
+          "insert your picture"
+        ],
+        "images": [],
+        "tags": [
+          "Product Photography",
+          "Pool Floatie",
+          "Photo Reference"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DaBMlCsIIA-/",
+          "publishedAt": "2026-06-25T18:20:01+00:00",
+          "kind": "carousel",
+          "slide": 8
+        }
+      }
+    ]
+  },
+  {
     "id": "presentations",
     "title": "ChatGPT 5.5 Presentation Prompts",
     "shortTitle": "Presentations",
@@ -7,7 +578,13 @@
     "description": "Build complete decks, pitch stories, research presentations, and speaker scripts from a single structured prompt.",
     "accent": "emerald",
     "cover": null,
-    "tags": ["Decks", "Research", "Pitch", "Script", "Storytelling"],
+    "tags": [
+      "Decks",
+      "Research",
+      "Pitch",
+      "Script",
+      "Storytelling"
+    ],
     "tipsTitle": "Pro Tips for Presentations",
     "tips": [
       "Iterate and refine: ask ChatGPT to expand specific slides or change the tone.",
@@ -22,9 +599,16 @@
         "category": "Deck Builder",
         "body": "Act as a world-class presentation creator. Create a complete slide-by-slide presentation about [topic] for [audience].\n\nInclude title slide, key points, examples, data, one strong metaphor, visual suggestions, and a closing call-to-action.\n\nStructure it with a TED-style storytelling flow: clear hook, useful insight, and memorable ending.",
         "note": "Best for turning a raw topic into a complete deck structure.",
-        "variables": ["topic", "audience"],
+        "variables": [
+          "topic",
+          "audience"
+        ],
         "images": [],
-        "tags": ["Deck Builder", "topic", "audience"]
+        "tags": [
+          "Deck Builder",
+          "topic",
+          "audience"
+        ]
       },
       {
         "id": "deep-research-presentation",
@@ -32,9 +616,16 @@
         "category": "Research",
         "body": "Create a research-backed presentation about [topic] for [audience].\n\nInclude real statistics, case studies, expert quotes, practical insights, and concrete examples.\n\nMake each slide educational and engaging. Add source references at the end.",
         "note": "Best when credibility and supporting evidence matter.",
-        "variables": ["topic", "audience"],
+        "variables": [
+          "topic",
+          "audience"
+        ],
         "images": [],
-        "tags": ["Research", "topic", "audience"]
+        "tags": [
+          "Research",
+          "topic",
+          "audience"
+        ]
       },
       {
         "id": "simplified-explanation",
@@ -42,9 +633,16 @@
         "category": "Education",
         "body": "Build a beginner-friendly presentation about [topic] for [audience].\n\nBreak down complex concepts into simple explanations, analogies, and step-by-step logic.\n\nMake the content clear enough for a complete beginner to understand without prior knowledge.",
         "note": "Best for education, onboarding, and complex topics.",
-        "variables": ["topic", "audience"],
+        "variables": [
+          "topic",
+          "audience"
+        ],
         "images": [],
-        "tags": ["Education", "topic", "audience"]
+        "tags": [
+          "Education",
+          "topic",
+          "audience"
+        ]
       },
       {
         "id": "business-pitch-presentation",
@@ -52,9 +650,14 @@
         "category": "Pitch",
         "body": "Create a complete investor-style pitch deck for this business idea: [business idea].\n\nInclude problem, solution, market size, product features, business model, competitive advantage, financial projections, team slide, and closing pitch script.",
         "note": "Best for startup ideas, internal proposals, and funding decks.",
-        "variables": ["business idea"],
+        "variables": [
+          "business idea"
+        ],
         "images": [],
-        "tags": ["Pitch", "business idea"]
+        "tags": [
+          "Pitch",
+          "business idea"
+        ]
       },
       {
         "id": "the-storytelling-master",
@@ -62,9 +665,14 @@
         "category": "Storytelling",
         "body": "Create a complete presentation about [topic] using this storytelling structure:\n\nHook -> Conflict -> Journey -> Insight -> Transformation -> Call to Action.\n\nMake the slides emotional, memorable, and persuasive. Add concise speaker notes with delivery guidance.",
         "note": "Best for persuasive talks and narrative-driven decks.",
-        "variables": ["topic"],
+        "variables": [
+          "topic"
+        ],
         "images": [],
-        "tags": ["Storytelling", "topic"]
+        "tags": [
+          "Storytelling",
+          "topic"
+        ]
       },
       {
         "id": "corporate-presentation",
@@ -72,9 +680,16 @@
         "category": "Corporate",
         "body": "Create a formal corporate presentation about [topic] for [company/team/audience].\n\nInclude professional tone, structured bullet points, charts, graphs, SWOT analysis, trends, forecasts, and data-backed recommendations.\n\nMake it suitable for boardrooms.",
         "note": "Best for executive, boardroom, and internal strategy contexts.",
-        "variables": ["topic", "company/team/audience"],
+        "variables": [
+          "topic",
+          "company/team/audience"
+        ],
         "images": [],
-        "tags": ["Corporate", "topic", "company/team/audience"]
+        "tags": [
+          "Corporate",
+          "topic",
+          "company/team/audience"
+        ]
       },
       {
         "id": "complete-presentation-script-combo",
@@ -82,9 +697,16 @@
         "category": "Script",
         "body": "Create a ready-to-use presentation about [topic] for [audience], and write a complete spoken script I can read while presenting.\n\nEnsure the script matches the tone, pacing, and emotional flow of the slides.\n\nInclude pauses, emphasis, storytelling cues, and delivery instructions.",
         "note": "Best when you need both slides and delivery support.",
-        "variables": ["topic", "audience"],
+        "variables": [
+          "topic",
+          "audience"
+        ],
         "images": [],
-        "tags": ["Script", "topic", "audience"]
+        "tags": [
+          "Script",
+          "topic",
+          "audience"
+        ]
       }
     ]
   },
@@ -96,7 +718,14 @@
     "description": "A structured set of visual prompts with a consistent purpose, prompt text, and example-image placeholder for each item.",
     "accent": "cyan",
     "cover": "1.png",
-    "tags": ["Character", "Typography", "Print", "Mockups", "Icon Set", "Infographic"],
+    "tags": [
+      "Character",
+      "Typography",
+      "Print",
+      "Mockups",
+      "Icon Set",
+      "Infographic"
+    ],
     "tipsTitle": "Pro Tips for Images 2.0",
     "tips": [
       "Replace bracketed text before copying so the model has concrete subject, style, and content details.",
@@ -111,9 +740,16 @@
         "category": "Character",
         "body": "Draw the same character [character description] in 8 different poses/expressions in one image:\n\n1. Smiling 2. Surprised 3. Sad 4. Reading 5. Working on a laptop 6. Drinking coffee 7. On the phone 8. Giving a presentation.\n\nKeep the character design consistent across all 8 versions. Use 2K resolution and a plain background.",
         "note": "Excellent for unifying brand characters or social media accounts.",
-        "variables": ["character description"],
-        "images": ["1.png"],
-        "tags": ["Character", "character description"]
+        "variables": [
+          "character description"
+        ],
+        "images": [
+          "1.png"
+        ],
+        "tags": [
+          "Character",
+          "character description"
+        ]
       },
       {
         "id": "character-design-from-all-angles",
@@ -121,9 +757,18 @@
         "category": "Character Sheet",
         "body": "Design a character reference sheet for [character description] from 3 angles: front, side, and back. Use [style: anime/3D/cartoon] with a clean plain background.",
         "note": "Locks in the character features so you can reuse the same design from different angles.",
-        "variables": ["character description", "style: anime/3D/cartoon"],
-        "images": ["2.png"],
-        "tags": ["Character Sheet", "character description", "style: anime/3D/cartoon"]
+        "variables": [
+          "character description",
+          "style: anime/3D/cartoon"
+        ],
+        "images": [
+          "2.png"
+        ],
+        "tags": [
+          "Character Sheet",
+          "character description",
+          "style: anime/3D/cartoon"
+        ]
       },
       {
         "id": "high-precision-text-writing",
@@ -131,9 +776,18 @@
         "category": "Typography",
         "body": "Create a [design type] and write this exact text: [text]. Use a bold, clear font with perfect spelling and high readability.",
         "note": "Useful for thumbnails, ads, and designs where manual text cleanup would slow you down.",
-        "variables": ["design type", "text"],
-        "images": ["3.png"],
-        "tags": ["Typography", "design type", "text"]
+        "variables": [
+          "design type",
+          "text"
+        ],
+        "images": [
+          "3.png"
+        ],
+        "tags": [
+          "Typography",
+          "design type",
+          "text"
+        ]
       },
       {
         "id": "print-quality-2k",
@@ -141,9 +795,18 @@
         "category": "Print",
         "body": "Create a print-ready [poster/brochure/flyer] about [topic], in very high 2K resolution, A4 dimensions, portrait orientation, sharp details, and clean margins.",
         "note": "Append this to poster, flyer, brochure, or one-page design prompts.",
-        "variables": ["poster/brochure/flyer", "topic"],
-        "images": ["4.png"],
-        "tags": ["Print", "poster/brochure/flyer", "topic"]
+        "variables": [
+          "poster/brochure/flyer",
+          "topic"
+        ],
+        "images": [
+          "4.png"
+        ],
+        "tags": [
+          "Print",
+          "poster/brochure/flyer",
+          "topic"
+        ]
       },
       {
         "id": "generate-multilingual-designs",
@@ -151,9 +814,24 @@
         "category": "Localization",
         "body": "Create 3 versions of this [design type] in exactly the same layout: version 1 in [language 1], version 2 in [language 2], and version 3 in [language 3]. Keep spacing, hierarchy, and style consistent.",
         "note": "Ready for publishing the same visual concept across multilingual platforms.",
-        "variables": ["design type", "language 1", "language 2", "language 3"],
-        "images": ["5a.png", "5b.png", "5c.png"],
-        "tags": ["Localization", "design type", "language 1", "language 2", "language 3"]
+        "variables": [
+          "design type",
+          "language 1",
+          "language 2",
+          "language 3"
+        ],
+        "images": [
+          "5a.png",
+          "5b.png",
+          "5c.png"
+        ],
+        "tags": [
+          "Localization",
+          "design type",
+          "language 1",
+          "language 2",
+          "language 3"
+        ]
       },
       {
         "id": "self-review-command",
@@ -161,9 +839,20 @@
         "category": "Quality Control",
         "body": "After generating the image, self-review [hands/fingers], [faces], and [text spelling]. Correct visible errors before showing the final result.",
         "note": "Add this when hands, readable text, or polish are important.",
-        "variables": ["hands/fingers", "faces", "text spelling"],
-        "images": ["6.png"],
-        "tags": ["Quality Control", "hands/fingers", "faces", "text spelling"]
+        "variables": [
+          "hands/fingers",
+          "faces",
+          "text spelling"
+        ],
+        "images": [
+          "6.png"
+        ],
+        "tags": [
+          "Quality Control",
+          "hands/fingers",
+          "faces",
+          "text spelling"
+        ]
       },
       {
         "id": "legal-design-cloning-via-link",
@@ -171,9 +860,18 @@
         "category": "Style Reference",
         "body": "Visit [reference link], analyze its visual style, and create a new original image in a similar style using my content: [your content]. Do not copy logos, trademarks, or exact layout.",
         "note": "Use for inspiration and style analysis while keeping the final content specific to your own project.",
-        "variables": ["reference link", "your content"],
-        "images": ["7.png"],
-        "tags": ["Style Reference", "reference link", "your content"]
+        "variables": [
+          "reference link",
+          "your content"
+        ],
+        "images": [
+          "7.png"
+        ],
+        "tags": [
+          "Style Reference",
+          "reference link",
+          "your content"
+        ]
       },
       {
         "id": "professional-lens-realism",
@@ -181,9 +879,16 @@
         "category": "Photography",
         "body": "Create a highly realistic photorealistic image of [subject], shot with a 35mm lens, cinematic lighting, sharp focus, natural depth of field, and high-resolution detail.",
         "note": "Best for visuals that should feel like professional photography.",
-        "variables": ["subject"],
-        "images": ["8.png"],
-        "tags": ["Photography", "subject"]
+        "variables": [
+          "subject"
+        ],
+        "images": [
+          "8.png"
+        ],
+        "tags": [
+          "Photography",
+          "subject"
+        ]
       },
       {
         "id": "designing-product-mockups",
@@ -191,9 +896,20 @@
         "category": "Mockups",
         "body": "Place [logo/text] realistically on [product], integrated into the material, lighting, and perspective. Show it in use by [person/context] in a natural lifestyle scene.",
         "note": "Use to showcase products, merch, and branded assets quickly.",
-        "variables": ["logo/text", "product", "person/context"],
-        "images": ["9.png"],
-        "tags": ["Mockups", "logo/text", "product", "person/context"]
+        "variables": [
+          "logo/text",
+          "product",
+          "person/context"
+        ],
+        "images": [
+          "9.png"
+        ],
+        "tags": [
+          "Mockups",
+          "logo/text",
+          "product",
+          "person/context"
+        ]
       },
       {
         "id": "create-a-complete-icon-set",
@@ -201,9 +917,20 @@
         "category": "Icon Set",
         "body": "Create a cohesive set of 6 icons for [app/topic] in a flat design style. Use only [color 1] and [color 2], consistent stroke/shape language, and a transparent background.",
         "note": "Excellent for app designers and visual identity systems.",
-        "variables": ["app/topic", "color 1", "color 2"],
-        "images": ["10.png"],
-        "tags": ["Icon Set", "app/topic", "color 1", "color 2"]
+        "variables": [
+          "app/topic",
+          "color 1",
+          "color 2"
+        ],
+        "images": [
+          "10.png"
+        ],
+        "tags": [
+          "Icon Set",
+          "app/topic",
+          "color 1",
+          "color 2"
+        ]
       },
       {
         "id": "split-screen-for-comparisons",
@@ -211,9 +938,18 @@
         "category": "Before and After",
         "body": "Create a split-screen before/after image. Left side: [problem state]. Right side: the same scene after [solution/result]. Keep the composition aligned for easy comparison.",
         "note": "Strong for ads that show a clear problem and solution.",
-        "variables": ["problem state", "solution/result"],
-        "images": ["11.png"],
-        "tags": ["Before and After", "problem state", "solution/result"]
+        "variables": [
+          "problem state",
+          "solution/result"
+        ],
+        "images": [
+          "11.png"
+        ],
+        "tags": [
+          "Before and After",
+          "problem state",
+          "solution/result"
+        ]
       },
       {
         "id": "strict-color-palette-control",
@@ -221,9 +957,22 @@
         "category": "Brand Color",
         "body": "Draw [subject/scene] using only this color palette: [color 1], [color 2], [color 3]. Strictly avoid all other colors and keep the palette consistent.",
         "note": "Use to keep campaign visuals aligned with a specific brand palette.",
-        "variables": ["subject/scene", "color 1", "color 2", "color 3"],
-        "images": ["12.png"],
-        "tags": ["Brand Color", "subject/scene", "color 1", "color 2", "color 3"]
+        "variables": [
+          "subject/scene",
+          "color 1",
+          "color 2",
+          "color 3"
+        ],
+        "images": [
+          "12.png"
+        ],
+        "tags": [
+          "Brand Color",
+          "subject/scene",
+          "color 1",
+          "color 2",
+          "color 3"
+        ]
       },
       {
         "id": "sequential-image-generation",
@@ -231,9 +980,16 @@
         "category": "Storyboarding",
         "body": "Using the same character, outfit, and visual style from the previous image, draw the character now [new action/scene]. Keep identity and style consistent.",
         "note": "Perfect for comics, storyboards, and sequential social content.",
-        "variables": ["new action/scene"],
-        "images": ["13.png"],
-        "tags": ["Storyboarding", "new action/scene"]
+        "variables": [
+          "new action/scene"
+        ],
+        "images": [
+          "13.png"
+        ],
+        "tags": [
+          "Storyboarding",
+          "new action/scene"
+        ]
       },
       {
         "id": "structural-infographic-designs",
@@ -241,9 +997,18 @@
         "category": "Infographic",
         "body": "Design an empty, ready-to-fill infographic template about [topic], divided into [number] sequential steps. Use a modern layout and leave clean blank spaces for text.",
         "note": "Use when you want a custom template instead of a stock infographic layout.",
-        "variables": ["topic", "number"],
-        "images": ["14.png"],
-        "tags": ["Infographic", "topic", "number"]
+        "variables": [
+          "topic",
+          "number"
+        ],
+        "images": [
+          "14.png"
+        ],
+        "tags": [
+          "Infographic",
+          "topic",
+          "number"
+        ]
       },
       {
         "id": "transform-a-doodle-into-a-masterpiece",
@@ -251,9 +1016,16 @@
         "category": "Sketch Upgrade",
         "body": "Take this uploaded sketch, preserve its main structure and composition, and transform it into a high-quality [style] design with polished lighting, depth, and detail.",
         "note": "Upload a rough sketch first, then use this to preserve the idea while upgrading the finish.",
-        "variables": ["style"],
-        "images": ["15.png"],
-        "tags": ["Sketch Upgrade", "style"]
+        "variables": [
+          "style"
+        ],
+        "images": [
+          "15.png"
+        ],
+        "tags": [
+          "Sketch Upgrade",
+          "style"
+        ]
       }
     ]
   },
@@ -265,7 +1037,13 @@
     "description": "Use one source scene and quickly explore it across recognizable animation, collage, 3D, anime, and cinematic treatments.",
     "accent": "violet",
     "cover": "style-01-don-bluth.png",
-    "tags": ["Animation", "Style Transfer", "Storyboarding", "Cinematic", "Visual Systems"],
+    "tags": [
+      "Animation",
+      "Style Transfer",
+      "Storyboarding",
+      "Cinematic",
+      "Visual Systems"
+    ],
     "tipsTitle": "Pro Tips for Style Reimaginings",
     "tips": [
       "Replace [show/movie/scene] with a concrete subject, then keep it the same across every style.",
@@ -280,9 +1058,16 @@
         "category": "Don Bluth",
         "body": "Reimagine [show/movie/scene] as a lavish hand-drawn fantasy animation with lush lighting, expressive eyes, painterly backgrounds, dramatic posing, and warm cinematic emotion.",
         "note": "Best for nostalgic fantasy energy, expressive characters, and rich illustrated drama.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-01-don-bluth.png"],
-        "tags": ["Don Bluth", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-01-don-bluth.png"
+        ],
+        "tags": [
+          "Don Bluth",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "classic-claymation",
@@ -290,9 +1075,16 @@
         "category": "Claymation",
         "body": "Reimagine [show/movie/scene] as classic clay stop-motion with handmade clay textures, tiny physical sets, imperfect sculpted details, soft studio lighting, and tactile charm.",
         "note": "Best for cozy handmade scenes that feel crafted frame by frame.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-02-claymation.png"],
-        "tags": ["Claymation", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-02-claymation.png"
+        ],
+        "tags": [
+          "Claymation",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "layered-paper-cut-collage",
@@ -300,9 +1092,16 @@
         "category": "Paper Cut",
         "body": "Reimagine [show/movie/scene] as a 2D paper-cut collage made from layered cut paper, flat shapes, visible paper texture, soft shadows, and a crafted storybook composition.",
         "note": "Best for editorial, handmade, and charming flat-layout visuals.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-03-paper-cut.png"],
-        "tags": ["Paper Cut", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-03-paper-cut.png"
+        ],
+        "tags": [
+          "Paper Cut",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "1930s-rubber-hose-cartoon",
@@ -310,9 +1109,16 @@
         "category": "Fleischer",
         "body": "Reimagine [show/movie/scene] as a 1930s rubber-hose cartoon with black-and-white ink lines, bendy limbs, vintage character posing, theatrical expressions, and old animation charm.",
         "note": "Best for retro cartoon energy with playful exaggeration.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-04-fleischer.png"],
-        "tags": ["Fleischer", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-04-fleischer.png"
+        ],
+        "tags": [
+          "Fleischer",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "nostalgic-holiday-stop-motion",
@@ -320,9 +1126,16 @@
         "category": "Rankin/Bass",
         "body": "Reimagine [show/movie/scene] as nostalgic stop-motion with cozy miniature sets, slightly janky character puppets, warm holiday lighting, soft textures, and storybook staging.",
         "note": "Best for warm, odd, handcrafted scenes with a vintage TV-special feel.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-05-rankin-bass.png"],
-        "tags": ["Rankin/Bass", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-05-rankin-bass.png"
+        ],
+        "tags": [
+          "Rankin/Bass",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "yellow-sitcom-cartoon",
@@ -330,9 +1143,16 @@
         "category": "Simpsons",
         "body": "Reimagine [show/movie/scene] as a classic yellow-skin satirical sitcom cartoon with bold outlines, flat colors, expressive crowd staging, simple backgrounds, and comedic visual timing.",
         "note": "Best for instantly readable parody-style scenes and ensemble casts.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-06-simpsons.png"],
-        "tags": ["Simpsons", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-06-simpsons.png"
+        ],
+        "tags": [
+          "Simpsons",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "polished-3d-animated-feature",
@@ -340,9 +1160,16 @@
         "category": "Pixar",
         "body": "Reimagine [show/movie/scene] as a polished 3D animated feature with warm lighting, expressive faces, impeccable shot composition, soft materials, and cinematic depth.",
         "note": "Best for clean, emotional, family-film-style visual storytelling.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-07-pixar.png"],
-        "tags": ["Pixar", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-07-pixar.png"
+        ],
+        "tags": [
+          "Pixar",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "deliberately-bad-ms-paint",
@@ -350,9 +1177,16 @@
         "category": "MS Paint",
         "body": "Reimagine [show/movie/scene] as deliberately crude MS Paint art with simple brush lines, flat fills, awkward anatomy, uneven shapes, and charming low-effort computer-drawing energy.",
         "note": "Best for humor, memes, and intentionally rough visual contrast.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-08-ms-paint.png"],
-        "tags": ["MS Paint", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-08-ms-paint.png"
+        ],
+        "tags": [
+          "MS Paint",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "chaotic-adult-sci-fi-cartoon",
@@ -360,9 +1194,16 @@
         "category": "Rick and Morty",
         "body": "Reimagine [show/movie/scene] as a chaotic adult sci-fi cartoon with sharp outlines, exaggerated expressions, surreal props, strange background details, and irreverent animated energy.",
         "note": "Best for absurd sci-fi reinterpretations and comedic weirdness.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-09-rick-and-morty.png"],
-        "tags": ["Rick and Morty", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-09-rick-and-morty.png"
+        ],
+        "tags": [
+          "Rick and Morty",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "1970s-japanese-anime-movie",
@@ -370,9 +1211,16 @@
         "category": "Anime",
         "body": "Reimagine [show/movie/scene] as a classic 1970s Japanese anime movie with dramatic lighting, painted backgrounds, expressive eyes, cinematic framing, and vintage film texture.",
         "note": "Best for emotional, cinematic scenes with retro anime atmosphere.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-10-anime.png"],
-        "tags": ["Anime", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-10-anime.png"
+        ],
+        "tags": [
+          "Anime",
+          "show/movie/scene"
+        ]
       },
       {
         "id": "green-tinted-cyberpunk-matrix",
@@ -380,9 +1228,16 @@
         "category": "Matrix Bonus",
         "body": "Reimagine [show/movie/scene] as a green-tinted cyberpunk action film with leather outfits, digital rain atmosphere, fluorescent lighting, slow-motion tension, and hacker-movie mood.",
         "note": "Best for dark cinematic action, tech-noir mood, and dramatic reinventions.",
-        "variables": ["show/movie/scene"],
-        "images": ["style-11-matrix.png"],
-        "tags": ["Matrix Bonus", "show/movie/scene"]
+        "variables": [
+          "show/movie/scene"
+        ],
+        "images": [
+          "style-11-matrix.png"
+        ],
+        "tags": [
+          "Matrix Bonus",
+          "show/movie/scene"
+        ]
       }
     ]
   },
@@ -394,7 +1249,14 @@
     "description": "Transform an uploaded identity reference into nostalgic photo, video, game, print, and animation aesthetics with editable scene variables.",
     "accent": "nostalgia",
     "cover": "nostalgia-cover-working-deck.png",
-    "tags": ["VHS", "Polaroid", "Y2K", "CRT", "Pixel Art", "Vintage"],
+    "tags": [
+      "VHS",
+      "Polaroid",
+      "Y2K",
+      "CRT",
+      "Pixel Art",
+      "Vintage"
+    ],
     "tipsTitle": "Pro Tips for Nostalgia Prompts",
     "tips": [
       "Upload a clear face reference first so the prompt can preserve identity across styles.",
@@ -409,9 +1271,25 @@
         "category": "VHS",
         "body": "Use the uploaded photo as the face and identity reference. Turn this person into [ROLE] captured on a 1990s home video in [SCENE]. They are [ACTION], framed casually as if someone nearby recorded the moment without planning it. Keep the person recognizable, but adapt their outfit to [OUTFIT]. Add [EXTRA DETAILS]. Make it feel like a VHS handycam still, with analog blur, scan lines, tape noise, color bleed, muted colors, low resolution, and imperfect handheld framing. Mood, [MOOD].",
         "note": "Best for 1990s home-video stills with tape noise and imperfect handheld framing.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-01-vhs.png"],
-        "tags": ["VHS", "1990s", "analog", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-01-vhs.png"
+        ],
+        "tags": [
+          "VHS",
+          "1990s",
+          "analog",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "polaroid-instant-photo",
@@ -419,9 +1297,25 @@
         "category": "Polaroid",
         "body": "Use the uploaded photo as the identity reference. Reimagine this person as [ROLE] in [SCENE], captured in a single vintage instant photo. They are [ACTION], posed naturally but not too perfectly. Keep their likeness clear, change the clothing to [OUTFIT], and include [EXTRA DETAILS]. Make the image feel like an old Polaroid, with soft focus, faded tones, gentle flash, creamy highlights, instant film texture, and slight color aging. Mood, [MOOD].",
         "note": "Best for warm instant-film portraits with faded tones and soft nostalgic texture.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-02-polaroid.png"],
-        "tags": ["Polaroid", "instant film", "portrait", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-02-polaroid.png"
+        ],
+        "tags": [
+          "Polaroid",
+          "instant film",
+          "portrait",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "y2k-digital-camera",
@@ -429,9 +1323,25 @@
         "category": "Y2K",
         "body": "Use the uploaded photo as the identity reference. Create a mid-2000s digital snapshot of this person as [ROLE] at [SCENE]. They are [ACTION], caught with casual flash-camera energy, like a photo taken for an old social album. Keep their face and recognizable features consistent. Dress them in [OUTFIT] and add [EXTRA DETAILS]. Use harsh direct flash, shiny highlights, slight red-eye risk, low-res digital noise, overexposed skin, and compact camera sharpness. Mood, [MOOD].",
         "note": "Best for mid-2000s party snapshots, old social albums, and direct flash energy.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-03-y2k-digital-camera.png"],
-        "tags": ["Y2K", "digital camera", "flash", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-03-y2k-digital-camera.png"
+        ],
+        "tags": [
+          "Y2K",
+          "digital camera",
+          "flash",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "cinematic-film-grain",
@@ -439,9 +1349,25 @@
         "category": "Cinematic",
         "body": "Use the uploaded photo as the actor reference. Cast this person as [ROLE] in a cinematic scene set in [SCENE]. They are [ACTION], lit like a still from an analog feature film. Keep the person recognizable while adapting their wardrobe to [OUTFIT]. Add [EXTRA DETAILS]. Use natural film grain, soft highlight rolloff, rich shadows, subtle lens softness, realistic color grading, and an emotional movie-still atmosphere. Mood, [MOOD].",
         "note": "Best for emotional analog movie stills with rich shadows and realistic film texture.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-04-cinematic-film-grain.png"],
-        "tags": ["Cinematic", "film grain", "movie still", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-04-cinematic-film-grain.png"
+        ],
+        "tags": [
+          "Cinematic",
+          "film grain",
+          "movie still",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "crt-tv-screen",
@@ -449,9 +1375,25 @@
         "category": "CRT TV",
         "body": "Use the uploaded photo as the identity reference. Make this person appear as [ROLE] inside a scene playing on an old CRT television. The scene is [SCENE], and they are [ACTION]. Keep their likeness visible through the screen distortion. Dress them in [OUTFIT] and include [EXTRA DETAILS]. Render it as a paused retro TV image, with scan lines, phosphor glow, rounded screen curvature, bloom, slight static, softened detail, and analog display distortion. Mood, [MOOD].",
         "note": "Best for paused retro television frames with scan lines, glow, and curved screen distortion.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-05-crt-tv-screen.png"],
-        "tags": ["CRT TV", "television", "scan lines", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-05-crt-tv-screen.png"
+        ],
+        "tags": [
+          "CRT TV",
+          "television",
+          "scan lines",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "ps1-era-game-character",
@@ -459,9 +1401,25 @@
         "category": "PS1 Graphics",
         "body": "Use the uploaded photo as the character identity reference. Recreate this person as a PS1-era game character, a [ROLE] in [SCENE]. They are [ACTION], designed like a playable character or cutscene model. Keep their likeness recognizable through low-poly facial structure and key features. Give them [OUTFIT] and include [EXTRA DETAILS]. Use low-polygon geometry, crunchy textures, limited lighting, jagged edges, warped surfaces, and late-1990s 3D game atmosphere. Mood, [MOOD].",
         "note": "Best for late-1990s game characters with low-poly geometry and crunchy textures.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-06-ps1-graphics.png"],
-        "tags": ["PS1", "low poly", "game", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-06-ps1-graphics.png"
+        ],
+        "tags": [
+          "PS1",
+          "low poly",
+          "game",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "low-res-monochrome-handheld-camera",
@@ -469,9 +1427,25 @@
         "category": "Handheld Camera",
         "body": "Use the uploaded photo as the face and identity reference. Turn this person into [ROLE] in [SCENE], [ACTION], as if photographed with an old monochrome handheld camera. Keep the person recognizable, but reduce the image aggressively to match the device's limitations. Adapt the outfit to [OUTFIT] and add [EXTRA DETAILS] only in very simple readable shapes.\n\nMake it look like a true low-resolution handheld camera image, with tiny resolution, only 4 greenish tones, strong dithering, coarse dot patterns, heavy pixelation, simplified shadows, and a raw monochrome portable-camera look. The final result should feel ugly, limited, and graphic, not polished pixel art, not smooth digital art, and not a modern retro illustration. Mood, [MOOD].",
         "note": "Best for harsh monochrome portable-camera looks with dithering and tiny resolution.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-07-low-res-monochrome-camera.png"],
-        "tags": ["Handheld Camera", "monochrome", "dithering", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-07-low-res-monochrome-camera.png"
+        ],
+        "tags": [
+          "Handheld Camera",
+          "monochrome",
+          "dithering",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "classic-disney-animation",
@@ -479,9 +1453,25 @@
         "category": "Classic Disney",
         "body": "Use the uploaded photo as the identity reference. Reimagine this person as [ROLE] in [SCENE], drawn as a classic hand-painted animated character. They are [ACTION], with expressive body language and a clear storybook pose. Keep their recognizable face, features, and personality, but translate them into traditional animation design. Dress them in [OUTFIT] and add [EXTRA DETAILS]. Use clean linework, soft painted backgrounds, warm color styling, gentle shading, and timeless animated film charm. Mood, [MOOD].",
         "note": "Best for classic hand-painted animation with warm storybook charm.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-08-classic-disney-animation.png"],
-        "tags": ["Classic Disney", "animation", "storybook", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-08-classic-disney-animation.png"
+        ],
+        "tags": [
+          "Classic Disney",
+          "animation",
+          "storybook",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "myspace-profile-pic",
@@ -489,9 +1479,25 @@
         "category": "MySpace",
         "body": "Use the uploaded photo as the identity reference. Turn this person into [ROLE] taking a mid-2000s MySpace profile picture in [SCENE]. They are [ACTION], with an intentionally casual, slightly awkward social-media pose. Keep their face and recognizable features consistent. Style them with [OUTFIT] and include [EXTRA DETAILS]. Use direct flash, blown highlights, strong contrast, low-res digital quality, messy framing, nostalgic profile-photo energy, and early internet attitude. Mood, [MOOD].",
         "note": "Best for early internet profile-photo energy with messy framing and direct flash.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-09-myspace-profile-pic.png"],
-        "tags": ["MySpace", "profile photo", "early internet", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-09-myspace-profile-pic.png"
+        ],
+        "tags": [
+          "MySpace",
+          "profile photo",
+          "early internet",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "tabloid-gossip-magazine-scan",
@@ -499,9 +1505,25 @@
         "category": "Tabloid",
         "body": "Use the uploaded photo as the subject reference. Turn this person into [ROLE] featured inside a crowded tabloid gossip magazine page about [SCANDAL OR STORY]. Keep their likeness recognizable, but make the final image feel like a chaotic printed celebrity gossip spread, not a clean editorial portrait. Place them in [SCENE], [ACTION], wearing [OUTFIT], surrounded by loud headlines, cropped paparazzi-style photos, arrows, circles, stickers, price tags, captions, gossip callouts, and messy page graphics.\n\nMake it look like a real scanned tabloid magazine page, with cheap glossy paper texture, halftone dots, saturated ink, slightly faded print, scanner softness, compression artifacts, overlapping text boxes, dramatic pull quotes, red circles, yellow labels, and cluttered layout energy. The page should feel noisy, sensational, and overdesigned, like a 2000s supermarket gossip magazine. Mood, [MOOD].",
         "note": "Best for chaotic 2000s celebrity gossip spreads with headlines, arrows, and scan texture.",
-        "variables": ["ROLE", "SCANDAL OR STORY", "SCENE", "ACTION", "OUTFIT", "MOOD"],
-        "images": ["nostalgia-10-tabloid-gossip-magazine.png"],
-        "tags": ["Tabloid", "magazine scan", "gossip", "ROLE", "SCANDAL OR STORY", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCANDAL OR STORY",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-10-tabloid-gossip-magazine.png"
+        ],
+        "tags": [
+          "Tabloid",
+          "magazine scan",
+          "gossip",
+          "ROLE",
+          "SCANDAL OR STORY",
+          "MOOD"
+        ]
       },
       {
         "id": "1980s-pixel-art",
@@ -509,9 +1531,25 @@
         "category": "Pixel Art",
         "body": "Use the uploaded photo as the character reference. Transform this person into [ROLE] in [SCENE], shown [ACTION] like a scene from an 1980s fantasy or arcade game. Keep their identity recognizable through simplified facial features, silhouette, and expression. Give them [OUTFIT] and include [EXTRA DETAILS]. Render it as authentic 1980s pixel art, with a limited color palette, crisp blocky pixels, simplified forms, minimal shading, and old-school game-screen composition. Mood, [MOOD].",
         "note": "Best for old-school arcade or fantasy scenes with crisp blocky pixels.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-11-1980s-pixel-art.png"],
-        "tags": ["Pixel Art", "1980s", "arcade", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-11-1980s-pixel-art.png"
+        ],
+        "tags": [
+          "Pixel Art",
+          "1980s",
+          "arcade",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       },
       {
         "id": "vintage-sepia-photograph",
@@ -519,9 +1557,25 @@
         "category": "Vintage Sepia",
         "body": "Use the uploaded photo as the identity reference. Recreate this person as [ROLE] in an old sepia photograph set in [SCENE]. They are [ACTION], posed like a formal or candid photo from the late 1800s or early 1900s. Keep their face and recognizable features consistent, but adapt their outfit to [OUTFIT] and add [EXTRA DETAILS] that feel historically aged and natural.\n\nMake the image look like a true vintage sepia photograph, with warm brown monochrome tones, faded contrast, soft focus, subtle scratches, paper stains, worn edges, gentle vignette, uneven exposure, and old photographic texture. Avoid modern sharpness, bright colors, clean digital skin, or glossy AI polish. Mood, [MOOD].",
         "note": "Best for late-1800s or early-1900s sepia photos with worn paper texture.",
-        "variables": ["ROLE", "SCENE", "ACTION", "OUTFIT", "EXTRA DETAILS", "MOOD"],
-        "images": ["nostalgia-12-vintage-sepia.png"],
-        "tags": ["Vintage Sepia", "sepia", "old photograph", "ROLE", "SCENE", "MOOD"]
+        "variables": [
+          "ROLE",
+          "SCENE",
+          "ACTION",
+          "OUTFIT",
+          "EXTRA DETAILS",
+          "MOOD"
+        ],
+        "images": [
+          "nostalgia-12-vintage-sepia.png"
+        ],
+        "tags": [
+          "Vintage Sepia",
+          "sepia",
+          "old photograph",
+          "ROLE",
+          "SCENE",
+          "MOOD"
+        ]
       }
     ]
   },
@@ -533,7 +1587,14 @@
     "description": "A compact prompt library for compressing learning, improving mental systems, creating leverage, and making sharper decisions.",
     "accent": "superman",
     "cover": null,
-    "tags": ["Learning", "Mastery", "Mindset", "Strategy", "Leverage", "Clarity"],
+    "tags": [
+      "Learning",
+      "Mastery",
+      "Mindset",
+      "Strategy",
+      "Leverage",
+      "Clarity"
+    ],
     "tipsTitle": "Pro Tips for Superman Mode",
     "tips": [
       "Replace bracketed fields with specific context before copying the prompt.",
@@ -548,9 +1609,14 @@
         "category": "Learning",
         "body": "Pretend you are a cognitively advanced mentor. I want to master any complex skill at above-average speed.\n\nBuild a weekly learning plan based on spaced repetition, interleaving, simplified explanations, and active recall.\n\nApply this plan to [insert topic]. The goal is top 1% excellence within 90 days.",
         "note": "Best for turning a hard skill into a structured 90-day learning system.",
-        "variables": ["insert topic"],
+        "variables": [
+          "insert topic"
+        ],
         "images": [],
-        "tags": ["Learning", "topic"]
+        "tags": [
+          "Learning",
+          "topic"
+        ]
       },
       {
         "id": "expert-level-knowledge",
@@ -558,9 +1624,14 @@
         "category": "Mastery",
         "body": "Act as the absolute authority in [insert field]. Guide me like a direct apprentice, from fundamentals to full mastery.\n\nBuild the path in clear stages with practice tasks, little-known resources, and faster routes.\n\nInclude applied exercises, simulations, or real challenges so every stage is truly absorbed.",
         "note": "Best for mapping the path from beginner to advanced execution in a field.",
-        "variables": ["insert field"],
+        "variables": [
+          "insert field"
+        ],
         "images": [],
-        "tags": ["Mastery", "field"]
+        "tags": [
+          "Mastery",
+          "field"
+        ]
       },
       {
         "id": "upgrade-your-mental-system",
@@ -570,7 +1641,9 @@
         "note": "Best for diagnosing current habits and rebuilding a stronger personal operating system.",
         "variables": [],
         "images": [],
-        "tags": ["Mindset"]
+        "tags": [
+          "Mindset"
+        ]
       },
       {
         "id": "high-performance-thinking",
@@ -580,7 +1653,9 @@
         "note": "Best for upgrading how you reason through goals, systems, and high-leverage decisions.",
         "variables": [],
         "images": [],
-        "tags": ["Strategy"]
+        "tags": [
+          "Strategy"
+        ]
       },
       {
         "id": "turn-years-into-days",
@@ -590,7 +1665,9 @@
         "note": "Best for finding tools, shortcuts, and leverage points around a specific goal.",
         "variables": [],
         "images": [],
-        "tags": ["Leverage"]
+        "tags": [
+          "Leverage"
+        ]
       },
       {
         "id": "become-your-best-version",
@@ -600,7 +1677,9 @@
         "note": "Best for translating an ideal identity into practical behavior and decisions.",
         "variables": [],
         "images": [],
-        "tags": ["Identity"]
+        "tags": [
+          "Identity"
+        ]
       },
       {
         "id": "build-absolute-clarity",
@@ -610,7 +1689,9 @@
         "note": "Best for stripping away distraction and building a clearer priority system.",
         "variables": [],
         "images": [],
-        "tags": ["Clarity"]
+        "tags": [
+          "Clarity"
+        ]
       },
       {
         "id": "design-a-high-impact-life",
@@ -620,7 +1701,9 @@
         "note": "Best for connecting values, ambition, skills, and practical direction.",
         "variables": [],
         "images": [],
-        "tags": ["Life Design"]
+        "tags": [
+          "Life Design"
+        ]
       }
     ]
   },
@@ -632,7 +1715,13 @@
     "description": "A focused Higgsfield prompt library for image repair, identity-preserving edits, lifestyle shots, style conversion, and polished commercial visuals.",
     "accent": "higgsfield",
     "cover": "higgsfield-title.png",
-    "tags": ["Restoration", "Retouching", "Cleanup", "Headshot", "Anime"],
+    "tags": [
+      "Restoration",
+      "Retouching",
+      "Cleanup",
+      "Headshot",
+      "Anime"
+    ],
     "tipsTitle": "Pro Tips for Higgsfield Prompts",
     "tips": [
       "Upload the clearest possible reference image before using identity-preserving prompts.",
@@ -648,8 +1737,14 @@
         "body": "Bring this aged photograph back to life using period-appropriate restoration. Identify when it was taken and which photographic process produced it so the rebuild stays historically faithful. Tighten blurred contours, ease out grain, and fill lost regions with textures native to the original. Reintroduce missing color in a measured, era-appropriate way – never neon, never plastic. Re-balance whites, blacks, and skin tones for natural lighting; lift shadows and tame highlights without flattening the image. Quietly reconstruct eroded detail – fabric weave, skin pores, distant scenery – while leaving the framing untouched. Keep gentle film grain for character, strip artefacts but preserve the era's soft exposure profile. Finally, upscale to a clean modern resolution so the result reads as a freshly developed photograph rather than a digital effect.",
         "note": "Best for historically faithful restoration of aged or damaged photographs.",
         "variables": [],
-        "images": ["higgsfield-01.png"],
-        "tags": ["Restoration", "Photo Repair", "Upscale"]
+        "images": [
+          "higgsfield-01.png"
+        ],
+        "tags": [
+          "Restoration",
+          "Photo Repair",
+          "Upscale"
+        ]
       },
       {
         "id": "body-reshape",
@@ -657,9 +1752,17 @@
         "category": "Retouching",
         "body": "Recompose the body in this image to match [TARGET BUILD – e.g. lean and athletic, slimmer waist, longer legs, more muscular, softer figure, etc.]. Preserve believable anatomy and proportion, keep skin tone and surface texture consistent with the original, and let the lighting on the new body match the lighting that was already on the rest of the scene. The retouch must read as one continuous photograph – no warped surroundings, no smeared edges, no cut-out feel – just the same person in the same shot with their physique adjusted.",
         "note": "Best for realistic physique adjustments that preserve the original photo context.",
-        "variables": ["TARGET BUILD – e.g. lean and athletic, slimmer waist, longer legs, more muscular, softer figure, etc."],
-        "images": ["higgsfield-02.png"],
-        "tags": ["Retouching", "Anatomy", "Photo Realism"]
+        "variables": [
+          "TARGET BUILD – e.g. lean and athletic, slimmer waist, longer legs, more muscular, softer figure, etc."
+        ],
+        "images": [
+          "higgsfield-02.png"
+        ],
+        "tags": [
+          "Retouching",
+          "Anatomy",
+          "Photo Realism"
+        ]
       },
       {
         "id": "remove-watermarks",
@@ -668,8 +1771,14 @@
         "body": "Treat the underlying photo as untouchable and strip away only the overlaid logos, captions, or graphic marks sitting on top of it. The recovered image must remain identical beneath – no redrawn faces, no altered hair or skin, no shifted expression, no rearranged limbs, no new background. Just the source photo, cleanly free of overlays.",
         "note": "Best for removing visible overlays while keeping the original image unchanged.",
         "variables": [],
-        "images": ["higgsfield-03.png"],
-        "tags": ["Cleanup", "Overlay Removal", "Preservation"]
+        "images": [
+          "higgsfield-03.png"
+        ],
+        "tags": [
+          "Cleanup",
+          "Overlay Removal",
+          "Preservation"
+        ]
       },
       {
         "id": "professional-portrait",
@@ -678,8 +1787,14 @@
         "body": "Take the casual reference photo and rebuild it as a polished executive-grade headshot. Reframe to head-and-shoulders against a clean seamless studio backdrop, swap whatever the subject is wearing for a sharp tailored suit, crisp dress shirt, and a subtle tie. Direct the gaze straight into the lens with a confident closed-mouth smile and an upright squared posture. Light it like a high-end studio: a large soft key from above camera-left, gentle fill, a quiet rim to separate them from the backdrop, with clean catchlights in both eyes. Hold an 85mm portrait look with the backdrop softly out of focus. Preserve real skin texture – pores, fine lines, age – without plastic smoothing. Keep the original face identity, age, ethnicity, hair, and beard intact; only the wardrobe, framing, lighting, and backdrop change.",
         "note": "Best for turning casual references into polished professional headshots.",
         "variables": [],
-        "images": ["higgsfield-04.png"],
-        "tags": ["Headshot", "Studio Lighting", "Identity"]
+        "images": [
+          "higgsfield-04.png"
+        ],
+        "tags": [
+          "Headshot",
+          "Studio Lighting",
+          "Identity"
+        ]
       },
       {
         "id": "famous-selfie",
@@ -688,8 +1803,14 @@
         "body": "Casual phone selfie shot, both subjects from the reference images crowded close together at the lens, leaning into the frame from each side, holding the phone at arm's length with a slight upward tilt. Easy shoulder-to-shoulder framing, eyes straight into the camera, relaxed everyday expressions. Soft mixed indoor light cutting against direct phone-flash, with mild blown highlights and natural shadow falloff on the faces. Skin reads real – visible pore detail, faint pore-level texture, subtle makeup if any, the odd flyaway hair, minor fabric crease. The setting sits softly behind them, slightly out of focus, with everyday environmental detail still readable. A touch of edge motion blur from a moving hand, gentle lens distortion from how close the phone is, off-center crop, hint of ISO grain, white balance not perfectly clean. Unfiltered, unposed, candid realism – looks like a quick phone snap, not a styled portrait.",
         "note": "Best for candid two-person phone selfies with unpolished realism.",
         "variables": [],
-        "images": ["higgsfield-05.png"],
-        "tags": ["Selfie", "Candid", "Realism"]
+        "images": [
+          "higgsfield-05.png"
+        ],
+        "tags": [
+          "Selfie",
+          "Candid",
+          "Realism"
+        ]
       },
       {
         "id": "4k-enhancer",
@@ -698,8 +1819,14 @@
         "body": "High-resolution upscale anchored to the source – zero deviation in face, identity, expression, pose, framing, and scene. Recover natural detail (pores, hair, fabric) without stylization. Keep colors, lighting, and contrast exact. Strip compression artifacts and noise while preserving authentic texture – no smoothing, no plastic skin, no identity drift, no hallucinated detail. Output: a photorealistic upscale – only clearer and sharper.",
         "note": "Best for sharper source-faithful upscales without identity drift.",
         "variables": [],
-        "images": ["higgsfield-06.png"],
-        "tags": ["Upscale", "Clarity", "Source Faithful"]
+        "images": [
+          "higgsfield-06.png"
+        ],
+        "tags": [
+          "Upscale",
+          "Clarity",
+          "Source Faithful"
+        ]
       },
       {
         "id": "product-ad",
@@ -708,8 +1835,14 @@
         "body": "Premium product ad composition: isolate the product from the reference and rebuild it as a hero shot – centered, sharply in focus, surrounded by its key flavor ingredients arranged with depth and intent. Mix whole and sliced fruits, herb sprigs or botanicals, and crushed ice where it fits the product. Composition balanced but not perfectly symmetrical. Wet surface with subtle reflections, scattered droplets, and micro-condensation on the product. Background tone gradient tuned to match the label's color palette and mood. High-end studio lighting with controlled edge highlights and soft shadow falloff grounding the product. Crisp edges, fine detail in condensation, pulp, leaf veins, and ice crystals. Minimal negative space, no clutter, polished commercial finish that still feels real. Preserve the product's design, label text, logo, proportions, and packaging exactly as in the reference.",
         "note": "Best for premium commercial product hero shots from a reference image.",
         "variables": [],
-        "images": ["higgsfield-07.png"],
-        "tags": ["Product Ad", "Commercial", "Hero Shot"]
+        "images": [
+          "higgsfield-07.png"
+        ],
+        "tags": [
+          "Product Ad",
+          "Commercial",
+          "Hero Shot"
+        ]
       },
       {
         "id": "anime-effect",
@@ -718,8 +1851,14 @@
         "body": "Convert the reference image into a polished hand-drawn anime rendering, keeping composition, camera angle, framing, pose, and proportions exactly intact. Translate facial structure and expression faithfully into anime style – large expressive eyes following the original gaze, simplified clean nose and mouth, charming character appeal. Crisp linework with subtle weight variation. Reinterpret hair into defined anime strands while preserving original shape, color, and flow. Skin shaded smoothly with soft tonal gradients. Carry over lighting direction and intensity from the source. Palette lightly stylized but true to the original. Background reworked into a matching anime environment with the same depth and perspective. Gentle cel shading. No anatomy or perspective distortion, no crop change – a high-fidelity anime adaptation of the original.",
         "note": "Best for anime conversion while preserving framing, pose, and identity.",
         "variables": [],
-        "images": ["higgsfield-08.png"],
-        "tags": ["Anime", "Style Transfer", "Identity"]
+        "images": [
+          "higgsfield-08.png"
+        ],
+        "tags": [
+          "Anime",
+          "Style Transfer",
+          "Identity"
+        ]
       }
     ]
   },
@@ -727,12 +1866,18 @@
     "id": "world-cup-2026",
     "title": "FIFA World Cup 2026 Prompts",
     "shortTitle": "World Cup 2026",
-    "summary": "Real FIFA World Cup 2026 match, team, and stadium prompt customizations.",
+    "summary": "Two World Cup spectator prompts: the full customizable version and the published short version.",
     "description": "Build broadcast-style FIFA World Cup 2026 spectator cutaways with real tournament teams, fixtures, scores, stages, and venues.",
     "accent": "worldcup",
     "cover": null,
     "entryPromptId": "world-cup-vip-cutaway",
-    "tags": ["FIFA World Cup 2026", "Teams", "Matches", "Stadiums", "Broadcast"],
+    "tags": [
+      "FIFA World Cup 2026",
+      "Teams",
+      "Matches",
+      "Stadiums",
+      "Broadcast"
+    ],
     "tipsTitle": "Pro Tips for World Cup 2026",
     "tips": [
       "Start with the match dropdown so the matchup, scoreline, stage, and default venue stay tied to real fixture data.",
@@ -750,14 +1895,61 @@
         ],
         "body": "Create a photorealistic candid live football broadcast cutaway using the uploaded subject image only as the exact facial identity reference. Preserve the subject’s face, skin tone, age, facial proportions, distinctive features, gender presentation, ethnicity, hairstyle and modesty. If the subject wears a headcover, do not reveal hair or neck. Do not copy the original pose, head tilt, expression or camera angle; rebuild everything naturally.\n\nScene: FIFA World Cup 2026 [match stage] match between [home team] and [away team] at [stadium] in [venue location], with the subject supporting [supported team]. The subject is inside a premium VIP hospitality suite behind a clear glass railing, overlooking the pitch.\n\nOutfit: official [supported team] national team jersey, elegant dark navy blazer or cardigan, black trousers, FIFA style event lanyard, slim watch, small [supported team] scarf draped naturally.\n\nThe subject is unaware of the camera, fully focused on the match. Frame waist up. Body turned about 45 degrees toward the pitch, head upright and facing the same direction, neck straight, shoulders balanced. Gaze directed toward the right side of frame, slightly downward toward the pitch. No eye contact with camera. Expression is tense and hopeful, eyebrows slightly tightened, lips slightly parted, as if watching a final minutes [supported team] attack.\n\nPose: both hands rest lightly on the clear glass railing with natural relaxed fingers. No thumbs up, waving, peace signs or camera facing gestures.\n\nInclude 5 supporting spectators around the subject, partially cropped at the left and right edges, wearing [home team] and [away team] jerseys or refined matchday clothing. Everyone looks naturally toward the pitch. Add softly blurred heads, shoulders, scarves and raised hands in the lower foreground for stadium depth, without blocking the subject’s face.\n\nShow subtle glass reflections, dark suite framing, premium stadium architecture and softly blurred crowd background. Reflections must stay light and never cover the face.\n\nCamera and lighting: authentic distant live sports broadcast angle, 200mm to 400mm telephoto compression, natural asymmetrical composition. Face and eyes sharp, surrounding spectators slightly softer. Realistic stadium lighting with soft VIP suite ambient light and reflected pitch light. Natural skin texture, realistic fabric folds, mild live broadcast compression.\n\nAdd a compact professional football broadcast scoreboard at the top left, using the uploaded scoreboard image as the visual style reference. Text: [scoreboard text]. Design: small white rounded timer box with bold black text, dark charcoal team boxes, accurate flag icons, bold uppercase three letter team codes [home team code] and [away team code], bright cyan score boxes with large black numbers, small central white rounded box with a black and gold tournament trophy icon, compact connected broadcast graphics, sharp and readable. Do not add “LIVE.” Do not cover the subject’s head or face.\n\nFinal image must look like a real spontaneous spectator cutaway from a live FIFA World Cup 2026 television broadcast, not a studio portrait, fashion shoot, ad, CGI or illustration. Photorealistic, realistic anatomy, natural hands and fingers, accurate facial identity, 4K broadcast quality, aspect ratio 3:4.",
         "note": "Best for identity-preserving live football spectator cutaways with broadcast scoreboard graphics.",
-        "variables": ["scoreboard time"],
+        "variables": [
+          "scoreboard time"
+        ],
         "customization": {
           "type": "fifa-world-cup-2026",
           "defaultMatchId": "760444",
           "defaultScoreboardTime": "34:29"
         },
         "images": [],
-        "tags": ["Sports Broadcast", "Football", "Identity"]
+        "tags": [
+          "Sports Broadcast",
+          "Football",
+          "Identity"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ3w3PFgPOQ/",
+          "publishedAt": "2026-06-22T02:24:45+00:00",
+          "kind": "carousel",
+          "slide": 11
+        }
+      },
+      {
+        "id": "world-cup-vip-cutaway-short",
+        "title": "VIP FIFA Spectator — Short Prompt",
+        "category": "Sports Broadcast",
+        "body": "Photorealistic candid live sports broadcast cutaway, aspect ratio 3:4.\n\nSubject: [Name or Image Reference], supporting [Supported Team].\n\nScene: FIFA World Cup 2026 match between [Team A] and [Team B] at [Stadium]. Subject is inside a VIP suite behind a clear glass railing overlooking the pitch, unaware of the camera, looking tense/hopeful.\n\nOutfit: Official [Supported Team] jersey, dark blazer or cardigan, FIFA lanyard, matching team scarf.\n\nComposition: Waist-up, 45-degree angle facing the pitch. Hands rest lightly on the glass railing. Surrounded by 5 supporting spectators looking toward the field, with blurred crowd and stadium architecture in the background.\n\nCamera & Lighting: Distant telephoto sports broadcast lens (300mm), soft stadium lighting, subtle glass reflections, natural skin texture, sharp details on subject with soft depth-of-field.\n\nScoreboard (Optional): TV broadcast scoreboard overlay at top-left: \"[Time] [Team A] [Score A]-[Score B] [Team B]\" (e.g. 34:29 BRA 3-0 HAI) with flat flag icons, cyan score boxes, and clean typography.",
+        "note": "The short version published in the World Cup carousel, with manually editable match and scoreboard fields.",
+        "instructions": [
+          "Upload a subject photo or enter a subject name, then fill in the teams and stadium.",
+          "The scoreboard is optional. Set the time and score yourself, or remove that paragraph."
+        ],
+        "variables": [
+          "Name or Image Reference",
+          "Supported Team",
+          "Team A",
+          "Team B",
+          "Stadium",
+          "Time",
+          "Score A",
+          "Score B"
+        ],
+        "images": [],
+        "tags": [
+          "Sports Broadcast",
+          "Football",
+          "Short Prompt"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ3w3PFgPOQ/",
+          "publishedAt": "2026-06-22T02:24:45+00:00",
+          "kind": "carousel",
+          "slide": 10
+        }
       }
     ]
   },
@@ -769,7 +1961,14 @@
     "description": "ChatGPT has quietly built a file on you. Expose what it has on you, check what is stored, and wipe anything you did not agree to keep.",
     "accent": "superman",
     "cover": null,
-    "tags": ["Privacy", "Security", "Memory", "Profile", "Expose", "ChatGPT"],
+    "tags": [
+      "Privacy",
+      "Security",
+      "Memory",
+      "Profile",
+      "Expose",
+      "ChatGPT"
+    ],
     "tipsTitle": "Pro Tips for Hidden Mode",
     "tips": [
       "Open your ChatGPT settings first to locate Personalization and Memory controls.",
@@ -786,7 +1985,10 @@
         "note": "Best for seeing a complete dump of ChatGPT's memory database of you.",
         "variables": [],
         "images": [],
-        "tags": ["Memory", "Expose"]
+        "tags": [
+          "Memory",
+          "Expose"
+        ]
       },
       {
         "id": "the-hidden-profile",
@@ -796,7 +1998,10 @@
         "note": "Best for uncovering the inferred persona ChatGPT has generated about you.",
         "variables": [],
         "images": [],
-        "tags": ["Profile", "Inferences"]
+        "tags": [
+          "Profile",
+          "Inferences"
+        ]
       },
       {
         "id": "traits-i-cant-see",
@@ -806,7 +2011,10 @@
         "note": "Best for gaining an outside perspective on your psychological patterns and habits.",
         "variables": [],
         "images": [],
-        "tags": ["Blind Spots", "Self-Mastery"]
+        "tags": [
+          "Blind Spots",
+          "Self-Mastery"
+        ]
       },
       {
         "id": "predict-me",
@@ -816,7 +2024,10 @@
         "note": "Best for testing the predictive accuracy of the profile ChatGPT has built.",
         "variables": [],
         "images": [],
-        "tags": ["Predictions", "Profiling"]
+        "tags": [
+          "Predictions",
+          "Profiling"
+        ]
       },
       {
         "id": "see-whats-stored",
@@ -826,7 +2037,10 @@
         "note": "Best for deleting individual facts or clearing out all saved memory data.",
         "variables": [],
         "images": [],
-        "tags": ["Settings", "Memory Wipe"]
+        "tags": [
+          "Settings",
+          "Memory Wipe"
+        ]
       },
       {
         "id": "kill-the-invisible-tracking",
@@ -836,7 +2050,10 @@
         "note": "Best for completely disabling background tracking and model training.",
         "variables": [],
         "images": [],
-        "tags": ["Tracking", "Privacy Settings"]
+        "tags": [
+          "Tracking",
+          "Privacy Settings"
+        ]
       }
     ]
   },
@@ -848,7 +2065,14 @@
     "description": "Reimagine your learning processes, upgrade your thinking frameworks, and accelerate your personal mastery.",
     "accent": "harvard",
     "cover": null,
-    "tags": ["Learning", "Mastery", "Mindset", "Strategy", "Leverage", "Clarity"],
+    "tags": [
+      "Learning",
+      "Mastery",
+      "Mindset",
+      "Strategy",
+      "Leverage",
+      "Clarity"
+    ],
     "tipsTitle": "Pro Tips for Harvard Prompts",
     "tips": [
       "Replace bracketed fields with specific context before copying the prompt.",
@@ -863,9 +2087,21 @@
         "category": "Learning",
         "body": "Pretend you are a cognitively advanced mentor. I want to master any complex skill at above-average speed.\n\nBuild a weekly learning plan based on spaced repetition, interleaving, simplified explanations, and active recall.\n\nApply this plan to [insert topic]. The goal is top 1% excellence within 90 days.",
         "note": "Best for turning a hard skill into a structured 90-day learning system.",
-        "variables": ["insert topic"],
+        "variables": [
+          "insert topic"
+        ],
         "images": [],
-        "tags": ["Learning", "topic"]
+        "tags": [
+          "Learning",
+          "topic"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 2
+        }
       },
       {
         "id": "expert-level-knowledge",
@@ -873,9 +2109,21 @@
         "category": "Mastery",
         "body": "Act as the absolute authority in [insert field]. Guide me like a direct apprentice, from fundamentals to full mastery.\n\nBuild the path in clear stages with practice tasks, little-known resources, and faster routes.\n\nInclude applied exercises, simulations, or real challenges so every stage is truly absorbed.",
         "note": "Best for mapping the path from beginner to advanced execution in a field.",
-        "variables": ["insert field"],
+        "variables": [
+          "insert field"
+        ],
         "images": [],
-        "tags": ["Mastery", "field"]
+        "tags": [
+          "Mastery",
+          "field"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 3
+        }
       },
       {
         "id": "upgrade-your-mental-system",
@@ -885,7 +2133,16 @@
         "note": "Best for diagnosing current habits and rebuilding a stronger personal operating system.",
         "variables": [],
         "images": [],
-        "tags": ["Mindset"]
+        "tags": [
+          "Mindset"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 4
+        }
       },
       {
         "id": "high-performance-thinking",
@@ -895,7 +2152,16 @@
         "note": "Best for upgrading how you reason through goals, systems, and high-leverage decisions.",
         "variables": [],
         "images": [],
-        "tags": ["Strategy"]
+        "tags": [
+          "Strategy"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 5
+        }
       },
       {
         "id": "turn-years-into-days",
@@ -905,7 +2171,16 @@
         "note": "Best for finding tools, shortcuts, and leverage points around a specific goal.",
         "variables": [],
         "images": [],
-        "tags": ["Leverage"]
+        "tags": [
+          "Leverage"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 6
+        }
       },
       {
         "id": "become-your-best-version",
@@ -915,7 +2190,16 @@
         "note": "Best for translating an ideal identity into practical behavior and decisions.",
         "variables": [],
         "images": [],
-        "tags": ["Identity"]
+        "tags": [
+          "Identity"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 7
+        }
       },
       {
         "id": "build-absolute-clarity",
@@ -925,7 +2209,16 @@
         "note": "Best for stripping away distraction and building a clearer priority system.",
         "variables": [],
         "images": [],
-        "tags": ["Clarity"]
+        "tags": [
+          "Clarity"
+        ],
+        "source": {
+          "account": "chatgptricks",
+          "url": "https://www.instagram.com/p/DZ5gfSMFWVC/",
+          "publishedAt": "2026-06-22T18:40:02+00:00",
+          "kind": "carousel",
+          "slide": 8
+        }
       }
     ]
   },
@@ -937,7 +2230,13 @@
     "description": "Leverage Claude's superior reasoning, coding agent capabilities, and detailed prose structure.",
     "accent": "claude",
     "cover": null,
-    "tags": ["Claude", "Coding", "Reasoning", "Refactoring", "Analysis"],
+    "tags": [
+      "Claude",
+      "Coding",
+      "Reasoning",
+      "Refactoring",
+      "Analysis"
+    ],
     "tipsTitle": "Pro Tips for Claude Prompts",
     "tips": [
       "Use XML tags (like <content> or <instructions>) to structure inputs cleanly.",
@@ -952,9 +2251,16 @@
         "category": "Coding",
         "body": "Act as an expert software architect. Refactor the following [programming language] code to improve readability, performance, and adherence to clean code principles:\n\n<code>\n[insert code]\n</code>\n\nExplain each modification in detail and highlight the performance gains.",
         "note": "Best for cleaning up legacy code or optimizing slow functions.",
-        "variables": ["programming language", "insert code"],
+        "variables": [
+          "programming language",
+          "insert code"
+        ],
         "images": [],
-        "tags": ["Coding", "programming language", "insert code"]
+        "tags": [
+          "Coding",
+          "programming language",
+          "insert code"
+        ]
       },
       {
         "id": "step-by-step-logic-analyzer",
@@ -962,9 +2268,14 @@
         "category": "Reasoning",
         "body": "I want you to solve a complex logical problem: [logical problem].\n\nBefore giving me the final answer, use a detailed step-by-step thinking process. Break down your reasoning, check for assumptions, evaluate alternative solutions, and verify your conclusion.",
         "note": "Leverages Claude's reasoning capabilities for complex problems.",
-        "variables": ["logical problem"],
+        "variables": [
+          "logical problem"
+        ],
         "images": [],
-        "tags": ["Reasoning", "logical problem"]
+        "tags": [
+          "Reasoning",
+          "logical problem"
+        ]
       },
       {
         "id": "document-analysis-synthesis",
@@ -972,9 +2283,14 @@
         "category": "Analysis",
         "body": "Analyze the uploaded document content about [document topic].\n\nSynthesize the key points into a structured markdown report including:\n- Executive Summary\n- 5 Core Takeaways\n- Potential Risks or Gaps\n- Actionable Next Steps\n- 3 follow-up questions I should ask you about this data.",
         "note": "Best for reading reports, contracts, or research papers.",
-        "variables": ["document topic"],
+        "variables": [
+          "document topic"
+        ],
         "images": [],
-        "tags": ["Analysis", "document topic"]
+        "tags": [
+          "Analysis",
+          "document topic"
+        ]
       },
       {
         "id": "brand-voice-copywriter",
@@ -982,9 +2298,18 @@
         "category": "Writing",
         "body": "You are a senior copywriter. Rewrite the following copy to match a [desired tone] brand voice targeted at [target audience]:\n\nCopy:\n\"[original copy]\"\n\nKeep the core message intact but elevate the flow and emotional appeal.",
         "note": "Best for newsletters, ads, and landing page copy.",
-        "variables": ["desired tone", "target audience", "original copy"],
+        "variables": [
+          "desired tone",
+          "target audience",
+          "original copy"
+        ],
         "images": [],
-        "tags": ["Writing", "desired tone", "target audience", "original copy"]
+        "tags": [
+          "Writing",
+          "desired tone",
+          "target audience",
+          "original copy"
+        ]
       },
       {
         "id": "interactive-programming-mentor",
@@ -992,9 +2317,14 @@
         "category": "Education",
         "body": "Act as a patient and highly skilled coding mentor. I want to learn [programming concept].\n\nExplain the concept clearly using a simple real-world analogy. Then, give me a small exercise to solve. Wait for my response before giving me the answer or moving to the next concept.",
         "note": "Best for step-by-step interactive learning.",
-        "variables": ["programming concept"],
+        "variables": [
+          "programming concept"
+        ],
         "images": [],
-        "tags": ["Education", "programming concept"]
+        "tags": [
+          "Education",
+          "programming concept"
+        ]
       },
       {
         "id": "claude-system-prompt-builder",
@@ -1002,9 +2332,14 @@
         "category": "Prompt Engineering",
         "body": "Design a comprehensive system prompt for Claude to perform [intended task].\n\nStructure the prompt using standard XML tags (e.g., <role>, <rules>, <examples>, <output_format>) to maximize execution precision.",
         "note": "Best for building custom prompts for Claude projects.",
-        "variables": ["intended task"],
+        "variables": [
+          "intended task"
+        ],
         "images": [],
-        "tags": ["Prompt Engineering", "intended task"]
+        "tags": [
+          "Prompt Engineering",
+          "intended task"
+        ]
       }
     ]
   },
@@ -1016,7 +2351,14 @@
     "description": "Utilize Gemini's massive context window and native multimodal inputs for video, audio, and large repository tasks.",
     "accent": "gemini",
     "cover": null,
-    "tags": ["Gemini", "Multimodal", "Video", "Audio", "Repository", "Context"],
+    "tags": [
+      "Gemini",
+      "Multimodal",
+      "Video",
+      "Audio",
+      "Repository",
+      "Context"
+    ],
     "tipsTitle": "Pro Tips for Gemini Prompts",
     "tips": [
       "Upload raw video or audio files directly alongside the prompt for native analysis.",
@@ -1031,9 +2373,14 @@
         "category": "Research",
         "body": "Based on the uploaded video and transcript, analyze [topic]. Break down the video into logical chapters with timestamps, summarize the core arguments, and highlight 5 key takeaways.",
         "note": "Best for webinars, lectures, or interviews.",
-        "variables": ["topic"],
+        "variables": [
+          "topic"
+        ],
         "images": [],
-        "tags": ["Research", "topic"]
+        "tags": [
+          "Research",
+          "topic"
+        ]
       },
       {
         "id": "full-codebase-architect",
@@ -1041,9 +2388,14 @@
         "category": "Coding",
         "body": "Analyze the uploaded code files for [project name]. Act as a lead architect and perform a structural audit. Identify performance bottlenecks, redundancy, and provide refactored code snippets to improve speed and clean architecture.",
         "note": "Best for audits of medium to large repositories.",
-        "variables": ["project name"],
+        "variables": [
+          "project name"
+        ],
         "images": [],
-        "tags": ["Coding", "project name"]
+        "tags": [
+          "Coding",
+          "project name"
+        ]
       },
       {
         "id": "design-screenshot-to-code",
@@ -1051,9 +2403,18 @@
         "category": "Design",
         "body": "Analyze the uploaded screenshot of [website name]. Recreate this user interface using [frontend framework] and [styling library]. Focus on matching the visual layout, spacing, and typography accurately.",
         "note": "Best for converting mockups to functional code.",
-        "variables": ["website name", "frontend framework", "styling library"],
+        "variables": [
+          "website name",
+          "frontend framework",
+          "styling library"
+        ],
         "images": [],
-        "tags": ["Design", "website name", "frontend framework", "styling library"]
+        "tags": [
+          "Design",
+          "website name",
+          "frontend framework",
+          "styling library"
+        ]
       },
       {
         "id": "audio-transcript-optimizer",
@@ -1061,9 +2422,14 @@
         "category": "Content",
         "body": "Listen to the uploaded audio recording of [podcast/meeting] and read its transcript. Write a comprehensive summary, format the action items with owners, and highlight any unresolved questions.",
         "note": "Best for meeting notes and podcast summaries.",
-        "variables": ["podcast/meeting"],
+        "variables": [
+          "podcast/meeting"
+        ],
         "images": [],
-        "tags": ["Content", "podcast/meeting"]
+        "tags": [
+          "Content",
+          "podcast/meeting"
+        ]
       },
       {
         "id": "contextual-document-translator",
@@ -1071,9 +2437,16 @@
         "category": "Translation",
         "body": "Translate the uploaded [source language] document into [target language]. Maintain the original professional tone, formatting, and industry-specific jargon. Correct any literal translation errors using local cultural context.",
         "note": "Best for legal, technical, or marketing documents.",
-        "variables": ["source language", "target language"],
+        "variables": [
+          "source language",
+          "target language"
+        ],
         "images": [],
-        "tags": ["Translation", "source language", "target language"]
+        "tags": [
+          "Translation",
+          "source language",
+          "target language"
+        ]
       },
       {
         "id": "large-dataset-trend-spotter",
@@ -1081,9 +2454,16 @@
         "category": "Strategy",
         "body": "Analyze the uploaded dataset containing [data topic]. Identify the top 3 trends, flag anomalies, and provide 5 data-backed strategic recommendations for [business goal].",
         "note": "Best for analyzing spreadsheets, logs, or reports.",
-        "variables": ["data topic", "business goal"],
+        "variables": [
+          "data topic",
+          "business goal"
+        ],
         "images": [],
-        "tags": ["Strategy", "data topic", "business goal"]
+        "tags": [
+          "Strategy",
+          "data topic",
+          "business goal"
+        ]
       }
     ]
   }
