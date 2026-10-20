@@ -3269,15 +3269,14 @@
     "section": "learning",
     "title": "Privacy & Memory",
     "shortTitle": "Privacy & Memory",
-    "summary": "Explore memory, inferred profiles, personalization, and the settings discussed in the existing collection.",
-    "description": "Explore memory, inferred profiles, personalization, and the settings discussed in the existing collection.",
+    "summary": "Manage your digital footprint and explore AI memory and personalization.",
+    "description": "Manage your digital footprint and explore AI memory and personalization.",
     "accent": "cyan",
     "tags": [
+      "Privacy",
+      "Digital Footprint",
       "Memory",
-      "Profile",
-      "Blind Spots",
-      "Predictions",
-      "Settings"
+      "Personalization"
     ],
     "tipsTitle": "Using this collection",
     "tips": [
@@ -3286,6 +3285,90 @@
       "Open the original post when source attribution is available."
     ],
     "prompts": [
+      {
+        "id": "digital-footprint-cleanup",
+        "title": "Digital Footprint Cleanup",
+        "category": "Privacy",
+        "kind": "guide",
+        "layout": "step-guide",
+        "body": "Digital Footprint Cleanup\n\n1. See what’s visible\nGoogle your name, email address and phone number, screenshot everything you find, then ask Claude to organize the results\n\nLook at these results [paste].\n\nCategorize them into data brokers, social media, old accounts and articles\n\nRank them in deletion priority order\n\n2. Target data brokers\nStart with Spokeo, BeenVerified, Whitepages and MyLife, ask Claude to draft the request, then copy it and send it\n\nWrite a CCPA opt-out request to this data broker: [name]\n\nMy details: [name, email, address]\n\nAdd legal references and use a professional tone\n\n3. Delete forgotten accounts\nOld forums, tools and apps can still hold your data, go to justdeleteme.xyz and choose the accounts you want to remove\n\nI want to delete my [service name] account\n\nWhat is the full deletion process, and how can I make sure the data is completely deleted rather than just deactivating the account?\n\n4. Use privacy laws\nUse KVKK in Turkey or GDPR in Europe, ask Claude to draft the deletion request under the law that applies to you\n\nWrite a personal data deletion request to [company name] under Article 7 of Turkey’s KVKK\n\nInclude identity verification language and specify a 30-day response period\n\n5. If it won’t delete, bury it\nIf an old article cannot be removed, publish new content around your name and profession to push it lower in search results\n\nUsing my name and profession, suggest five different content angles.\n\nUse the same keywords as [unwanted result URL] and optimize the new content to rank higher on Google\n\n6. Clean up data breaches\nEnter your email at haveibeenpwned.com, check which breaches appear, then ask Claude which fixes you should prioritize\n\nLook at this breach list [paste]\n\nShould I change passwords, set up 2FA or delete accounts?\n\nRank the actions by current risk\n\nBonus: keep it clean\n\nUse SimpleLogin\nCreate a new email alias for every signup\nIf an alias leaks, disable it and keep your real email private\n\nUse Brave or Firefox\nSwitch from Chrome to a browser with tracking protection\nKeep reducing the data you leave behind as you browse",
+        "note": "One six-step guide to reviewing your digital footprint, preparing removal requests, and prioritizing account security.",
+        "variables": [],
+        "placeholderStyle": "literal",
+        "images": [],
+        "tags": [
+          "Digital Footprint",
+          "Privacy",
+          "Claude",
+          "6 Steps"
+        ],
+        "steps": [
+          {
+            "title": "See what’s visible",
+            "instructions": "Google your name, email address and phone number, screenshot everything you find, then ask Claude to organize the results",
+            "body": "Look at these results [paste].\n\nCategorize them into data brokers, social media, old accounts and articles\n\nRank them in deletion priority order",
+            "sourcePage": 2
+          },
+          {
+            "title": "Target data brokers",
+            "instructions": "Start with Spokeo, BeenVerified, Whitepages and MyLife, ask Claude to draft the request, then copy it and send it",
+            "body": "Write a CCPA opt-out request to this data broker: [name]\n\nMy details: [name, email, address]\n\nAdd legal references and use a professional tone",
+            "sourcePage": 3
+          },
+          {
+            "title": "Delete forgotten accounts",
+            "instructions": "Old forums, tools and apps can still hold your data, go to justdeleteme.xyz and choose the accounts you want to remove",
+            "body": "I want to delete my [service name] account\n\nWhat is the full deletion process, and how can I make sure the data is completely deleted rather than just deactivating the account?",
+            "sourcePage": 4
+          },
+          {
+            "title": "Use privacy laws",
+            "instructions": "Use KVKK in Turkey or GDPR in Europe, ask Claude to draft the deletion request under the law that applies to you",
+            "body": "Write a personal data deletion request to [company name] under Article 7 of Turkey’s KVKK\n\nInclude identity verification language and specify a 30-day response period",
+            "sourcePage": 5
+          },
+          {
+            "title": "If it won’t delete, bury it",
+            "instructions": "If an old article cannot be removed, publish new content around your name and profession to push it lower in search results",
+            "body": "Using my name and profession, suggest five different content angles.\n\nUse the same keywords as [unwanted result URL] and optimize the new content to rank higher on Google",
+            "sourcePage": 6
+          },
+          {
+            "title": "Clean up data breaches",
+            "instructions": "Enter your email at haveibeenpwned.com, check which breaches appear, then ask Claude which fixes you should prioritize",
+            "body": "Look at this breach list [paste]\n\nShould I change passwords, set up 2FA or delete accounts?\n\nRank the actions by current risk",
+            "sourcePage": 7
+          }
+        ],
+        "bonus": [
+          {
+            "title": "Use SimpleLogin",
+            "body": "Create a new email alias for every signup\nIf an alias leaks, disable it and keep your real email private"
+          },
+          {
+            "title": "Use Brave or Firefox",
+            "body": "Switch from Chrome to a browser with tracking protection\nKeep reducing the data you leave behind as you browse"
+          }
+        ],
+        "source": {
+          "kind": "pdf",
+          "filename": "mib.pdf",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "label": "Provided six-step guide"
+        },
+        "addedAt": "2026-10-20",
+        "sourceSeries": [
+          "Digital Footprint Cleanup"
+        ]
+      },
       {
         "id": "open-the-file",
         "title": "1. Open the File",

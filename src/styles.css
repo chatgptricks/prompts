@@ -1559,6 +1559,50 @@ h1, h2, h3, p { min-width: 0; }
   line-height: 1.75;
 }
 
+/* A single guide with sequential, individually copyable prompts. */
+.step-guide { display: grid; gap: 1.5rem; }
+.step-guide > .back-link { margin: 0; justify-self: start; }
+.step-guide .step-guide-header,
+.step-guide .step-guide-step,
+.step-guide .step-guide-bonus-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+}
+.step-guide .step-guide-header h1 { margin: 0.3rem 0 0; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -0.035em; }
+.step-guide .step-guide-intro { max-width: 72ch; margin: 1rem 0 0; color: var(--soft); line-height: 1.65; }
+.step-guide .step-guide-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.25rem; }
+.step-guide .step-guide-steps { display: grid; gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
+.step-guide .step-guide-step-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.step-guide .step-guide-step-heading > div { min-width: 0; }
+.step-guide .step-guide-step-heading .eyebrow { margin: 0 0 0.4rem; }
+.step-guide .step-guide-step-heading h2 { margin: 0; font-size: clamp(1.2rem, 2.5vw, 1.5rem); line-height: 1.25; letter-spacing: -0.02em; }
+.step-guide .step-guide-step-heading button { flex-shrink: 0; }
+.step-guide .step-guide-instructions { margin: 1.1rem 0; color: var(--soft); line-height: 1.7; white-space: pre-line; }
+.step-guide .step-guide-prompt {
+  margin: 1.1rem 0 0;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #cde8f5;
+  padding: 1rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.step-guide .step-guide-bonus > h2 { margin: 0 0 1rem; font-size: 1.3rem; letter-spacing: -0.02em; }
+.step-guide .step-guide-bonus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+.step-guide .step-guide-bonus-card h3 { margin: 0; font-size: 1rem; }
+.step-guide .step-guide-bonus-card p { margin: 0.75rem 0 0; color: var(--soft); line-height: 1.7; white-space: pre-line; }
+@media (max-width: 600px) {
+  .step-guide .step-guide-step-heading { flex-direction: column; }
+  .step-guide .step-guide-bonus-grid { grid-template-columns: 1fr; }
+}
+
 .composer-actions { display: grid; grid-template-columns: 1.2fr repeat(3, minmax(96px, 1fr)); gap: 0.55rem; }
 
 .primary-button, .secondary-button {

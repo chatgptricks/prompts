@@ -15,10 +15,10 @@
     "existingWorkPrompts": 100,
     "existingWorkflows": 5,
     "addedPrompts": 39,
-    "addedGuides": 4,
+    "addedGuides": 5,
     "existingEntriesGivenSourceAttribution": 8,
     "promptBodiesReplaced": 0,
-    "totalLibraryEntries": 123,
+    "totalLibraryEntries": 124,
     "deduplicatedExistingEntries": 7
   },
   "importedPosts": [
@@ -566,7 +566,7 @@
     "logic": "One primary home per prompt, organized by task instead of model or source carousel.",
     "sections": 3,
     "collections": 11,
-    "uniqueEntries": 123,
+    "uniqueEntries": 124,
     "deduplicatedPairs": [
       {
         "duplicateKeys": [
@@ -646,7 +646,19 @@
     "individualGeneratedCoverAssignments": 0,
     "individualsWithExistingImages": 46,
     "groupsWithImages": 0,
-    "individualsWithEmoji": 77,
+    "individualsWithEmoji": 78,
     "individualVisuals": "Existing prompt examples where available; simple emoji elsewhere. No generated artwork."
-  }
+  },
+  "manualSources": [
+    {
+      "kind": "pdf",
+      "filename": "mib.pdf",
+      "key": "privacy-memory/digital-footprint-cleanup",
+      "addedAt": "2026-10-20",
+      "steps": 6,
+      "bonusTips": 2,
+      "copyableBodiesVerifiedAgainstSource": true,
+      "publicUrl": "https://chatgptricks.fun/digital-footprint/"
+    }
+  ]
 }

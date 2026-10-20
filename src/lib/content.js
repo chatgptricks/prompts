@@ -135,6 +135,7 @@ export const librarySections = navigation.sections.map((section) => ({
 }))
 
 export const canonicalPromptKey = (key) => navigation.promptAliases[key] ?? key
+export const directPromptPages = navigation.directPromptPages ?? {}
 
 export const legacyLibraryRoutes = Object.fromEntries(
   Object.entries(navigation.legacyLibraries).map(([id, library]) => [id, library.route]),

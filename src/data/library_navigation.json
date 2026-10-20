@@ -618,5 +618,8 @@
         ]
       }
     }
+  },
+  "directPromptPages": {
+    "digital-footprint": "privacy-memory/digital-footprint-cleanup"
   }
 }

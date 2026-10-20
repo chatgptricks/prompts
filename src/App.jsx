@@ -13,6 +13,7 @@ import EmptyState from './components/EmptyState'
 import LibraryCard from './components/LibraryCard'
 import PromptCard from './components/PromptCard'
 import PromptComposer from './components/PromptComposer'
+import StepGuide from './components/StepGuide'
 import SearchBox from './components/SearchBox'
 import ChatGPTatWork from './components/ChatGPTatWork'
 import {
@@ -21,6 +22,7 @@ import {
   findPromptByKey,
   librarySections,
   canonicalPromptKey,
+  directPromptPages,
   legacyLibraryRoutes,
   migrateFavorites,
   migrateRecentCopies,
@@ -51,7 +53,12 @@ function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '')
   const parts = hash.split('/').filter(Boolean)
 
-  if (!parts.length) return { name: 'hub' }
+  if (!parts.length) {
+    const page = window.location.pathname?.replace(/^\/+|\/+$/g, '')
+    const context = directPromptPages[page] ? findPromptByKey(directPromptPages[page]) : null
+    if (context) return { name: 'prompt', libraryId: context.library.id, promptId: context.prompt.id, canonicalHash: `#/prompt/${context.prompt.key}` }
+    return { name: 'hub' }
+  }
   if (parts[0] === 'hub') return { name: 'hub' }
   if (parts[0] === 'saved') return { name: 'saved' }
   if (parts[0] === 'recent') return { name: 'recent' }
@@ -445,6 +452,9 @@ function PromptPage({ libraryId, promptId, favoriteSet, drafts, onDraftChange, o
   if (!context) return <MissingPage />
 
   const { library, prompt } = context
+  if (prompt.layout === 'step-guide') {
+    return <StepGuide library={library} prompt={prompt} isFavorite={favoriteSet.has(prompt.key)} onToggleFavorite={onToggleFavorite} onCopy={onCopy} />
+  }
   return (
     <div className="page prompt-page">
       <a className="back-link" href={`#/library/${library.id}`}>
