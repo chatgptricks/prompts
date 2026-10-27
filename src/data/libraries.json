@@ -4,8 +4,8 @@
     "section": "visuals",
     "title": "Halloween",
     "shortTitle": "Halloween",
-    "summary": "9 Halloween image prompts for portraits, posters, doodles and collectible figures",
-    "description": "Create spooky portraits, playful ghost photos, a horror movie poster and more with nine ready-to-copy Halloween prompts and original examples",
+    "summary": "10 Halloween image prompts for portraits, posters, doodles and collectible figures",
+    "description": "Create spooky portraits, playful ghost photos, a horror movie poster and more with ten ready-to-copy Halloween prompts and original examples",
     "accent": "emerald",
     "tags": [
       "Halloween",
@@ -306,6 +306,30 @@
             10
           ]
         },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "jack-o-lantern-faces",
+        "title": "Jack-o’-lantern faces",
+        "body": "Create a 16:9 jack-o’-lantern inspiration sheet in a 3 × 3 grid, show nine different expressions, from friendly and goofy to spooky and angry, use simple, carveable faces on realistic orange pumpkins, warm candlelight and a dark background, keep the scale consistent, no text",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "Nine pumpkin-carving face ideas in a 16:9 inspiration sheet",
+        "variables": [],
+        "images": [
+          "halloween-jack-o-lantern-faces.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Pumpkin Carving",
+          "16:9"
+        ],
+        "instructions": [
+          "No reference photo is needed, copy the prompt as written",
+          "Use the designs as visual inspiration and adapt details to your carving tools"
+        ],
         "sourceSeries": [
           "Halloween image prompts"
         ]
