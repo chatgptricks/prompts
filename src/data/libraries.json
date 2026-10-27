@@ -1,5 +1,318 @@
 [
   {
+    "id": "halloween",
+    "section": "visuals",
+    "title": "Halloween",
+    "shortTitle": "Halloween",
+    "summary": "9 Halloween image prompts for portraits, posters, doodles and collectible figures",
+    "description": "Create spooky portraits, playful ghost photos, a horror movie poster and more with nine ready-to-copy Halloween prompts and original examples",
+    "accent": "emerald",
+    "tags": [
+      "Halloween",
+      "Portraits",
+      "Posters",
+      "Doodles",
+      "Collectibles"
+    ],
+    "tipsTitle": "Before you generate",
+    "tips": [
+      "For portrait prompts, upload a clear reference photo first",
+      "Keep the same reference photo when trying multiple looks",
+      "Customize the party details before copying its prompt"
+    ],
+    "prompts": [
+      {
+        "id": "photobooth-strip",
+        "title": "Halloween photobooth",
+        "body": "Use my uploaded photo to create four stacked Halloween photobooth portraits, dress me as a witch with a pointed hat and subtle makeup, vary my expression in each frame, add direct flash, film grain and vintage curtains, preserve my recognizable face",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "Four vintage Halloween photobooth frames from one face reference",
+        "variables": [],
+        "images": [
+          "halloween-photobooth-strip.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            2
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "ghost-and-pumpkin",
+        "title": "Ghost and pumpkin",
+        "body": "Use my photo for a candid Halloween portrait of two friends seated in autumn woods at night, dress me as a sheet ghost with my face visible and give my friend a carved pumpkin head, use direct flash, fallen leaves and a playful spooky mood",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A flash-lit ghost-and-pumpkin photo with a friend",
+        "variables": [],
+        "images": [
+          "halloween-ghost-and-pumpkin.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            3
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "spooky-doodles",
+        "title": "Spooky doodles",
+        "body": "Draw an original Halloween doodle sheet in black marker on white paper, include a skeleton kitten, vampire frog, witch frog, ghost cat, pumpkin, potion bottle, mushrooms, bats and tiny haunted snapshots, keep the linework cute, minimal, playful and slightly imperfect",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A cute black-ink Halloween doodle sheet",
+        "variables": [],
+        "images": [
+          "halloween-spooky-doodles.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Design"
+        ],
+        "instructions": [],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            4
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "party-poster",
+        "title": "Halloween party poster",
+        "body": "Design a gritty black-and-red Halloween party poster with vampire fangs, distressed horror typography and torn-paper textures, add the title Halloween Party plus [date], [time], [venue] and [dress code], balance the text so every event detail stays readable",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A customizable black-and-red Halloween party flyer",
+        "variables": [
+          "date",
+          "time",
+          "venue",
+          "dress code"
+        ],
+        "images": [
+          "halloween-party-poster.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Design"
+        ],
+        "instructions": [
+          "Customize the bracketed event details before generating"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            5
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "horror-movie-poster",
+        "title": "Your horror movie",
+        "body": "Use my photo to star in a realistic 1990s supernatural horror poster, place me outside an abandoned mansion at midnight holding a flashlight, add fog and a shadow in an upstairs window, preserve my face and title the film Cemetery Diner Party",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "Star in Cemetery Diner Party, your own horror movie poster",
+        "variables": [],
+        "images": [
+          "halloween-horror-movie-poster.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            6
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "haunted-mirror",
+        "title": "The haunted mirror",
+        "body": "Create an over-the-shoulder mirror selfie from my photo in a candlelit Victorian bathroom, show the back of my head and my raised phone in the foreground, reveal my recognizable face only in the correctly aligned reflection, give it pale eyes and an unsettling smile",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A physically coherent mirror selfie with an uncanny reflection",
+        "variables": [],
+        "images": [
+          "halloween-haunted-mirror.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            7
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "victorian-ghost",
+        "title": "Victorian ghost portrait",
+        "body": "Transform me into a Victorian ghost in an antique black-and-white photograph, preserve my face, dress me in an 1800s suit and make my body subtly translucent inside an abandoned mansion, add faded edges, fine scratches and convincing old photographic grain",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "An antique Victorian ghost portrait",
+        "variables": [],
+        "images": [
+          "halloween-victorian-ghost.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            8
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "magazine-cover",
+        "title": "Halloween magazine",
+        "body": "Use my photo for a photorealistic Halloween fashion magazine cover called After Dark, style me in gothic clothing and subtle dramatic makeup, preserve my facial features, add elegant red-and-white cover lines, a barcode and a moody candlelit editorial setting",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A gothic After Dark fashion magazine cover",
+        "variables": [],
+        "images": [
+          "halloween-magazine-cover.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            9
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      },
+      {
+        "id": "collectible-figure",
+        "title": "Halloween collectible",
+        "body": "Turn me into a realistic limited-edition Halloween figure in a retro toy box, preserve my recognizable face, add a gothic witch outfit and miniature spell book, black cat, pumpkin and lantern accessories, label the packaging Halloween Edition and use detailed product photography",
+        "kind": "prompt",
+        "category": "Halloween",
+        "note": "A Halloween collectible figure with miniature accessories",
+        "variables": [],
+        "images": [
+          "halloween-collectible-figure.webp"
+        ],
+        "tags": [
+          "Halloween",
+          "Image Generation",
+          "Photo Editing"
+        ],
+        "instructions": [
+          "Upload a clear reference photo first",
+          "The Sam Altman image is an AI-generated example, use your own photo for a personal result"
+        ],
+        "source": {
+          "account": "okaashish",
+          "url": "https://www.instagram.com/p/De82Aqojwo4/",
+          "kind": "carousel",
+          "slides": [
+            10
+          ]
+        },
+        "sourceSeries": [
+          "Halloween image prompts"
+        ]
+      }
+    ]
+  },
+  {
     "id": "photo-editing",
     "section": "visuals",
     "title": "Photo Editing & Restoration",

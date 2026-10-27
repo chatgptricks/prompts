@@ -8,6 +8,7 @@ const assetModules = import.meta.glob('../../assets/*', {
 })
 
 const libraryEmojis = {
+  halloween: '🎃',
   presentations: '📊',
   'images-2': '🎨',
   euphoria: '🎬',
@@ -33,6 +34,7 @@ const libraryEmojis = {
 }
 
 const categoryEmojis = {
+  Halloween: '🎃',
   Career: '💼',
   Coding: '💻',
   Reasoning: '🧩',
