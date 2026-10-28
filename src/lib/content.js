@@ -8,6 +8,7 @@ const assetModules = import.meta.glob('../../assets/*', {
 })
 
 const libraryEmojis = {
+  'photo-transformations': '📸',
   halloween: '🎃',
   presentations: '📊',
   'images-2': '🎨',

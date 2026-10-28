@@ -1,5 +1,423 @@
 [
   {
+    "id": "photo-transformations",
+    "section": "visuals",
+    "title": "Photo transformations",
+    "shortTitle": "Photo transformations",
+    "summary": "10 photo-edit prompts with real before photos and AI-edited examples",
+    "description": "Retouch portraits, create product campaigns and transform scenes into GTA, Minecraft, LEGO, MS Paint or anime with ready-to-copy prompts",
+    "accent": "emerald",
+    "tags": [
+      "Photo Editing",
+      "Before and After",
+      "Portraits",
+      "Style Transfer"
+    ],
+    "tipsTitle": "Start with your photo",
+    "tips": [
+      "Upload your reference photo first, then paste the prompt",
+      "For the group selfie, upload two separate portraits",
+      "Example galleries show the edited result first and the original references after it"
+    ],
+    "prompts": [
+      {
+        "id": "4k-enhancement",
+        "title": "4K enhancement",
+        "body": "Enhance this photo with a crisp, natural 4K look, preserve identity, expression, pose, clothing, composition and colors, recover fine hair, fabric and skin detail, reduce noise and compression without smoothing skin, reshaping features or inventing details",
+        "kind": "prompt",
+        "category": "Upscale",
+        "note": "Recover natural detail without changing the photo",
+        "variables": [],
+        "images": [
+          "photo-transformations-4k-enhancement-after.webp",
+          "photo-transformations-4k-enhancement-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "4K enhancement"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            2
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "01-4k-idris-elba",
+            "url": "https://www.gq.com/story/what-lapels-should-you-choose-for-your-suit"
+          }
+        ]
+      },
+      {
+        "id": "natural-skin-retouch",
+        "title": "Natural skin retouch",
+        "body": "Retouch only temporary blemishes and redness, preserve identity, facial structure, pores, freckles, fine lines and natural skin texture, subtly even the tone while keeping the original lighting and color, no airbrushing, beauty filter or facial reshaping",
+        "kind": "prompt",
+        "category": "Photo Editing",
+        "note": "Clean up temporary blemishes while retaining skin texture",
+        "variables": [],
+        "images": [
+          "photo-transformations-natural-skin-retouch-after.webp",
+          "photo-transformations-natural-skin-retouch-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Natural skin retouch"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            3
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "02-skin-shawn-mendes",
+            "url": "https://www.pinterest.com/pin/815362707542551746/"
+          }
+        ]
+      },
+      {
+        "id": "gta-effect",
+        "title": "GTA effect",
+        "body": "Rebuild this entire scene as a GTA V gameplay screenshot, recreate the person, car and surroundings as textured 3D game assets, preserve pose, framing, perspective and lighting, use recognizable game geometry and shading, no photographic surfaces or interface overlays",
+        "kind": "prompt",
+        "category": "Photo Editing",
+        "note": "Rebuild the scene as a GTA V gameplay screenshot",
+        "variables": [],
+        "images": [
+          "photo-transformations-gta-effect-after.webp",
+          "photo-transformations-gta-effect-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "GTA effect"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            4
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "03-gta-sports-car",
+            "url": "https://www.topgear.com/car-news/big-reads/never-meet-your-heroes-these-are-legendary-japanese-sports-cars-inspiring-future"
+          }
+        ]
+      },
+      {
+        "id": "minecraft-world",
+        "title": "Minecraft world",
+        "body": "Keep the person completely photorealistic and unchanged, rebuild everything else as Minecraft blocks, match the original terrain, trees, water, layout, perspective and lighting, use cubic geometry and pixel textures, preserve the exact pose, clothing and placement of the person",
+        "kind": "prompt",
+        "category": "Photo Editing",
+        "note": "Turn the surroundings into blocks while keeping the person real",
+        "variables": [],
+        "images": [
+          "photo-transformations-minecraft-world-after.webp",
+          "photo-transformations-minecraft-world-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Minecraft world"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            5
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "04-minecraft-lake",
+            "url": "https://www.traveloka.com/vi-vn/explore/destination/du-lich-cao-bang-2-ngay-1-dem/316000"
+          }
+        ]
+      },
+      {
+        "id": "studio-headshot",
+        "title": "Studio headshot",
+        "body": "Turn this photo into a professional studio headshot, preserve identity, facial proportions, hairstyle and clothing, use a neutral light-gray backdrop, soft key light, subtle fill and natural catchlights, keep realistic skin texture, frame the head and shoulders without reshaping the face",
+        "kind": "prompt",
+        "category": "Headshot",
+        "note": "Create a clean studio headshot from an existing portrait",
+        "variables": [],
+        "images": [
+          "photo-transformations-studio-headshot-after.webp",
+          "photo-transformations-studio-headshot-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Studio headshot"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            6
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "05-portrait-daniel-kaluuya",
+            "url": "https://www.vanityfair.com/hollywood/2022/07/daniel-kaluuya-will-not-be-in-black-panther-wakanda-forever"
+          }
+        ]
+      },
+      {
+        "id": "ms-paint-effect",
+        "title": "MS Paint effect",
+        "body": "Redraw this photo as a deliberately clumsy mouse drawing in classic MS Paint, use a plain white background, shaky outlines, crude flat colors and awkward proportions, keep the pose, cup, chair and table recognizable, charmingly bad, no polished illustration or added text",
+        "kind": "prompt",
+        "category": "Illustration",
+        "note": "Turn a photo into a deliberately clumsy mouse drawing",
+        "variables": [],
+        "images": [
+          "photo-transformations-ms-paint-effect-after.webp",
+          "photo-transformations-ms-paint-effect-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "MS Paint effect"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            7
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "06-paint-keanu-reeves",
+            "url": "https://x.com/keanuthings/status/978279423622434817"
+          }
+        ]
+      },
+      {
+        "id": "lego-world",
+        "title": "LEGO world",
+        "body": "Keep the person photorealistic and unchanged, rebuild the surroundings from LEGO bricks, recreate the buildings, terrace, sea and mountains with visible studs and plastic textures, preserve the exact composition, scale, perspective and lighting, the person must remain human, not a minifigure",
+        "kind": "prompt",
+        "category": "Photo Editing",
+        "note": "Rebuild the scenery with LEGO bricks",
+        "variables": [],
+        "images": [
+          "photo-transformations-lego-world-after.webp",
+          "photo-transformations-lego-world-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "LEGO world"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            8
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "07-lego-amalfi",
+            "url": "https://www.travlinmad.com/blog/amalfi-or-positano"
+          }
+        ]
+      },
+      {
+        "id": "product-campaign",
+        "title": "Product campaign",
+        "body": "Create a premium ad photograph around this exact bottle, preserve its shape, cap, label and colors, surround it with fresh orange slices, ice and subtle condensation on a warm orange studio set, use crisp commercial lighting and realistic reflections, no extra text or products",
+        "kind": "prompt",
+        "category": "Product Photography",
+        "note": "Turn a product reference into a commercial photo",
+        "variables": [],
+        "images": [
+          "photo-transformations-product-campaign-after.webp",
+          "photo-transformations-product-campaign-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Product campaign"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            9
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "08-product-aranciata",
+            "url": "https://www.global-wines.cz/aranciata-20cl-sklo"
+          }
+        ]
+      },
+      {
+        "id": "group-selfie",
+        "title": "Group selfie",
+        "body": "Combine the two reference people into one candid phone selfie, preserve both identities, hairstyles and outfits, place them shoulder to shoulder in a café, one holding the camera at arm’s length, match natural lighting, realistic proportions and slight wide-angle distortion, no extra people",
+        "kind": "prompt",
+        "category": "Selfie",
+        "note": "Combine two separate portraits into one candid selfie",
+        "variables": [],
+        "images": [
+          "photo-transformations-group-selfie-after.webp",
+          "photo-transformations-group-selfie-before-1.webp",
+          "photo-transformations-group-selfie-before-2.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Group selfie"
+        ],
+        "instructions": [
+          "Upload two clear reference portraits before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photos"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            10
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "09a-selfie-man",
+            "url": "https://unsplash.com/photos/man-in-blue-button-up-shirt-C2Nf5iPOnz0"
+          },
+          {
+            "name": "09b-selfie-woman",
+            "url": "https://unsplash.com/es/fotos/mujer-con-camisa-de-vestir-a-cuadros-blancos-y-azules-jzz_3jWMzHA"
+          }
+        ]
+      },
+      {
+        "id": "anime-effect",
+        "title": "Anime effect",
+        "body": "Transform this photo into a hand-drawn sports anime frame, preserve the players, poses, uniforms, ball, camera angle and court layout, use clean linework, cel shading, expressive faces and dramatic arena lighting, keep anatomy coherent and the action unchanged, no extra text or characters",
+        "kind": "prompt",
+        "category": "Illustration",
+        "note": "Restyle an action photo as a hand-drawn anime frame",
+        "variables": [],
+        "images": [
+          "photo-transformations-anime-effect-after.webp",
+          "photo-transformations-anime-effect-before.webp"
+        ],
+        "tags": [
+          "Photo Editing",
+          "Before and After",
+          "Anime effect"
+        ],
+        "instructions": [
+          "Upload your reference photo before pasting the prompt",
+          "The gallery shows the AI-edited result first, followed by the original reference photo"
+        ],
+        "source": {
+          "account": "getintoai",
+          "url": "https://www.instagram.com/p/De9wCPzmCkd/",
+          "kind": "carousel",
+          "slides": [
+            11
+          ]
+        },
+        "sourceSeries": [
+          "10 photo transformations"
+        ],
+        "photoCredits": [
+          {
+            "name": "10-anime-basketball",
+            "url": "https://www.eurohoops.net/basket/mzt-skopje/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "halloween",
     "section": "visuals",
     "title": "Halloween",
