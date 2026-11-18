@@ -3631,7 +3631,9 @@
         ],
         "variables": [],
         "placeholderStyle": "literal",
-        "images": [],
+        "images": [
+          "fix-your-life-astronaut.png"
+        ],
         "tags": [
           "Identity",
           "Reflection",
