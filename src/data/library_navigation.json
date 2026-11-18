@@ -620,6 +620,7 @@
     }
   },
   "directPromptPages": {
-    "digital-footprint": "privacy-memory/digital-footprint-cleanup"
+    "digital-footprint": "privacy-memory/digital-footprint-cleanup",
+    "fix-your-life": "learning-growth/fix-your-life"
   }
 }
