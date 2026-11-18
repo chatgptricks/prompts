@@ -155,10 +155,10 @@ export default function PromptComposer({
   return (
     <section className="composer-grid">
       <article className={`prompt-detail-card accent-${library.accent}`}>
-        <div className="detail-media">
+        <div className="detail-media" style={prompt.imageAspectRatio ? { height: 'auto', minHeight: 0 } : undefined}>
           {prompt.imageUrls?.length ? (
             <>
-              <img src={prompt.imageUrls[activeImage]} alt="" style={prompt.imageAspectRatio ? { height: 'auto', aspectRatio: prompt.imageAspectRatio, objectFit: 'contain' } : undefined} />
+              <img src={prompt.imageUrls[activeImage]} alt="" style={prompt.imageAspectRatio ? { display: 'block', height: 'auto', minHeight: 0, aspectRatio: prompt.imageAspectRatio, objectFit: 'contain' } : undefined} />
               {prompt.imageUrls.length > 1 ? (
                 <div className="image-strip">
                   {prompt.imageUrls.map((url, index) => (
