@@ -158,7 +158,7 @@ export default function PromptComposer({
         <div className="detail-media">
           {prompt.imageUrls?.length ? (
             <>
-              <img src={prompt.imageUrls[activeImage]} alt="" />
+              <img src={prompt.imageUrls[activeImage]} alt="" style={prompt.imageAspectRatio ? { height: 'auto', aspectRatio: prompt.imageAspectRatio, objectFit: 'contain' } : undefined} />
               {prompt.imageUrls.length > 1 ? (
                 <div className="image-strip">
                   {prompt.imageUrls.map((url, index) => (
