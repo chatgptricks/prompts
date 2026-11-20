@@ -338,7 +338,7 @@ function LibraryPage({
 
   return (
     <div className="page library-page">
-      <section className={`library-hero accent-${library.accent}`}>
+      <section className={`library-hero accent-${library.accent}${library.cover ? ' with-cover' : ''}`}>
         <div className="library-hero-copy">
           <p className="eyebrow">{library.compatibility ? 'Original collection' : 'Collection'} · {library.prompts.length} {entryLabel}</p>
           <h1>{library.title}</h1>
@@ -349,6 +349,9 @@ function LibraryPage({
             ))}
           </div>
         </div>
+        {library.cover && (
+          <img className="library-hero-cover" src={library.cover.src} alt={library.cover.alt} width="1440" height="1440" />
+        )}
       </section>
 
       <section className="library-toolbar">

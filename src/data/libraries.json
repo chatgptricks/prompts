@@ -3362,6 +3362,161 @@
     ]
   },
   {
+    "id": "10-prompts",
+    "section": "learning",
+    "title": "10 ChatGPT Prompts",
+    "shortTitle": "10 ChatGPT Prompts",
+    "summary": "Challenge ideas, compare options, and work backward from a goal.",
+    "description": "Choose a prompt to pressure-test an idea, make a decision, or turn a goal into a plan.",
+    "cover": {
+      "src": "/10-prompts/cover.jpg",
+      "alt": "Sam Altman sits in front of an audience wearing glowing blue visors."
+    },
+    "accent": "cyan",
+    "tags": [
+      "Decisions",
+      "Planning",
+      "Learning"
+    ],
+    "tipsTitle": "Using these prompts",
+    "tips": [
+      "Copy a prompt as written, or open it to fill in the words in brackets.",
+      "For The Thinking Partner and The Ruthless Critic, include the question or idea you want to discuss."
+    ],
+    "prompts": [
+      {
+        "id": "thinking-partner",
+        "title": "1. THE THINKING PARTNER",
+        "body": "Don't answer my question right away. First, identify what I'm really trying to solve. Ask me the 3 most important questions that would help you give me a much better answer.",
+        "kind": "prompt",
+        "category": "Clarity",
+        "note": "First, identify what I'm really trying to solve.",
+        "images": [],
+        "tags": [
+          "Questions",
+          "Problem solving"
+        ]
+      },
+      {
+        "id": "ruthless-critic",
+        "title": "2. THE RUTHLESS CRITIC",
+        "body": "I'm going to run an idea by you. Your job isn't to agree with me. Find its 5 biggest weaknesses, challenge my assumptions, spot what I'm missing, and tell me what could make it fail.",
+        "kind": "prompt",
+        "category": "Reasoning",
+        "note": "Find its 5 biggest weaknesses, challenge my assumptions, spot what I'm missing, and tell me what could make it fail.",
+        "images": [],
+        "tags": [
+          "Feedback",
+          "Assumptions"
+        ]
+      },
+      {
+        "id": "reverse-engineer",
+        "title": "3. THE REVERSE ENGINEER",
+        "body": "I want to achieve [SPECIFIC RESULT]. Start with the desired outcome and work backward. Identify precisely the steps, skills, tools, decisions, and milestones needed to get there. Explain the most efficient path for me.",
+        "kind": "prompt",
+        "category": "Strategy",
+        "note": "Start with the desired outcome and work backward.",
+        "images": [],
+        "tags": [
+          "Goals",
+          "Planning"
+        ]
+      },
+      {
+        "id": "expert-simulator",
+        "title": "4. THE EXPERT SIMULATOR",
+        "body": "Act as a top 1% expert in [FIELD]. Evaluate my current approach, identify what beginners get wrong, explain what experienced pros do differently, and show me how to think at an advanced level.",
+        "kind": "prompt",
+        "category": "Learning",
+        "note": "Act as a top 1% expert in [FIELD].",
+        "images": [],
+        "tags": [
+          "Expert feedback",
+          "Practice"
+        ]
+      },
+      {
+        "id": "decision-architect",
+        "title": "5. THE DECISION ARCHITECT",
+        "body": "I'm torn between [OPTION A] and [OPTION B]. Build a decision matrix that compares the two options based on my priorities, risks, opportunity costs, and long-term consequences. Identify the option most likely to produce the best outcome.",
+        "kind": "prompt",
+        "category": "Analysis",
+        "note": "Identify the option most likely to produce the best outcome.",
+        "images": [],
+        "tags": [
+          "Decisions",
+          "Trade-offs"
+        ]
+      },
+      {
+        "id": "opportunity-hunter",
+        "title": "6. THE OPPORTUNITY HUNTER",
+        "body": "Analyze [INDUSTRY, SKILL, OR BUSINESS]. Identify 10 overlooked opportunities that most people don't pay attention to. Explain why each one exists, who would be willing to pay for it, and how I could practically take advantage of it.",
+        "kind": "prompt",
+        "category": "Strategy",
+        "note": "Identify 10 overlooked opportunities that most people don't pay attention to.",
+        "images": [],
+        "tags": [
+          "Opportunities",
+          "Demand"
+        ]
+      },
+      {
+        "id": "learning-accelerator",
+        "title": "7. THE LEARNING ACCELERATOR",
+        "body": "I want to master [SKILL] as efficiently as possible. Build me a learning system based on deliberate practice, active recall, spaced repetition, and hands-on projects. Focus on the knowledge that offers the greatest practical advantage.",
+        "kind": "prompt",
+        "category": "Learning",
+        "note": "Focus on the knowledge that offers the greatest practical advantage.",
+        "images": [],
+        "tags": [
+          "Deliberate practice",
+          "Active recall"
+        ]
+      },
+      {
+        "id": "system-builder",
+        "title": "8. THE SYSTEM BUILDER",
+        "body": "Help me consistently achieve [GOAL]. Instead of giving me motivation or random advice, design a repeatable system with daily actions, triggers, checkpoints, feedback loops, and measurable progress.",
+        "kind": "prompt",
+        "category": "Strategy",
+        "note": "Instead of giving me motivation or random advice, design a repeatable system with daily actions, triggers, checkpoints, feedback loops, and measurable progress.",
+        "images": [],
+        "tags": [
+          "Habits",
+          "Systems"
+        ]
+      },
+      {
+        "id": "knowledge-extractor",
+        "title": "9. THE KNOWLEDGE EXTRACTOR",
+        "body": "I'm going to give you an [ARTICLE, BOOK, TRANSCRIPT, OR DOCUMENT]. Don't just summarize it. Extract the most valuable insights, implicit assumptions, practical applications, counterintuitive lessons, and ideas I can apply right away.",
+        "kind": "prompt",
+        "category": "Research",
+        "note": "Extract the most valuable insights, implicit assumptions, practical applications, counterintuitive lessons, and ideas I can apply right away.",
+        "images": [],
+        "tags": [
+          "Documents",
+          "Insights"
+        ]
+      },
+      {
+        "id": "strategic-advisor",
+        "title": "10. THE STRATEGIC ADVISOR",
+        "body": "Act as my strategic advisor. Here's my current situation: [CONTEXT]. Here's what I want to achieve: [GOAL]. Identify my biggest levers, the highest-impact actions, what I should stop doing, and the next 3 moves that would get me the furthest.",
+        "kind": "prompt",
+        "category": "Strategy",
+        "note": "Identify my biggest levers, the highest-impact actions, what I should stop doing, and the next 3 moves that would get me the furthest.",
+        "images": [],
+        "tags": [
+          "Priorities",
+          "Next steps"
+        ]
+      }
+    ]
+  },
+  {
     "id": "learning-growth",
     "section": "learning",
     "title": "Learning & Thinking",

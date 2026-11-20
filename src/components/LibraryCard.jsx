@@ -34,7 +34,9 @@ export default function LibraryCard({ library, sectionTitle }) {
     >
       <div className="card-kicker">
         <span>{sectionTitle ?? libraryLabel}</span>
-        <Layers3 aria-hidden="true" size={15} />
+        {library.cover
+          ? <img className="collection-card-cover" src={library.cover.src} alt="" width="60" height="60" loading="lazy" />
+          : <Layers3 aria-hidden="true" size={15} />}
       </div>
       <h3>{library.shortTitle}</h3>
       <p className="library-card-summary">{library.summary ?? library.description}</p>
